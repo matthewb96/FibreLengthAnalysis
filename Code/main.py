@@ -57,15 +57,17 @@ plt.subplot(2,3,2)
 plt.imshow(imageGray)
 plt.title("Grayscale Image"), plt.yticks([]), plt.xticks([])
 
+
 #Blur the image using a simple blur in openCV
-kernel = np.ones((100,100), np.float32)/10000 #Creates an array that is used to define area of blurring
+kernel = np.ones((200,200), np.float32)/40000 #Creates an array that is used to define area of blurring
 blurGray = cv2.filter2D(imageGray, -1, kernel) #Finds a mean of the pixels in the kernel and sets the center pixel to that
 plt.subplot(2,3,3)
 plt.imshow(imageGray)
 plt.title("Blurred Image"), plt.yticks([]), plt.xticks([])
 
+
 #Finding the edges of the image using Canny Edge detection from opencv
-imageUint8 = np.uint8(image) #Converts the image from CV_8U to uint8 so it can be used by Canny()
+imageUint8 = np.uint8(blurGray) #Converts the image from CV_8U to uint8 so it can be used by Canny()
 edges = cv2.Canny(imageUint8, 0, 0) #Finds the edges in the image, the arguments are image, minVal and maxVal
 plt.subplot(2,3,4)
 plt.imshow(edges, cmap="gray")
