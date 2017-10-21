@@ -2,11 +2,13 @@
 """
 @author: Matthew
 This main file will control all other files and house a lot of the important functions. 
+At the minute most of the code is for testing what works and what doesn't.
 """
 #All the imported modules
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt, image as mpimg
+import os #Used in saveImg()
 
 #All the global constants that are needed
 IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
@@ -15,6 +17,30 @@ PROCESSEDFOLDER = "..\\ProcessedData\\" #Source for where processed data is stor
 #All the global variables that are needed
 imageSource = input("Please input filename to be analysed: ")
 
+#Some functions are defined that will be used later
+
+def saveImg(filename, overwrite = False):
+    """
+    This function will save the images that have been created into a file with the name "filename", by default it will not overwrite existing images.
+    Currently not working as planned as plt.saveFig() won't work inside the function so instead this function just finds the next free filename and returns it.
+    
+    Arguments:
+        filename - This is the name and source of the file to be saved and should be a string.
+        overwrite - This defines whether or not an image can be overwrited, it is a boolean. (Default = False)
+        
+    Returns a string of an edited version of the filename that won't overwrite anything.
+    
+    """
+    if overwrite or not os.path.isfile(filename) : #Check if overwrite is enabled or if the file doesn't exist and save the image and exit function.
+        return filename
+    else: #The file does exist so add a number to the filename and save it
+        pos = filename.rfind(".") #Find the position of the start of the file type to put a number before it
+        num = 1
+        filename = filename[:pos] + " [" + str(num) + "]" + filename[pos:] 
+        while os.path.isfile(filename): #While the filename is being used replace the number until the filename isn't in use
+            num += 1
+            filename = filename[:(pos+2)] + str(num) + filename[(pos+3):]
+        return filename
 
 #First bit of test code opening the image and showing it in the console
 image = mpimg.imread(IMAGEFOLDER + imageSource) #Opens the image and converts it to an array of floating point data between 0 and 1. Could use cv2.imread but that nwon't read png files
@@ -58,5 +84,5 @@ plt.title("Line Detected Image"), plt.yticks([])
 
 #Show and save the images
 plt.show()
-img.savefig(PROCESSEDFOLDER + imageSource)
+plt.savefig(saveImg(PROCESSEDFOLDER + imageSource))
 plt.close(img)
