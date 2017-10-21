@@ -86,5 +86,5 @@ plt.title("Line Image"), plt.yticks([]), plt.xticks([])
 
 #Show and save the images
 plt.show()
-plt.savefig(saveImg(PROCESSEDFOLDER + imageSource))
+img.savefig(saveImg(PROCESSEDFOLDER + imageSource))
 plt.close(img)
