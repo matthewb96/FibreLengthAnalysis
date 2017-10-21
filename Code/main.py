@@ -38,8 +38,9 @@ def saveImg(filename, overwrite = False):
         num = 1
         filename = filename[:pos] + " [" + str(num) + "]" + filename[pos:] 
         while os.path.isfile(filename): #While the filename is being used replace the number until the filename isn't in use
+            digits = len(str(num))
             num += 1
-            filename = filename[:(pos+2)] + str(num) + filename[(pos+3):]
+            filename = filename[:(pos+2)] + str(num) + filename[(pos+2+digits):]
         return filename
 
 
@@ -67,7 +68,7 @@ plt.title("Blurred Image"), plt.yticks([]), plt.xticks([])
 """
 
 #Finding the edges of the image using Canny Edge detection from opencv
-imageUint8 = np.uint8(blurGray) #Converts the image from CV_8U to uint8 so it can be used by Canny()
+imageUint8 = np.uint8(imageGray) #Converts the image from CV_8U to uint8 so it can be used by Canny()
 edges = cv2.Canny(imageUint8, 0, 0) #Finds the edges in the image, the arguments are image, minVal and maxVal
 plt.subplot(2,3,4)
 plt.imshow(edges, cmap="gray")
@@ -75,8 +76,8 @@ plt.title("Edge Image"), plt.yticks([]), plt.xticks([])
 
 
 #Trying Harris corner detection
-imageFloat = np.float32(blurGray)
-corners = cv2.cornerHarris(imageFloat, 2, 3, 0.04)
+imageFloat = np.float32(imageGray)
+corners = cv2.cornerHarris(imageFloat, 10, 15, 0.04)
 corners = cv2.dilate(corners, None) #Used to mark the corners
 plt.subplot(2,3,5)
 plt.imshow(corners)
