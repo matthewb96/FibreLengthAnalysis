@@ -7,7 +7,7 @@ At the minute most of the code is for testing what works and what doesn't.
 #All the imported modules
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt, image as mpimg #mimg was previously used for imread
+from matplotlib import pyplot as plt
 import os #Used in saveImg()
 
 #All the global constants that are needed
@@ -83,14 +83,15 @@ plt.imshow(corners)
 plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
 
 
-
+"""
 #Trying Line Detection using Hough Line Transform
 #ret, imageThres = cv2.threshold(imageUint8, 127, 255, cv2.THRESH_BINARY)
 lines = cv2.HoughLines(edges, 1, np.pi/180, 200) #Using Hough line transform on canny edge detected image
-plt.subplot(2,3,6)
-plt.imshow(lines)
-plt.title("Line Image"), plt.yticks([]), plt.xticks([])
-
+#plt.subplot(2,3,6)
+cv2.imshow("image",lines)
+cv2.waitKey(0)
+#plt.title("Line Image"), plt.yticks([]), plt.xticks([])
+"""
 
 #Show and save the images
 plt.show()
