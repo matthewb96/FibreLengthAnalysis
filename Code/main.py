@@ -7,7 +7,7 @@ At the minute most of the code is for testing what works and what doesn't.
 #All the imported modules
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt, image as mpimg
+from matplotlib import pyplot as plt, image as mpimg #mimg was previously used for imread
 import os #Used in saveImg()
 
 #All the global constants that are needed
@@ -42,44 +42,46 @@ def saveImg(filename, overwrite = False):
             filename = filename[:(pos+2)] + str(num) + filename[(pos+3):]
         return filename
 
-#First bit of test code opening the image and showing it in the console
-image = mpimg.imread(IMAGEFOLDER + imageSource) #Opens the image and converts it to an array of floating point data between 0 and 1. Could use cv2.imread but that nwon't read png files
+
+#First bit of test code opening the image and showing it in the console can't read png when using cv2.imread() instead of mimg.imread()
+image = cv2.imread(IMAGEFOLDER + imageSource) #Opens the image and converts it to an array of floating point data between 0 and 1.
 img = plt.figure()
-plt.subplot(131)
+plt.subplot(2,3,1)
 plt.imshow(image) #Shows the image in the IPython console test purposes
-plt.title("Original Image")
+plt.title("Original Image"), plt.yticks([]), plt.xticks([])
+
+
+#Convert to grayscale
+imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+plt.subplot(2,3,2)
+plt.imshow(imageGray)
+plt.title("Grayscale Image"), plt.yticks([]), plt.xticks([])
+
 
 #Finding the edges of the image using Canny Edge detection from opencv
-imageConverted = np.uint8(image) #Converts the image from CV_8U to uint8 so it can be used by Canny()
-edges = cv2.Canny(imageConverted, 0, 0) #Finds the edges in the image, the arguments are image, minVal and maxVal
-plt.subplot(132)
+imageUint8 = np.uint8(image) #Converts the image from CV_8U to uint8 so it can be used by Canny()
+edges = cv2.Canny(imageUint8, 0, 0) #Finds the edges in the image, the arguments are image, minVal and maxVal
+plt.subplot(2,3,3)
 plt.imshow(edges, cmap="gray")
-plt.title("Edge Detected Image"), plt.yticks([])
+plt.title("Edge Image"), plt.yticks([]), plt.xticks([])
 
 
-plt.subplot(133)
-plt.imshow(imageConverted)
-plt.title("Converted Image"), plt.yticks([])
-
-"""
 #Trying Harris corner detection
-imageConverted = np.float32(image)
-print(imageConverted)
-corners = cv2.cornerHarris(imageConverted, 2, 3, 0.04)
-plt.subplot(132)
+imageFloat = np.float32(imageGray)
+corners = cv2.cornerHarris(imageFloat, 2, 3, 0.04)
+corners = cv2.dilate(corners, None) #Used to mark the corners
+plt.subplot(2,3,4)
 plt.imshow(corners)
-plt.title("Corner Detected Image"), plt.yaxis([])
-"""
+plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
+
 
 """
 #Trying Line Detection using Hough Line Transform
-imageConverted = np.uint8(image)
-imageConverted = cv2.cvtColor(imageConverted, cv2.COLOR_BGR2GRAY)
-ret, imageThres = cv2.threshold(imageConverted, 127, 255, cv2.THRESH_BINARY)
+ret, imageThres = cv2.threshold(imageUint8, 127, 255, cv2.THRESH_BINARY)
 lines = cv2.HoughLines(imageThres, 1, np.pi/180, 200)
-plt.subplot(133)
-plt.imshow(lines, cmap="gray")
-plt.title("Line Detected Image"), plt.yticks([])
+plt.subplot(2,3,5)
+plt.imshow(lines)
+plt.title("Line Image"), plt.yticks([]), plt.xticks([])
 """
 
 #Show and save the images
