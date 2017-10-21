@@ -83,14 +83,14 @@ plt.imshow(corners)
 plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
 
 
-"""
+
 #Trying Line Detection using Hough Line Transform
-ret, imageThres = cv2.threshold(imageUint8, 127, 255, cv2.THRESH_BINARY)
-lines = cv2.HoughLines(imageThres, 1, np.pi/180, 200)
-plt.subplot(2,3,5)
+#ret, imageThres = cv2.threshold(imageUint8, 127, 255, cv2.THRESH_BINARY)
+lines = cv2.HoughLines(edges, 1, np.pi/180, 200) #Using Hough line transform on canny edge detected image
+plt.subplot(2,3,6)
 plt.imshow(lines)
 plt.title("Line Image"), plt.yticks([]), plt.xticks([])
-"""
+
 
 #Show and save the images
 plt.show()
