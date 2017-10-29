@@ -67,6 +67,25 @@ plt.subplot(2,3,5)
 plt.imshow(corners)
 plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
 
+# Find the corners more accuratley using cornerSubPix
+corners = np.uint8(corners)
+ret, labels, stats, centroids = cv2.connectedComponentsWithStats(corners)
+criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
+                                 np.float32(centroids), #Initial coordinates of the original corners
+                                (5,5),                  #Size of search window        
+                                (-1,-1),                #Size of dead region (-1,-1) is no dead region
+                                criteria)               #Criteria to stop the iteration
+
+plt.subplot(2,3,6)
+plt.imshow(cornersSubPix)
+plt.title("Sub Pixel Image"), plt.yticks([]), plt.xticks([])
+
+print(centroids)
+print(cornersSubPix)
+print(corners[500, 499])
+#Try to find the indices of the coloured corners
+positions = np.nonzero(np.absolute(corners) < 1e-5) #Returns the indices of any non-zero values of the array
 
 """
 #Trying Line Detection using Hough Line Transform
