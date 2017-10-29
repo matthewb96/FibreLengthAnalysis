@@ -89,7 +89,18 @@ print(cornersSubPix)
 """
 
 #Try to find the indices of the coloured corners
-positions = np.nonzero(np.absolute(corners) < 1e-5) #Returns the indices of any non-zero values of the array
+#positions = np.nonzero(np.absolute(corners) < 1e-5) #Returns the indices of any non-zero values of the array
+corners = np.uint8(corners)
+ret, threshold = cv2.threshold(corners,250,255,cv2.THRESH_BINARY)
+plt.subplot(2,3,6)
+plt.imshow(threshold)
+plt.title("Threshold Image"), plt.yticks([]), plt.xticks([])
+
+print(corners[19, 19])
+print(corners[19, 79])
+print(corners[79, 19])
+print(corners[79, 79])
+np.savetxt(saveImg(imageSource) + ".txt", corners)
 
 """
 #Trying Line Detection using Hough Line Transform
