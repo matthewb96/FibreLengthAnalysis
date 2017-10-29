@@ -69,7 +69,8 @@ plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
 
 # Find the corners more accuratley using cornerSubPix
 corners = np.uint8(corners)
-ret, labels, stats, centroids = cv2.connectedComponentsWithStats(corners)
+output = cv2.connectedComponentsWithStats(corners)
+"""
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
 cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
                                  np.float32(centroids), #Initial coordinates of the original corners
@@ -80,10 +81,11 @@ cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
 plt.subplot(2,3,6)
 plt.imshow(cornersSubPix)
 plt.title("Sub Pixel Image"), plt.yticks([]), plt.xticks([])
+"""
+print(output)
+print(corners)
+#print(cornersSubPix)
 
-print(centroids)
-print(cornersSubPix)
-print(corners[500, 499])
 #Try to find the indices of the coloured corners
 positions = np.nonzero(np.absolute(corners) < 1e-5) #Returns the indices of any non-zero values of the array
 
