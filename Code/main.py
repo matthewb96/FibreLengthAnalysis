@@ -63,7 +63,7 @@ plt.title("Grayscale Image"), plt.yticks([]), plt.xticks([])
 imageFloat = np.float32(imageGray)
 corners = cv2.cornerHarris(imageFloat, 10, 15, 0.04)
 corners = cv2.dilate(corners, None) #Used to mark the corners
-plt.subplot(2,3,5)
+plt.subplot(2,3,4)
 plt.imshow(corners)
 plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
 
@@ -89,18 +89,22 @@ print(cornersSubPix)
 """
 
 #Try to find the indices of the coloured corners
-#positions = np.nonzero(np.absolute(corners) < 1e-5) #Returns the indices of any non-zero values of the array
 corners = np.uint8(corners)
-ret, threshold = cv2.threshold(corners,250,255,cv2.THRESH_BINARY)
-plt.subplot(2,3,6)
+ret, threshold = cv2.threshold(corners,254,255,cv2.THRESH_BINARY)
+plt.subplot(2,3,5)
 plt.imshow(threshold)
 plt.title("Threshold Image"), plt.yticks([]), plt.xticks([])
 
-print(corners[19, 19])
-print(corners[19, 79])
-print(corners[79, 19])
-print(corners[79, 79])
+positions = np.array(np.nonzero(corners)) #Returns the indices of any non-zero values of the array
+#positions = np.transpose(positions)
+print(positions[0].size)
+x1 = np.average(positions[0, :int(positions[0].size/2)])
+x2 = np.average(positions[0, int(positions[0].size/2):])
+print(x1)
+print(x2)
+print("length = "+ str(np.absolute(x1-x2)))
 np.savetxt(saveImg(imageSource) + ".txt", corners)
+np.savetxt(saveImg(imageSource) + "(positions).txt", positions)
 
 """
 #Trying Line Detection using Hough Line Transform
