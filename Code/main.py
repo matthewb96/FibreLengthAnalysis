@@ -47,25 +47,37 @@ def saveImg(filename, overwrite = False):
 #First bit of test code opening the image and showing it in the console can't read png when using cv2.imread() instead of mimg.imread()
 image = cv2.imread(IMAGEFOLDER + imageSource) #Opens the image and converts it to an array of floating point data between 0 and 1.
 img = plt.figure()
-plt.subplot(2,3,1)
+plt.subplot(2,4,1)
 plt.imshow(image) #Shows the image in the IPython console test purposes
 plt.title("Original Image"), plt.yticks([]), plt.xticks([])
+#Plot histogram
+plt.subplot(2,4,2)
+plt.hist(np.ndarray.flatten(np.uint8(image))) #Plot histogram of the image array
+plt.title("Original Hist"), plt.yticks([])
 
 
 #Convert to grayscale
 imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-plt.subplot(2,3,2)
+plt.subplot(2,4,3)
 plt.imshow(imageGray)
 plt.title("Grayscale Image"), plt.yticks([]), plt.xticks([])
+#Plot histogram
+plt.subplot(2,4,4)
+plt.hist(np.ndarray.flatten(np.uint8(imageGray))) #Plot histogram of the image array
+plt.title("Greyscale Hist"), plt.yticks([])
 
 
 #Trying Harris corner detection
 imageFloat = np.float32(imageGray)
 corners = cv2.cornerHarris(imageFloat, 10, 15, 0.04)
 corners = cv2.dilate(corners, None) #Used to mark the corners
-plt.subplot(2,3,4)
+plt.subplot(2,4,5)
 plt.imshow(corners)
 plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
+#Plot histogram
+plt.subplot(2,4,6)
+plt.hist(np.ndarray.flatten(np.uint8(corners))) #Plot histogram of the image array
+plt.title("Corner Hist"), plt.yticks([])
 
 """
 # Find the corners more accuratley using cornerSubPix
@@ -91,9 +103,13 @@ print(cornersSubPix)
 #Try to find the indices of the coloured corners
 corners = np.uint8(corners)
 ret, threshold = cv2.threshold(corners,254,255,cv2.THRESH_BINARY)
-plt.subplot(2,3,5)
+plt.subplot(2,4,7)
 plt.imshow(threshold)
 plt.title("Threshold Image"), plt.yticks([]), plt.xticks([])
+#Plot histogram
+plt.subplot(2,4,8)
+plt.hist(np.ndarray.flatten(np.uint8(threshold))) #Plot histogram of the image array
+plt.title("Threshold Hist"), plt.yticks([])
 
 positions = np.array(np.nonzero(corners)) #Returns the indices of any non-zero values of the array
 #positions = np.transpose(positions)
