@@ -47,42 +47,59 @@ def saveImg(filename, overwrite = False):
 #First bit of test code opening the image and showing it in the console can't read png when using cv2.imread() instead of mimg.imread()
 image = cv2.imread(IMAGEFOLDER + imageSource) #Opens the image and converts it to an array of floating point data between 0 and 1.
 img = plt.figure()
-plt.subplot(2,4,1)
+plt.subplot(3,4,1)
 plt.imshow(image) #Shows the image in the IPython console test purposes
 plt.title("Original Image"), plt.yticks([]), plt.xticks([])
 #Plot histogram
-plt.subplot(2,4,2)
-plt.hist(np.ndarray.flatten(np.uint8(image))) #Plot histogram of the image array
+plt.subplot(3,4,2)
+n, bins, patches = plt.hist(np.ndarray.flatten(np.uint8(image))) #Plot histogram of the image array
 plt.title("Original Hist"), plt.yticks([])
-
+print("Original Hist Data")
+print(n)
+print(bins)
+print(np.sum(n))
 
 #Convert to grayscale
 imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-plt.subplot(2,4,3)
+plt.subplot(3,4,3)
 plt.imshow(imageGray)
 plt.title("Grayscale Image"), plt.yticks([]), plt.xticks([])
 #Plot histogram
-plt.subplot(2,4,4)
-plt.hist(np.ndarray.flatten(np.uint8(imageGray))) #Plot histogram of the image array
-plt.title("Greyscale Hist"), plt.yticks([])
-
+plt.subplot(3,4,4)
+n, bins, patches = plt.hist(np.ndarray.flatten(np.uint8(imageGray))) #Plot histogram of the image array
+plt.title("Grayscale Hist"), plt.yticks([])
+print("Grayscale Hist Data")
+print(n)
+print(bins)
+print(np.sum(n))
 
 #Trying Harris corner detection
 imageFloat = np.float32(imageGray)
-corners = cv2.cornerHarris(imageFloat, 10, 15, 0.04)
+corners = cv2.cornerHarris(imageFloat.copy(), 10, 15, 0.04)
 corners = cv2.dilate(corners, None) #Used to mark the corners
-plt.subplot(2,4,5)
+plt.subplot(3,4,5)
 plt.imshow(corners)
 plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
 #Plot histogram
-plt.subplot(2,4,6)
+plt.subplot(3,4,6)
 plt.hist(np.ndarray.flatten(np.uint8(corners))) #Plot histogram of the image array
 plt.title("Corner Hist"), plt.yticks([])
 
-"""
-# Find the corners more accuratley using cornerSubPix
-corners = np.uint8(corners)
-output = cv2.connectedComponentsWithStats(corners)
+
+# Find the corners more accurately using cornerSubPix
+#cornersThres = cv2.threshold(corners, 0.01*corners.max(), 255, 0)
+cornersThres = np.uint8(corners)
+ret, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
+print(centroids)
+#Plot cornersThres
+plt.subplot(3,4,7)
+plt.imshow(cornersThres)
+plt.title("CornerThres Image"), plt.yticks([]), plt.xticks([])
+#Plot histogram
+plt.subplot(3,4,8)
+plt.hist(np.ndarray.flatten(np.uint8(cornersThres))) #Plot histogram of the image array
+plt.title("Corner Thres Hist"), plt.yticks([])
+
 
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
 cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
@@ -91,23 +108,18 @@ cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
                                 (-1,-1),                #Size of dead region (-1,-1) is no dead region
                                 criteria)               #Criteria to stop the iteration
 
-plt.subplot(2,3,6)
-plt.imshow(cornersSubPix)
-plt.title("Sub Pixel Image"), plt.yticks([]), plt.xticks([])
-
-print(output)
-print(corners)
 print(cornersSubPix)
-"""
 
+
+"""
 #Try to find the indices of the coloured corners
 corners = np.uint8(corners)
 ret, threshold = cv2.threshold(corners,254,255,cv2.THRESH_BINARY)
-plt.subplot(2,4,7)
+plt.subplot(3,4,9)
 plt.imshow(threshold)
 plt.title("Threshold Image"), plt.yticks([]), plt.xticks([])
 #Plot histogram
-plt.subplot(2,4,8)
+plt.subplot(3,4,10)
 plt.hist(np.ndarray.flatten(np.uint8(threshold))) #Plot histogram of the image array
 plt.title("Threshold Hist"), plt.yticks([])
 
@@ -121,6 +133,7 @@ print(x2)
 print("length = "+ str(np.absolute(x1-x2)))
 np.savetxt(saveImg(imageSource) + ".txt", corners)
 np.savetxt(saveImg(imageSource) + "(positions).txt", positions)
+"""
 
 """
 #Trying Line Detection using Hough Line Transform
@@ -134,5 +147,15 @@ cv2.waitKey(0)
 
 #Show and save the images
 plt.show()
-img.savefig(saveImg(PROCESSEDFOLDER + imageSource))
+saveName = saveImg(PROCESSEDFOLDER + imageSource)
+img.savefig(saveName)
 plt.close(img)
+
+# Now draw orginal image with corners plotted
+res = np.hstack((centroids,cornersSubPix))
+res = np.int0(res)
+image[res[:,1],res[:,0]]=[0,0,255]
+image[res[:,3],res[:,2]] = [0,255,0]
+
+cv2.imwrite(saveName + " subpix.jpg",image)
+cv2.imwrite(saveName + " Harris.jpg",corners)
