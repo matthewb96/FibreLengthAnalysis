@@ -76,7 +76,7 @@ print(np.sum(n))
 #Trying Harris corner detection
 imageFloat = np.float32(imageGray)
 corners = cv2.cornerHarris(imageFloat.copy(), 10, 15, 0.04)
-cornersDil = cv2.dilate(corners, None) #Used to mark the corners
+corners = cv2.dilate(corners, None) #Used to mark the corners
 plt.subplot(3,4,5)
 plt.imshow(corners)
 plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
@@ -85,14 +85,6 @@ plt.subplot(3,4,6)
 plt.hist(np.ndarray.flatten(np.uint8(corners))) #Plot histogram of the image array
 plt.title("Corner Hist"), plt.yticks([])
 
-#Plot dilate image
-plt.subplot(3,4,7)
-plt.imshow(cornersDil)
-plt.title("Dilate Image"), plt.yticks([]), plt.xticks([])
-#Plot histogram
-plt.subplot(3,4,8)
-plt.hist(np.ndarray.flatten(np.uint8(cornersDil))) #Plot histogram of the image array
-plt.title("Dilate Hist"), plt.yticks([])
 
 # Find the corners more accurately using cornerSubPix
 cornersThres = np.uint8(corners)
