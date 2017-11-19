@@ -87,9 +87,9 @@ plt.title("Corner Hist"), plt.yticks([])
 
 
 # Find the corners more accurately using cornerSubPix
-#cornersThres = cv2.threshold(corners, 0.01*corners.max(), 255, 0)
 cornersThres = np.uint8(corners)
-ret, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
+thresVal, cornersThres = cv2.threshold(cornersThres, 150, 255, 0)
+retval, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
 print(centroids)
 #Plot cornersThres
 plt.subplot(3,4,7)
@@ -100,7 +100,7 @@ plt.subplot(3,4,8)
 plt.hist(np.ndarray.flatten(np.uint8(cornersThres))) #Plot histogram of the image array
 plt.title("Corner Thres Hist"), plt.yticks([])
 
-
+#Sub Pixel Function
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
 cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
                                  np.float32(centroids), #Initial coordinates of the original corners
