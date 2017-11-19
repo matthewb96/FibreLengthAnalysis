@@ -88,7 +88,7 @@ plt.title("Corner Hist"), plt.yticks([])
 
 # Find the corners more accurately using cornerSubPix
 cornersThres = np.uint8(corners)
-thresVal, cornersThres = cv2.threshold(cornersThres, 150, 255, 0)
+thresVal, cornersThres = cv2.threshold(cornersThres, 250, 255, 0)
 retval, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
 print(centroids)
 #Plot cornersThres
