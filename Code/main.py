@@ -44,7 +44,7 @@ def saveImg(filename, overwrite = False):
         return filename
 
 
-#First bit of test code opening the image and showing it in the console can't read png when using cv2.imread() instead of mimg.imread()
+#Opening the image and showing it in the console can't read png when using cv2.imread() instead of mimg.imread()
 image = cv2.imread(IMAGEFOLDER + imageSource) #Opens the image and converts it to an array of floating point data between 0 and 1.
 img = plt.figure()
 plt.subplot(3,4,1)
@@ -54,10 +54,6 @@ plt.title("Original Image"), plt.yticks([]), plt.xticks([])
 plt.subplot(3,4,2)
 n, bins, patches = plt.hist(np.ndarray.flatten(np.uint8(image))) #Plot histogram of the image array
 plt.title("Original Hist"), plt.yticks([])
-print("Original Hist Data")
-print(n)
-print(bins)
-print(np.sum(n))
 
 #Convert to grayscale
 imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -68,10 +64,7 @@ plt.title("Grayscale Image"), plt.yticks([]), plt.xticks([])
 plt.subplot(3,4,4)
 n, bins, patches = plt.hist(np.ndarray.flatten(np.uint8(imageGray))) #Plot histogram of the image array
 plt.title("Grayscale Hist"), plt.yticks([])
-print("Grayscale Hist Data")
-print(n)
-print(bins)
-print(np.sum(n))
+
 
 #Trying Harris corner detection
 imageFloat = np.float32(imageGray)
@@ -90,7 +83,6 @@ plt.title("Corner Hist"), plt.yticks([])
 thresVal, cornersThres = cv2.threshold(corners, 0.9*corners.max(), 255, 0)
 cornersThres = np.uint8(cornersThres)
 retval, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
-print(centroids)
 #Plot cornersThres
 plt.subplot(3,4,9)
 plt.imshow(cornersThres)
@@ -110,30 +102,6 @@ cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
 
 print(cornersSubPix)
 
-
-"""
-#Try to find the indices of the coloured corners
-corners = np.uint8(corners)
-ret, threshold = cv2.threshold(corners,254,255,cv2.THRESH_BINARY)
-plt.subplot(3,4,9)
-plt.imshow(threshold)
-plt.title("Threshold Image"), plt.yticks([]), plt.xticks([])
-#Plot histogram
-plt.subplot(3,4,10)
-plt.hist(np.ndarray.flatten(np.uint8(threshold))) #Plot histogram of the image array
-plt.title("Threshold Hist"), plt.yticks([])
-
-positions = np.array(np.nonzero(corners)) #Returns the indices of any non-zero values of the array
-#positions = np.transpose(positions)
-print(positions[0].size)
-x1 = np.average(positions[0, :int(positions[0].size/2)])
-x2 = np.average(positions[0, int(positions[0].size/2):])
-print(x1)
-print(x2)
-print("length = "+ str(np.absolute(x1-x2)))
-np.savetxt(saveImg(imageSource) + ".txt", corners)
-np.savetxt(saveImg(imageSource) + "(positions).txt", positions)
-"""
 
 """
 #Trying Line Detection using Hough Line Transform
