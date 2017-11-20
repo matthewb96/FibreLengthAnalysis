@@ -43,6 +43,31 @@ def saveImg(filename, overwrite = False):
             filename = filename[:(pos+2)] + str(num) + filename[(pos+2+digits):]
         return filename
 
+def averageEdges(cornerPos, FIBREWIDTH = 25):
+    """
+    Finds the corners that are close enough together to be considered part of the short edge 
+    and averages them to return one position for each edge.
+    """
+    averageCoords = np.array([[0,0]]) #Initiate array with temp values
+    arrayLength, width = cornerPos.shape #Find length of axis 0
+    for i in range(arrayLength):
+        for j in range(i, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
+            distance = coordDist(cornerPos[i], cornerPos[j])
+            if  distance <= FIBREWIDTH and distance != 0:
+                average = np.array([(cornerPos[i] + cornerPos[j])/2])
+                averageCoords = np.vstack((averageCoords, average))
+    
+    averageCoords = np.delete(averageCoords, 0, 0) #Delete temp values
+    return averageCoords
+
+def coordDist(pos1, pos2):
+    """
+    Takes two arrays of length 2 and will find the length between them.
+    """
+    xDiff, yDiff = abs(pos1 - pos2)
+    hippotenuse = np.sqrt(xDiff**2 + yDiff**2)
+    return hippotenuse
+
 
 #Opening the image and showing it in the console can't read png when using cv2.imread() instead of mimg.imread()
 image = cv2.imread(IMAGEFOLDER + imageSource) #Opens the image and converts it to an array of floating point data between 0 and 1.
@@ -102,6 +127,14 @@ cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
 
 print(cornersSubPix)
 
+
+#Averaging positions that are on the same short edge
+print("Average Coords: " + str(averageEdges(cornersSubPix)))
+
+#Find fibre length
+pos1, pos2 = averageEdges(cornersSubPix)
+length = coordDist(pos1, pos2)
+print("Fibre Length: " + str(round(length, 0)))
 
 """
 #Trying Line Detection using Hough Line Transform
