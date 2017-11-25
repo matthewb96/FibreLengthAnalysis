@@ -68,6 +68,40 @@ def coordDist(pos1, pos2):
     hippotenuse = np.sqrt(xDiff**2 + yDiff**2)
     return hippotenuse
 
+def checkLine(pos1, pos2):
+    """
+    This function takes two sets of coordinates and checks there is a solid line of pixels between them.
+    
+    Returns boolean value for if there is a solid line between them or not.
+    """
+    return True
+
+def findLengths(coords, minLength = 25):
+    """
+    Accepts a 2D numpy array of coordinates and finds the length between all combinations of coordinates that have a line between them.
+    
+    Returns array containing the coordinates of the line and the line length 
+    [[x0, y0, x1, y1, length01]
+     [x0, y0, x2, y2, length02] 
+     ...]
+    """
+    lineLengths = np.array([[0, 0, 0, 0, 0]]) #For each line in the array [x, y, x1, y1, length]
+    arrayLength, width = coords.shape #Find length of axis 0
+    for i in range(arrayLength):
+        for j in range(i, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
+            if not checkLine(coords[i], coords[j]):
+                continue #Skip loop if corners not joined by solid black pixels ie not part of the same fibre
+            distance = coordDist(coords[i], coords[j])
+            if distance == 0:
+                continue #Skip this loop if the distance is zero ie same corners are being measured
+            arrayRow = np.array([coords[i][0], coords[i][1], coords[j][0], coords[j][1], distance])
+            lineLengths = np.vstack((lineLengths, arrayRow))
+    
+    lineLengths = np.delete(lineLengths, 0, 0)
+    return lineLengths
+            
+   
+
 
 #Opening the image and showing it in the console can't read png when using cv2.imread() instead of mimg.imread()
 image = cv2.imread(IMAGEFOLDER + imageSource) #Opens the image and converts it to an array of floating point data between 0 and 1.
@@ -125,16 +159,16 @@ cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
                                 (-1,-1),                #Size of dead region (-1,-1) is no dead region
                                 criteria)               #Criteria to stop the iteration
 
-print(cornersSubPix)
+print("Corner pos: \n"+ str(cornersSubPix))
 
 
 #Averaging positions that are on the same short edge
-print("Average Coords: " + str(averageEdges(cornersSubPix)))
+print("Endpoints: \n" + str(averageEdges(cornersSubPix)))
 
 #Find fibre length
-pos1, pos2 = averageEdges(cornersSubPix)
-length = coordDist(pos1, pos2)
-print("Fibre Length: " + str(round(length, 0)))
+edges = averageEdges(cornersSubPix)
+fibresLength = findLengths(edges)
+print("Fibre lengths: [x0, y0, x1, y1, length01]\n"+ str(fibresLength))
 
 """
 #Trying Line Detection using Hough Line Transform
