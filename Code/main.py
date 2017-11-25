@@ -9,6 +9,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 import os #Used in saveImg()
+import time
 
 #All the global constants that are needed
 IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
@@ -16,7 +17,7 @@ PROCESSEDFOLDER = "..\\ProcessedData\\" #Source for where processed data is stor
 
 #All the global variables that are needed
 imageSource = input("Please input filename to be analysed: ")
-
+start = time.clock() #Time the program from this point so that waiting for user input isnt included
 #Some functions are defined that will be used later
 
 def saveImg(filename, overwrite = False):
@@ -158,27 +159,15 @@ cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
                                 (5,5),                  #Size of search window        
                                 (-1,-1),                #Size of dead region (-1,-1) is no dead region
                                 criteria)               #Criteria to stop the iteration
-
-print("Corner pos: \n"+ str(cornersSubPix))
-
-
-#Averaging positions that are on the same short edge
-print("Endpoints: \n" + str(averageEdges(cornersSubPix)))
+print("Subpix Corners: " + str(cornersSubPix.shape[0]))
 
 #Find fibre length
 edges = averageEdges(cornersSubPix)
+print("# Endpoints: " + str(edges.shape[0]))
 fibresLength = findLengths(edges)
-print("Fibre lengths: [x0, y0, x1, y1, length01]\n"+ str(fibresLength))
+print("Lengths Found: " + str(fibresLength.shape[0]))
+print("Fibre lengths: [x0, y0, x1, y1, length01]\n")
 
-"""
-#Trying Line Detection using Hough Line Transform
-#ret, imageThres = cv2.threshold(imageUint8, 127, 255, cv2.THRESH_BINARY)
-lines = cv2.HoughLines(edges, 1, np.pi/180, 200) #Using Hough line transform on canny edge detected image
-#plt.subplot(2,3,6)
-cv2.imshow("image",lines)
-cv2.waitKey(0)
-#plt.title("Line Image"), plt.yticks([]), plt.xticks([])
-"""
 
 #Show and save the images
 plt.show()
@@ -194,3 +183,6 @@ image[res[:,3],res[:,2]] = [0,255,0]
 
 cv2.imwrite(saveName + " subpix.jpg",image)
 cv2.imwrite(saveName + " Harris.jpg",corners)
+
+end = time.clock()
+print("Time taken: " + str(end-start))
