@@ -143,6 +143,7 @@ plt.title("Corner Hist"), plt.yticks([])
 thresVal, cornersThres = cv2.threshold(corners, 0.9*corners.max(), 255, 0)
 cornersThres = np.uint8(cornersThres)
 retval, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
+centroids = np.delete(centroids, 0, 0) #Delete the first row in the array because it does not refer to a corner
 #Plot cornersThres
 plt.subplot(3,4,9)
 plt.imshow(cornersThres)
