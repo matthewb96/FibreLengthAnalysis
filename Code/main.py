@@ -140,7 +140,7 @@ plt.title("Corner Hist"), plt.yticks([])
 
 
 # Find the corners more accurately using cornerSubPix
-thresVal, cornersThres = cv2.threshold(corners, 0.9*corners.max(), 255, 0)
+thresVal, cornersThres = cv2.threshold(corners, 0.7*corners.max(), 255, 0)
 cornersThres = np.uint8(cornersThres)
 retval, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
 centroids = np.delete(centroids, 0, 0) #Delete the first row in the array because it does not refer to a corner
@@ -184,6 +184,7 @@ image[res[:,3],res[:,2]] = [0,255,0]
 
 cv2.imwrite(saveName + " subpix.jpg",image)
 cv2.imwrite(saveName + " Harris.jpg",corners)
+cv2.imwrite(saveName + " HarrisThres.jpg",cornersThres)
 
 end = time.clock()
 print("Time taken: " + str(end-start))
