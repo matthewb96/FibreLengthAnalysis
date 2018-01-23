@@ -75,7 +75,32 @@ def checkLine(pos1, pos2):
     
     Returns boolean value for if there is a solid line between them or not.
     """
+    #Find an equation for the line between the two postions y = mx + c
+    gradient = (pos1[1]-pos2[1])/(pos1[0]-pos2[0])
+    yIntercept = pos1[1] - (gradient*pos1[0])
+    if yIntercept != pos2[1] - (gradient*pos2[0]):
+        print("Cannot find the equation for the line between " + str(pos1) + " and " + str(pos2))
+        return False
+    #Loop through equation checking each postion is black
+    #First loop through the x postions calculating corresponding y
+    for i in range(min(pos1[0], pos2[0]), max(pos1[0], pos2[0]) + 1):
+        yVal = (gradient * i) + yIntercept
+        pos = np.array([i, yVal])
+        if not checkBlack(pos):
+            return False
+    #Next loop through the y positions calculating corresponding x
+    for i in range(min(pos1[1], pos2[1]), max(pos1[1], pos2[1]) + 1):
+        xVal = (i - yIntercept)/gradient
+        pos = np.array([xVal, i])
+        if not checkBlack(pos):
+            return False
+    #If both loops make it all the way through then the postions must be connected by a fibre so return True
     return True
+
+def checkBlack(pos):
+    """
+    This function checks if the pixel at the given position is black ie part of a fibre.
+    """
 
 def findLengths(coords, minLength = 25):
     """
