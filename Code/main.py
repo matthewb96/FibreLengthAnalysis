@@ -143,8 +143,14 @@ def findLengths(coords, minLength = 25):
     """
     lineLengths = np.array([[0, 0, 0, 0, 0]]) #For each line in the array [x, y, x1, y1, length]
     arrayLength, width = coords.shape #Find length of axis 0
+    lengthsChecked = 0
+    maxChecks = int((arrayLength * (arrayLength - 1))/2)
     for i in range(arrayLength):
-        for j in range(i, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
+        for j in range(i + 1, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
+            if lengthsChecked % 20 == 0:
+                now = time.clock()
+                print("Running for "+ str(int(now-start)) + "s Lengths checked: " + str(lengthsChecked) + "/" + str(maxChecks))
+            lengthsChecked += 1
             if not checkLine(coords[i], coords[j]):
                 continue #Skip loop if corners not joined by solid black pixels ie not part of the same fibre
             distance = coordDist(coords[i], coords[j])
@@ -152,7 +158,9 @@ def findLengths(coords, minLength = 25):
                 continue #Skip this loop if the distance is zero ie same corners are being measured
             arrayRow = np.array([coords[i][0], coords[i][1], coords[j][0], coords[j][1], distance])
             lineLengths = np.vstack((lineLengths, arrayRow))
+            
     
+    print("Final lengths checked: " + str(lengthsChecked) + "/" + str(maxChecks))
     lineLengths = np.delete(lineLengths, 0, 0)
     return lineLengths
             
@@ -217,14 +225,6 @@ cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
                                 criteria)               #Criteria to stop the iteration
 print("Subpix Corners: " + str(cornersSubPix.shape[0]))
 
-#Find fibre length
-edges = averageEdges(cornersSubPix)
-print("# Endpoints: " + str(edges.shape[0]))
-fibresLength = findLengths(edges)
-print("Lengths Found: " + str(fibresLength.shape[0]))
-print("Fibre lengths: [x0, y0, x1, y1, length01]\n")
-
-
 #Show and save the images
 plt.show()
 saveName = saveImg(PROCESSEDFOLDER + imageSource)
@@ -240,6 +240,14 @@ image[res[:,3],res[:,2]] = [0,255,0]
 cv2.imwrite(saveName + " subpix.jpg",image)
 cv2.imwrite(saveName + " Harris.jpg",corners)
 cv2.imwrite(saveName + " HarrisThres.jpg",cornersThres)
+
+
+#Find fibre length
+edges = averageEdges(cornersSubPix)
+print("# Endpoints: " + str(edges.shape[0]))
+fibresLength = findLengths(edges)
+print("Lengths Found: " + str(fibresLength.shape[0]))
+print("Fibre lengths: [x0, y0, x1, y1, length01]\n")
 
 end = time.clock()
 print("Time taken: " + str(end-start))
