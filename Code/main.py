@@ -95,7 +95,7 @@ def checkLine(pos1, pos2):
     else: #The line has a gradient
         gradient = (pos1[1]-pos2[1])/(pos1[0]-pos2[0])
         yIntercept = pos1[1] - (gradient*pos1[0])
-        if np.rint(yIntercept) != np.rint(pos2[1] - (gradient*pos2[0])):
+        if np.rint(yIntercept) != np.rint(pos2[1] - (gradient*pos2[0])): #Rounding errors can cause these to not be equal so rounded to int for checking
             print("Cannot find the equation for the line between " + str(pos1) + " and " + str(pos2))
             return False
     
