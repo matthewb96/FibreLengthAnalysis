@@ -75,25 +75,50 @@ def checkLine(pos1, pos2):
     
     Returns boolean value for if there is a solid line between them or not.
     """
+    #Create two booleans to allow for a for either for loop to be ignored
+    horizontal = False
+    vertical = False
+    #Round the coords to integers
+    pos1 = np.rint(pos1)
+    pos2 = np.rint(pos2)
+    #Check they aren't same corners or that the line isn't vertical
     #Find an equation for the line between the two postions y = mx + c
-    gradient = (pos1[1]-pos2[1])/(pos1[0]-pos2[0])
-    yIntercept = pos1[1] - (gradient*pos1[0])
-    if yIntercept != pos2[1] - (gradient*pos2[0]):
-        print("Cannot find the equation for the line between " + str(pos1) + " and " + str(pos2))
+    if pos1[0] == pos2[0] and pos1[1] == pos2[1] : #Same corner
         return False
+    elif pos1[0] == pos2[0]: #Completely vertical line 
+        xVal = pos1[0]
+        vertical = True
+    elif pos1[1] == pos2[1]: #Completely horizontal line
+        gradient = 0
+        yIntercept = pos1[1]
+        horizontal = True
+    else: #The line has a gradient
+        gradient = (pos1[1]-pos2[1])/(pos1[0]-pos2[0])
+        yIntercept = pos1[1] - (gradient*pos1[0])
+        if yIntercept != pos2[1] - (gradient*pos2[0]):
+            print("Cannot find the equation for the line between " + str(pos1) + " and " + str(pos2))
+            return False
+    
     #Loop through equation checking each postion is black
-    #First loop through the x postions calculating corresponding y
-    for i in range(min(pos1[0], pos2[0]), max(pos1[0], pos2[0]) + 1):
-        yVal = (gradient * i) + yIntercept
-        pos = np.array([i, yVal])
-        if not checkBlack(pos):
-            return False
-    #Next loop through the y positions calculating corresponding x
-    for i in range(min(pos1[1], pos2[1]), max(pos1[1], pos2[1]) + 1):
-        xVal = (i - yIntercept)/gradient
-        pos = np.array([xVal, i])
-        if not checkBlack(pos):
-            return False
+    if not vertical: #If the line is vertical all x will be the same so no need to loop through x
+        #First loop through the x postions calculating corresponding y
+        for i in range(int(min(pos1[0], pos2[0])), int(max(pos1[0], pos2[0])) + 1):
+            yVal = (gradient * i) + yIntercept
+            pos = np.array([i, yVal])
+            if not checkBlack(pos):
+                return False
+    
+    if not horizontal: #If line is horizontal all y will be the same 
+        #Next loop through the y positions calculating corresponding x
+        for i in range(int(min(pos1[1], pos2[1])), int(max(pos1[1], pos2[1])) + 1):
+            if vertical: 
+                pass #Do nothing x is constant
+            else:
+                xVal = (i - yIntercept)/gradient
+            pos = np.array([xVal, i])
+            if not checkBlack(pos):
+                return False
+            
     #If both loops make it all the way through then the postions must be connected by a fibre so return True
     return True
 
@@ -101,6 +126,11 @@ def checkBlack(pos):
     """
     This function checks if the pixel at the given position is black ie part of a fibre.
     """
+    pixel = imageGray[int(pos[1])][int(pos[0])]
+    if pixel <= (0.1*np.amax(imageGray)):
+        return True 
+    else:
+        return False
 
 def findLengths(coords, minLength = 25):
     """
