@@ -95,7 +95,7 @@ def checkLine(pos1, pos2):
     else: #The line has a gradient
         gradient = (pos1[1]-pos2[1])/(pos1[0]-pos2[0])
         yIntercept = pos1[1] - (gradient*pos1[0])
-        if yIntercept != pos2[1] - (gradient*pos2[0]):
+        if np.rint(yIntercept) != np.rint(pos2[1] - (gradient*pos2[0])):
             print("Cannot find the equation for the line between " + str(pos1) + " and " + str(pos2))
             return False
     
@@ -127,7 +127,7 @@ def checkBlack(pos):
     This function checks if the pixel at the given position is black ie part of a fibre.
     """
     pixel = imageGray[int(pos[1])][int(pos[0])]
-    if pixel <= (0.1*np.amax(imageGray)):
+    if pixel <= (0.5*np.amax(imageGray)):
         return True 
     else:
         return False
