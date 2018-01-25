@@ -149,7 +149,8 @@ def findLengths(coords, minLength = 25):
         for j in range(i + 1, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
             if lengthsChecked % 20 == 0:
                 now = time.clock()
-                print("Running for "+ str(int(now-start)) + "s Lengths checked: " + str(lengthsChecked) + "/" + str(maxChecks))
+                print("Running for "+ str(int(now-start)) + "s Lengths checked: " + str(lengthsChecked) + ". Maximum possible checks: " 
+                      + str(maxChecks) + ". Lengths found: " + str(lineLengths.shape[0] - 1))
             lengthsChecked += 1
             if not checkLine(coords[i], coords[j]):
                 continue #Skip loop if corners not joined by solid black pixels ie not part of the same fibre
@@ -158,9 +159,9 @@ def findLengths(coords, minLength = 25):
                 continue #Skip this loop if the distance is zero ie same corners are being measured
             arrayRow = np.array([coords[i][0], coords[i][1], coords[j][0], coords[j][1], distance])
             lineLengths = np.vstack((lineLengths, arrayRow))
-            
+            break #If the code reaches this then a joined fibre is found so there is no need to carry on checking all other corners against this one
     
-    print("Final lengths checked: " + str(lengthsChecked) + "/" + str(maxChecks))
+    print("Final lengths checked: " + str(lengthsChecked) + " Maximum possible checks: " + str(maxChecks))
     lineLengths = np.delete(lineLengths, 0, 0)
     return lineLengths
             
