@@ -5,10 +5,11 @@ This module contains all the functions that will find the corners and edges of t
 """
 #Imports
 import numpy as np
+from lengths import coordDist
+import cv2
 
 
 #Functions
-
 def averageEdges(cornerPos, FIBREWIDTH = 25):
     """
     Finds the corners that are close enough together to be considered part of the short edge 
@@ -26,56 +27,75 @@ def averageEdges(cornerPos, FIBREWIDTH = 25):
     averageCoords = np.delete(averageCoords, 0, 0) #Delete temp values
     return averageCoords
 
+def findCorners(imageArray, debug = False, filename):
+    """
+    Finds the corners of the fibres in a given image array using Harris corner detection and returns an array of coordinates for the corners.
+    Saves images showing the positions of the corners that are found on the original image. 
+    Also plots the images being used and histograms showing the data if debug = True.
+    
+    arg[0] imageArray - a numpy array containing grayscale image data.
+    arg[1] debug - a boolean that will allow extra code to be run for debugging.
+    arg[2] filename - a string giving the source for where outputs should be saved.
+    
+    Returns numpy array containing the coordinates for every corner found.
+    """
+    #Harris corner detection
+    imageFloat = np.float32(imageGray)
+    corners = cv2.cornerHarris(imageFloat.copy(), 10, 15, 0.04)
+    corners = cv2.dilate(corners, None) #Used to mark the corners
+    
+    # Find the corners more accurately using cornerSubPix
+    thresVal, cornersThres = cv2.threshold(corners, 0.7*corners.max(), 255, 0)
+    cornersThres = np.uint8(cornersThres)
+    retval, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
+    centroids = np.delete(centroids, 0, 0) #Delete the first row in the array because it does not refer to a corner
+    #Sub Pixel Function
+    criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
+    cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
+                                     np.float32(centroids), #Initial coordinates of the original corners
+                                    (5,5),                  #Size of search window        
+                                    (-1,-1),                #Size of dead region (-1,-1) is no dead region
+                                    criteria)               #Criteria to stop the iteration
+    print("# Corners Found: " + str(cornersSubPix.shape[0]))
+    
+    # Now draw orginal image with corners plotted
+    res = np.hstack((centroids,cornersSubPix))
+    res = np.int0(res)
+    image[res[:,1],res[:,0]]=[0,0,255]
+    image[res[:,3],res[:,2]] = [0,255,0]
+    #Save a copy of the orginal image given with the corner positions drawn on
+    cv2.imwrite(filename + " subpix.jpg",image)
+    
+          
+    if debug: #Plot images for debugging
+        #Save images showing Harris corner detection outputs
+        cv2.imwrite(filename + " Harris.jpg",corners)
+        cv2.imwrite(filename + " HarrisThres.jpg",cornersThres)
+        
+        img = plt.figure()
+        #Plot corners
+        plt.subplot(2,2,1)
+        plt.imshow(corners)
+        plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
+        #Plot cornersThres
+        plt.subplot(2,2,2)
+        plt.imshow(cornersThres)
+        plt.title("CornerThres Image"), plt.yticks([]), plt.xticks([])
+        #Plot histograms
+        plt.subplot(2,2,3)
+        plt.hist(np.ndarray.flatten(np.uint8(corners))) #Plot histogram of the image array
+        plt.title("Corner Hist"), plt.yticks([])
+        plt.subplot(2,2,4)
+        plt.hist(np.ndarray.flatten(np.uint8(cornersThres))) #Plot histogram of the image array
+        plt.title("Corner Thres Hist"), plt.yticks([])
+        #Show and save the plots
+        plt.show()
+        try:
+            img.savefig(filename)
+        except TypeError as error:
+            print(error)
+            print("Debugging images could not be saved. In corners.findCorners().")
+        plt.close(img)
 
+    return cornersSubPix
 
-#Harris corner detection
-imageFloat = np.float32(imageGray)
-corners = cv2.cornerHarris(imageFloat.copy(), 10, 15, 0.04)
-corners = cv2.dilate(corners, None) #Used to mark the corners
-plt.subplot(3,4,5)
-plt.imshow(corners)
-plt.title("Corner Image"), plt.yticks([]), plt.xticks([])
-#Plot histogram
-plt.subplot(3,4,6)
-plt.hist(np.ndarray.flatten(np.uint8(corners))) #Plot histogram of the image array
-plt.title("Corner Hist"), plt.yticks([])
-
-
-# Find the corners more accurately using cornerSubPix
-thresVal, cornersThres = cv2.threshold(corners, 0.7*corners.max(), 255, 0)
-cornersThres = np.uint8(cornersThres)
-retval, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
-centroids = np.delete(centroids, 0, 0) #Delete the first row in the array because it does not refer to a corner
-#Plot cornersThres
-plt.subplot(3,4,9)
-plt.imshow(cornersThres)
-plt.title("CornerThres Image"), plt.yticks([]), plt.xticks([])
-#Plot histogram
-plt.subplot(3,4,10)
-plt.hist(np.ndarray.flatten(np.uint8(cornersThres))) #Plot histogram of the image array
-plt.title("Corner Thres Hist"), plt.yticks([])
-
-#Sub Pixel Function
-criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
-cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image
-                                 np.float32(centroids), #Initial coordinates of the original corners
-                                (5,5),                  #Size of search window        
-                                (-1,-1),                #Size of dead region (-1,-1) is no dead region
-                                criteria)               #Criteria to stop the iteration
-print("Subpix Corners: " + str(cornersSubPix.shape[0]))
-
-#Show and save the images
-plt.show()
-saveName = saveImg(PROCESSEDFOLDER + imageSource)
-img.savefig(saveName)
-plt.close(img)
-
-# Now draw orginal image with corners plotted
-res = np.hstack((centroids,cornersSubPix))
-res = np.int0(res)
-image[res[:,1],res[:,0]]=[0,0,255]
-image[res[:,3],res[:,2]] = [0,255,0]
-
-cv2.imwrite(saveName + " subpix.jpg",image)
-cv2.imwrite(saveName + " Harris.jpg",corners)
-cv2.imwrite(saveName + " HarrisThres.jpg",cornersThres)

@@ -16,7 +16,7 @@ def openImage(imageSource, debug = False, filename = ""):
     It will return the grayscale image as a numpy array.
     
     arg[0] imageSource - a string containg the source for the image file to be opened.
-    arg[1] debug - a boolean that will allow extra code to be ran for debugging.
+    arg[1] debug - a boolean that will allow extra code to be run for debugging.
     arg[2] filename - a string containing the source for where the debugging images should be saved.
     
     Returns a numpy array containing the grayscale image data.
@@ -46,7 +46,7 @@ def openImage(imageSource, debug = False, filename = ""):
             img.savefig(filename)
         except TypeError as error:
             print(error)
-            print("Debugging images could not be saved. In openFile().")
+            print("Debugging images could not be saved. In input.openFile().")
         plt.close(img)
     
     return imageGray

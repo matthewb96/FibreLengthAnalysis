@@ -7,10 +7,16 @@ This module will contain all the functions for finding the lengths of the fibres
 #Imports
 import numpy as np
 
+
 #Functions
 def coordDist(pos1, pos2):
     """
     Takes two arrays of length 2 and will find the length between them.
+    
+    arg[0] pos1 - a numpy array containing the first set of coordinates.
+    arg[1] pos2 - a numpy array containing the second set of coordinates.
+    
+    Returns a float that is the distance between the two sets of coordinates.
     """
     xDiff, yDiff = abs(pos1 - pos2)
     hippotenuse = np.sqrt(xDiff**2 + yDiff**2)
