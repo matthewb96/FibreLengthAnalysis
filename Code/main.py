@@ -11,6 +11,8 @@ from datetime import datetime
 import inputs 
 import corners
 import lengths
+import sys
+
 
 #Constants
 IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
@@ -19,6 +21,7 @@ DEBUGGING = False
 OVERWRITE = False
 MIN_LENGTH = 25 #Minimum fibre length
 FIBRE_WIDTH = 25 #Maximum fibre width
+
 
 #Functions
 def saveImg(filename, overwrite = False):
@@ -45,10 +48,16 @@ def saveImg(filename, overwrite = False):
         return newFilename
 
 
+
 #Main Code
 imageSource = input("Please input filename to be analysed: ")
 start = time.clock() #Time the program from this point so that waiting for user input isnt included
 saveLocation = saveImg(PROCESSEDFOLDER + imageSource, OVERWRITE)
+
+#Redirecting Standard output of python terminal to a log file
+orignal = sys.stdout
+sys.stdout = open(saveLocation + "(LOG).txt", "w")
+print("Log file for " + PROCESSEDFOLDER + imageSource)
 
 #Create the grayscale numpy array of the image
 imageGray = inputs.openImage(IMAGEFOLDER + imageSource, DEBUGGING, saveLocation)
@@ -63,3 +72,6 @@ fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, imageGray)
 #Finished
 end = time.clock()
 print("Time taken: " + str(end-start))
+
+#Set standard out back to its original
+sys.stdout = orignal
