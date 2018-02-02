@@ -22,9 +22,13 @@ def coordDist(pos1, pos2):
     hippotenuse = np.sqrt(xDiff**2 + yDiff**2)
     return hippotenuse
 
-def checkLine(pos1, pos2):
+def checkLine(pos1, pos2, imageArray):
     """
     This function takes two sets of coordinates and checks there is a solid line of pixels between them.
+    
+    arg[0] pos1 - numpy array containing the first set of coordinates.
+    arg[1] pos2 - numpy array containing the second set of coordinates.
+    arg[2] imageArray - numpy array containing the image data that should be checked.
     
     Returns boolean value for if there is a solid line between them or not.
     """
@@ -58,7 +62,7 @@ def checkLine(pos1, pos2):
         for i in range(int(min(pos1[0], pos2[0])), int(max(pos1[0], pos2[0])) + 1):
             yVal = (gradient * i) + yIntercept
             pos = np.array([i, yVal])
-            if not checkBlack(pos):
+            if not checkBlack(pos, imageArray):
                 return False
     
     if not horizontal: #If line is horizontal all y will be the same 
@@ -69,25 +73,34 @@ def checkLine(pos1, pos2):
             else:
                 xVal = (i - yIntercept)/gradient
             pos = np.array([xVal, i])
-            if not checkBlack(pos):
+            if not checkBlack(pos, imageArray):
                 return False
             
     #If both loops make it all the way through then the postions must be connected by a fibre so return True
     return True
 
-def checkBlack(pos):
+def checkBlack(pos, image):
     """
-    This function checks if the pixel at the given position is black ie part of a fibre.
+    This function checks if the pixel at the given position is black and therefore part of a fibre.
+    
+    arg[0] pos - a numpy array containing the coordinates for the pixel that should be checked.
+    arg[1] image - a numpy array containing the image data that should be checked.
+    
+    Returns boolean value of True if the pixel is part of a fibre and False if it is not.
     """
-    pixel = imageGray[int(pos[1])][int(pos[0])]
-    if pixel <= (0.5*np.amax(imageGray)):
+    pixel = image[int(pos[1])][int(pos[0])]
+    if pixel <= (0.5*np.amax(image)):
         return True 
     else:
         return False
 
-def findLengths(coords, minLength = 25):
+def findLengths(coords, minLength, imageArray):
     """
     Accepts a 2D numpy array of coordinates and finds the length between all combinations of coordinates that have a line between them.
+    
+    arg[0] coords - numpy array containing the end of fibre coordinates that should be analysed.
+    arg[1] minLength - integer value of the minimum distance apart the coordinates can be to be part of a fibre.
+    arg[2] imageArray - a numpy array containing the image data for checking two coordinates are part of a single fibre.
     
     Returns array containing the coordinates of the line and the line length 
     [[x0, y0, x1, y1, length01]
@@ -101,20 +114,21 @@ def findLengths(coords, minLength = 25):
     for i in range(arrayLength):
         for j in range(i + 1, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
             if lengthsChecked % 20 == 0:
-                now = time.clock()
-                print("Running for "+ str(int(now-start)) + "s Lengths checked: " + str(lengthsChecked) + ". Maximum possible checks: " 
+                print("Running for "+ "s Lengths checked: " + str(lengthsChecked) + ". Maximum possible checks: " 
                       + str(maxChecks) + ". Lengths found: " + str(lineLengths.shape[0] - 1))
             lengthsChecked += 1
-            if not checkLine(coords[i], coords[j]):
-                continue #Skip loop if corners not joined by solid black pixels ie not part of the same fibre
             distance = coordDist(coords[i], coords[j])
-            if distance == 0:
-                continue #Skip this loop if the distance is zero ie same corners are being measured
+            if distance < minLength:
+                continue #Skip this loop if the distance is less than the minimum length of a fibre
+            if not checkLine(coords[i], coords[j], imageArray):
+                continue #Skip loop if corners not joined by solid black pixels ie not part of the same fibre
             arrayRow = np.array([coords[i][0], coords[i][1], coords[j][0], coords[j][1], distance])
             lineLengths = np.vstack((lineLengths, arrayRow))
             break #If the code reaches this then a joined fibre is found so there is no need to carry on checking all other corners against this one
     
     print("Final lengths checked: " + str(lengthsChecked) + " Maximum possible checks: " + str(maxChecks))
     lineLengths = np.delete(lineLengths, 0, 0)
+    print("Lengths Found: " + str(lineLengths.shape[0]))
+    print("Fibre lengths: [x0, y0, x1, y1, length01]\n")
     return lineLengths
  

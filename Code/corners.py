@@ -7,10 +7,11 @@ This module contains all the functions that will find the corners and edges of t
 import numpy as np
 from lengths import coordDist
 import cv2
+from matplotlib import pyplot as plt
 
 
 #Functions
-def averageEdges(cornerPos, FIBREWIDTH = 25):
+def averageEdges(cornerPos, FIBREWIDTH):
     """
     Finds the corners that are close enough together to be considered part of the short edge 
     and averages them to return one position for each edge.
@@ -25,22 +26,23 @@ def averageEdges(cornerPos, FIBREWIDTH = 25):
                 averageCoords = np.vstack((averageCoords, average))
     
     averageCoords = np.delete(averageCoords, 0, 0) #Delete temp values
+    print("# Endpoints: " + str(averageCoords.shape[0]))
     return averageCoords
 
-def findCorners(imageArray, debug = False, filename):
+def findCorners(imageArray, filename, debug = False):
     """
     Finds the corners of the fibres in a given image array using Harris corner detection and returns an array of coordinates for the corners.
     Saves images showing the positions of the corners that are found on the original image. 
     Also plots the images being used and histograms showing the data if debug = True.
     
     arg[0] imageArray - a numpy array containing grayscale image data.
-    arg[1] debug - a boolean that will allow extra code to be run for debugging.
-    arg[2] filename - a string giving the source for where outputs should be saved.
+    arg[1] filename - a string giving the source for where outputs should be saved.
+    arg[2] debug - a boolean that will allow extra code to be run for debugging.
     
     Returns numpy array containing the coordinates for every corner found.
     """
     #Harris corner detection
-    imageFloat = np.float32(imageGray)
+    imageFloat = np.float32(imageArray)
     corners = cv2.cornerHarris(imageFloat.copy(), 10, 15, 0.04)
     corners = cv2.dilate(corners, None) #Used to mark the corners
     
@@ -58,19 +60,20 @@ def findCorners(imageArray, debug = False, filename):
                                     criteria)               #Criteria to stop the iteration
     print("# Corners Found: " + str(cornersSubPix.shape[0]))
     
-    # Now draw orginal image with corners plotted
+    # Now draw orginal image array with corners plotted
+    imageArray = cv2.cvtColor(imageArray, cv2.COLOR_GRAY2BGR)
     res = np.hstack((centroids,cornersSubPix))
     res = np.int0(res)
-    image[res[:,1],res[:,0]]=[0,0,255]
-    image[res[:,3],res[:,2]] = [0,255,0]
+    imageArray[res[:,1],res[:,0]]=[0,0,255]
+    imageArray[res[:,3],res[:,2]] = [0,255,0]
     #Save a copy of the orginal image given with the corner positions drawn on
-    cv2.imwrite(filename + " subpix.jpg",image)
+    cv2.imwrite(filename + " subpix.jpg",imageArray)
     
           
     if debug: #Plot images for debugging
         #Save images showing Harris corner detection outputs
-        cv2.imwrite(filename + " Harris.jpg",corners)
-        cv2.imwrite(filename + " HarrisThres.jpg",cornersThres)
+        cv2.imwrite(filename + " Harris(DEBUG).jpg",corners)
+        cv2.imwrite(filename + " HarrisThres(DEBUG).jpg",cornersThres)
         
         img = plt.figure()
         #Plot corners
@@ -91,7 +94,7 @@ def findCorners(imageArray, debug = False, filename):
         #Show and save the plots
         plt.show()
         try:
-            img.savefig(filename)
+            img.savefig(filename + " Corners(DEBUG).jpg")
         except TypeError as error:
             print(error)
             print("Debugging images could not be saved. In corners.findCorners().")

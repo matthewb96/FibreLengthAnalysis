@@ -7,17 +7,20 @@ At the minute most of the code is for testing what works and what doesn't.
 #All the imported modules
 import os #Used in saveImg()
 import time
+from datetime import datetime
+import inputs 
+import corners
+import lengths
 
-#All the global constants that are needed
+#Constants
 IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
 PROCESSEDFOLDER = "..\\ProcessedData\\" #Source for where processed data is stored
 DEBUGGING = False
+OVERWRITE = False
+MIN_LENGTH = 25 #Minimum fibre length
+FIBRE_WIDTH = 25 #Maximum fibre width
 
-#All the global variables that are needed
-imageSource = input("Please input filename to be analysed: ")
-start = time.clock() #Time the program from this point so that waiting for user input isnt included
-#Some functions are defined that will be used later
-
+#Functions
 def saveImg(filename, overwrite = False):
     """
     This function will save the images that have been created into a file with the name "filename", by default it will not overwrite existing images.
@@ -28,35 +31,35 @@ def saveImg(filename, overwrite = False):
         overwrite - This defines whether or not an image can be overwrited, it is a boolean. (Default = False)
         
     Returns a string of an edited version of the filename that won't overwrite anything.
-    
     """
-    if overwrite or not os.path.isfile(filename) : #Check if overwrite is enabled or if the file doesn't exist and save the image and exit function.
+    pos = filename.rfind(".") #Find the position of the start of the file type to put a number before it 
+    filename = filename[:pos] + "[" + str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) +  "]" #Add the date and time to the filename, and then it will probably not need to overwrite anything
+    if overwrite or not os.path.isfile(filename + ".jpg") : #Check if overwrite is enabled or if the file doesn't exist and save the image and exit function.
         return filename
     else: #The file does exist so add a number to the filename and save it
-        pos = filename.rfind(".") #Find the position of the start of the file type to put a number before it
         num = 1
-        filename = filename[:pos] + " [" + str(num) + "]" + filename[pos:] 
-        while os.path.isfile(filename): #While the filename is being used replace the number until the filename isn't in use
-            digits = len(str(num))
+        newFilename = filename + " [" + str(num) + "]"
+        while os.path.isfile(newFilename + ".jpg"): #While the filename is being used replace the number until the filename isn't in use
             num += 1
-            filename = filename[:(pos+2)] + str(num) + filename[(pos+2+digits):]
-        return filename
+            newFilename = filename + " [" + str(num) + "]"
+        return newFilename
 
 
+#Main Code
+imageSource = input("Please input filename to be analysed: ")
+start = time.clock() #Time the program from this point so that waiting for user input isnt included
+saveLocation = saveImg(PROCESSEDFOLDER + imageSource, OVERWRITE)
 
-           
-   
+#Create the grayscale numpy array of the image
+imageGray = inputs.openImage(IMAGEFOLDER + imageSource, DEBUGGING, saveLocation)
 
+#Find the corners and then the edges on the image
+cornersCoords = corners.findCorners(imageGray, saveLocation, DEBUGGING)
+edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH)
 
+#Finding the fibre lengths
+fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, imageGray)
 
-
-
-#Find fibre length
-edges = averageEdges(cornersSubPix)
-print("# Endpoints: " + str(edges.shape[0]))
-fibresLength = findLengths(edges)
-print("Lengths Found: " + str(fibresLength.shape[0]))
-print("Fibre lengths: [x0, y0, x1, y1, length01]\n")
-
+#Finished
 end = time.clock()
 print("Time taken: " + str(end-start))

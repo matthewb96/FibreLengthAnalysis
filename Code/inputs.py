@@ -22,6 +22,7 @@ def openImage(imageSource, debug = False, filename = ""):
     Returns a numpy array containing the grayscale image data.
     """
     image = cv2.imread(imageSource)
+    cv2.imwrite(filename + ".jpg", image)
     imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
     if debug: #Printing the images and some histograms to the console for debugging purposes
@@ -43,7 +44,7 @@ def openImage(imageSource, debug = False, filename = ""):
         #Show and save the plots
         plt.show()
         try:
-            img.savefig(filename)
+            img.savefig(filename + " GrayScale(DEBUG).jpg")
         except TypeError as error:
             print(error)
             print("Debugging images could not be saved. In input.openFile().")
