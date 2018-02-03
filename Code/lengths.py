@@ -38,7 +38,7 @@ def findLengths(coords, minLength, fibreWidth, imageArray):
      [x0, y0, x2, y2, length02] 
      ...]
     """
-    lineLengths = np.array([[0, 0, 0, 0, 0]]) #For each line in the array [x, y, x1, y1, length]
+    lineLengths = np.array([[0, 0, 0, 0, 0, 0]]) #For each line in the array [x, y, x1, y1, length]
     arrayLength, width = coords.shape #Find length of axis 0
     lengthsChecked = 0
     coordsChecked = np.full(arrayLength, False) #Array corresponding to coords that will be set to true once a corner has been connected so none are found twice
@@ -57,18 +57,21 @@ def findLengths(coords, minLength, fibreWidth, imageArray):
             lengthsChecked += 1 #Amount of lengths needed to be checked by checkLine()
             if not checkLine(coords[i], coords[j], fibreWidth, imageArray):
                 continue #Skip loop if corners not joined by solid black pixels ie not part of the same fibre
-            arrayRow = np.array([coords[i][0], coords[i][1], coords[j][0], coords[j][1], distance])
+            
+            #Found a fibre so add all data to the array
+            angle = findAngle(coords[i], coords[j])
+            arrayRow = np.array([coords[i][0], coords[i][1], coords[j][0], coords[j][1], distance, angle])
             lineLengths = np.vstack((lineLengths, arrayRow))
             coordsChecked[i] = True
             coordsChecked[j] = True
             break #If the code reaches this then a joined fibre is found so there is no need to carry on checking all other corners against this one
     
+    #Print info and remove the empty first line of the array before returning it
     numChecked = np.count_nonzero(coordsChecked == True)
     print("Final: " + str(numChecked) + " out of " + str(arrayLength) + " coordinates found.")
     lineLengths = np.delete(lineLengths, 0, 0)
     print("Lengths checked: " + str(lengthsChecked))
     print("Lengths Found: " + str(lineLengths.shape[0]))
-    print("Fibre lengths: [x0, y0, x1, y1, length01]\n")
     return lineLengths
  
 
@@ -167,9 +170,7 @@ def midpoint(pos1, pos2):
     
     Returns a numpy array containing the coordinates of the midpoint between pos1 and pos2
     """
-    val0 = (pos1[0] + pos2[0])/2.
-    val1 = (pos1[1] + pos2[1])/2.
-    middle = np.array([val0, val1])
+    middle = (pos1 + pos2)/2
     return middle
 
 
@@ -188,3 +189,23 @@ def checkBlack(pos, image):
     else:
         return False
 
+
+def findAngle(pos1, pos2):
+    """
+    This function will find the angle between two given sets of coordinates.
+    
+    arg[0] pos1 - numpy array containing the first set of coordinates.
+    arg[1] pos2 - numpy array containing the second set of coordinates.
+    
+    Returns the angle in radians between the two coordinates as a float.
+    """
+    diff = abs(pos1 - pos2)
+    angle = np.arctan(diff[0]/diff[1])
+    return angle
+    
+    
+    
+    
+    
+    
+    

@@ -85,7 +85,7 @@ edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH)
 
 #Finding the fibre lengths
 fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
-np.savetxt(saveLocation + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01]")
+np.savetxt(saveLocation + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01, angle01]")
 
 #Finished
 end = time.clock()
