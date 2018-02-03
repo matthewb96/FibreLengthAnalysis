@@ -1,0 +1,14 @@
+Log file for ..\FibreImages\4 test fibres (25,500 fibre).jpg
+Started at: 3.018739428751863e-07s
+
+# Corners Found: 16
+# Endpoints: 8
+Current clock 0.3708219514278788s. 0 out of 8 coordinates found.
+Current clock 0.3799294882844232s. 0 out of 8 coordinates found.
+Current clock 0.3887922053732958s. 0 out of 8 coordinates found.
+Current clock 0.42393667167676785s. 4 out of 8 coordinates found.
+Current clock 0.43302730359251124s. 4 out of 8 coordinates found.
+Final: 8 out of 8 coordinates found.
+Lengths checked: 7
+Lengths Found: 4
+Drawing 0 out of 4

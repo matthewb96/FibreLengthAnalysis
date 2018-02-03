@@ -1,0 +1,20 @@
+Log file for ..\FibreImages\4 test fibres (25,500 fibre).jpg
+Started at: 3.018739428751863e-07s
+
+# Corners Found: 16
+# Endpoints: 8
+Current clock 0.3731116652845871s. 0 out of 8 coordinates found.
+Current clock 0.3822255414939319s. 0 out of 8 coordinates found.
+Current clock 0.39130983405687486s. 0 out of 8 coordinates found.
+Current clock 0.42802464861118367s. 4 out of 8 coordinates found.
+Current clock 0.43697219227800416s. 4 out of 8 coordinates found.
+Final: 8 out of 8 coordinates found.
+Lengths checked: 7
+Lengths Found: 4
+> [1;32mc:\users\matthew\google drive\university\work\year 4\masters project\program files\fibrelengthanalysis\code\main.py[0m(93)[0;36m<module>[1;34m()[0m
+[1;32m     91 [1;33m[1;31m#Draw on the found fibres[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     92 [1;33m[1;32mfor[0m [0mi[0m [1;32min[0m [0mrange[0m[1;33m([0m[0mfibreLengths[0m[1;33m.[0m[0mshape[0m[1;33m[[0m[1;36m0[0m[1;33m][0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 93 [1;33m    [0mprint[0m[1;33m([0m[1;34m"Drawing "[0m [1;33m+[0m [0mstr[0m[1;33m([0m[0mi[0m[1;33m)[0m [1;33m+[0m [1;34m" out of "[0m [1;33m+[0m [0mstr[0m[1;33m([0m[0mfibreLengths[0m[1;33m.[0m[0mshape[0m[1;33m[[0m[1;36m0[0m[1;33m][0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     94 [1;33m    [0mrr[0m[1;33m,[0m [0mcc[0m [1;33m=[0m [0mdraw[0m[1;33m.[0m[0mline[0m[1;33m([0m[0mfibreLengths[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m[[0m[1;36m0[0m[1;33m][0m[1;33m,[0m [0mfibreLengths[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m,[0m [0mfibreLengths[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m[[0m[1;36m2[0m[1;33m][0m[1;33m,[0m [0mfibreLengths[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m[[0m[1;36m3[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     95 [1;33m    [0mimage[0m [1;33m=[0m [0mcv2[0m[1;33m.[0m[0mcvtColor[0m[1;33m([0m[0mimageGray[0m[1;33m,[0m [0mcv2[0m[1;33m.[0m[0mCOLOR_GRAY2BGR[0m[1;33m)[0m[1;33m[0m[0m
+[0m

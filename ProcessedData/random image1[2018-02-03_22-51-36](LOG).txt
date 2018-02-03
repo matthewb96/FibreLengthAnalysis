@@ -1,0 +1,23 @@
+Log file for ..\FibreImages\random image1.jpg
+Started at: 5916.357861899312s
+
+# Corners Found: 42
+# Endpoints: 20
+Current clock 5916.4506585531s. 0 out of 20 coordinates found.
+Current clock 5916.457564523291s. 4 out of 20 coordinates found.
+Current clock 5916.460006381615s. 4 out of 20 coordinates found.
+Current clock 5916.465783645134s. 8 out of 20 coordinates found.
+Current clock 5916.468123168192s. 8 out of 20 coordinates found.
+Current clock 5916.470404429578s. 8 out of 20 coordinates found.
+Current clock 5916.475273052528s. 12 out of 20 coordinates found.
+Current clock 5916.475377802786s. 12 out of 20 coordinates found.
+Current clock 5916.477604726863s. 12 out of 20 coordinates found.
+Current clock 5916.479848254006s. 12 out of 20 coordinates found.
+Current clock 5916.482118044183s. 12 out of 20 coordinates found.
+Current clock 5916.484385721242s. 12 out of 20 coordinates found.
+Current clock 5916.496654783902s. 16 out of 20 coordinates found.
+Current clock 5916.499992302214s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 22
+Lengths Found: 10
+Time taken: 0.15065109681381728

@@ -13,14 +13,15 @@ import corners
 import lengths
 import sys
 import numpy as np
-
+from skimage import draw
+import cv2
 
 #Constants
 IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
 PROCESSEDFOLDER = "..\\ProcessedData\\" #Source for where processed data is stored
 DEBUGGING = False
 OVERWRITE = False
-MIN_LENGTH = 25 #Minimum fibre length
+MIN_LENGTH = 50 #Minimum fibre length
 FIBRE_WIDTH = 25 #fibre width
 
 
@@ -86,6 +87,18 @@ edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH)
 #Finding the fibre lengths
 fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
 np.savetxt(saveLocation + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01, angle01]")
+
+#Draw on the found fibres
+image = cv2.cvtColor(imageGray, cv2.COLOR_GRAY2BGR)
+for i in range(fibreLengths.shape[0]):
+    print("Drawing " + str(i) + " out of " + str(fibreLengths.shape[0]))
+    lineCoords = int(np.rint(fibreLengths[i]))
+    print("Line coords: " + str(lineCoords))
+    rr, cc = draw.line(lineCoords[0], lineCoords[2], lineCoords[1], lineCoords[3])
+    print("rr " + str(rr) + " cc" + str(cc))
+    image[rr, cc] = np.array([255, 0, 0])
+    
+cv2.imwrite(saveLocation + "Drawn Lines.jpg", image)
 
 #Finished
 end = time.clock()
