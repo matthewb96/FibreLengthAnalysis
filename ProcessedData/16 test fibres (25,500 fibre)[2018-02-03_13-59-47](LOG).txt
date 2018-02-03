@@ -1,0 +1,22 @@
+Log file for ..\ProcessedData\16 test fibres (25,500 fibre).jpg
+# Corners Found: 64
+# Endpoints: 32
+Running for s Lengths checked: 0. Maximum possible checks: 496. Lengths found: 0
+Running for s Lengths checked: 20. Maximum possible checks: 496. Lengths found: 3
+Running for s Lengths checked: 40. Maximum possible checks: 496. Lengths found: 3
+Running for s Lengths checked: 60. Maximum possible checks: 496. Lengths found: 4
+Running for s Lengths checked: 80. Maximum possible checks: 496. Lengths found: 4
+Running for s Lengths checked: 100. Maximum possible checks: 496. Lengths found: 4
+Running for s Lengths checked: 120. Maximum possible checks: 496. Lengths found: 4
+Running for s Lengths checked: 140. Maximum possible checks: 496. Lengths found: 8
+Running for s Lengths checked: 160. Maximum possible checks: 496. Lengths found: 8
+Running for s Lengths checked: 180. Maximum possible checks: 496. Lengths found: 8
+Running for s Lengths checked: 200. Maximum possible checks: 496. Lengths found: 8
+Running for s Lengths checked: 220. Maximum possible checks: 496. Lengths found: 11
+Running for s Lengths checked: 240. Maximum possible checks: 496. Lengths found: 12
+Running for s Lengths checked: 260. Maximum possible checks: 496. Lengths found: 13
+Final lengths checked: 278 Maximum possible checks: 496
+Lengths Found: 16
+Fibre lengths: [x0, y0, x1, y1, length01]
+
+Time taken: 260.5413158262546

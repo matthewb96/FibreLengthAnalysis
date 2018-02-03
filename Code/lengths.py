@@ -6,6 +6,7 @@ This module will contain all the functions for finding the lengths of the fibres
 
 #Imports
 import numpy as np
+import time
 
 
 #Functions
@@ -114,7 +115,7 @@ def findLengths(coords, minLength, imageArray):
     for i in range(arrayLength):
         for j in range(i + 1, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
             if lengthsChecked % 20 == 0:
-                print("Running for "+ "s Lengths checked: " + str(lengthsChecked) + ". Maximum possible checks: " 
+                print("Current clock "+ str(time.clock()) +"s Lengths checked: " + str(lengthsChecked) + ". Maximum possible checks: " 
                       + str(maxChecks) + ". Lengths found: " + str(lineLengths.shape[0] - 1))
             lengthsChecked += 1
             distance = coordDist(coords[i], coords[j])

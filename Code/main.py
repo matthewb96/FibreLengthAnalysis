@@ -55,9 +55,22 @@ start = time.clock() #Time the program from this point so that waiting for user 
 saveLocation = saveImg(PROCESSEDFOLDER + imageSource, OVERWRITE)
 
 #Redirecting Standard output of python terminal to a log file
+#This class will allow the stdout to be duplicated into the log file so it is also seen in the terminal
+#This piece of code was found online at stackoverflow.com by Jacob Gabrielson
+class Logger(object):
+    def __init__(self):
+        self.terminal = sys.stdout
+        self.log = open(saveLocation + "(LOG).txt", "w")
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)  
+        
 orignal = sys.stdout
-sys.stdout = open(saveLocation + "(LOG).txt", "w")
-print("Log file for " + PROCESSEDFOLDER + imageSource)
+sys.stdout = Logger()
+
+#Log file info
+print("Log file for " + IMAGEFOLDER + imageSource + "\nStarted at: " + str(start) + "s\n")
 
 #Create the grayscale numpy array of the image
 imageGray = inputs.openImage(IMAGEFOLDER + imageSource, DEBUGGING, saveLocation)

@@ -1,0 +1,24 @@
+Log file for ..\FibreImages\16 test fibres (25,500 fibre).jpg
+Started at: 1686.992327571868s
+
+# Corners Found: 64
+# Endpoints: 32
+Current clock 1688.6733002459366s Lengths checked: 0. Maximum possible checks: 496. Lengths found: 0
+Current clock 1730.1386549281979s Lengths checked: 20. Maximum possible checks: 496. Lengths found: 3
+Current clock 1739.458549236093s Lengths checked: 40. Maximum possible checks: 496. Lengths found: 3
+Current clock 1752.2325464787764s Lengths checked: 60. Maximum possible checks: 496. Lengths found: 4
+Current clock 1754.6012311626887s Lengths checked: 80. Maximum possible checks: 496. Lengths found: 4
+Current clock 1756.8164313609595s Lengths checked: 100. Maximum possible checks: 496. Lengths found: 4
+Current clock 1757.994340467319s Lengths checked: 120. Maximum possible checks: 496. Lengths found: 4
+Current clock 1815.3286094086259s Lengths checked: 140. Maximum possible checks: 496. Lengths found: 8
+Current clock 1824.5259069727144s Lengths checked: 160. Maximum possible checks: 496. Lengths found: 8
+Current clock 1829.302234078489s Lengths checked: 180. Maximum possible checks: 496. Lengths found: 8
+Current clock 1831.9161735304249s Lengths checked: 200. Maximum possible checks: 496. Lengths found: 8
+Current clock 1863.5452024532692s Lengths checked: 220. Maximum possible checks: 496. Lengths found: 11
+Current clock 1878.9387241177055s Lengths checked: 240. Maximum possible checks: 496. Lengths found: 12
+Current clock 1894.1944270447657s Lengths checked: 260. Maximum possible checks: 496. Lengths found: 13
+Final lengths checked: 278 Maximum possible checks: 496
+Lengths Found: 16
+Fibre lengths: [x0, y0, x1, y1, length01]
+
+Time taken: 251.6896938122784
