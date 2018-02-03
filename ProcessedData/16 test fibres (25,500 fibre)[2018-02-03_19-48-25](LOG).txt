@@ -1,0 +1,11 @@
+Log file for ..\FibreImages\16 test fibres (25,500 fibre).jpg
+Started at: 889.8168929262181s
+
+# Corners Found: 64
+# Endpoints: 32
+Final: 32 out of 32 coordinates found.
+Lengths checked: 46
+Lengths Found: 16
+Fibre lengths: [x0, y0, x1, y1, length01]
+
+Time taken: 3.8276441666936307

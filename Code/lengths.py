@@ -41,24 +41,32 @@ def findLengths(coords, minLength, fibreWidth, imageArray):
     lineLengths = np.array([[0, 0, 0, 0, 0]]) #For each line in the array [x, y, x1, y1, length]
     arrayLength, width = coords.shape #Find length of axis 0
     lengthsChecked = 0
-    maxChecks = int((arrayLength * (arrayLength - 1))/2)
+    coordsChecked = np.full(arrayLength, False) #Array corresponding to coords that will be set to true once a corner has been connected so none are found twice
     for i in range(arrayLength):
-        for j in range(i + 1, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
-            if lengthsChecked % 20 == 0:
-                print("Current clock "+ str(time.clock()) +"s Lengths checked: " + str(lengthsChecked) + ". Maximum possible checks: " 
-                      + str(maxChecks) + ". Lengths found: " + str(lineLengths.shape[0] - 1))
-            lengthsChecked += 1
+        if coordsChecked[i]: #if corner is already part of a fibre
+            continue
+        for j in range(i + 1, arrayLength): #Generates list of numbers starts at i so to not to repeat numbers already compared
+            if coordsChecked[j]: #if corner is already part of a fibre
+                continue
+            numChecked = np.count_nonzero(coordsChecked == True)
+            if numChecked % 4 == 0:
+                print("Current clock "+ str(time.clock()) + "s. " + str(numChecked) + " out of " + str(arrayLength) + " coordinates found.")
             distance = coordDist(coords[i], coords[j])
             if distance < minLength:
                 continue #Skip this loop if the distance is less than the minimum length of a fibre
+            lengthsChecked += 1 #Amount of lengths needed to be checked by checkLine()
             if not checkLine(coords[i], coords[j], fibreWidth, imageArray):
                 continue #Skip loop if corners not joined by solid black pixels ie not part of the same fibre
             arrayRow = np.array([coords[i][0], coords[i][1], coords[j][0], coords[j][1], distance])
             lineLengths = np.vstack((lineLengths, arrayRow))
+            coordsChecked[i] = True
+            coordsChecked[j] = True
             break #If the code reaches this then a joined fibre is found so there is no need to carry on checking all other corners against this one
     
-    print("Final lengths checked: " + str(lengthsChecked) + " Maximum possible checks: " + str(maxChecks))
+    numChecked = np.count_nonzero(coordsChecked == True)
+    print("Final: " + str(numChecked) + " out of " + str(arrayLength) + " coordinates found.")
     lineLengths = np.delete(lineLengths, 0, 0)
+    print("Lengths checked: " + str(lengthsChecked))
     print("Lengths Found: " + str(lineLengths.shape[0]))
     print("Fibre lengths: [x0, y0, x1, y1, length01]\n")
     return lineLengths
@@ -67,6 +75,7 @@ def findLengths(coords, minLength, fibreWidth, imageArray):
 def checkLineOld(pos1, pos2, imageArray):
     """
     This function takes two sets of coordinates and checks there is a solid line of pixels between them.
+    This function checks every single pixel between the two coordinates which is why it is so slow.
     This is the older less efficient algorithm a new function has been written.
     
     arg[0] pos1 - numpy array containing the first set of coordinates.

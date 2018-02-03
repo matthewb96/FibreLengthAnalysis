@@ -1,0 +1,12 @@
+Log file for ..\FibreImages\4 test fibres (25,500 fibre).jpg
+Started at: 6589.00776872592s
+
+# Corners Found: 16
+# Endpoints: 8
+> [1;32mc:\users\matthew\google drive\university\work\year 4\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(46)[0;36mfindLengths[1;34m()[0m
+[1;32m     44 [1;33m    [0mmaxChecks[0m [1;33m=[0m [0mint[0m[1;33m([0m[1;33m([0m[0marrayLength[0m [1;33m*[0m [1;33m([0m[0marrayLength[0m [1;33m-[0m [1;36m1[0m[1;33m)[0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     45 [1;33m    [1;32mfor[0m [0mi[0m [1;32min[0m [0mrange[0m[1;33m([0m[0marrayLength[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 46 [1;33m        [1;32mfor[0m [0mj[0m [1;32min[0m [0mrange[0m[1;33m([0m[0mi[0m [1;33m+[0m [1;36m1[0m[1;33m,[0m [0marrayLength[0m[1;33m)[0m[1;33m:[0m [1;31m#Generates list of numbers starts at i so to not to repeat numbers already compared[0m[1;33m[0m[0m
+[0m[1;32m     47 [1;33m            [1;32mif[0m [0mlengthsChecked[0m [1;33m%[0m [1;36m20[0m [1;33m==[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     48 [1;33m                print("Current clock "+ str(time.clock()) +"s Lengths checked: " + str(lengthsChecked) + ". Maximum possible checks: " 
+[0m

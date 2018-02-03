@@ -1,0 +1,37 @@
+Log file for ..\FibreImages\16 test fibres (25,500 fibre).jpg
+Started at: 744.2728363864361s
+
+# Corners Found: 64
+# Endpoints: 32
+Current clock 745.8131671980151s. 0 out of 32 coordinates found.
+Current clock 745.8498943894011s. 0 out of 32 coordinates found.
+Current clock 745.8865575835111s. 0 out of 32 coordinates found.
+Current clock 745.922867886982s. 0 out of 32 coordinates found.
+Current clock 745.9588123192341s. 0 out of 32 coordinates found.
+Current clock 745.9942764700431s. 0 out of 32 coordinates found.
+Current clock 746.286555349644s. 4 out of 32 coordinates found.
+Current clock 746.4376840110353s. 8 out of 32 coordinates found.
+Current clock 746.473900129836s. 8 out of 32 coordinates found.
+Current clock 746.5106061900459s. 8 out of 32 coordinates found.
+Current clock 746.5464422495526s. 8 out of 32 coordinates found.
+Current clock 746.7575728851995s. 12 out of 32 coordinates found.
+Current clock 746.7932586114825s. 12 out of 32 coordinates found.
+Current clock 746.9344918450264s. 16 out of 32 coordinates found.
+Current clock 746.9698364537539s. 16 out of 32 coordinates found.
+Current clock 747.0053757711747s. 16 out of 32 coordinates found.
+Current clock 747.0407707928508s. 16 out of 32 coordinates found.
+Current clock 747.0756553456895s. 16 out of 32 coordinates found.
+Current clock 747.1111816825306s. 16 out of 32 coordinates found.
+Current clock 747.3920047478733s. 20 out of 32 coordinates found.
+Current clock 747.5317838546345s. 24 out of 32 coordinates found.
+Current clock 747.5668564749395s. 24 out of 32 coordinates found.
+Current clock 747.6017826863823s. 24 out of 32 coordinates found.
+Current clock 747.6366705598343s. 24 out of 32 coordinates found.
+Current clock 747.8480333365433s. 28 out of 32 coordinates found.
+Current clock 747.8828590239631s. 28 out of 32 coordinates found.
+Final: 32 out of 32 coordinates found.
+Lengths checked: 46
+Lengths Found: 16
+Fibre lengths: [x0, y0, x1, y1, length01]
+
+Time taken: 3.758640311461477

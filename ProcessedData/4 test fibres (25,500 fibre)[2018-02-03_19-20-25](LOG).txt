@@ -1,0 +1,12 @@
+Log file for ..\FibreImages\4 test fibres (25,500 fibre).jpg
+Started at: 340.16889062231616s
+
+# Corners Found: 16
+# Endpoints: 8
+> [0;32mc:\users\matthew\google drive\university\work\year 4\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(47)[0;36mfindLengths[0;34m()[0m
+[0;32m     45 [0;31m    [0mmaxChecks[0m [0;34m=[0m [0mint[0m[0;34m([0m[0;34m([0m[0marrayLength[0m [0;34m*[0m [0;34m([0m[0marrayLength[0m [0;34m-[0m [0;36m1[0m[0;34m)[0m[0;34m)[0m[0;34m/[0m[0;36m2[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     46 [0;31m    [0;32mfor[0m [0mi[0m [0;32min[0m [0mrange[0m[0;34m([0m[0marrayLength[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m--> 47 [0;31m        [0;32mfor[0m [0mj[0m [0;32min[0m [0mrange[0m[0;34m([0m[0mi[0m [0;34m+[0m [0;36m1[0m[0;34m,[0m [0marrayLength[0m[0;34m)[0m[0;34m:[0m [0;31m#Generates list of numbers starts at i so to not to repeat numbers already compared[0m[0;34m[0m[0m
+[0m[0;32m     48 [0;31m            [0;32mif[0m [0mlengthsChecked[0m [0;34m%[0m [0;36m20[0m [0;34m==[0m [0;36m0[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m     49 [0;31m                print("Current clock "+ str(time.clock()) +"s Lengths checked: " + str(lengthsChecked) + ". Maximum possible checks: " 
+[0m
