@@ -12,6 +12,7 @@ import inputs
 import corners
 import lengths
 import sys
+import numpy as np
 
 
 #Constants
@@ -20,7 +21,7 @@ PROCESSEDFOLDER = "..\\ProcessedData\\" #Source for where processed data is stor
 DEBUGGING = False
 OVERWRITE = False
 MIN_LENGTH = 25 #Minimum fibre length
-FIBRE_WIDTH = 25 #Maximum fibre width
+FIBRE_WIDTH = 25 #fibre width
 
 
 #Functions
@@ -51,6 +52,9 @@ def saveImg(filename, overwrite = False):
 
 #Main Code
 imageSource = input("Please input filename to be analysed: ")
+while not os.path.isfile(IMAGEFOLDER + imageSource): #Loop to check file exists before continuing
+    imageSource = input("Could not find \"" + imageSource + "\" in " + IMAGEFOLDER + "\nPlease input filename to be analysed: ")
+
 start = time.clock() #Time the program from this point so that waiting for user input isnt included
 saveLocation = saveImg(PROCESSEDFOLDER + imageSource, OVERWRITE)
 
@@ -80,7 +84,8 @@ cornersCoords = corners.findCorners(imageGray, saveLocation, DEBUGGING)
 edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH)
 
 #Finding the fibre lengths
-fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, imageGray)
+fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
+np.savetxt(saveLocation + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01]")
 
 #Finished
 end = time.clock()

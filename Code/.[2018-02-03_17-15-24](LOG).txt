@@ -1,0 +1,5 @@
+Log file for ..\FibreImages\#Find the new midpoints
+        mid1 = midpoint(pos1, mid1)
+        mid2 = midpoint(pos2, mid2)
+Started at: 3.018739428751863e-07s
+

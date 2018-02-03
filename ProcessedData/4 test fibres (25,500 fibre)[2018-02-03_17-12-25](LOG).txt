@@ -1,0 +1,13 @@
+Log file for ..\FibreImages\4 test fibres (25,500 fibre).jpg
+Started at: 3.018739428751863e-07s
+
+# Corners Found: 16
+# Endpoints: 8
+Current clock 0.38328179842005217s Lengths checked: 0. Maximum possible checks: 28. Lengths found: 0
+> [1;32mc:\users\matthew\google drive\university\work\year 4\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(139)[0;36mcheckLine[1;34m()[0m
+[1;32m    137 [1;33m    [0mmid1[0m [1;33m=[0m [0mmidpoint[0m[1;33m([0m[0mpos1[0m[1;33m,[0m [0mpos2[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    138 [1;33m    [0mmid2[0m [1;33m=[0m [0mmidpoint[0m[1;33m([0m[0mpos1[0m[1;33m,[0m [0mpos2[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m-> 139 [1;33m    [1;32mwhile[0m [0mint[0m[1;33m([0m[0mcoordDist[0m[1;33m([0m[0mmid1[0m[1;33m,[0m [0mpos1[0m[1;33m)[0m[1;33m)[0m [1;33m>[0m [0mfibreWidth[0m [1;32mand[0m [0mint[0m[1;33m([0m[0mcoordDist[0m[1;33m([0m[0mmid2[0m[1;33m,[0m [0mpos2[0m[1;33m)[0m[1;33m)[0m [1;33m>[0m [0mfibreWidth[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m    140 [1;33m        [1;31m#Check if the midpoints are part of a fibre[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m    141 [1;33m        [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mmid1[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m [1;32mor[0m [0mcheckBlack[0m[1;33m([0m[0mmid2[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m

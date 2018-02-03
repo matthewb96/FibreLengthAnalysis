@@ -1,0 +1,3 @@
+Log file for ..\FibreImages\coordDist(mid1, pos1)
+Started at: 3.018739428751863e-07s
+
