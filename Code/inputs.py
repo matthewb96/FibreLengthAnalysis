@@ -71,7 +71,7 @@ def generateImage(fibreWidth, minLength, numFibres, arraySize):
     #Continue generating fibres until enough are generated
     while fibresGen < numFibres:
         #Randomly generate the fibre
-        length = np.random.randint(minLength, int(arraySize/3), size = 1)
+        length = np.random.randint(minLength, (minLength * 10), size = 1)
         corner1 = np.random.randint(arraySize, size = 2)
         angle = np.random.randint(360, size = 1)
         lengths = trig(length, angle)
@@ -89,7 +89,9 @@ def generateImage(fibreWidth, minLength, numFibres, arraySize):
                 #Returns the coordinates that are part of the polygone (fibre)
                 rr, cc = draw.polygon(rows, cols)
                 imageArray[rr, cc] = 0
+                imageArray = np.uint8(imageArray) #Convert the array to 8 bit for use with openCV functions
                 fibresGen += 1
+                print("Generated " + str(fibresGen) + " out of " + str(numFibres) + " fibres.")
                 
     return imageArray
 
@@ -105,10 +107,3 @@ def trig(length, angle):
     """
     lengths = np.array([(length * (np.cos(np.deg2rad(angle)))), (length * (np.sin(np.deg2rad(angle))))])
     return lengths
-
-
-num = 0
-while num < 100:
-    image = generateImage(25, 50, 10, 1000)
-    cv2.imwrite("..\\Test Files\\random image" + str(num) + ".jpg", image)
-    num += 1

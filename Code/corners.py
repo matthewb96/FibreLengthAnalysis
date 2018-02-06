@@ -68,7 +68,6 @@ def findCorners(imageArray, filename, debug = False):
     imageArray[res[:,3],res[:,2]] = [0,255,0]
     #Save a copy of the orginal image given with the corner positions drawn on
     cv2.imwrite(filename + " subpix.jpg",imageArray)
-    
           
     if debug: #Plot images for debugging
         #Save images showing Harris corner detection outputs

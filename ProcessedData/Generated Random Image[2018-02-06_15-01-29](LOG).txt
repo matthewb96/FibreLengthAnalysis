@@ -1,0 +1,24 @@
+Log file for Generated Random Image. 2 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Generated Random Image[2018-02-06_15-01-29]
+Started at: 3.018739428751863e-07s
+
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 2
+# Corners Found: 47
+> [1;32mc:\users\matthew\google drive\university\work\year 4\masters project\program files\fibrelengthanalysis\code\corners.py[0m(64)[0;36mfindCorners[1;34m()[0m
+[1;32m     62 [1;33m[1;33m[0m[0m
+[0m[1;32m     63 [1;33m    [1;31m# Now draw orginal image array with corners plotted[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 64 [1;33m    [0mimageArray[0m [1;33m=[0m [0mcv2[0m[1;33m.[0m[0mcvtColor[0m[1;33m([0m[0mimageArray[0m[1;33m,[0m [0mcv2[0m[1;33m.[0m[0mCOLOR_GRAY2BGR[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     65 [1;33m    [0mres[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mhstack[0m[1;33m([0m[1;33m([0m[0mcentroids[0m[1;33m,[0m[0mcornersSubPix[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     66 [1;33m    [0mres[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mint0[0m[1;33m([0m[0mres[0m[1;33m)[0m[1;33m[0m[0m
+[0m

@@ -13,16 +13,16 @@ import corners
 import lengths
 import sys
 import numpy as np
-from skimage import draw
-import cv2
+
 
 #Constants
 IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
 PROCESSEDFOLDER = "..\\ProcessedData\\" #Source for where processed data is stored
 DEBUGGING = False
 OVERWRITE = False
-MIN_LENGTH = 50 #Minimum fibre length
+RANDOM = False #Whether or not to generate random images
 FIBRE_WIDTH = 25 #fibre width
+MIN_LENGTH = 4 * FIBRE_WIDTH #Minimum fibre length minimum ratio is approximately 4:1
 
 
 #Functions
@@ -51,11 +51,29 @@ def saveImg(filename, overwrite = False):
 
 
 
-#Main Code
-imageSource = input("Please input filename to be analysed: ")
-while not os.path.isfile(IMAGEFOLDER + imageSource): #Loop to check file exists before continuing
-    imageSource = input("Could not find \"" + imageSource + "\" in " + IMAGEFOLDER + "\nPlease input filename to be analysed: ")
-
+#Get input file
+while True:
+    imageSource = input("Please input filename to be analysed, input \"Random #\" to generate and analyse # random images (case sensitive): ")
+    if imageSource.find("Random") != -1:
+        RANDOM = True
+        try:
+            rand, numRand = imageSource.lower().split(" ")
+            numAnalyse = int(numRand) #Number of images to be analysed
+        except:
+            print("The format you have given is incorrect please try again. \n If you would like random images type \"random #\" (case sensitive)")
+            continue
+        print("Generating and analysing " + str(numRand) + " random images.")
+        imageSource = "Generated Random Image."
+        break
+    elif not os.path.isfile(IMAGEFOLDER + imageSource):
+        print("Could not find \"" + imageSource + "\" in " + IMAGEFOLDER + "\nPlease try again.")
+        continue
+    else:
+        RANDOM = False
+        numAnalyse = 1 #Number of images to be analysed
+        print("Analysing " + IMAGEFOLDER + imageSource)
+        break
+        
 start = time.clock() #Time the program from this point so that waiting for user input isnt included
 saveLocation = saveImg(PROCESSEDFOLDER + imageSource, OVERWRITE)
 
@@ -75,34 +93,45 @@ orignal = sys.stdout
 sys.stdout = Logger()
 
 #Log file info
-print("Log file for " + IMAGEFOLDER + imageSource + "\nStarted at: " + str(start) + "s\n")
+if RANDOM:
+    print("Log file for " + imageSource + " " + str(numRand) + " images to be generated and analysed.")
+else:
+    print("Log file for " + IMAGEFOLDER + imageSource)
+print("\nSave location: " + saveLocation + "\nStarted at: " + str(start) + "s\n")
 
-#Create the grayscale numpy array of the image
-imageGray = inputs.openImage(IMAGEFOLDER + imageSource, DEBUGGING, saveLocation)
-
-#Find the corners and then the edges on the image
-cornersCoords = corners.findCorners(imageGray, saveLocation, DEBUGGING)
-edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH)
-
-#Finding the fibre lengths
-fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
-np.savetxt(saveLocation + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01, angle01]")
-
-#Draw on the found fibres
-image = cv2.cvtColor(imageGray, cv2.COLOR_GRAY2BGR)
-for i in range(fibreLengths.shape[0]):
-    print("Drawing " + str(i) + " out of " + str(fibreLengths.shape[0]))
-    lineCoords = int(np.rint(fibreLengths[i]))
-    print("Line coords: " + str(lineCoords))
-    rr, cc = draw.line(lineCoords[0], lineCoords[2], lineCoords[1], lineCoords[3])
-    print("rr " + str(rr) + " cc" + str(cc))
-    image[rr, cc] = np.array([255, 0, 0])
+#Loop to allow mulitple images to be analysed at without extra input
+numDone = 1
+originalSaveLoc = saveLocation #Keep the unedited saveLocation 
+while numDone <= numAnalyse:
+    #Create the grayscale numpy array of the image or generate an image array
+    print("\n\n***********************************************************************************\nStarting image " + 
+          str(numDone) + " out of " + str(numAnalyse))
+    if RANDOM:
+        imageGray = inputs.generateImage(FIBRE_WIDTH, MIN_LENGTH, 10, 1000)
+        saveLocation = originalSaveLoc + " (Random Image " + str(numDone) + ") "
+        print("Generated random image " + str(numDone) + " out of " + str(numAnalyse))
+    else:
+        imageGray = inputs.openImage(IMAGEFOLDER + imageSource, DEBUGGING, saveLocation)
+        print("Opened image " + str(numDone) + " out of " + str(numAnalyse))
     
-cv2.imwrite(saveLocation + "Drawn Lines.jpg", image)
+    #Find the corners and then the edges on the image
+    cornersCoords = corners.findCorners(imageGray, saveLocation, DEBUGGING)
+    edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH)
+    
+    #Finding the fibre lengths
+    fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
+    np.savetxt(saveLocation + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01, angle01]")
+    
+    #Draw found fibres
+    
+    #Update number done
+    print("Analysed image " + str(numDone) + " out of " + str(numAnalyse) + 
+          "\n***********************************************************************************")
+    numDone += 1
 
 #Finished
 end = time.clock()
-print("Time taken: " + str(end-start))
+print("\nTime taken: " + str(end-start))
 
 #Set standard out back to its original
 sys.stdout = orignal

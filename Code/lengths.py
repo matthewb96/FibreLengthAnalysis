@@ -204,7 +204,20 @@ def findAngle(pos1, pos2):
     return angle
     
     
-    
-    
-    
-    
+def drawFound():
+    """
+    This function will colour in the found fibres.
+    """
+    #Draw on the found fibres
+    image = cv2.cvtColor(imageGray, cv2.COLOR_GRAY2BGR)
+    for i in range(fibreLengths.shape[0]):
+        print("Drawing " + str(i) + " out of " + str(fibreLengths.shape[0]))
+        lineCoords = int(np.rint(fibreLengths[i]))
+        print("Line coords: " + str(lineCoords))
+        rr, cc = draw.line(lineCoords[0], lineCoords[2], lineCoords[1], lineCoords[3])
+        print("rr " + str(rr) + " cc" + str(cc))
+        image[rr, cc] = np.array([255, 0, 0])
+        
+    cv2.imwrite(saveLocation + "Drawn Lines.jpg", image)
+        
+        

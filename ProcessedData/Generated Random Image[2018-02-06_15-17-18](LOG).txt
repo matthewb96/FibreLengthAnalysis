@@ -1,0 +1,173 @@
+Log file for Generated Random Image. 4 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Generated Random Image[2018-02-06_15-17-18]
+Started at: 591.0087567593349s
+
+
+
+***********************************************************************************
+Starting image 1 out of 4
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 4
+# Corners Found: 37
+# Endpoints: 15
+Current clock 591.100669224344s. 0 out of 15 coordinates found.
+Current clock 591.1007081660825s. 0 out of 15 coordinates found.
+Current clock 591.1029299583022s. 0 out of 15 coordinates found.
+Current clock 591.1051789191765s. 0 out of 15 coordinates found.
+Current clock 591.1074734630164s. 0 out of 15 coordinates found.
+Current clock 591.1097166882859s. 0 out of 15 coordinates found.
+Current clock 591.1122201288941s. 0 out of 15 coordinates found.
+Current clock 591.1144699953904s. 0 out of 15 coordinates found.
+Current clock 591.1167099000465s. 0 out of 15 coordinates found.
+Current clock 591.1221916289752s. 0 out of 15 coordinates found.
+Current clock 591.1279359882342s. 0 out of 15 coordinates found.
+Current clock 591.1335194486816s. 0 out of 15 coordinates found.
+Current clock 591.1357647870686s. 0 out of 15 coordinates found.
+Current clock 591.1423456390233s. 0 out of 15 coordinates found.
+Current clock 591.1446791246018s. 0 out of 15 coordinates found.
+Current clock 591.1470071764493s. 0 out of 15 coordinates found.
+Current clock 591.1503972208277s. 0 out of 15 coordinates found.
+Current clock 591.1526766709704s. 0 out of 15 coordinates found.
+Current clock 591.1549540079955s. 0 out of 15 coordinates found.
+Current clock 591.1572313450205s. 0 out of 15 coordinates found.
+Current clock 591.1596040742115s. 0 out of 15 coordinates found.
+Current clock 591.1630237022364s. 0 out of 15 coordinates found.
+Current clock 591.16530858611s. 0 out of 15 coordinates found.
+Current clock 591.1675868287568s. 0 out of 15 coordinates found.
+Current clock 591.169863863908s. 0 out of 15 coordinates found.
+Current clock 591.1721402953112s. 0 out of 15 coordinates found.
+Current clock 591.1748345202514s. 0 out of 15 coordinates found.
+Current clock 591.177129969713s. 0 out of 15 coordinates found.
+Current clock 591.179465568409s. 0 out of 15 coordinates found.
+Current clock 591.1817130199137s. 0 out of 15 coordinates found.
+Current clock 591.183978885729s. 0 out of 15 coordinates found.
+Current clock 591.1873031215879s. 0 out of 15 coordinates found.
+Current clock 591.189913123698s. 0 out of 15 coordinates found.
+Current clock 591.1924905234223s. 0 out of 15 coordinates found.
+Current clock 591.195091771188s. 0 out of 15 coordinates found.
+Current clock 591.1974044274643s. 0 out of 15 coordinates found.
+Current clock 591.1996425208769s. 0 out of 15 coordinates found.
+Current clock 591.201908386692s. 0 out of 15 coordinates found.
+Current clock 591.2041751581291s. 0 out of 15 coordinates found.
+Current clock 591.2068105176504s. 0 out of 15 coordinates found.
+Current clock 591.2092390935209s. 0 out of 15 coordinates found.
+Current clock 591.2128033191643s. 0 out of 15 coordinates found.
+Current clock 591.2150661662401s. 0 out of 15 coordinates found.
+Current clock 591.2449740252566s. 4 out of 15 coordinates found.
+Current clock 591.2583195703971s. 8 out of 15 coordinates found.
+Current clock 591.2605987186658s. 8 out of 15 coordinates found.
+Current clock 591.2629246573957s. 8 out of 15 coordinates found.
+Final: 10 out of 15 coordinates found.
+Lengths checked: 60
+Lengths Found: 5
+Analysed image 1 out of 4
+
+
+***********************************************************************************
+Starting image 2 out of 4
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 2 out of 4
+# Corners Found: 47
+# Endpoints: 10
+Current clock 591.3636784064437s. 0 out of 10 coordinates found.
+Current clock 591.3660381550551s. 0 out of 10 coordinates found.
+Current clock 591.3738886888135s. 4 out of 10 coordinates found.
+Current clock 591.3761774970484s. 4 out of 10 coordinates found.
+Current clock 591.3786278078427s. 4 out of 10 coordinates found.
+Current clock 591.3875077317464s. 8 out of 10 coordinates found.
+Final: 8 out of 10 coordinates found.
+Lengths checked: 9
+Lengths Found: 4
+Analysed image 2 out of 4
+
+
+***********************************************************************************
+Starting image 3 out of 4
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 3 out of 4
+# Corners Found: 41
+# Endpoints: 15
+Current clock 591.4881884273002s. 0 out of 15 coordinates found.
+Current clock 591.4914335721861s. 0 out of 15 coordinates found.
+Current clock 591.4939116553832s. 0 out of 15 coordinates found.
+Current clock 591.4964815082589s. 0 out of 15 coordinates found.
+Current clock 591.4988817079786s. 0 out of 15 coordinates found.
+Current clock 591.5012625877661s. 0 out of 15 coordinates found.
+Current clock 591.50377870708s. 0 out of 15 coordinates found.
+Current clock 591.5096715883188s. 0 out of 15 coordinates found.
+Current clock 591.5121427284151s. 0 out of 15 coordinates found.
+Current clock 591.5295723261289s. 4 out of 15 coordinates found.
+Current clock 591.529745903646s. 4 out of 15 coordinates found.
+Current clock 591.5320627861577s. 4 out of 15 coordinates found.
+Current clock 591.5400757280973s. 8 out of 15 coordinates found.
+Current clock 591.5424255148687s. 8 out of 15 coordinates found.
+Current clock 591.5447834522364s. 8 out of 15 coordinates found.
+Current clock 591.5471235790416s. 8 out of 15 coordinates found.
+Current clock 591.5495225712657s. 8 out of 15 coordinates found.
+Current clock 591.5630715794437s. 12 out of 15 coordinates found.
+Current clock 591.5654669491804s. 12 out of 15 coordinates found.
+Current clock 591.5678659414044s. 12 out of 15 coordinates found.
+Final: 14 out of 15 coordinates found.
+Lengths checked: 27
+Lengths Found: 7
+Analysed image 3 out of 4
+
+
+***********************************************************************************
+Starting image 4 out of 4
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 4 out of 4
+# Corners Found: 42
+# Endpoints: 17
+Current clock 591.6717999324406s. 0 out of 17 coordinates found.
+Current clock 591.6742749968982s. 0 out of 17 coordinates found.
+Current clock 591.6920571833773s. 4 out of 17 coordinates found.
+Current clock 591.6944335350555s. 4 out of 17 coordinates found.
+Current clock 591.7452842007328s. 8 out of 17 coordinates found.
+Current clock 591.7476128563283s. 8 out of 17 coordinates found.
+Current clock 591.7554501076331s. 12 out of 17 coordinates found.
+Current clock 591.7576954460203s. 12 out of 17 coordinates found.
+Current clock 591.7599338413066s. 12 out of 17 coordinates found.
+Current clock 591.7622588744147s. 12 out of 17 coordinates found.
+Final: 14 out of 17 coordinates found.
+Lengths checked: 34
+Lengths Found: 7
+Analysed image 4 out of 4
+Time taken: 0.7598170160907785
