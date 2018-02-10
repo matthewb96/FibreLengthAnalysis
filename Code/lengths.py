@@ -207,7 +207,7 @@ def findAngle(pos1, pos2):
     
 def drawFound(fibreLengths, imageArray, filename):
     """
-    This function will colour in the found fibres, and save a new image containing the coloured fibres.
+    This function will draw a red line on the found fibres, and save a new image containing the drawn lines.
     
     arg[0] fibreLengths - the numpy array containing the fibre coordinates and lengths.
     arg[1] imageArray - numpy array containing the image data for a grayscale image.
@@ -216,6 +216,7 @@ def drawFound(fibreLengths, imageArray, filename):
     Returns nothing.
     """
     #Draw on the found fibres
+    print("\nDrawing found fibres.")
     image = cv2.cvtColor(imageArray, cv2.COLOR_GRAY2BGR)
     for i in range(fibreLengths.shape[0]):
         print("Drawing " + str(i) + " out of " + str(fibreLengths.shape[0]))
@@ -226,12 +227,5 @@ def drawFound(fibreLengths, imageArray, filename):
         image[rr, cc] = np.array([0, 0, 255])
         
     cv2.imwrite(filename + "Drawn Lines.jpg", image)
-    print("Drawn found fibres on the image: " + filename + "Drawn Lines.jpg")
+    print("Drawn found fibres on the image: " + filename + "Drawn Lines.jpg\n")
     return
-
-   
-import inputs
-
-imageGray = inputs.openImage("..\\FibreImages\\4 test fibres (25,500 fibre).jpg", False, "testing draw")
-fibreLengths = np.loadtxt("..\\ProcessedData\\4 test fibres (25,500 fibre)[2018-02-10_15-12-53]Fibre_Lengths.txt", skiprows = 1)
-drawFound(fibreLengths, imageGray, "Drawn fibres test.jpg")

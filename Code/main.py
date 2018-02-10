@@ -123,9 +123,7 @@ while numDone <= numAnalyse:
     np.savetxt(saveLocation + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01, angle01]")
     
     #Draw found fibres
-    print("Before drawFound()")
     lengths.drawFound(fibreLengths, imageGray, saveLocation)
-    print("After drawFound()")
     
     #Update number done
     print("Analysed image " + str(numDone) + " out of " + str(numAnalyse) + 
