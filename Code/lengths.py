@@ -7,7 +7,8 @@ This module will contain all the functions for finding the lengths of the fibres
 #Imports
 import numpy as np
 import time
-
+import cv2
+from skimage import draw
 
 #Functions
 def coordDist(pos1, pos2):
@@ -204,20 +205,33 @@ def findAngle(pos1, pos2):
     return angle
     
     
-def drawFound():
+def drawFound(fibreLengths, imageArray, filename):
     """
-    This function will colour in the found fibres.
+    This function will colour in the found fibres, and save a new image containing the coloured fibres.
+    
+    arg[0] fibreLengths - the numpy array containing the fibre coordinates and lengths.
+    arg[1] imageArray - numpy array containing the image data for a grayscale image.
+    arg[2] saveLocation - string containing the source for where the image will be saved.
+    
+    Returns nothing.
     """
     #Draw on the found fibres
-    image = cv2.cvtColor(imageGray, cv2.COLOR_GRAY2BGR)
+    image = cv2.cvtColor(imageArray, cv2.COLOR_GRAY2BGR)
     for i in range(fibreLengths.shape[0]):
         print("Drawing " + str(i) + " out of " + str(fibreLengths.shape[0]))
-        lineCoords = int(np.rint(fibreLengths[i]))
-        print("Line coords: " + str(lineCoords))
-        rr, cc = draw.line(lineCoords[0], lineCoords[2], lineCoords[1], lineCoords[3])
-        print("rr " + str(rr) + " cc" + str(cc))
-        image[rr, cc] = np.array([255, 0, 0])
+        lineCoords = np.rint(fibreLengths[i])
+        lineCoords = lineCoords.astype(int)
+        print("Line coords: " + str((lineCoords[1], lineCoords[0], lineCoords[3], lineCoords[2])))
+        rr, cc = draw.line(lineCoords[1], lineCoords[0], lineCoords[3], lineCoords[2])
+        image[rr, cc] = np.array([0, 0, 255])
         
-    cv2.imwrite(saveLocation + "Drawn Lines.jpg", image)
-        
-        
+    cv2.imwrite(filename + "Drawn Lines.jpg", image)
+    print("Drawn found fibres on the image: " + filename + "Drawn Lines.jpg")
+    return
+
+   
+import inputs
+
+imageGray = inputs.openImage("..\\FibreImages\\4 test fibres (25,500 fibre).jpg", False, "testing draw")
+fibreLengths = np.loadtxt("..\\ProcessedData\\4 test fibres (25,500 fibre)[2018-02-10_15-12-53]Fibre_Lengths.txt", skiprows = 1)
+drawFound(fibreLengths, imageGray, "Drawn fibres test.jpg")

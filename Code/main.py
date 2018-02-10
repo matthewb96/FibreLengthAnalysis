@@ -5,7 +5,7 @@ This main file will control all other modules.
 At the minute most of the code is for testing what works and what doesn't.
 """
 #All the imported modules
-import os #Used in saveImg()
+import os
 import time
 from datetime import datetime
 import inputs 
@@ -15,7 +15,7 @@ import sys
 import numpy as np
 
 
-#Constants
+#Variables and Constants
 IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
 PROCESSEDFOLDER = "..\\ProcessedData\\" #Source for where processed data is stored
 DEBUGGING = False
@@ -123,11 +123,15 @@ while numDone <= numAnalyse:
     np.savetxt(saveLocation + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01, angle01]")
     
     #Draw found fibres
+    print("Before drawFound()")
+    lengths.drawFound(fibreLengths, imageGray, saveLocation)
+    print("After drawFound()")
     
     #Update number done
     print("Analysed image " + str(numDone) + " out of " + str(numAnalyse) + 
           "\n***********************************************************************************")
     numDone += 1
+
 
 #Finished
 end = time.clock()
