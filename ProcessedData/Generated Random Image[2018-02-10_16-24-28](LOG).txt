@@ -1,0 +1,529 @@
+Log file for Generated Random Image. 10 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28]
+Started at: 2705.166738814648s
+
+
+
+***********************************************************************************
+Starting image 1 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 10
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 2710.803250643898s. 0 out of 20 coordinates found.
+Current clock 2712.1501378358503s. 4 out of 20 coordinates found.
+Current clock 2712.9367947459364s. 8 out of 20 coordinates found.
+Current clock 2713.9566315164116s. 12 out of 20 coordinates found.
+Current clock 2715.2109211516145s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 13
+Lengths Found: 10
+
+Drawing found fibres.
+Drawing 1 out of 10
+Line coords: (405, 9981, 577, 9293)
+Drawing 2 out of 10
+Line coords: (1717, 3825, 2311, 4141)
+Drawing 3 out of 10
+Line coords: (1943, 6491, 2101, 7039)
+Drawing 4 out of 10
+Line coords: (2911, 447, 3174, 503)
+Drawing 5 out of 10
+Line coords: (3273, 7349, 3910, 7717)
+Drawing 6 out of 10
+Line coords: (4526, 1845, 4587, 2726)
+Drawing 7 out of 10
+Line coords: (6841, 4504, 6918, 5056)
+Drawing 8 out of 10
+Line coords: (7331, 4774, 8198, 4714)
+Drawing 9 out of 10
+Line coords: (8090, 2668, 8209, 2745)
+Drawing 10 out of 10
+Line coords: (9400, 7801, 9944, 7175)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 1) Drawn Lines.jpg
+
+Analysed image 1 out of 10
+***********************************************************************************
+
+
+***********************************************************************************
+Starting image 2 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 2 out of 10
+
+# Corners Found: 6
+# Endpoints: 1
+Final: 0 out of 1 coordinates found.
+Lengths checked: 0
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 2) Drawn Lines.jpg
+
+Analysed image 2 out of 10
+***********************************************************************************
+
+
+***********************************************************************************
+Starting image 3 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 3 out of 10
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 2729.6631060581362s. 0 out of 20 coordinates found.
+Current clock 2731.034440246378s. 4 out of 20 coordinates found.
+Current clock 2731.6289205937505s. 8 out of 20 coordinates found.
+Current clock 2731.8492188698065s. 8 out of 20 coordinates found.
+Current clock 2732.07877804866s. 8 out of 20 coordinates found.
+Current clock 2732.2987515078626s. 8 out of 20 coordinates found.
+Current clock 2732.520304675793s. 8 out of 20 coordinates found.
+Current clock 2733.8396397913925s. 12 out of 20 coordinates found.
+Current clock 2734.0605943423907s. 12 out of 20 coordinates found.
+Current clock 2734.942529453885s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 19
+Lengths Found: 10
+
+Drawing found fibres.
+Drawing 1 out of 10
+Line coords: (629, 6008, 1040, 5481)
+Drawing 2 out of 10
+Line coords: (2870, 5502, 3659, 5392)
+Drawing 3 out of 10
+Line coords: (2879, 4674, 3045, 4694)
+Drawing 4 out of 10
+Line coords: (6556, 8391, 6556, 8696)
+Drawing 5 out of 10
+Line coords: (7015, 3747, 7796, 3787)
+Drawing 6 out of 10
+Line coords: (7096, 3227, 7388, 2865)
+Drawing 7 out of 10
+Line coords: (7230, 3823, 7818, 3585)
+Drawing 8 out of 10
+Line coords: (7265, 8142, 7862, 8372)
+Drawing 9 out of 10
+Line coords: (8001, 3132, 8085, 3239)
+Drawing 10 out of 10
+Line coords: (9650, 6404, 9729, 6579)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 3) Drawn Lines.jpg
+
+Analysed image 3 out of 10
+***********************************************************************************
+
+
+***********************************************************************************
+Starting image 4 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 4 out of 10
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 2742.3466882567236s. 0 out of 20 coordinates found.
+Current clock 2742.578073775688s. 0 out of 20 coordinates found.
+Current clock 2742.8107965982376s. 0 out of 20 coordinates found.
+Current clock 2743.0392439736816s. 0 out of 20 coordinates found.
+Current clock 2743.2726432967584s. 0 out of 20 coordinates found.
+Current clock 2744.553601421949s. 4 out of 20 coordinates found.
+Current clock 2745.5742638189045s. 8 out of 20 coordinates found.
+Current clock 2745.796193726084s. 8 out of 20 coordinates found.
+Current clock 2746.0177212346903s. 8 out of 20 coordinates found.
+Current clock 2746.787584570113s. 12 out of 20 coordinates found.
+Current clock 2747.0159791175365s. 12 out of 20 coordinates found.
+Current clock 2747.9362341651786s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 20
+Lengths Found: 10
+
+Drawing found fibres.
+Drawing 1 out of 10
+Line coords: (692, 4317, 1520, 4389)
+Drawing 2 out of 10
+Line coords: (916, 3531, 1062, 3257)
+Drawing 3 out of 10
+Line coords: (926, 6909, 1039, 7186)
+Drawing 4 out of 10
+Line coords: (3692, 3703, 3915, 3968)
+Drawing 5 out of 10
+Line coords: (3831, 8870, 4524, 9374)
+Drawing 6 out of 10
+Line coords: (4075, 7621, 4212, 7496)
+Drawing 7 out of 10
+Line coords: (7366, 2604, 8131, 2325)
+Drawing 8 out of 10
+Line coords: (7837, 2958, 8355, 2949)
+Drawing 9 out of 10
+Line coords: (9186, 1453, 9277, 1972)
+Drawing 10 out of 10
+Line coords: (9616, 3474, 9753, 2774)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 4) Drawn Lines.jpg
+
+Analysed image 4 out of 10
+***********************************************************************************
+
+
+***********************************************************************************
+Starting image 5 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 5 out of 10
+
+# Corners Found: 39
+# Endpoints: 19
+Current clock 2755.7231860065517s. 0 out of 19 coordinates found.
+Current clock 2756.2794861856237s. 4 out of 19 coordinates found.
+Current clock 2756.5013101348895s. 4 out of 19 coordinates found.
+Current clock 2756.7235334639845s. 4 out of 19 coordinates found.
+Current clock 2757.3884012611106s. 8 out of 19 coordinates found.
+Current clock 2758.2677637989805s. 12 out of 19 coordinates found.
+Current clock 2760.1692845214507s. 16 out of 19 coordinates found.
+Final: 18 out of 19 coordinates found.
+Lengths checked: 16
+Lengths Found: 9
+
+Drawing found fibres.
+Drawing 1 out of 9
+Line coords: (1714, 3985, 1876, 3983)
+Drawing 2 out of 9
+Line coords: (2172, 1532, 2327, 1698)
+Drawing 3 out of 9
+Line coords: (3532, 1892, 3978, 1567)
+Drawing 4 out of 9
+Line coords: (3658, 9274, 3735, 9392)
+Drawing 5 out of 9
+Line coords: (5190, 2680, 5575, 3374)
+Drawing 6 out of 9
+Line coords: (6674, 4268, 6726, 4869)
+Drawing 7 out of 9
+Line coords: (6812, 6678, 6876, 6591)
+Drawing 8 out of 9
+Line coords: (8757, 760, 9221, 1501)
+Drawing 9 out of 9
+Line coords: (9116, 4879, 9484, 4391)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 5) Drawn Lines.jpg
+
+Analysed image 5 out of 10
+***********************************************************************************
+
+
+***********************************************************************************
+Starting image 6 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 6 out of 10
+
+# Corners Found: 39
+# Endpoints: 19
+Current clock 2767.4787278167596s. 0 out of 19 coordinates found.
+Current clock 2767.704754763276s. 0 out of 19 coordinates found.
+Current clock 2768.8330827775826s. 4 out of 19 coordinates found.
+Current clock 2771.970152470721s. 8 out of 19 coordinates found.
+Current clock 2772.893286796376s. 12 out of 19 coordinates found.
+Current clock 2773.580690724849s. 16 out of 19 coordinates found.
+Final: 18 out of 19 coordinates found.
+Lengths checked: 23
+Lengths Found: 9
+
+Drawing found fibres.
+Drawing 1 out of 9
+Line coords: (113, 3501, 591, 3824)
+Drawing 2 out of 9
+Line coords: (283, 865, 735, 682)
+Drawing 3 out of 9
+Line coords: (714, 3361, 872, 3481)
+Drawing 4 out of 9
+Line coords: (3553, 5696, 3676, 5643)
+Drawing 5 out of 9
+Line coords: (4455, 4378, 4547, 3788)
+Drawing 6 out of 9
+Line coords: (5644, 9752, 5668, 9275)
+Drawing 7 out of 9
+Line coords: (7664, 2660, 7856, 2626)
+Drawing 8 out of 9
+Line coords: (7998, 7168, 8237, 7581)
+Drawing 9 out of 9
+Line coords: (9182, 1402, 9682, 689)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 6) Drawn Lines.jpg
+
+Analysed image 6 out of 10
+***********************************************************************************
+
+
+***********************************************************************************
+Starting image 7 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 7 out of 10
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 2781.1253705508243s. 0 out of 20 coordinates found.
+Current clock 2781.7949246461126s. 4 out of 20 coordinates found.
+Current clock 2782.79382431393s. 8 out of 20 coordinates found.
+Current clock 2783.680913930779s. 12 out of 20 coordinates found.
+Current clock 2783.905365696684s. 12 out of 20 coordinates found.
+Current clock 2785.2447455742195s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 13
+Lengths Found: 10
+
+Drawing found fibres.
+Drawing 1 out of 10
+Line coords: (1572, 372, 2023, 285)
+Drawing 2 out of 10
+Line coords: (2148, 4256, 2175, 4066)
+Drawing 3 out of 10
+Line coords: (2255, 4532, 2656, 4157)
+Drawing 4 out of 10
+Line coords: (3165, 9861, 4000, 9979)
+Drawing 5 out of 10
+Line coords: (4834, 458, 5280, 412)
+Drawing 6 out of 10
+Line coords: (5495, 1661, 6114, 1607)
+Drawing 7 out of 10
+Line coords: (7810, 2848, 8339, 2388)
+Drawing 8 out of 10
+Line coords: (8190, 4364, 8720, 4299)
+Drawing 9 out of 10
+Line coords: (8526, 3844, 8593, 4096)
+Drawing 10 out of 10
+Line coords: (9333, 8083, 9638, 7245)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 7) Drawn Lines.jpg
+
+Analysed image 7 out of 10
+***********************************************************************************
+
+
+***********************************************************************************
+Starting image 8 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 8 out of 10
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 2793.1057158106114s. 0 out of 20 coordinates found.
+Current clock 2793.7891872212945s. 4 out of 20 coordinates found.
+Current clock 2794.0201226455306s. 4 out of 20 coordinates found.
+Current clock 2794.9175294236975s. 8 out of 20 coordinates found.
+Current clock 2795.8439209741123s. 12 out of 20 coordinates found.
+Current clock 2796.50680545644s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 11
+Lengths Found: 10
+
+Drawing found fibres.
+Drawing 1 out of 10
+Line coords: (254, 1178, 685, 1029)
+Drawing 2 out of 10
+Line coords: (1264, 6407, 1277, 6532)
+Drawing 3 out of 10
+Line coords: (2153, 2696, 2831, 2916)
+Drawing 4 out of 10
+Line coords: (2787, 3742, 3149, 4222)
+Drawing 5 out of 10
+Line coords: (3898, 4772, 4324, 5402)
+Drawing 6 out of 10
+Line coords: (4387, 2149, 4690, 2567)
+Drawing 7 out of 10
+Line coords: (6368, 3870, 6914, 3832)
+Drawing 8 out of 10
+Line coords: (7302, 802, 7395, 670)
+Drawing 9 out of 10
+Line coords: (7979, 6661, 8102, 6621)
+Drawing 10 out of 10
+Line coords: (9206, 3880, 9290, 4013)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 8) Drawn Lines.jpg
+
+Analysed image 8 out of 10
+***********************************************************************************
+
+
+***********************************************************************************
+Starting image 9 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 9 out of 10
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 2803.8092703212787s. 0 out of 20 coordinates found.
+Current clock 2804.7088022952116s. 4 out of 20 coordinates found.
+Current clock 2804.9341382512293s. 4 out of 20 coordinates found.
+Current clock 2805.7272115016563s. 8 out of 20 coordinates found.
+Current clock 2805.9564669948645s. 8 out of 20 coordinates found.
+Current clock 2806.1857101112228s. 8 out of 20 coordinates found.
+Current clock 2806.408584583395s. 8 out of 20 coordinates found.
+Current clock 2806.6296007167707s. 8 out of 20 coordinates found.
+Current clock 2806.851478701554s. 8 out of 20 coordinates found.
+Current clock 2807.0716785665554s. 8 out of 20 coordinates found.
+Current clock 2807.291458524269s. 8 out of 20 coordinates found.
+Current clock 2807.5119705273987s. 8 out of 20 coordinates found.
+Current clock 2807.732926587769s. 8 out of 20 coordinates found.
+Current clock 2807.951705831851s. 8 out of 20 coordinates found.
+Current clock 2808.171062561658s. 8 out of 20 coordinates found.
+Current clock 2808.390399971503s. 8 out of 20 coordinates found.
+Current clock 2808.612023778043s. 8 out of 20 coordinates found.
+Current clock 2808.836631009263s. 8 out of 20 coordinates found.
+Current clock 2811.4221251595404s. 12 out of 20 coordinates found.
+Current clock 2811.652337292718s. 12 out of 20 coordinates found.
+Current clock 2812.333434763131s. 16 out of 20 coordinates found.
+Final: 18 out of 20 coordinates found.
+Lengths checked: 33
+Lengths Found: 9
+
+Drawing found fibres.
+Drawing 1 out of 9
+Line coords: (2332, 1096, 2639, 1227)
+Drawing 2 out of 9
+Line coords: (3138, 4639, 3892, 4091)
+Drawing 3 out of 9
+Line coords: (6288, 9968, 6585, 9409)
+Drawing 4 out of 9
+Line coords: (6379, 1164, 6632, 1473)
+Drawing 5 out of 9
+Line coords: (6963, 4925, 7342, 5126)
+Drawing 6 out of 9
+Line coords: (7060, 3835, 7304, 4158)
+Drawing 7 out of 9
+Line coords: (7962, 8391, 8100, 8384)
+Drawing 8 out of 9
+Line coords: (8076, 580, 8363, 82)
+Drawing 9 out of 9
+Line coords: (9491, 9394, 9522, 9652)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 9) Drawn Lines.jpg
+
+Analysed image 9 out of 10
+***********************************************************************************
+
+
+***********************************************************************************
+Starting image 10 out of 10
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 10 out of 10
+
+# Corners Found: 39
+# Endpoints: 19
+Current clock 2819.5461372755713s. 0 out of 19 coordinates found.
+Current clock 2820.4480459066435s. 4 out of 19 coordinates found.
+Current clock 2821.1388595064473s. 8 out of 19 coordinates found.
+Current clock 2822.0347723082164s. 12 out of 19 coordinates found.
+Current clock 2822.818269498973s. 16 out of 19 coordinates found.
+Current clock 2823.037660038712s. 16 out of 19 coordinates found.
+Current clock 2823.2592065654057s. 16 out of 19 coordinates found.
+Final: 18 out of 19 coordinates found.
+Lengths checked: 11
+Lengths Found: 9
+
+Drawing found fibres.
+Drawing 1 out of 9
+Line coords: (628, 1892, 668, 1428)
+Drawing 2 out of 9
+Line coords: (2166, 8667, 2166, 9314)
+Drawing 3 out of 9
+Line coords: (2833, 2629, 3006, 2276)
+Drawing 4 out of 9
+Line coords: (3584, 9534, 3852, 9822)
+Drawing 5 out of 9
+Line coords: (4834, 8851, 5235, 8129)
+Drawing 6 out of 9
+Line coords: (5761, 4708, 6113, 5229)
+Drawing 7 out of 9
+Line coords: (6952, 5895, 7230, 6172)
+Drawing 8 out of 9
+Line coords: (7412, 6524, 7887, 7111)
+Drawing 9 out of 9
+Line coords: (9626, 6369, 9832, 7338)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_16-24-28] (Random Image 10) Drawn Lines.jpg
+
+Analysed image 10 out of 10
+***********************************************************************************
+
+Time taken: 120.07177969447912

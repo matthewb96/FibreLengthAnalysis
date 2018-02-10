@@ -21,7 +21,7 @@ def averageEdges(cornerPos, FIBREWIDTH):
     for i in range(arrayLength):
         for j in range(i, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
             distance = coordDist(cornerPos[i], cornerPos[j])
-            if  distance <= FIBREWIDTH and distance != 0:
+            if  distance <= int(np.rint(FIBREWIDTH*1.1)) and distance != 0: #Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width
                 average = np.array([(cornerPos[i] + cornerPos[j])/2])
                 averageCoords = np.vstack((averageCoords, average))
     

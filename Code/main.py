@@ -107,9 +107,9 @@ while numDone <= numAnalyse:
     print("\n\n***********************************************************************************\nStarting image " + 
           str(numDone) + " out of " + str(numAnalyse))
     if RANDOM:
-        imageGray = inputs.generateImage(FIBRE_WIDTH, MIN_LENGTH, 10, 1000)
+        imageGray = inputs.generateImage(FIBRE_WIDTH, MIN_LENGTH, 10, 10000)
         saveLocation = originalSaveLoc + " (Random Image " + str(numDone) + ") "
-        print("Generated random image " + str(numDone) + " out of " + str(numAnalyse))
+        print("Generated random image " + str(numDone) + " out of " + str(numAnalyse) + "\n")
     else:
         imageGray = inputs.openImage(IMAGEFOLDER + imageSource, DEBUGGING, saveLocation)
         print("Opened image " + str(numDone) + " out of " + str(numAnalyse))

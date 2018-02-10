@@ -219,7 +219,7 @@ def drawFound(fibreLengths, imageArray, filename):
     print("\nDrawing found fibres.")
     image = cv2.cvtColor(imageArray, cv2.COLOR_GRAY2BGR)
     for i in range(fibreLengths.shape[0]):
-        print("Drawing " + str(i) + " out of " + str(fibreLengths.shape[0]))
+        print("Drawing " + str(i + 1) + " out of " + str(fibreLengths.shape[0]))
         lineCoords = np.rint(fibreLengths[i])
         lineCoords = lineCoords.astype(int)
         print("Line coords: " + str((lineCoords[1], lineCoords[0], lineCoords[3], lineCoords[2])))
