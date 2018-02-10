@@ -1,0 +1,12 @@
+Log file for ..\FibreImages\4 test fibres (25,500 fibre).jpg
+
+Save location: ..\ProcessedData\4 test fibres (25,500 fibre)[2018-02-10_18-29-44]
+Started at: 10220.29763608196s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 16
+# Endpoints: 8

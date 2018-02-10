@@ -1,0 +1,38 @@
+Log file for ..\FibreImages\4 test fibres (25,500 fibre).jpg
+
+Save location: ..\ProcessedData\4 test fibres (25,500 fibre)[2018-02-10_18-36-13]
+Started at: 3.0187439851526095e-07s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 16
+# Endpoints: 8
+Done 1
+Done 2
+Current clock 0.382848281549799s. 0 out of 8 coordinates found.
+Current clock 0.39204096073338573s. 0 out of 8 coordinates found.
+Current clock 0.4012991466614503s. 0 out of 8 coordinates found.
+Current clock 0.4385432024526691s. 4 out of 8 coordinates found.
+Current clock 0.44763354621515916s. 4 out of 8 coordinates found.
+Final: 8 out of 8 coordinates found.
+Lengths checked: 7
+Lengths Found: 4
+
+Drawing found fibres.
+Drawing 1 out of 4
+Line coords: (250, 487, 749, 487)
+Drawing 2 out of 4
+Line coords: (486, 1251, 486, 1750)
+Drawing 3 out of 4
+Line coords: (1312, 675, 1665, 322)
+Drawing 4 out of 4
+Line coords: (1315, 1330, 1668, 1683)
+Drawn found fibres on the image: ..\ProcessedData\4 test fibres (25,500 fibre)[2018-02-10_18-36-13]Drawn Lines.jpg
+
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 0.549726562169825

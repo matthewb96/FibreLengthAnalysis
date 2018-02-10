@@ -39,7 +39,8 @@ def findCorners(imageArray, filename, debug = False):
     arg[1] filename - a string giving the source for where outputs should be saved.
     arg[2] debug - a boolean that will allow extra code to be run for debugging.
     
-    Returns numpy array containing the coordinates for every corner found.
+    Returns a tuple containing two numpy arrays. The first containing the coordinates for every corner found and the second being the orignal image array
+    with the subpixel and centroid points added to it.
     """
     #Harris corner detection
     imageFloat = np.float32(imageArray)
@@ -66,8 +67,7 @@ def findCorners(imageArray, filename, debug = False):
     res = np.int0(res)
     imageArray[res[:,1],res[:,0]]=[0,0,255]
     imageArray[res[:,3],res[:,2]] = [0,255,0]
-    #Save a copy of the orginal image given with the corner positions drawn on
-    cv2.imwrite(filename + " subpix.jpg",imageArray)
+    
           
     if debug: #Plot images for debugging
         #Save images showing Harris corner detection outputs
@@ -99,5 +99,5 @@ def findCorners(imageArray, filename, debug = False):
             print("Debugging images could not be saved. In corners.findCorners().")
         plt.close(img)
 
-    return cornersSubPix
+    return cornersSubPix, imageArray
 

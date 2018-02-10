@@ -13,6 +13,7 @@ import corners
 import lengths
 import sys
 import numpy as np
+import cv2
 
 
 #Variables and Constants
@@ -115,8 +116,13 @@ while numDone <= numAnalyse:
         print("Opened image " + str(numDone) + " out of " + str(numAnalyse))
     
     #Find the corners and then the edges on the image
-    cornersCoords = corners.findCorners(imageGray, saveLocation, DEBUGGING)
+    cornersCoords, subpixArray = corners.findCorners(imageGray, saveLocation, DEBUGGING)
     edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH)
+    
+    #Add the edge positions to the subpixArray and then saved the image
+    subpixArray[np.rint(edgeCoords[:,1]).astype(int) , np.rint(edgeCoords[:, 0]).astype(int)] = np.array([255, 255, 0])
+    #Save a copy of the orginal image given with the corner and edge positions saved on
+    cv2.imwrite(saveLocation + "Corners and Edges.jpg",subpixArray)
     
     #Finding the fibre lengths
     fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
