@@ -66,7 +66,7 @@ def generateImage(fibreWidth, minLength, numFibres, arraySize):
     Returns a tuple containing two numpy arrays, one containing the image array and the other containing the fibre lengths and positions.
     """
     #Inititate the image array with all white pixels
-    imageArray = np.full((arraySize, arraySize), 255)
+    imageArray = np.full((arraySize, arraySize), 255, dtype = np.uint8)
     fibresGen = 0 #Amount of fibres generated
     #Continue generating fibres until enough are generated
     while fibresGen < numFibres:
@@ -75,7 +75,7 @@ def generateImage(fibreWidth, minLength, numFibres, arraySize):
         corner1 = np.random.randint(arraySize, size = 2)
         angle = np.random.randint(360, size = 1)
         lengths = trig(length, angle)
-        corner2 = np.array([(corner1[0] + lengths[0]), (corner1[1] + lengths[1])])
+        corner2 = np.array([corner1[0] + lengths[0], corner1[1] + lengths[1]])
         if np.all(corner2 < arraySize) and np.all(corner2 > 0): 
             #If corner2 is within boundries then generate corner 3 and 4 at 90degrees and the width of the fibre away
             lengths = trig(fibreWidth, angle + 90)
@@ -83,13 +83,16 @@ def generateImage(fibreWidth, minLength, numFibres, arraySize):
             corner4 = np.array([(corner2[0] + lengths[0]), (corner2[1] + lengths[1])])
             if np.all(corner3 < arraySize) and np.all(corner3 > 0) and np.all(corner4 < arraySize) and np.all(corner4 > 0):
                 #If corner 3 and 4 are within boundries then the whole fibre is so it can be drawn
+                #Round all corners to nearest int
+                corner2 = np.rint(corner2).astype(int)
+                corner3 = np.rint(corner3).astype(int)
+                corner4 = np.rint(corner4).astype(int)
                 #Create two arrays containing the coordinates for the rows and the columns
                 rows = np.array([corner1[0], corner3[0], corner4[0], corner2[0]])
                 cols = np.array([corner1[1], corner3[1], corner4[1], corner2[1]])
                 #Returns the coordinates that are part of the polygone (fibre)
                 rr, cc = draw.polygon(rows, cols)
                 imageArray[rr, cc] = 0
-                imageArray = np.uint8(imageArray) #Convert the array to 8 bit for use with openCV functions
                 fibresGen += 1
                 print("Generated " + str(fibresGen) + " out of " + str(numFibres) + " fibres.")
                 
@@ -105,5 +108,6 @@ def trig(length, angle):
     
     Returns a numpy array containing lengths of the other two lines.
     """
-    lengths = np.array([(length * (np.cos(np.deg2rad(angle)))), (length * (np.sin(np.deg2rad(angle))))])
+    lengths = np.array([(length * (np.cos(np.deg2rad(angle))))[0], (length * (np.sin(np.deg2rad(angle))))[0]])
     return lengths
+
