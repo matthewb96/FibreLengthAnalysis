@@ -1,0 +1,1 @@
+# Fibre lengths: [x0, y0, x1, y1, length01, angle01]

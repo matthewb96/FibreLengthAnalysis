@@ -8,6 +8,7 @@ import cv2
 from matplotlib import pyplot as plt
 import numpy as np
 from skimage import draw
+from lengths import midpoint
 
 #Functions
 def openImage(imageSource, debug = False, filename = ""):
@@ -68,6 +69,7 @@ def generateImage(fibreWidth, minLength, numFibres, arraySize):
     #Inititate the image array with all white pixels
     imageArray = np.full((arraySize, arraySize), 255, dtype = np.uint8)
     fibresGen = 0 #Amount of fibres generated
+    fibrePositions = np.array([[0, 0, 0, 0, 0, 0]]) #Initiate array for fibre data [x0, y0, x1, y1, length, angle]
     #Continue generating fibres until enough are generated
     while fibresGen < numFibres:
         #Randomly generate the fibre
@@ -94,9 +96,17 @@ def generateImage(fibreWidth, minLength, numFibres, arraySize):
                 rr, cc = draw.polygon(rows, cols)
                 imageArray[rr, cc] = 0
                 fibresGen += 1
-                print("Generated " + str(fibresGen) + " out of " + str(numFibres) + " fibres.")
                 
-    return imageArray
+                #Find midpoint for fibre data
+                pos1 = midpoint(corner1, corner3)
+                pos2 = midpoint(corner2, corner4)
+                #Add generated fibre position data
+                arrayRow = np.array([pos1[0], pos1[1], pos2[0], pos2[1], length, angle])
+                fibrePositions = np.vstack((fibrePositions, arrayRow))
+                print("Generated " + str(fibresGen) + " out of " + str(numFibres) + " fibres.")
+    
+    fibrePositions = np.delete(fibrePositions, 0, 0)          
+    return imageArray, fibrePositions
 
     
 def trig(length, angle):

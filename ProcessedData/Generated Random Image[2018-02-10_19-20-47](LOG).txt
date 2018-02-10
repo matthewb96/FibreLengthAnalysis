@@ -1,0 +1,60 @@
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Generated Random Image[2018-02-10_19-20-47]
+Started at: 987.3776533250258s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 1
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 993.8309056594205s. 0 out of 20 coordinates found.
+Current clock 994.7290550486078s. 4 out of 20 coordinates found.
+Current clock 994.9602319723627s. 4 out of 20 coordinates found.
+Current clock 996.3182051997261s. 8 out of 20 coordinates found.
+Current clock 997.004430610547s. 12 out of 20 coordinates found.
+Current clock 997.7132576594591s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 13
+Lengths Found: 10
+
+Drawing found fibres.
+Drawing 1 out of 10
+Line coords: (300, 2682, 528, 1981)
+Drawing 2 out of 10
+Line coords: (1269, 3459, 1981, 3347)
+Drawing 3 out of 10
+Line coords: (2911, 4487, 3117, 4576)
+Drawing 4 out of 10
+Line coords: (3019, 5459, 3930, 5299)
+Drawing 5 out of 10
+Line coords: (3145, 4519, 3472, 4280)
+Drawing 6 out of 10
+Line coords: (4569, 7510, 4803, 7546)
+Drawing 7 out of 10
+Line coords: (5120, 1365, 5219, 1193)
+Drawing 8 out of 10
+Line coords: (6245, 4673, 6245, 5224)
+Drawing 9 out of 10
+Line coords: (6362, 3108, 7001, 3540)
+Drawing 10 out of 10
+Line coords: (7792, 3173, 7945, 3135)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_19-20-47] (Random Image 1) Drawn Lines.jpg
+
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 12.442911324999159

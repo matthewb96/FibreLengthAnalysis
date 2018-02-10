@@ -39,7 +39,7 @@ def findLengths(coords, minLength, fibreWidth, imageArray):
      [x0, y0, x2, y2, length02] 
      ...]
     """
-    lineLengths = np.array([[0, 0, 0, 0, 0, 0]]) #For each line in the array [x, y, x1, y1, length]
+    lineLengths = np.array([[0, 0, 0, 0, 0, 0]]) #For each line in the array [x, y, x1, y1, length, angle]
     arrayLength, width = coords.shape #Find length of axis 0
     lengthsChecked = 0
     coordsChecked = np.full(arrayLength, False) #Array corresponding to coords that will be set to true once a corner has been connected so none are found twice

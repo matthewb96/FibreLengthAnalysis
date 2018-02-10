@@ -1,0 +1,63 @@
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Generated Random Image[2018-02-10_19-18-24]
+Started at: 843.6975740769586s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 1
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 849.6159988601223s. 0 out of 20 coordinates found.
+Current clock 849.6162771883177s. 0 out of 20 coordinates found.
+Current clock 849.6163436006854s. 0 out of 20 coordinates found.
+Current clock 850.1885374668391s. 4 out of 20 coordinates found.
+Current clock 850.4203335349854s. 4 out of 20 coordinates found.
+Current clock 850.6515853235912s. 4 out of 20 coordinates found.
+Current clock 851.694730721999s. 8 out of 20 coordinates found.
+Current clock 852.3877178174722s. 12 out of 20 coordinates found.
+Current clock 853.3842091313383s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 13
+Lengths Found: 10
+
+Drawing found fibres.
+Drawing 1 out of 10
+Line coords: (404, 8186, 907, 8829)
+Drawing 2 out of 10
+Line coords: (411, 8120, 477, 8201)
+Drawing 3 out of 10
+Line coords: (1544, 4311, 1840, 4346)
+Drawing 4 out of 10
+Line coords: (1662, 7828, 1846, 7295)
+Drawing 5 out of 10
+Line coords: (1797, 6859, 2142, 6547)
+Drawing 6 out of 10
+Line coords: (2475, 6664, 2614, 6699)
+Drawing 7 out of 10
+Line coords: (3135, 2035, 3700, 2134)
+Drawing 8 out of 10
+Line coords: (4298, 4561, 5209, 4875)
+Drawing 9 out of 10
+Line coords: (6483, 9687, 6716, 9420)
+Drawing 10 out of 10
+Line coords: (7136, 5118, 7653, 5803)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_19-18-24] (Random Image 1) Drawn Lines.jpg
+
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 12.077836804285198

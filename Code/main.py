@@ -51,6 +51,46 @@ def saveImg(filename, overwrite = False):
         return newFilename
 
 
+def checkRandom(fibreLengths, knownPositions):
+    """
+    This function will check the fibre lengths found against the known fibre lengths generated and return a value for the amount correct, incorrect and one away.
+    
+    arg[0] fibreLengths - numpy array containing the found fibre lengths.
+    arg[1] knownPositions - numpy array containing the known positions of fibres.
+    
+    Returns three int values for the correct number of fibres, the incorrect number of fibres and the number of fibres that are one away.
+    """
+    print("Checking found fibres with known fibre positions.")
+    #Convert found angle to degrees
+    fibreLengths[:,5] = np.rad2deg(fibreLengths[:,5])
+    #Round the arrays to int
+    knownPositions = np.rint(knownPositions)
+    fibreLengths = np.rint(fibreLengths)
+    #Sort the two arrays based on length
+    knownPositions = knownPositions[knownPositions[:, 4].argsort()]
+    fibreLengths = fibreLengths[fibreLengths[:, 4].argsort()]
+    
+    #Check the lengths are the same
+    incorrect = 0
+    correct = 0
+    oneAway = 0
+    for i in range(knownPositions.shape[0]):
+        try: #In case not all fibres have been found use try statement so the program doesn't crash
+            if fibreLengths[i, 4] == knownPositions[i, 4]:
+                print("CORRECT: " + str(fibreLengths[i]))
+                correct += 1
+            elif fibreLengths[i, 4] - knownPositions[i, 4] <= 1:
+                print("One away: "+ str(knownPositions[i]) + " Found Data: " + str(fibreLengths[i]))
+                oneAway += 1
+            else:
+                print("INCORRECT: Known Data: " + str(knownPositions[i]) + " Found Data: " + str(fibreLengths[i]))
+                incorrect += 1
+        except:
+            print("There are " + str(knownPositions.shape[0]) + " generated fibres but only " + str(fibreLengths.shape[0]) + 
+                  " have been found. \nCheck the incorrect data given to see what was missed.")
+
+    return correct, incorrect, oneAway 
+
 
 #Get input file
 while True:
@@ -96,6 +136,10 @@ sys.stdout = Logger()
 #Log file info
 if RANDOM:
     print("Log file for " + imageSource + " " + str(numRand) + " images to be generated and analysed.")
+    #Initiate variables for random fibre checks
+    totCorrect = 0
+    totIncorrect = 0
+    totOneAway = 0
 else:
     print("Log file for " + IMAGEFOLDER + imageSource)
 print("\nSave location: " + saveLocation + "\nStarted at: " + str(start) + "s\n")
@@ -108,7 +152,7 @@ while numDone <= numAnalyse:
     print("\n\n***********************************************************************************\nStarting image " + 
           str(numDone) + " out of " + str(numAnalyse))
     if RANDOM:
-        imageGray = inputs.generateImage(FIBRE_WIDTH, MIN_LENGTH, 10, 10000)
+        imageGray, knownPositions = inputs.generateImage(FIBRE_WIDTH, MIN_LENGTH, 10, 10000)
         saveLocation = originalSaveLoc + " (Random Image " + str(numDone) + ") "
         print("Generated random image " + str(numDone) + " out of " + str(numAnalyse) + "\n")
     else:
@@ -131,11 +175,25 @@ while numDone <= numAnalyse:
     #Draw found fibres
     lengths.drawFound(fibreLengths, imageGray, saveLocation)
     
+    #If randomly generated image check found fibres against known fibre positions
+    if RANDOM:
+        correct, incorrect, oneAway = checkRandom(fibreLengths, knownPositions)
+        #Print the data found
+        print("Found " + str(incorrect) + " incorrect fibres and " + str(correct) + " correct fibres and " + str(oneAway) + " fibres that are one away.")
+        #Add to the total numbers
+        totCorrect += correct
+        totIncorrect += incorrect
+        totOneAway += oneAway
+        
     #Update number done
     print("Analysed image " + str(numDone) + " out of " + str(numAnalyse) + 
           "\n***********************************************************************************")
     numDone += 1
 
+#Print values for generated image checks
+if RANDOM:
+    print("A total of " + str(totCorrect) + " correct fibres have been found, with " + str(totOneAway) + " fibres only one away. " 
+          + str(totIncorrect) + " have been incorrectly found.")
 
 #Finished
 end = time.clock()
