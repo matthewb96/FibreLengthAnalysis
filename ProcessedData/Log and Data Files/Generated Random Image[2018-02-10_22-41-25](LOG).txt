@@ -1,0 +1,75 @@
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Generated Random Image[2018-02-10_22-41-25]
+Started at: 4616.595876516466s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 1
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 4622.232802215517s. 0 out of 20 coordinates found.
+Current clock 4623.02815793827s. 4 out of 20 coordinates found.
+Current clock 4623.700364302024s. 8 out of 20 coordinates found.
+Current clock 4623.927054164719s. 8 out of 20 coordinates found.
+Current clock 4624.899757172234s. 12 out of 20 coordinates found.
+Current clock 4625.8184642079605s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 12
+Lengths Found: 10
+
+Drawing found fibres.
+Drawing 1 out of 10
+Line coords: (57, 1095, 342, 1876)
+Drawing 2 out of 10
+Line coords: (1080, 340, 1340, 80)
+Drawing 3 out of 10
+Line coords: (1433, 7253, 1676, 7305)
+Drawing 4 out of 10
+Line coords: (1675, 3628, 2045, 3603)
+Drawing 5 out of 10
+Line coords: (2807, 4308, 2858, 4906)
+Drawing 6 out of 10
+Line coords: (2834, 8974, 2902, 8791)
+Drawing 7 out of 10
+Line coords: (2858, 3484, 3080, 3049)
+Drawing 8 out of 10
+Line coords: (3717, 2959, 4382, 3328)
+Drawing 9 out of 10
+Line coords: (5954, 3493, 6368, 3514)
+Drawing 10 out of 10
+Line coords: (8106, 4233, 8627, 3762)
+Drawn found fibres on the image: ..\ProcessedData\Generated Random Image[2018-02-10_22-41-25] (Random Image 1) Drawn Lines.jpg
+
+Checking found fibres with known fibre positions.
+CORRECT: [ 8974.  2834.  8791.  2902.   195.    70.]
+One away: [ 1676.  7305.  1433.  7253.   249.   192.] Found Data: [ 7253.  1433.  7305.  1676.   248.    12.]
+CORRECT: [  340.  1080.    80.  1340.   368.    45.]
+CORRECT: [ 3628.  1675.  3603.  2045.   371.     4.]
+One away: [  5.95400000e+03   3.49200000e+03   6.36800000e+03   3.51400000e+03
+   4.16000000e+02   3.00000000e+00] Found Data: [  3.49300000e+03   5.95400000e+03   3.51400000e+03   6.36800000e+03
+   4.15000000e+02   3.00000000e+00]
+CORRECT: [ 3484.  2858.  3049.  3080.   488.    63.]
+CORRECT: [ 4308.  2807.  4906.  2858.   600.    85.]
+CORRECT: [ 4233.  8106.  3762.  8627.   702.    42.]
+CORRECT: [ 2959.  3717.  3328.  4382.   761.    29.]
+One away: [   58.  1094.   342.  1876.   832.    70.] Found Data: [ 1095.    57.  1876.   342.   831.    70.]
+Found 0 incorrect fibres and 7 correct fibres and 3 fibres that are one away.
+Analysed image 1 out of 1
+***********************************************************************************
+A total of 7 correct fibres have been found, with 3 fibres only one away. 0 have been incorrectly found.
+
+Time taken: 11.474813713308322
