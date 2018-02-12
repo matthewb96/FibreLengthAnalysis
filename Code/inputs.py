@@ -67,6 +67,8 @@ def generateImage(fibreWidth, minLength, numFibres, arraySize):
     Returns a tuple containing two numpy arrays, one containing the image array and the other containing the fibre lengths and positions.
     """
     #Inititate the image array with all white pixels
+    print("Generating random image with " + str(numFibres) + " fibres and an array size of " + str(arraySize) + 
+          " pixels.\n The fibre widths are " + str(fibreWidth) + " with lengths between " + str(minLength) + " and " + str(minLength*10) + " pixels.")
     imageArray = np.full((arraySize, arraySize), 255, dtype = np.uint8)
     fibresGen = 0 #Amount of fibres generated
     fibrePositions = np.array([[0, 0, 0, 0, 0, 0]]) #Initiate array for fibre data [x0, y0, x1, y1, length, angle]
