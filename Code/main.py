@@ -132,18 +132,28 @@ saveName = saveImg(imageSource, OVERWRITE)
 #This class will allow the stdout to be duplicated into the log file so it is also seen in the terminal
 #This piece of code was found online at https://stackoverflow.com/questions/616645/how-do-i-duplicate-sys-stdout-to-a-log-file-in-python and edited
 class Logger(object):
-    def __init__(self):
+    def __init__(self, standard):
+        self.type = standard
         self.terminal = sys.stdout
-        self.log = open(PROCESSEDDATA + saveName + "(LOG).txt", "w")
+        if self.type == "Out":
+            self.log = open(PROCESSEDDATA + saveName + "(LOG).txt", "w")
 
     def write(self, message):
         self.terminal.write(message)
-        self.log.write(message)
-
+        if self.type == "Out":
+            self.log.write(message)
+        
+    def flush(self):
+        self.terminal.flush()
+        if self.type == "Out":
+            self.log.flush()
+        
 orignalOut = sys.stdout
-sys.stdout = Logger()
+originalErr = sys.stderr
+sys.stdout = Logger("Out")
+sys.stderr = Logger("Error")
 
- 
+
 #Log file info
 if RANDOM:
     print("Log file for " + imageSource + " " + str(numRand) + " images to be generated and analysed.")
@@ -154,6 +164,8 @@ if RANDOM:
 else:
     print("Log file for " + IMAGEFOLDER + imageSource)
 print("\nSave location: " + PROCESSEDIMAGES + saveName + "\nStarted at: " + str(start) + "s\n")
+
+raise Exception("poo", "error")
 
 #Loop to allow mulitple images to be analysed at without extra input
 numDone = 1
@@ -221,3 +233,4 @@ print("\nTime taken: " + str(end-start))
 
 #Set standard out back to its original
 sys.stdout = orignalOut
+sys.stderr = originalErr

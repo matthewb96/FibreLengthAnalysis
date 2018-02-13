@@ -1,0 +1,5 @@
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-13_13-09-23]
+Started at: 1037.5040191460357s
+
