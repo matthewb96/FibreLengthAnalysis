@@ -2,7 +2,6 @@
 """
 @author: Matthew
 This main file will control all other modules. 
-At the minute most of the code is for testing what works and what doesn't.
 """
 #All the imported modules
 import os
@@ -27,7 +26,7 @@ OVERWRITE = False
 FIBRE_WIDTH = 25 #fibre width
 MIN_LENGTH = 4 * FIBRE_WIDTH #Minimum fibre length minimum ratio is approximately 4:1
 #Varibles for random generated images
-randArraySize = 10000
+randArraySize = 1000
 randFibreNum = 10
 
 
@@ -85,7 +84,7 @@ def checkRandom(fibreLengths, knownPositions, incorrectFile):
             if fibreLengths[i, 4] == knownPositions[i, 4]:
                 print("CORRECT: " + str(fibreLengths[i]))
                 correct += 1
-            elif fibreLengths[i, 4] - knownPositions[i, 4] <= 1:
+            elif abs(fibreLengths[i, 4] - knownPositions[i, 4]) <= 1:
                 print("One away: "+ str(knownPositions[i]) + " Found Data: " + str(fibreLengths[i]))
                 oneAway += 1
             else:
@@ -131,7 +130,7 @@ saveName = saveImg(imageSource, OVERWRITE)
 
 #Redirecting Standard output of python terminal to a log file
 #This class will allow the stdout to be duplicated into the log file so it is also seen in the terminal
-#This piece of code was found online at stackoverflow.com by Jacob Gabrielson
+#This piece of code was found online at https://stackoverflow.com/questions/616645/how-do-i-duplicate-sys-stdout-to-a-log-file-in-python and edited
 class Logger(object):
     def __init__(self):
         self.terminal = sys.stdout
@@ -139,11 +138,12 @@ class Logger(object):
 
     def write(self, message):
         self.terminal.write(message)
-        self.log.write(message)  
-        
-orignal = sys.stdout
+        self.log.write(message)
+
+orignalOut = sys.stdout
 sys.stdout = Logger()
 
+ 
 #Log file info
 if RANDOM:
     print("Log file for " + imageSource + " " + str(numRand) + " images to be generated and analysed.")
@@ -193,7 +193,7 @@ while numDone <= numAnalyse:
             #If there is incorrect data in this image then state the image number
             if incorrect != 0: 
                 incorrectFile.write("Incorrect Data for Random Image " + str(numDone) + 
-                                    "\n\n************************************************")
+                                    "\n\n************************************************\n")
 
         #Print the data found
         print("Found " + str(incorrect) + " incorrect fibres and " + str(correct) + " correct fibres and " + str(oneAway) + " fibres that are one away.")
@@ -220,4 +220,4 @@ end = time.clock()
 print("\nTime taken: " + str(end-start))
 
 #Set standard out back to its original
-sys.stdout = orignal
+sys.stdout = orignalOut

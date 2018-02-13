@@ -1,0 +1,103 @@
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-13_12-16-45]
+Started at: 651.6713347404672s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Generating random image with 10 fibres and an array size of 1000 pixels.
+The fibre widths are 25 with lengths between 100 and 1000 pixels.
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 1
+
+# Corners Found: 45
+# Endpoints: 20
+Current clock 651.7583851449175s. 0 out of 20 coordinates found.
+Current clock 651.7614808593981s. 0 out of 20 coordinates found.
+Current clock 651.7638762269655s. 0 out of 20 coordinates found.
+Current clock 651.7661384682447s. 0 out of 20 coordinates found.
+Current clock 651.7683913514401s. 0 out of 20 coordinates found.
+Current clock 651.7706418196461s. 0 out of 20 coordinates found.
+Current clock 651.7728904766102s. 0 out of 20 coordinates found.
+Current clock 651.7763590050727s. 0 out of 20 coordinates found.
+Current clock 651.7786206426046s. 0 out of 20 coordinates found.
+Current clock 651.7808729220526s. 0 out of 20 coordinates found.
+Current clock 651.7831218808903s. 0 out of 20 coordinates found.
+Current clock 651.785369028486s. 0 out of 20 coordinates found.
+Current clock 651.8075630825407s. 4 out of 20 coordinates found.
+Current clock 651.8076959069552s. 4 out of 20 coordinates found.
+Current clock 651.8077402823847s. 4 out of 20 coordinates found.
+Current clock 651.8077783184671s. 4 out of 20 coordinates found.
+Current clock 651.8100456915986s. 4 out of 20 coordinates found.
+Current clock 651.8123773638217s. 4 out of 20 coordinates found.
+Current clock 651.8146764336886s. 4 out of 20 coordinates found.
+Current clock 651.8169727866924s. 4 out of 20 coordinates found.
+Current clock 651.8479290258779s. 8 out of 20 coordinates found.
+Current clock 651.8502247751343s. 8 out of 20 coordinates found.
+Current clock 651.8524842995505s. 8 out of 20 coordinates found.
+Current clock 651.854930683768s. 8 out of 20 coordinates found.
+Current clock 651.8572699028329s. 8 out of 20 coordinates found.
+Current clock 651.8595946319616s. 8 out of 20 coordinates found.
+Current clock 651.8618958149442s. 8 out of 20 coordinates found.
+Current clock 651.8642585801553s. 8 out of 20 coordinates found.
+Current clock 651.86768122382s. 8 out of 20 coordinates found.
+Current clock 651.8701218724378s. 8 out of 20 coordinates found.
+Current clock 651.8727741344981s. 8 out of 20 coordinates found.
+Current clock 651.8752428573671s. 8 out of 20 coordinates found.
+Current clock 651.8777725587174s. 8 out of 20 coordinates found.
+Current clock 651.8801039290669s. 8 out of 20 coordinates found.
+Current clock 651.8824011876918s. 8 out of 20 coordinates found.
+Current clock 651.9015058666129s. 12 out of 20 coordinates found.
+Current clock 651.9038770842867s. 12 out of 20 coordinates found.
+Final: 14 out of 20 coordinates found.
+Lengths checked: 64
+Lengths Found: 7
+
+Drawing found fibres.
+Drawing 1 out of 7
+Line coords: (63, 217, 397, 39)
+Drawing 2 out of 7
+Line coords: (105, 453, 376, 584)
+Drawing 3 out of 7
+Line coords: (118, 130, 383, 181)
+Drawing 4 out of 7
+Line coords: (151, 57, 180, 271)
+Drawing 5 out of 7
+Line coords: (254, 734, 591, 689)
+Drawing 6 out of 7
+Line coords: (275, 496, 605, 799)
+Drawing 7 out of 7
+Line coords: (378, 754, 572, 489)
+Drawn found fibres on the image: ..\ProcessedData\Images\Generated Random Image[2018-02-13_12-16-45] (Random Image 1) Drawn Lines.jpg
+
+Checking found fibres with known fibre positions.
+INCORRECT: Known Data: [ 606.  800.  604.  681.  119.  269.] Found Data: [  57.  151.  271.  180.  216.   82.]
+INCORRECT: Known Data: [ 374.  586.  274.  496.  134.  222.] Found Data: [ 130.  118.  181.  383.  271.   11.]
+INCORRECT: Known Data: [ 254.  734.  214.  528.  211.  259.] Found Data: [ 453.  105.  584.  376.  301.   26.]
+INCORRECT: Known Data: [ 180.  272.  150.   58.  216.  262.] Found Data: [ 754.  378.  489.  572.  329.   54.]
+INCORRECT: Known Data: [ 384.  182.  118.  130.  271.  191.] Found Data: [ 734.  254.  689.  591.  340.    8.]
+INCORRECT: Known Data: [ 772.  784.  492.  670.  302.  202.] Found Data: [ 217.   63.   39.  397.  378.   28.]
+INCORRECT: Known Data: [ 470.  332.  298.  588.  309.  124.] Found Data: [ 496.  275.  799.  605.  449.   43.]
+There are 10 generated fibres but only 7 have been found. 
+Check the incorrect data given to see what was missed.
+There are 10 generated fibres but only 7 have been found. 
+Check the incorrect data given to see what was missed.
+There are 10 generated fibres but only 7 have been found. 
+Check the incorrect data given to see what was missed.
+Found 7 incorrect fibres and 0 correct fibres and 0 fibres that are one away.
+Analysed image 1 out of 1
+***********************************************************************************
+A total of 0 correct fibres have been found, with 0 fibres only one away. 7 have been incorrectly found.
+
+Time taken: 0.279898775721108

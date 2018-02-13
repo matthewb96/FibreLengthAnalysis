@@ -1,0 +1,9 @@
+INCORRECT: Known Data: [ 960.  486.  376.  558.  588.  173.] Found Data: [ 954.  183.  932.  776.  594.    2.]
+INCORRECT: Known Data: [ 183.  954.  877.  942.  694.  359.] Found Data: [  840.    71.   227.   971.  1089.    34.]
+There are 10 generated fibres but only 8 have been found. 
+Check the incorrect data given to see what was missed.
+There are 10 generated fibres but only 8 have been found. 
+Check the incorrect data given to see what was missed.
+Incorrect Data for Random Image 1
+
+************************************************
