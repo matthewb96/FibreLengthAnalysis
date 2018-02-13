@@ -26,7 +26,7 @@ OVERWRITE = False
 FIBRE_WIDTH = 25 #fibre width
 MIN_LENGTH = 4 * FIBRE_WIDTH #Minimum fibre length minimum ratio is approximately 4:1
 #Varibles for random generated images
-randArraySize = 1000
+randArraySize = 10000
 randFibreNum = 10
 
 
@@ -166,7 +166,6 @@ else:
     print("Log file for " + IMAGEFOLDER + imageSource)
 print("\nSave location: " + PROCESSEDIMAGES + saveName + "\nStarted at: " + str(start) + "s\n")
 
-raise Exception("poo", "error")
 
 #Loop to allow mulitple images to be analysed at without extra input
 numDone = 1

@@ -41,3 +41,37 @@ plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres (per image)")
 plt.title("Graph showing the data for 100 random images\nbefore fixing the one away check")
 plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
 graph.show()
+
+#Data for the 100 random image tests after fixing the one away check 
+#10 fibres per image between 100-1000 pixels long and 25 pixels wide
+#[Array Size, correct, one away, incorrect]
+dataNew = np.array([[10000, 720, 221, 59],
+                     [9000, 665, 213, 122],
+                     [8000, 669, 271, 60],
+                     [7000, 626, 242, 132],
+                     [6000, 671, 223, 106],
+                     [5000, 652, 184, 164],
+                     [4000, 593, 225, 182],
+                     [3000, 417, 135, 448],
+                     [2500, 355, 125, 520],
+                     [2000, 267, 114, 619],
+                     [1500, 187, 64, 749],
+                     [1000, 105, 50, 845]
+                     ])
+    
+#Checking the total fibres
+for i in range(dataNew.shape[0]):
+    totFibres = np.sum(dataNew[i, 1:])
+    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataOrig[i, 1:])))
+
+#Plot the graph
+labels = ("Correct", "One Away", "Incorrect")
+graph = plt.figure()
+[y1, y2, y3] = plt.plot(dataNew[:, 0], dataNew[:, 1:])
+plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres (per image)")
+plt.title("Graph showing the data for 100 random images\nafter fixing the one away check")
+plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
+graph.show()
+
+
+
