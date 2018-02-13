@@ -1,0 +1,332 @@
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-13_13-08-22]
+Started at: 976.1443626299717s
+
+[4;33mReloaded modules[24m: inputs, lengths, corners[0m
+Generating and analysing 1 random images.
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-13_13-09-23]
+Started at: 1037.5040191460357s
+
+[4;33mReloaded modules[24m: inputs, lengths, corners[0m
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+10996
+9993
+8983
+7986
+6971
+5976
+4971
+3935
+3425
+2869
+2319
+1776
+10996
+9993
+8983
+7986
+6971
+5976
+4971
+3935
+3425
+2869
+2319
+1776
+996
+993
+983
+986
+971
+976
+971
+935
+925
+869
+819
+776
+996
+993
+983
+986
+971
+976
+971
+935
+925
+869
+819
+776
+Total fibres: 996
+[[10000   698   271    31]
+ [ 9000   703   255    35]
+ [ 8000   675   281    27]
+ [ 7000   680   270    36]
+ [ 6000   629   272    70]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 993
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    27]
+ [ 7000   680   270    36]
+ [ 6000   629   272    70]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 983
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    36]
+ [ 6000   629   272    70]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 986
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    70]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 971
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 976
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 971
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 935
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 925
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   256]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 869
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   256]
+ [ 2000   222   338   440]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 819
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   256]
+ [ 2000   222   338   440]
+ [ 1500   190   378   432]
+ [ 1000   128   322   326]]
+Total fibres: 776
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   256]
+ [ 2000   222   338   440]
+ [ 1500   190   378   432]
+ [ 1000   128   322   550]]
+Total fibres: 996
+[10000   698   271    31]
+Total fibres: 993
+[9000  703  255   42]
+Total fibres: 983
+[8000  675  281   44]
+Total fibres: 986
+[7000  680  270   50]
+Total fibres: 971
+[6000  629  272   99]
+Total fibres: 976
+[5000  620  269  111]
+Total fibres: 971
+[4000  540  327  133]
+Total fibres: 935
+[3000  505  263  232]
+Total fibres: 925
+[2500  442  302  256]
+Total fibres: 869
+[2000  222  338  440]
+Total fibres: 819
+[1500  190  378  432]
+Total fibres: 776
+[1000  128  322  550]
+Total fibres: 996
+1000
+Total fibres: 993
+1000
+Total fibres: 983
+1000
+Total fibres: 986
+1000
+Total fibres: 971
+1000
+Total fibres: 976
+1000
+Total fibres: 971
+1000
+Total fibres: 935
+1000
+Total fibres: 925
+1000
+Total fibres: 869
+1000
+Total fibres: 819
+1000
+Total fibres: 776
+1000
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000

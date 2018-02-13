@@ -169,3 +169,501 @@ Drawing 4 out of 8
 Line coords: (507, 894, 666, 822)
 Drawing 5 out of 8
 Line coords: (647, 649, 852, 849)
+Drawing 6 out of 8
+Line coords: (701, 26, 776, 206)
+Drawing 7 out of 8
+Line coords: (790, 666, 909, 684)
+Drawing 8 out of 8
+Line coords: (873, 309, 979, 983)
+Drawn found fibres on the image: ..\ProcessedData\Images\Generated Random Image[2018-02-13_12-59-09] (Random Image 1) Drawn Lines.jpg
+
+Checking found fibres with known fibre positions.
+One away: [ 790.  666.  910.  682.  122.    8.] Found Data: [ 666.  790.  684.  909.  121.    9.]
+CORRECT: [ 546.  135.  594.  250.  125.   22.]
+INCORRECT: Known Data: [ 666.  822.  507.  894.  174.  156.] Found Data: [  90.  290.   79.  462.  172.    4.]
+INCORRECT: Known Data: [ 776.  206.  698.   33.  189.  246.] Found Data: [ 894.  507.  822.  666.  174.   24.]
+INCORRECT: Known Data: [ 852.  849.  647.  650.  286.  224.] Found Data: [  26.  701.  206.  776.  195.   68.]
+INCORRECT: Known Data: [ 506.  444.  616.  171.  294.  292.] Found Data: [ 649.  647.  849.  852.  286.   44.]
+INCORRECT: Known Data: [ 268.  500.  470.  188.  371.  303.] Found Data: [ 443.  506.  171.  617.  294.   68.]
+INCORRECT: Known Data: [ 702.   32.  290.   90.  416.  172.] Found Data: [ 309.  873.  983.  979.  682.   81.]
+There are 10 generated fibres but only 8 have been found. 
+Check the incorrect data given to see what was missed.
+There are 10 generated fibres but only 8 have been found. 
+Check the incorrect data given to see what was missed.
+Found 6 incorrect fibres and 1 correct fibres and 1 fibres that are one away.
+Analysed image 1 out of 1
+***********************************************************************************
+A total of 1 correct fibres have been found, with 1 fibres only one away. 6 have been incorrectly found.
+
+Time taken: 0.22072489528000006
+[4;33mReloaded modules[24m: inputs, lengths, corners[0m
+Generating and analysing 1 random images.
+[4;33mReloaded modules[24m: inputs, lengths, corners[0m
+Generating and analysing 1 random images.
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-13_13-06-28]
+Started at: 862.4240748477652s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Generating random image with 10 fibres and an array size of 1000 pixels.
+The fibre widths are 25 with lengths between 100 and 1000 pixels.
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 1
+
+# Corners Found: 50
+# Endpoints: 21
+Current clock 862.517024165591s. 0 out of 21 coordinates found.
+Current clock 862.519692125082s. 0 out of 21 coordinates found.
+Current clock 862.5220980582278s. 0 out of 21 coordinates found.
+Current clock 862.5244867845745s. 0 out of 21 coordinates found.
+Current clock 862.5267550633271s. 0 out of 21 coordinates found.
+Current clock 862.5290061352805s. 0 out of 21 coordinates found.
+Current clock 862.558763935998s. 4 out of 21 coordinates found.
+Current clock 862.5611100981572s. 4 out of 21 coordinates found.
+Current clock 862.5634269785706s. 4 out of 21 coordinates found.
+Current clock 862.5657550283097s. 4 out of 21 coordinates found.
+Current clock 862.5680634562603s. 4 out of 21 coordinates found.
+Current clock 862.5704733137638s. 4 out of 21 coordinates found.
+Current clock 862.5728212871652s. 4 out of 21 coordinates found.
+Current clock 862.5762276296517s. 4 out of 21 coordinates found.
+Current clock 862.5785378688444s. 4 out of 21 coordinates found.
+Current clock 862.5808447874266s. 4 out of 21 coordinates found.
+Current clock 862.5831710259237s. 4 out of 21 coordinates found.
+Current clock 862.5854966606735s. 4 out of 21 coordinates found.
+Current clock 862.588020626424s. 4 out of 21 coordinates found.
+Current clock 862.5903411293215s. 4 out of 21 coordinates found.
+Current clock 862.5926540853771s. 4 out of 21 coordinates found.
+Current clock 862.601657165696s. 8 out of 21 coordinates found.
+Current clock 862.6039185013542s. 8 out of 21 coordinates found.
+Current clock 862.6061689695603s. 8 out of 21 coordinates found.
+Current clock 862.6084146077876s. 8 out of 21 coordinates found.
+Current clock 862.610660246015s. 8 out of 21 coordinates found.
+Current clock 862.6291937799534s. 12 out of 21 coordinates found.
+Current clock 862.632961767096s. 12 out of 21 coordinates found.
+Final: 14 out of 21 coordinates found.
+Lengths checked: 56
+Lengths Found: 7
+
+Drawing found fibres.
+Drawing 1 out of 7
+Line coords: (34, 33, 374, 118)
+Drawing 2 out of 7
+Line coords: (246, 599, 743, 349)
+Drawing 3 out of 7
+Line coords: (274, 224, 790, 600)
+Drawing 4 out of 7
+Line coords: (333, 344, 339, 807)
+Drawing 5 out of 7
+Line coords: (346, 338, 638, 579)
+Drawing 6 out of 7
+Line coords: (456, 93, 748, 143)
+Drawing 7 out of 7
+Line coords: (540, 6, 620, 637)
+Drawn found fibres on the image: ..\ProcessedData\Images\Generated Random Image[2018-02-13_13-06-28] (Random Image 1) Drawn Lines.jpg
+
+Checking found fibres with known fibre positions.
+INCORRECT: Known Data: [ 620.  637.  602.  848.  212.   95.] Found Data: [  93.  456.  143.  748.  296.   10.]
+INCORRECT: Known Data: [ 590.  710.  746.  924.  266.   54.] Found Data: [  33.   34.  118.  374.  350.   14.]
+INCORRECT: Known Data: [ 768.   65.  742.  349.  285.   95.] Found Data: [ 338.  346.  579.  638.  379.   40.]
+INCORRECT: Known Data: [ 374.  118.   34.   33.  350.  194.] Found Data: [ 344.  333.  807.  339.  463.   89.]
+INCORRECT: Known Data: [ 456.   92.  827.  158.  377.   10.] Found Data: [ 599.  246.  349.  743.  556.   27.]
+INCORRECT: Known Data: [ 246.  599.  583.  404.  389.  330.] Found Data: [   6.  540.  637.  620.  636.   83.]
+INCORRECT: Known Data: [ 596.  412.  540.    6.  410.  262.] Found Data: [ 224.  274.  600.  790.  639.   36.]
+There are 10 generated fibres but only 7 have been found. 
+Check the incorrect data given to see what was missed.
+There are 10 generated fibres but only 7 have been found. 
+Check the incorrect data given to see what was missed.
+There are 10 generated fibres but only 7 have been found. 
+Check the incorrect data given to see what was missed.
+Found 7 incorrect fibres and 0 correct fibres and 0 fibres that are one away.
+Analysed image 1 out of 1
+***********************************************************************************
+A total of 0 correct fibres have been found, with 0 fibres only one away. 7 have been incorrectly found.
+
+Time taken: 0.27372244044329364
+[4;33mReloaded modules[24m: inputs, lengths, corners[0m
+Generating and analysing 1 random images.
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-13_13-08-22]
+Started at: 976.1443626299717s
+
+[4;33mReloaded modules[24m: inputs, lengths, corners[0m
+Generating and analysing 1 random images.
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-13_13-09-23]
+Started at: 1037.5040191460357s
+
+[4;33mReloaded modules[24m: inputs, lengths, corners[0m
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+70200
+10996
+9993
+8983
+7986
+6971
+5976
+4971
+3935
+3425
+2869
+2319
+1776
+10996
+9993
+8983
+7986
+6971
+5976
+4971
+3935
+3425
+2869
+2319
+1776
+996
+993
+983
+986
+971
+976
+971
+935
+925
+869
+819
+776
+996
+993
+983
+986
+971
+976
+971
+935
+925
+869
+819
+776
+Total fibres: 996
+[[10000   698   271    31]
+ [ 9000   703   255    35]
+ [ 8000   675   281    27]
+ [ 7000   680   270    36]
+ [ 6000   629   272    70]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 993
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    27]
+ [ 7000   680   270    36]
+ [ 6000   629   272    70]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 983
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    36]
+ [ 6000   629   272    70]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 986
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    70]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 971
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269    87]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 976
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   104]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 971
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   167]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 935
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   181]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 925
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   256]
+ [ 2000   222   338   309]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 869
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   256]
+ [ 2000   222   338   440]
+ [ 1500   190   378   251]
+ [ 1000   128   322   326]]
+Total fibres: 819
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   256]
+ [ 2000   222   338   440]
+ [ 1500   190   378   432]
+ [ 1000   128   322   326]]
+Total fibres: 776
+[[10000   698   271    31]
+ [ 9000   703   255    42]
+ [ 8000   675   281    44]
+ [ 7000   680   270    50]
+ [ 6000   629   272    99]
+ [ 5000   620   269   111]
+ [ 4000   540   327   133]
+ [ 3000   505   263   232]
+ [ 2500   442   302   256]
+ [ 2000   222   338   440]
+ [ 1500   190   378   432]
+ [ 1000   128   322   550]]
+Total fibres: 996
+[10000   698   271    31]
+Total fibres: 993
+[9000  703  255   42]
+Total fibres: 983
+[8000  675  281   44]
+Total fibres: 986
+[7000  680  270   50]
+Total fibres: 971
+[6000  629  272   99]
+Total fibres: 976
+[5000  620  269  111]
+Total fibres: 971
+[4000  540  327  133]
+Total fibres: 935
+[3000  505  263  232]
+Total fibres: 925
+[2500  442  302  256]
+Total fibres: 869
+[2000  222  338  440]
+Total fibres: 819
+[1500  190  378  432]
+Total fibres: 776
+[1000  128  322  550]
+Total fibres: 996
+1000
+Total fibres: 993
+1000
+Total fibres: 983
+1000
+Total fibres: 986
+1000
+Total fibres: 971
+1000
+Total fibres: 976
+1000
+Total fibres: 971
+1000
+Total fibres: 935
+1000
+Total fibres: 925
+1000
+Total fibres: 869
+1000
+Total fibres: 819
+1000
+Total fibres: 776
+1000
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Total fibres: 996 New total: 1000
+Total fibres: 993 New total: 1000
+Total fibres: 983 New total: 1000
+Total fibres: 986 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 976 New total: 1000
+Total fibres: 971 New total: 1000
+Total fibres: 935 New total: 1000
+Total fibres: 925 New total: 1000
+Total fibres: 869 New total: 1000
+Total fibres: 819 New total: 1000
+Total fibres: 776 New total: 1000
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "

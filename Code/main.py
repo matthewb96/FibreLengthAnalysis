@@ -94,9 +94,10 @@ def checkRandom(fibreLengths, knownPositions, incorrectFile):
                 incorrect += 1
         except:
             string = ("There are " + str(knownPositions.shape[0]) + " generated fibres but only " + str(fibreLengths.shape[0]) + 
-                  " have been found. \nCheck the incorrect data given to see what was missed.")
+                  " have been found.")
             print(string)
             incorrectFile.write(string + "\n")
+            incorrect += 1
 
     return correct, incorrect, oneAway 
 
