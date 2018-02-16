@@ -26,7 +26,7 @@ OVERWRITE = False
 FIBRE_WIDTH = 25 #fibre width
 MIN_LENGTH = 4 * FIBRE_WIDTH #Minimum fibre length minimum ratio is approximately 4:1
 #Varibles for random generated images
-randArraySize = 10000
+randArraySize = 2000
 randFibreNum = 10
 
 
@@ -79,15 +79,35 @@ def checkRandom(fibreLengths, knownPositions, incorrectFile):
     incorrect = 0
     correct = 0
     oneAway = 0
+    diff = knownPositions.shape[0] - fibreLengths.shape[0]
     for i in range(knownPositions.shape[0]):
         try: #In case not all fibres have been found use try statement so the program doesn't crash
             if fibreLengths[i, 4] == knownPositions[i, 4]:
                 print("CORRECT: " + str(fibreLengths[i]))
                 correct += 1
             elif abs(fibreLengths[i, 4] - knownPositions[i, 4]) <= 1:
-                print("One away: "+ str(knownPositions[i]) + " Found Data: " + str(fibreLengths[i]))
+                print("One away: Known Data: "+ str(knownPositions[i]) + " Found Data: " + str(fibreLengths[i]))
                 oneAway += 1
             else:
+                #If there are less fibres found than generated loop through all the missing fibres and check
+                if diff > 0:
+                    found = False
+                    for j in range(diff):
+                        j += 1
+                        #Check if next one is correct then break 
+                        if fibreLengths[i, 4] == knownPositions[i + j, 4]:
+                            print("CORRECT: " + str(fibreLengths[i]) + " Skipped " + str(j))
+                            correct += 1
+                            found = True
+                            break
+                        elif abs(fibreLengths[i, 4] - knownPositions[i + j, 4]) <= 1:
+                            print("One away: Known Data: "+ str(knownPositions[i + j]) + " Found Data: " + str(fibreLengths[i]) + " Skipped " + str(j))
+                            oneAway += 1
+                            found = True
+                            break
+                    if found:
+                        continue 
+                #Fibre is incorrect      
                 string = "INCORRECT: Known Data: " + str(knownPositions[i]) + " Found Data: " + str(fibreLengths[i])
                 print(string)
                 incorrectFile.write(string + "\n")
