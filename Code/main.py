@@ -26,7 +26,7 @@ OVERWRITE = False
 FIBRE_WIDTH = 25 #fibre width
 MIN_LENGTH = 4 * FIBRE_WIDTH #Minimum fibre length minimum ratio is approximately 4:1
 #Varibles for random generated images
-randArraySize = 2000
+randArraySize = 1000
 randFibreNum = 10
 
 

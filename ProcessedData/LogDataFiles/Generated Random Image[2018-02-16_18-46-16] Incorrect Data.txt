@@ -1,0 +1,379 @@
+INCORRECT: Known Data: [ 2238.  1764.  1658.  1662.   589.   190.] Found Data: [ 1667.  1685.  1764.  2238.   562.    10.]
+Incorrect Data for Random Image 1
+
+************************************************
+INCORRECT: Known Data: [  243.   451.   549.  1026.   651.    62.] Found Data: [ 106.  144.  409.  895.  810.   22.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 2
+
+************************************************
+INCORRECT: Known Data: [ 1592.  2334.  1204.  2168.   422.   203.] Found Data: [ 1230.  2113.  1471.  2802.   730.    19.]
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 3
+
+************************************************
+INCORRECT: Known Data: [ 1700.  2782.  1184.  2728.   519.   186.] Found Data: [ 1070.   640.   610.   935.   546.    57.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 6
+
+************************************************
+INCORRECT: Known Data: [ 1634.  2920.   783.  2890.   852.   182.] Found Data: [ 1954.   272.  1462.   974.   857.    35.]
+Incorrect Data for Random Image 7
+
+************************************************
+INCORRECT: Known Data: [ 1299.  1864.   754.  2107.   596.   156.] Found Data: [  6.97000000e+02   1.33200000e+03   7.21000000e+02   2.10400000e+03
+   7.73000000e+02   2.00000000e+00]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 8
+
+************************************************
+INCORRECT: Known Data: [  446.  1045.   232.   839.   297.   224.] Found Data: [ 2242.  1968.  2453.  2123.   262.    54.]
+INCORRECT: Known Data: [ 1471.  2805.  1762.  2905.   308.    19.] Found Data: [  838.   232.  1045.   445.   297.    44.]
+INCORRECT: Known Data: [ 1962.  2136.  1707.  2409.   374.   133.] Found Data: [ 2431.  1716.  2260.  1966.   303.    34.]
+INCORRECT: Known Data: [ 1462.  2646.  1028.  2562.   441.   191.] Found Data: [ 2805.  1471.  2905.  1762.   307.    19.]
+INCORRECT: Known Data: [  566.   962.   448.  1572.   621.   101.] Found Data: [ 2454.  1724.  2240.  1951.   311.    43.]
+INCORRECT: Known Data: [  319.  2890.   970.  2716.   674.   345.] Found Data: [ 2409.  1707.  2136.  1962.   374.    47.]
+INCORRECT: Known Data: [ 1664.  1887.  2123.  2454.   729.    51.] Found Data: [ 2552.  1021.  2646.  1461.   450.    12.]
+INCORRECT: Known Data: [  844.  2750.    85.  2830.   763.   174.] Found Data: [ 1887.  1664.  2258.  1949.   468.    53.]
+INCORRECT: Known Data: [ 1724.  2454.  2350.  1910.   829.   319.] Found Data: [ 1572.   449.   963.   566.   621.    79.]
+Incorrect Data for Random Image 9
+
+************************************************
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+Incorrect Data for Random Image 10
+
+************************************************
+INCORRECT: Known Data: [ 1302.  1892.  1716.  2043.   440.    20.] Found Data: [ 1219.  1116.  1184.  1372.   258.     8.]
+INCORRECT: Known Data: [ 2510.  1764.  2952.  1932.   472.    21.] Found Data: [ 1504.  1298.  1219.  1386.   298.    73.]
+INCORRECT: Known Data: [ 1116.  1220.  1636.  1174.   522.   355.] Found Data: [ 1892.  1303.  2043.  1716.   440.    20.]
+INCORRECT: Known Data: [  811.  1656.   138.  1716.   675.   175.] Found Data: [  932.  1004.  1220.  1364.   461.    39.]
+INCORRECT: Known Data: [ 2314.  2634.  1687.  2286.   717.   209.] Found Data: [ 1763.  2511.  1933.  2951.   472.    21.]
+INCORRECT: Known Data: [ 2750.  1068.  2294.  1746.   818.   124.] Found Data: [ 1715.   139.  1657.   811.   675.     5.]
+INCORRECT: Known Data: [ 1298.  1504.  1496.   646.   880.   283.] Found Data: [ 2286.  1687.  2634.  2314.   716.    29.]
+INCORRECT: Known Data: [ 1086.  1587.   847.   694.   925.   255.] Found Data: [ 1750.  2280.  1068.  2751.   828.    55.]
+INCORRECT: Known Data: [ 1772.  1512.  1004.   932.   963.   217.] Found Data: [  694.   847.  1587.  1086.   924.    75.]
+Incorrect Data for Random Image 11
+
+************************************************
+INCORRECT: Known Data: [ 2762.  1254.  2038.   818.   846.   211.] Found Data: [  832.  2021.  1254.  2762.   853.    30.]
+Incorrect Data for Random Image 12
+
+************************************************
+INCORRECT: Known Data: [  754.  1048.   544.   555.   536.   247.] Found Data: [ 555.  544.  998.  733.  482.   67.]
+INCORRECT: Known Data: [ 1940.  2380.  2351.  1873.   652.   309.] Found Data: [ 1385.   256.   849.   775.   747.    46.]
+There are 10 generated fibres but only 7 have been found.
+There are 10 generated fibres but only 7 have been found.
+There are 10 generated fibres but only 7 have been found.
+Incorrect Data for Random Image 15
+
+************************************************
+INCORRECT: Known Data: [ 2772.  1166.  2784.   954.   213.   273.] Found Data: [  460.  1830.   340.  1896.   137.    61.]
+INCORRECT: Known Data: [ 1660.   767.  1896.   340.   488.   299.] Found Data: [  477.  1835.   569.  1986.   177.    31.]
+INCORRECT: Known Data: [ 1389.  1866.  1887.  1654.   541.   337.] Found Data: [ 1166.  2773.   954.  2783.   213.    87.]
+INCORRECT: Known Data: [  586.  1690.   870.  1134.   624.   297.] Found Data: [  767.  1660.   482.  1818.   326.    61.]
+INCORRECT: Known Data: [ 1792.  2444.  2264.  2020.   635.   318.] Found Data: [  879.   836.   735.  1134.   331.    26.]
+INCORRECT: Known Data: [ 1122.   724.  1018.  1390.   674.    99.] Found Data: [ 1866.  1389.  1654.  1887.   541.    23.]
+INCORRECT: Known Data: [ 1986.   568.  1281.   144.   823.   211.] Found Data: [  144.  1281.   465.  1814.   621.    31.]
+INCORRECT: Known Data: [ 2949.  2332.  2076.  2272.   875.   184.] Found Data: [ 1690.   586.  1135.   869.   624.    63.]
+INCORRECT: Known Data: [ 2976.  1279.  2960.   350.   929.   269.] Found Data: [ 2445.  1793.  2019.  2264.   635.    42.]
+INCORRECT: Known Data: [  836.   878.  1742.   512.   977.   338.] Found Data: [ 1390.  1018.   724.  1122.   674.    81.]
+Incorrect Data for Random Image 17
+
+************************************************
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 18
+
+************************************************
+INCORRECT: Known Data: [ 2162.  2278.  2580.  2150.   437.   343.] Found Data: [ 1858.   833.  2367.  1144.   596.    59.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 19
+
+************************************************
+INCORRECT: Known Data: [ 1297.  1518.  1176.  1268.   278.   244.] Found Data: [ 1532.  1368.  1663.  1616.   281.    28.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 25
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 27
+
+************************************************
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 28
+
+************************************************
+INCORRECT: Known Data: [ 636.  569.   28.  110.  762.  217.] Found Data: [ 110.   28.  568.  632.  758.   37.]
+Incorrect Data for Random Image 32
+
+************************************************
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+Incorrect Data for Random Image 35
+
+************************************************
+INCORRECT: Known Data: [ 2238.  1364.  2072.   973.   425.   247.] Found Data: [  973.  2071.  1362.  2222.   417.    69.]
+Incorrect Data for Random Image 36
+
+************************************************
+INCORRECT: Known Data: [ 2022.   768.  2183.   889.   201.    37.] Found Data: [ 1497.  1231.  1484.  1391.   161.     5.]
+INCORRECT: Known Data: [ 1638.   662.  1688.  1019.   361.    82.] Found Data: [  768.  2023.   889.  2183.   201.    37.]
+INCORRECT: Known Data: [ 1806.  2478.  2072.  2182.   398.   312.] Found Data: [  661.  1639.  1019.  1688.   361.    82.]
+INCORRECT: Known Data: [ 395.  526.  834.  240.  524.  327.] Found Data: [ 1511.  1218.  1903.  1218.   392.    90.]
+INCORRECT: Known Data: [ 1391.  1484.   589.  1554.   805.   175.] Found Data: [ 2478.  1806.  2183.  2073.   398.    48.]
+INCORRECT: Known Data: [ 1598.  1482.  2278.  1940.   820.    34.] Found Data: [ 526.  395.  240.  834.  523.   33.]
+INCORRECT: Known Data: [ 1098.  1239.   326.   678.   954.   216.] Found Data: [ 1486.  1218.   940.  1218.   546.    90.]
+INCORRECT: Known Data: [ 1218.   940.  1218.  1904.   964.    90.] Found Data: [ 1553.   589.  1500.  1205.   619.     5.]
+INCORRECT: Known Data: [ 2764.  1206.  2848.   245.   965.   275.] Found Data: [ 1481.  1598.  1940.  2278.   820.    34.]
+Incorrect Data for Random Image 37
+
+************************************************
+INCORRECT: Known Data: [ 511.   88.  314.  369.  343.  125.] Found Data: [ 369.  314.   77.  497.  345.   58.]
+Incorrect Data for Random Image 38
+
+************************************************
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 42
+
+************************************************
+INCORRECT: Known Data: [ 2124.   334.  2896.   416.   775.     6.] Found Data: [   43.   150.  1104.   318.  1074.    81.]
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 43
+
+************************************************
+INCORRECT: Known Data: [ 2582.  1425.  2691.  1760.   352.    72.] Found Data: [ 1440.    55.  1801.   484.   560.    40.]
+INCORRECT: Known Data: [  780.  1228.   642.  1712.   502.   106.] Found Data: [ 1476.   881.   739.  1165.   790.    69.]
+INCORRECT: Known Data: [  484.  1800.    55.  1440.   560.   220.] Found Data: [ 1229.   780.  2020.   906.   802.    81.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 44
+
+************************************************
+There are 10 generated fibres but only 0 have been found.
+There are 10 generated fibres but only 0 have been found.
+There are 10 generated fibres but only 0 have been found.
+There are 10 generated fibres but only 0 have been found.
+There are 10 generated fibres but only 0 have been found.
+There are 10 generated fibres but only 0 have been found.
+There are 10 generated fibres but only 0 have been found.
+There are 10 generated fibres but only 0 have been found.
+There are 10 generated fibres but only 0 have been found.
+There are 10 generated fibres but only 0 have been found.
+Incorrect Data for Random Image 45
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 48
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 49
+
+************************************************
+INCORRECT: Known Data: [ 1022.  2446.  1106.  2334.   140.   307.] Found Data: [ 587.   39.  357.  245.  309.   48.]
+There are 10 generated fibres but only 7 have been found.
+There are 10 generated fibres but only 7 have been found.
+There are 10 generated fibres but only 7 have been found.
+Incorrect Data for Random Image 50
+
+************************************************
+INCORRECT: Known Data: [ 1448.  1860.  1354.  2526.   673.    98.] Found Data: [ 2528.  1332.  1860.  1447.   677.    80.]
+Incorrect Data for Random Image 53
+
+************************************************
+INCORRECT: Known Data: [ 2360.  1216.  2479.  1106.   162.   317.] Found Data: [  798.  1439.   960.  1609.   235.    44.]
+INCORRECT: Known Data: [ 2028.   194.  1780.   838.   690.   111.] Found Data: [  828.  1770.   195.  2028.   683.    68.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 54
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 55
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 57
+
+************************************************
+INCORRECT: Known Data: [ 2840.  1782.  2458.  1856.   388.   169.] Found Data: [ 2240.   659.  2369.  1014.   378.    20.]
+INCORRECT: Known Data: [  304.  1224.   636.  1494.   427.    39.] Found Data: [ 1856.  2459.  1783.  2839.   388.    11.]
+INCORRECT: Known Data: [ 1256.  2422.   659.  2240.   624.   197.] Found Data: [ 1224.   304.  1494.   636.   427.    39.]
+Incorrect Data for Random Image 60
+
+************************************************
+INCORRECT: Known Data: [ 1154.  1622.  1494.  1258.   498.   313.] Found Data: [ 1430.  1384.  2002.  1482.   580.    80.]
+INCORRECT: Known Data: [ 1665.  2486.  1362.  1940.   624.   241.] Found Data: [ 1762.   654.  1451.  1375.   785.    23.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 61
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 62
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 63
+
+************************************************
+INCORRECT: Known Data: [ 1038.  1994.   514.  1967.   526.   183.] Found Data: [ 1757.  1673.  1468.  2262.   656.    26.]
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 66
+
+************************************************
+There are 10 generated fibres but only 2 have been found.
+There are 10 generated fibres but only 2 have been found.
+There are 10 generated fibres but only 2 have been found.
+There are 10 generated fibres but only 2 have been found.
+There are 10 generated fibres but only 2 have been found.
+There are 10 generated fibres but only 2 have been found.
+There are 10 generated fibres but only 2 have been found.
+There are 10 generated fibres but only 2 have been found.
+Incorrect Data for Random Image 71
+
+************************************************
+INCORRECT: Known Data: [ 1498.  2086.  1992.  1640.   665.   318.] Found Data: [ 1733.  1664.  2403.  1795.   683.    79.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 72
+
+************************************************
+INCORRECT: Known Data: [ 1272.  1902.   683.  1995.   596.   171.] Found Data: [  1.74700000e+03   1.65400000e+03   1.76900000e+03   2.22800000e+03
+   5.74000000e+02   2.00000000e+00]
+INCORRECT: Known Data: [  220.  2649.   694.  2191.   659.   316.] Found Data: [ 1995.   683.  1902.  1272.   596.     9.]
+INCORRECT: Known Data: [  738.  1612.    52.  1808.   713.   164.] Found Data: [ 2649.   220.  2191.   693.   659.    44.]
+INCORRECT: Known Data: [ 1236.   304.  1904.   706.   779.    31.] Found Data: [ 1808.    53.  1612.   737.   712.    16.]
+INCORRECT: Known Data: [ 2450.  1748.  1654.  1748.   796.   180.] Found Data: [  304.  1237.   706.  1904.   779.    31.]
+Incorrect Data for Random Image 73
+
+************************************************
+INCORRECT: Known Data: [ 1918.  1370.  2228.  1224.   342.   335.] Found Data: [  999.  1739.  1370.  1919.   412.    64.]
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+Incorrect Data for Random Image 74
+
+************************************************
+INCORRECT: Known Data: [ 1182.  1958.  1289.  1528.   443.   284.] Found Data: [ 1531.  1824.  1361.  1931.   201.    58.]
+INCORRECT: Known Data: [ 2968.   788.  2532.   874.   445.   169.] Found Data: [ 1172.  1573.  1345.  1927.   394.    26.]
+INCORRECT: Known Data: [ 2106.  1885.  2114.  1428.   458.   271.] Found Data: [ 1958.  1182.  1528.  1289.   443.    76.]
+INCORRECT: Known Data: [ 2795.  1209.  2330.   962.   527.   208.] Found Data: [  873.  2532.   789.  2968.   445.    11.]
+INCORRECT: Known Data: [  357.  1696.   557.   998.   725.   286.] Found Data: [ 1355.  1949.  1579.  2406.   509.    26.]
+INCORRECT: Known Data: [ 1824.  1532.  2278.   808.   854.   302.] Found Data: [  962.  2330.  1209.  2795.   527.    28.]
+INCORRECT: Known Data: [  524.  2506.    85.  1714.   906.   241.] Found Data: [ 1340.  1945.   808.  2278.   628.    58.]
+INCORRECT: Known Data: [ 2406.  1579.  1572.  1172.   928.   206.] Found Data: [ 1695.   357.   999.   557.   725.    74.]
+INCORRECT: Known Data: [ 1213.   935.  1516.  1866.   979.    72.] Found Data: [ 1714.    85.  2506.   524.   906.    61.]
+Incorrect Data for Random Image 75
+
+************************************************
+INCORRECT: Known Data: [ 1872.   458.  2040.   198.   309.   303.] Found Data: [ 1214.  1210.  1254.  1438.   231.    10.]
+INCORRECT: Known Data: [  866.  2056.   341.  2102.   527.   175.] Found Data: [  458.  1871.   199.  2040.   309.    57.]
+INCORRECT: Known Data: [ 1394.   850.  1467.  1372.   528.    82.] Found Data: [  849.  1394.  1269.  1453.   424.    82.]
+INCORRECT: Known Data: [  170.   883.   498.  1351.   571.    55.] Found Data: [ 2102.   341.  2055.   866.   527.     5.]
+INCORRECT: Known Data: [  464.  2084.  1176.  2072.   712.   359.] Found Data: [  883.   170.  1351.   498.   571.    55.]
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 76
+
+************************************************
+INCORRECT: Known Data: [ 2084.   440.  2224.   209.   270.   301.] Found Data: [ 2500.  2017.  2742.  2334.   399.    37.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 81
+
+************************************************
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 82
+
+************************************************
+INCORRECT: Known Data: [  556.  1361.   682.   638.   734.   280.] Found Data: [  768.   673.   378.  1413.   836.    28.]
+INCORRECT: Known Data: [ 1120.   438.  1094.  1220.   781.    92.] Found Data: [ 1152.   946.  2056.  2041.  1419.    40.]
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 83
+
+************************************************
+INCORRECT: Known Data: [   41.  2305.   220.  2353.   186.    15.] Found Data: [ 1844.  1935.  1955.  2015.   136.    54.]
+INCORRECT: Known Data: [ 1966.  1993.  2146.  1852.   229.   322.] Found Data: [ 2305.    41.  2353.   220.   185.    15.]
+INCORRECT: Known Data: [ 1199.  1536.  1486.  1602.   295.    13.] Found Data: [ 1071.  2413.  1278.  2434.   208.    84.]
+INCORRECT: Known Data: [ 2002.   229.  1633.   442.   426.   150.] Found Data: [ 1993.  1966.  1852.  2146.   229.    38.]
+INCORRECT: Known Data: [ 2844.  1563.  2334.  1671.   520.   168.] Found Data: [ 1536.  1199.  1603.  1486.   295.    13.]
+INCORRECT: Known Data: [ 1710.  1900.  1182.  1676.   573.   203.] Found Data: [ 1573.  1637.  1895.  1709.   330.    77.]
+INCORRECT: Known Data: [ 2372.   686.  2434.  1278.   595.    84.] Found Data: [  686.  2373.  1046.  2410.   361.    84.]
+INCORRECT: Known Data: [ 1936.  1844.  2394.  2372.   700.    49.] Found Data: [  442.  1633.   229.  2002.   426.    30.]
+INCORRECT: Known Data: [ 1876.  1192.  2841.   952.   995.   346.] Found Data: [ 1055.  2424.   951.  2841.   429.    14.]
+INCORRECT: Known Data: [ 1637.  1573.  1895.  2536.   997.    75.] Found Data: [ 1671.  2335.  1563.  2843.   520.    12.]
+Incorrect Data for Random Image 84
+
+************************************************
+INCORRECT: Known Data: [ 1729.  1216.  1477.  1012.   324.   219.] Found Data: [ 809.  635.  783.  737.  105.   14.]
+INCORRECT: Known Data: [  274.  2584.   640.  2656.   373.    11.] Found Data: [ 443.  738.  767.  749.  324.   88.]
+INCORRECT: Known Data: [ 1342.  2096.  1172.  1695.   436.   247.] Found Data: [ 2585.   274.  2655.   639.   372.    11.]
+INCORRECT: Known Data: [ 1968.  2361.  1634.  2683.   464.   136.] Found Data: [ 1695.  1171.  2096.  1342.   435.    67.]
+INCORRECT: Known Data: [  760.  1060.   738.   443.   617.   268.] Found Data: [ 2683.  1634.  2361.  1967.   464.    44.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 85
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 86
+
+************************************************
+INCORRECT: Known Data: [ 2830.   592.  2946.   302.   312.   292.] Found Data: [ 1574.  1017.  1542.  1275.   260.     7.]
+INCORRECT: Known Data: [ 1890.  2702.  1565.  2840.   353.   157.] Found Data: [  591.  2829.   303.  2947.   311.    68.]
+INCORRECT: Known Data: [ 1016.  1574.  1442.  1484.   435.   348.] Found Data: [ 2841.  1565.  2702.  1890.   353.    23.]
+Incorrect Data for Random Image 89
+
+************************************************
+INCORRECT: Known Data: [ 1048.  2556.  1227.  2843.   339.    58.] Found Data: [ 2068.   692.  1977.   999.   320.    17.]
+INCORRECT: Known Data: [ 144.  116.  320.  478.  402.   64.] Found Data: [ 2556.  1047.  2843.  1227.   339.    58.]
+INCORRECT: Known Data: [   81.   814.   340.  1158.   431.    53.] Found Data: [ 117.  144.  477.  320.  401.   64.]
+INCORRECT: Known Data: [  692.  2068.  1249.  1876.   589.   341.] Found Data: [  815.    81.  1158.   340.   430.    53.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 91
+
+************************************************
+INCORRECT: Known Data: [ 1954.  2686.  1942.  2444.   242.   267.] Found Data: [ 1039.  1647.   857.  1662.   182.    85.]
+INCORRECT: Known Data: [ 1646.  1039.  1684.   612.   429.   275.] Found Data: [  832.  1665.   874.  1872.   212.    11.]
+INCORRECT: Known Data: [ 1941.   539.  1499.   683.   465.   162.] Found Data: [ 2438.  1929.  2685.  1954.   248.    84.]
+INCORRECT: Known Data: [ 2514.   578.  2074.   832.   507.   150.] Found Data: [  683.  1499.   539.  1941.   464.    18.]
+INCORRECT: Known Data: [ 1004.  2688.   544.  2464.   512.   206.] Found Data: [  831.  2075.   578.  2514.   507.    30.]
+INCORRECT: Known Data: [ 1936.  2440.  2215.  1936.   576.   299.] Found Data: [ 2463.   545.  2688.  1004.   511.    26.]
+INCORRECT: Known Data: [ 1044.  1182.   906.  1896.   728.   101.] Found Data: [  748.   969.   843.  1651.   689.     8.]
+INCORRECT: Known Data: [  530.  2211.   266.  1444.   811.   251.] Found Data: [ 1896.   906.  1182.  1044.   728.    79.]
+INCORRECT: Known Data: [ 1872.   874.   968.   748.   913.   188.] Found Data: [ 1444.   266.  2211.   530.   811.    71.]
+Incorrect Data for Random Image 93
+
+************************************************
+There are 10 generated fibres but only 7 have been found.
+There are 10 generated fibres but only 7 have been found.
+There are 10 generated fibres but only 7 have been found.
+Incorrect Data for Random Image 94
+
+************************************************
+There are 10 generated fibres but only 8 have been found.
+There are 10 generated fibres but only 8 have been found.
+Incorrect Data for Random Image 95
+
+************************************************
+INCORRECT: Known Data: [   84.  2812.   136.  2390.   426.   277.] Found Data: [ 1197.  1393.   967.  1704.   386.    37.]
+INCORRECT: Known Data: [ 1393.  1196.  1755.   962.   432.   327.] Found Data: [ 2812.    84.  2389.   135.   426.    83.]
+Incorrect Data for Random Image 96
+
+************************************************
+INCORRECT: Known Data: [ 1542.  1136.  1578.  1476.   342.    84.] Found Data: [ 1136.  1543.  1472.  1578.   337.    84.]
+INCORRECT: Known Data: [ 2000.  1492.  1512.  1484.   488.   181.] Found Data: [   93.  2183.   780.  2316.   700.    79.]
+INCORRECT: Known Data: [ 1707.  2174.  1578.  1656.   534.   256.] Found Data: [ 2737.    72.  2615.   766.   705.    10.]
+INCORRECT: Known Data: [ 2182.    92.  2316.   780.   701.    79.] Found Data: [ 1484.  1513.  2174.  1707.   717.    74.]
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 97
+
+************************************************

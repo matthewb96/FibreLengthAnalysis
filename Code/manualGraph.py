@@ -37,7 +37,7 @@ for i in range(dataOrig.shape[0]):
 labels = ("Correct", "One Away", "Incorrect")
 graph = plt.figure()
 [y1, y2, y3] = plt.plot(dataOrig[:, 0], dataOrig[:, 1:])
-plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres (per image)")
+plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
 plt.title("Graph showing the data for 100 random images\nbefore fixing the one away check")
 plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
 graph.show()
@@ -62,14 +62,45 @@ dataNew = np.array([[10000, 720, 221, 59],
 #Checking the total fibres
 for i in range(dataNew.shape[0]):
     totFibres = np.sum(dataNew[i, 1:])
-    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataOrig[i, 1:])))
+    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataNew[i, 1:])))
 
 #Plot the graph
 labels = ("Correct", "One Away", "Incorrect")
 graph = plt.figure()
 [y1, y2, y3] = plt.plot(dataNew[:, 0], dataNew[:, 1:])
-plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres (per image)")
+plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
 plt.title("Graph showing the data for 100 random images\nafter fixing the one away check")
+plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
+graph.show()
+
+#Data for the 100 random image tests after getting fibres to check further down the array when some are missing 
+#10 fibres per image between 100-1000 pixels long and 25 pixels wide
+#[Array Size, correct, one away, incorrect]
+dataCheckDown = np.array([[10000, 744, 219, 37],
+                         [9000, 707, 274, 19],
+                         [8000, 705, 259, 36],
+                         [7000, 722, 245, 33],
+                         [6000, 674, 254, 72],
+                         [5000, 667, 249, 84],
+                         [4000, 619, 222, 159],
+                         [3000, 582, 212, 206],
+                         [2500, 499, 197, 304],
+                         [2000, 435, 163, 402],
+                         [1500, 320, 124, 556],
+                         [1000, 200, 86, 714]
+                         ])
+    
+#Checking the total fibres
+for i in range(dataCheckDown.shape[0]):
+    totFibres = np.sum(dataCheckDown[i, 1:])
+    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataCheckDown[i, 1:])))
+
+#Plot the graph
+labels = ("Correct", "One Away", "Incorrect")
+graph = plt.figure()
+[y1, y2, y3] = plt.plot(dataCheckDown[:, 0], dataCheckDown[:, 1:])
+plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
+plt.title("Graph showing the data for 100 random images after having fibres checking\nfurther down array, to account for missing fibres.")
 plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
 graph.show()
 
