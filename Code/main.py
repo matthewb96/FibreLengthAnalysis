@@ -126,7 +126,7 @@ def checkRandom(fibreLengths, knownPositions, incorrectFile):
 RANDOM = False #Whether or not to generate random images
 while True:
     imageSource = input("Please input filename to be analysed, input \"Random #\" to generate and analyse # random images (case sensitive): ")
-    if imageSource.find("Random") != -1:
+    if imageSource.find("Random") == 0:
         RANDOM = True
         try:
             rand, numRand = imageSource.lower().split(" ")

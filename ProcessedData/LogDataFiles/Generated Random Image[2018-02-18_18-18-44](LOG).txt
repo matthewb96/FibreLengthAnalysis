@@ -1,0 +1,85 @@
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-18_18-18-44]
+Started at: 1185.6885845195466s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Generating random image with 10 fibres and an array size of 1000 pixels.
+The fibre widths are 25 with lengths between 100 and 1000 pixels.
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 1
+
+# Corners Found: 34
+# Endpoints: 15
+Current clock 1187.7618296815654s. 0 out of 15 coordinates found.
+Current clock 1187.7632949772417s. 0 out of 15 coordinates found.
+Current clock 1187.7647536316933s. 0 out of 15 coordinates found.
+Current clock 1187.7661316858266s. 0 out of 15 coordinates found.
+Current clock 1187.8223925193245s. 4 out of 15 coordinates found.
+Current clock 1187.8237313298569s. 4 out of 15 coordinates found.
+Current clock 1187.8249979925388s. 4 out of 15 coordinates found.
+Current clock 1187.8262568065006s. 4 out of 15 coordinates found.
+Current clock 1187.8275147148408s. 4 out of 15 coordinates found.
+Current clock 1187.8287690006948s. 4 out of 15 coordinates found.
+Current clock 1187.832478426585s. 4 out of 15 coordinates found.
+Current clock 1187.8338160296223s. 4 out of 15 coordinates found.
+Current clock 1187.8351026159785s. 4 out of 15 coordinates found.
+Current clock 1187.83636142994s. 4 out of 15 coordinates found.
+Current clock 1187.8376154139203s. 4 out of 15 coordinates found.
+Current clock 1187.8389448663634s. 4 out of 15 coordinates found.
+Current clock 1187.8402498670246s. 4 out of 15 coordinates found.
+Current clock 1187.8415129072202s. 4 out of 15 coordinates found.
+Current clock 1187.8452627842066s. 4 out of 15 coordinates found.
+Current clock 1187.8467214386583s. 4 out of 15 coordinates found.
+Current clock 1187.8483129176047s. 4 out of 15 coordinates found.
+Current clock 1187.8498893028586s. 4 out of 15 coordinates found.
+Current clock 1187.851242603336s. 4 out of 15 coordinates found.
+Current clock 1187.876522123429s. 8 out of 15 coordinates found.
+Final: 12 out of 15 coordinates found.
+Lengths checked: 52
+Lengths Found: 6
+
+Drawing found fibres.
+Drawing 1 out of 6
+Line coords: (25, 229, 355, 292)
+Drawing 2 out of 6
+Line coords: (101, 131, 908, 76)
+Drawing 3 out of 6
+Line coords: (619, 991, 686, 437)
+Drawing 4 out of 6
+Line coords: (666, 329, 881, 403)
+Drawing 5 out of 6
+Line coords: (791, 672, 828, 460)
+Drawing 6 out of 6
+Line coords: (845, 920, 908, 515)
+Drawn found fibres on the image: ..\ProcessedData\Images\Generated Random Image[2018-02-18_18-18-44] (Random Image 1) Drawn Lines.jpg
+
+Checking found fibres with known fibre positions.
+One away: Known Data: [ 790.  672.  828.  460.  216.  280.] Found Data: [ 672.  791.  460.  828.  215.   80.] Skipped 1
+One away: Known Data: [ 881.  403.  666.  329.  228.  199.] Found Data: [ 329.  666.  403.  881.  227.   19.] Skipped 1
+CORRECT: [ 229.   25.  292.  355.  337.   11.] Skipped 1
+CORRECT: [ 920.  845.  515.  908.  410.   81.] Skipped 1
+CORRECT: [ 991.  619.  437.  686.  558.   83.] Skipped 2
+CORRECT: [ 131.  101.   76.  908.  809.    4.] Skipped 4
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+There are 10 generated fibres but only 6 have been found.
+Found 4 incorrect fibres and 4 correct fibres and 2 fibres that are one away.
+Analysed image 1 out of 1
+***********************************************************************************
+A total of 4 correct fibres have been found, with 2 fibres only one away. 4 have been incorrectly found.
+
+Time taken: 2.2389633410432452

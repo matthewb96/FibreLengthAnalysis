@@ -57,7 +57,7 @@ def findCorners(imageArray, filename, debug = False):
     corners = cv2.dilate(corners, None) #Used to mark the corners
     
     # Find the corners more accurately using cornerSubPix
-    thresVal, cornersThres = cv2.threshold(corners, 0.7*corners.max(), 255, 0)
+    thresVal, cornersThres = cv2.threshold(corners, 0.5*corners.max(), 255, 0)
     cornersThres = np.uint8(cornersThres)
     retval, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
     centroids = np.delete(centroids, 0, 0) #Delete the first row in the array because it does not refer to a corner

@@ -1,0 +1,59 @@
+Log file for ..\ProcessedData\Images\Generated Random Image[2018-02-18_18-18-44] (Random Image 1) .jpg
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-18_18-18-44] (Random Image 1) [2018-02-18_18-28-36]
+Started at: 3.018738517473364e-07s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 37
+# Endpoints: 18
+Current clock 1.1465446613307444s. 0 out of 18 coordinates found.
+Current clock 1.1491926987582721s. 0 out of 18 coordinates found.
+Current clock 1.1505970159166008s. 0 out of 18 coordinates found.
+Current clock 1.1518836022727479s. 0 out of 18 coordinates found.
+Current clock 1.1531490574592727s. 0 out of 18 coordinates found.
+Current clock 1.1977219391651739s. 4 out of 18 coordinates found.
+Current clock 1.2013208792257057s. 4 out of 18 coordinates found.
+Current clock 1.2026234648959955s. 4 out of 18 coordinates found.
+Current clock 1.203915484981474s. 4 out of 18 coordinates found.
+Current clock 1.205182147663406s. 4 out of 18 coordinates found.
+Current clock 1.20644579160682s. 4 out of 18 coordinates found.
+Current clock 1.2077049074424584s. 4 out of 18 coordinates found.
+Current clock 1.2127691431793717s. 4 out of 18 coordinates found.
+Current clock 1.2141357261062318s. 4 out of 18 coordinates found.
+Current clock 1.2154358967857075s. 4 out of 18 coordinates found.
+Current clock 1.2189089554500607s. 4 out of 18 coordinates found.
+Current clock 1.2201674675379954s. 4 out of 18 coordinates found.
+Current clock 1.2545143725159555s. 8 out of 18 coordinates found.
+Current clock 1.2558486549406789s. 8 out of 18 coordinates found.
+Current clock 1.2803013425537682s. 12 out of 18 coordinates found.
+Final: 16 out of 18 coordinates found.
+Lengths checked: 55
+Lengths Found: 8
+
+Drawing found fibres.
+Drawing 1 out of 8
+Line coords: (25, 229, 355, 292)
+Drawing 2 out of 8
+Line coords: (61, 985, 497, 985)
+Drawing 3 out of 8
+Line coords: (101, 131, 908, 76)
+Drawing 4 out of 8
+Line coords: (397, 324, 508, 243)
+Drawing 5 out of 8
+Line coords: (619, 991, 686, 437)
+Drawing 6 out of 8
+Line coords: (666, 329, 881, 403)
+Drawing 7 out of 8
+Line coords: (791, 672, 828, 460)
+Drawing 8 out of 8
+Line coords: (845, 920, 908, 515)
+Drawn found fibres on the image: ..\ProcessedData\Images\Generated Random Image[2018-02-18_18-18-44] (Random Image 1) [2018-02-18_18-28-36]Drawn Lines.jpg
+
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 1.326885609733862
