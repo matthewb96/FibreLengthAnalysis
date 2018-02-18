@@ -3,3 +3,4 @@
 *.png
 *Fibre_Lengths.txt
 *.html
+\ipython consoles\*
