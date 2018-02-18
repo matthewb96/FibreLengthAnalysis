@@ -149,9 +149,10 @@ def checkLine(pos1, pos2, fibreWidth, imageArray):
     """
     mid1 = midpoint(pos1, pos2)
     mid2 = midpoint(pos1, pos2)
-    while int(coordDist(mid1, pos1)) > fibreWidth and int(coordDist(mid2, pos2)) > fibreWidth:
+    #Check to within half of fibre width
+    while int(coordDist(mid1, pos1)) > (fibreWidth/2) and int(coordDist(mid2, pos2)) > (fibreWidth/2):
         #Check if the midpoints are part of a fibre
-        if checkBlack(mid1, imageArray) or checkBlack(mid2, imageArray):
+        if checkBlack(mid1, imageArray) and checkBlack(mid2, imageArray):
             #Find the new midpoints
             mid1 = midpoint(pos1, mid1)
             mid2 = midpoint(pos2, mid2)

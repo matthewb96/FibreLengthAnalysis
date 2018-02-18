@@ -1,0 +1,79 @@
+Log file for ..\ProcessedData\Testing\ORIGINAL RANDOM IMAGE.jpg
+
+Save location: ..\ProcessedData\Testing\ORIGINAL RANDOM IMAGE[2018-02-18_17-32-54]
+Started at: 1463.5304346198593s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 38
+# Endpoints: 18
+Current clock 1463.6741929855384s. 0 out of 18 coordinates found.
+Current clock 1463.6768718140988s. 0 out of 18 coordinates found.
+Current clock 1463.6792810693096s. 0 out of 18 coordinates found.
+Current clock 1463.6815421044591s. 0 out of 18 coordinates found.
+Current clock 1463.6841379177104s. 0 out of 18 coordinates found.
+Current clock 1463.6864224990204s. 0 out of 18 coordinates found.
+Current clock 1463.6886811191791s. 0 out of 18 coordinates found.
+Current clock 1463.690933701861s. 0 out of 18 coordinates found.
+Current clock 1463.694274841652s. 0 out of 18 coordinates found.
+Current clock 1463.6965219906044s. 0 out of 18 coordinates found.
+Current clock 1463.699116898234s. 0 out of 18 coordinates found.
+Current clock 1463.7015167953555s. 0 out of 18 coordinates found.
+Current clock 1463.7037714911542s. 0 out of 18 coordinates found.
+Current clock 1463.7060225644666s. 0 out of 18 coordinates found.
+Current clock 1463.7082733359052s. 0 out of 18 coordinates found.
+Current clock 1463.7105207867316s. 0 out of 18 coordinates found.
+Current clock 1463.7217441546657s. 4 out of 18 coordinates found.
+Current clock 1463.721847395523s. 4 out of 18 coordinates found.
+Current clock 1463.7240592252347s. 4 out of 18 coordinates found.
+Current clock 1463.726312713538s. 4 out of 18 coordinates found.
+Current clock 1463.7297021531454s. 4 out of 18 coordinates found.
+Current clock 1463.7325080705975s. 4 out of 18 coordinates found.
+Current clock 1463.7349411738426s. 4 out of 18 coordinates found.
+Current clock 1463.7372224345402s. 4 out of 18 coordinates found.
+Current clock 1463.739474715348s. 4 out of 18 coordinates found.
+Current clock 1463.7417260905345s. 4 out of 18 coordinates found.
+Current clock 1463.7440151999522s. 4 out of 18 coordinates found.
+Current clock 1463.746470943736s. 4 out of 18 coordinates found.
+Current clock 1463.748754015677s. 4 out of 18 coordinates found.
+Current clock 1463.7510129377094s. 4 out of 18 coordinates found.
+Current clock 1463.7532685391297s. 4 out of 18 coordinates found.
+Current clock 1463.7822934081014s. 8 out of 18 coordinates found.
+Current clock 1463.7845961018427s. 8 out of 18 coordinates found.
+Current clock 1463.7868532126322s. 8 out of 18 coordinates found.
+Current clock 1463.7891042859446s. 8 out of 18 coordinates found.
+Current clock 1463.7913523405186s. 8 out of 18 coordinates found.
+Current clock 1463.8069465399522s. 12 out of 18 coordinates found.
+Current clock 1463.8095634843728s. 12 out of 18 coordinates found.
+Current clock 1463.8120693392164s. 12 out of 18 coordinates found.
+Current clock 1463.815005968046s. 12 out of 18 coordinates found.
+Current clock 1463.817571895786s. 12 out of 18 coordinates found.
+Current clock 1463.8198450058896s. 12 out of 18 coordinates found.
+Final: 14 out of 18 coordinates found.
+Lengths checked: 57
+Lengths Found: 7
+
+Drawing found fibres.
+Drawing 1 out of 7
+Line coords: (56, 230, 919, 186)
+Drawing 2 out of 7
+Line coords: (195, 985, 270, 635)
+Drawing 3 out of 7
+Line coords: (279, 164, 354, 705)
+Drawing 4 out of 7
+Line coords: (337, 903, 947, 893)
+Drawing 5 out of 7
+Line coords: (404, 351, 695, 154)
+Drawing 6 out of 7
+Line coords: (600, 629, 668, 26)
+Drawing 7 out of 7
+Line coords: (643, 818, 880, 526)
+Drawn found fibres on the image: ..\ProcessedData\Testing\ORIGINAL RANDOM IMAGE[2018-02-18_17-32-54]Drawn Lines.jpg
+
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 0.32260805725468344

@@ -197,6 +197,7 @@ while numDone <= numAnalyse:
     if RANDOM:
         imageGray, knownPositions = inputs.generateImage(FIBRE_WIDTH, MIN_LENGTH, randFibreNum, randArraySize)
         saveName = originalSaveName + " (Random Image " + str(numDone) + ") "
+        cv2.imwrite(PROCESSEDIMAGES + saveName + ".jpg", imageGray)
         print("Generated random image " + str(numDone) + " out of " + str(numAnalyse) + "\n")
     else:
         imageGray = inputs.openImage(IMAGEFOLDER + imageSource, DEBUGGING, PROCESSEDIMAGES + saveName)
@@ -204,7 +205,7 @@ while numDone <= numAnalyse:
     
     #Find the corners and then the edges on the image
     cornersCoords, subpixArray = corners.findCorners(imageGray, PROCESSEDIMAGES + saveName, DEBUGGING)
-    edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH)
+    edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH, imageGray)
     
     #Add the edge positions to the subpixArray and then saved the image
     subpixArray[np.rint(edgeCoords[:,1]).astype(int) , np.rint(edgeCoords[:, 0]).astype(int)] = np.array([255, 255, 0])
