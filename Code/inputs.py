@@ -27,6 +27,9 @@ def openImage(imageSource, debug = False, filename = ""):
     cv2.imwrite(filename + ".jpg", image)
     imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
+    #Threshold the image using a value of 200
+    thresVal, imageGray = cv2.threshold(imageGray, 180, 255, 0)
+    
     if debug: #Printing the images and some histograms to the console for debugging purposes
         img = plt.figure()
         #Plot images

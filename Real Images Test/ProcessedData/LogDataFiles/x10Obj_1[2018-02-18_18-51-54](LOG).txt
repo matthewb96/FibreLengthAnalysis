@@ -1,0 +1,78 @@
+Log file for ..\Real Images Test\Real Images Taken\x10Obj_1.bmp
+
+Save location: ..\Real Images Test\ProcessedData\Images\x10Obj_1[2018-02-18_18-51-54]
+Started at: 31.759733771412666s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 79
+# Endpoints: 11
+Current clock 32.724462528700656s. 0 out of 11 coordinates found.
+Current clock 32.72527607873111s. 0 out of 11 coordinates found.
+Current clock 32.72598699165198s. 0 out of 11 coordinates found.
+Current clock 32.726661377836784s. 0 out of 11 coordinates found.
+Current clock 32.72730799162723s. 0 out of 11 coordinates found.
+Current clock 32.7289178848786s. 0 out of 11 coordinates found.
+Current clock 32.729538235643936s. 0 out of 11 coordinates found.
+Current clock 32.730372011222464s. 0 out of 11 coordinates found.
+Current clock 32.73101500252668s. 0 out of 11 coordinates found.
+Current clock 32.73162720269803s. 0 out of 11 coordinates found.
+Current clock 32.73224332722945s. 0 out of 11 coordinates found.
+Current clock 32.732852206788415s. 0 out of 11 coordinates found.
+Current clock 32.732939146457724s. 0 out of 11 coordinates found.
+Current clock 32.73449772115429s. 0 out of 11 coordinates found.
+Current clock 32.73511173256875s. 0 out of 11 coordinates found.
+Current clock 32.73572061212772s. 0 out of 11 coordinates found.
+Current clock 32.736331302929806s. 0 out of 11 coordinates found.
+Current clock 32.736940484362634s. 0 out of 11 coordinates found.
+Current clock 32.73753547772443s. 0 out of 11 coordinates found.
+Current clock 32.738144961031104s. 0 out of 11 coordinates found.
+Current clock 32.73824125878981s. 0 out of 11 coordinates found.
+Current clock 32.73882508281909s. 0 out of 11 coordinates found.
+Current clock 32.73943275488266s. 0 out of 11 coordinates found.
+Current clock 32.740044351306295s. 0 out of 11 coordinates found.
+Current clock 32.74163220776649s. 0 out of 11 coordinates found.
+Current clock 32.74224380419013s. 0 out of 11 coordinates found.
+Current clock 32.74285238187525s. 0 out of 11 coordinates found.
+Current clock 32.7434645820466s. 0 out of 11 coordinates found.
+Current clock 32.74407195223631s. 0 out of 11 coordinates found.
+Current clock 32.74468354865995s. 0 out of 11 coordinates found.
+Current clock 32.745356123601645s. 0 out of 11 coordinates found.
+Current clock 32.74605315032533s. 0 out of 11 coordinates found.
+Current clock 32.74670248098044s. 0 out of 11 coordinates found.
+Current clock 32.747344868536956s. 0 out of 11 coordinates found.
+Current clock 32.747964615554594s. 0 out of 11 coordinates found.
+Current clock 32.74860066376023s. 0 out of 11 coordinates found.
+Current clock 32.74917543157395s. 0 out of 11 coordinates found.
+Current clock 32.74974989751383s. 0 out of 11 coordinates found.
+Current clock 32.75035092835266s. 0 out of 11 coordinates found.
+Current clock 32.75190920117537s. 0 out of 11 coordinates found.
+Current clock 32.75248608210607s. 0 out of 11 coordinates found.
+Current clock 32.75305783118127s. 0 out of 11 coordinates found.
+Current clock 32.7536319952473s. 0 out of 11 coordinates found.
+Current clock 32.75419921621473s. 0 out of 11 coordinates found.
+Current clock 32.75477398402846s. 0 out of 11 coordinates found.
+Current clock 32.75534331811286s. 0 out of 11 coordinates found.
+Current clock 32.75594646206864s. 0 out of 11 coordinates found.
+Current clock 32.75651579615304s. 0 out of 11 coordinates found.
+Current clock 32.75711773261342s. 0 out of 11 coordinates found.
+Current clock 32.75768978356248s. 0 out of 11 coordinates found.
+Current clock 32.75829262564442s. 0 out of 11 coordinates found.
+Current clock 32.75886407284578s. 0 out of 11 coordinates found.
+Current clock 32.75946510368461s. 0 out of 11 coordinates found.
+Current clock 32.75953242155355s. 0 out of 11 coordinates found.
+Current clock 32.760067040144996s. 0 out of 11 coordinates found.
+Final: 0 out of 11 coordinates found.
+Lengths checked: 52
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\Real Images Test\ProcessedData\Images\x10Obj_1[2018-02-18_18-51-54]Drawn Lines.jpg
+
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 1.0158257366778578

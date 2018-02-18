@@ -1,0 +1,26 @@
+Log file for ..\Real Images Test\Real Images Taken\x10Obj_1.bmp
+
+Save location: ..\Real Images Test\ProcessedData\Images\x10Obj_1[2018-02-18_18-51-22]
+Started at: 0.0s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 16
+# Endpoints: 3
+Current clock 0.7761312571657305s. 0 out of 3 coordinates found.
+Current clock 0.7769445053223378s. 0 out of 3 coordinates found.
+Current clock 0.7776813793944531s. 0 out of 3 coordinates found.
+Final: 0 out of 3 coordinates found.
+Lengths checked: 3
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\Real Images Test\ProcessedData\Images\x10Obj_1[2018-02-18_18-51-22]Drawn Lines.jpg
+
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 0.7976965213868568

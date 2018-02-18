@@ -18,9 +18,11 @@ import cv2
 #Variables and Constants
 IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
 PROCESSEDFOLDER = "..\\ProcessedData\\" #Source where output files are stored
+#IMAGEFOLDER = "..\\Real Images Test\\Real Images Taken\\"
+#PROCESSEDFOLDER = "..\\Real Images Test\\ProcessedData\\"
 PROCESSEDIMAGES = PROCESSEDFOLDER + "Images\\" #Source for where processed images are stored
 PROCESSEDDATA = PROCESSEDFOLDER + "LogDataFiles\\" #Source for where log and data files are stored
-DEBUGGING = False
+DEBUGGING = True
 OVERWRITE = False
 #Fibre variables
 FIBRE_WIDTH = 25 #fibre width

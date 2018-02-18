@@ -1,0 +1,10 @@
+Log file for ..\Real Images Test\Real Images Taken\x10Obj_1.bmp
+
+Save location: ..\Real Images Test\ProcessedData\Images\x10Obj_1[2018-02-18_18-46-50]
+Started at: 460.048235819023s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+[4;33mReloaded modules[24m: inputs, lengths, corners[0m

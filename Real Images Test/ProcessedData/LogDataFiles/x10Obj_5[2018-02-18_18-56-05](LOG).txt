@@ -1,0 +1,51 @@
+Log file for ..\Real Images Test\Real Images Taken\x10Obj_5.bmp
+
+Save location: ..\Real Images Test\ProcessedData\Images\x10Obj_5[2018-02-18_18-56-05]
+Started at: 282.99201211600894s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 55
+# Endpoints: 8
+Current clock 283.798007753328s. 0 out of 8 coordinates found.
+Current clock 283.79889707369523s. 0 out of 8 coordinates found.
+Current clock 283.79972360430133s. 0 out of 8 coordinates found.
+Current clock 283.80054379555656s. 0 out of 8 coordinates found.
+Current clock 283.801243237271s. 0 out of 8 coordinates found.
+Current clock 283.8018626824148s. 0 out of 8 coordinates found.
+Current clock 283.80248484442325s. 0 out of 8 coordinates found.
+Current clock 283.8030976483423s. 0 out of 8 coordinates found.
+Current clock 283.80373309280026s. 0 out of 8 coordinates found.
+Current clock 283.8043455948454s. 0 out of 8 coordinates found.
+Current clock 283.80594160189963s. 0 out of 8 coordinates found.
+Current clock 283.8065755369883s. 0 out of 8 coordinates found.
+Current clock 283.8071856240427s. 0 out of 8 coordinates found.
+Current clock 283.80779782421405s. 0 out of 8 coordinates found.
+Current clock 283.80840700564687s. 0 out of 8 coordinates found.
+Current clock 283.80901860207047s. 0 out of 8 coordinates found.
+Current clock 283.80962657600793s. 0 out of 8 coordinates found.
+Current clock 283.81023696493617s. 0 out of 8 coordinates found.
+Current clock 283.8108434295043s. 0 out of 8 coordinates found.
+Current clock 283.8109279541828s. 0 out of 8 coordinates found.
+Current clock 283.81150543886116s. 0 out of 8 coordinates found.
+Current clock 283.8121116015555s. 0 out of 8 coordinates found.
+Current clock 283.8127228961053s. 0 out of 8 coordinates found.
+Current clock 283.81332936067344s. 0 out of 8 coordinates found.
+Current clock 283.81393914585396s. 0 out of 8 coordinates found.
+Current clock 283.8145468179175s. 0 out of 8 coordinates found.
+Current clock 283.81515660309805s. 0 out of 8 coordinates found.
+Current clock 283.815240222155s. 0 out of 8 coordinates found.
+Final: 0 out of 8 coordinates found.
+Lengths checked: 26
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\Real Images Test\ProcessedData\Images\x10Obj_5[2018-02-18_18-56-05]Drawn Lines.jpg
+
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 0.8375299836202998
