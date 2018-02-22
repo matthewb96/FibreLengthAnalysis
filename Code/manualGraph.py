@@ -100,9 +100,100 @@ labels = ("Correct", "One Away", "Incorrect")
 graph = plt.figure()
 [y1, y2, y3] = plt.plot(dataCheckDown[:, 0], dataCheckDown[:, 1:])
 plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
-plt.title("Graph showing the data for 100 random images after having fibres checking\nfurther down array, to account for missing fibres.")
+plt.title("Graph showing the data for 100 random images after having\nfibres check further down array, to account for missing fibres.")
 plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
 graph.show()
 
+#Data for the 100 random image tests after edits for checking centroid position is part of a fibre
+#10 fibres per image between 100-1000 pixels long and 25 pixels wide
+#[Array Size, correct, one away, incorrect]
+dataCentroid = np.array([[10000, 692, 287, 21],
+                         [9000, 726, 246, 28],
+                         [8000, 698, 280, 22],
+                         [7000, 710, 258, 32],
+                         [6000, 689, 258, 53],
+                         [5000, 609, 221, 170],
+                         [4000, 590, 209, 201],
+                         [3000, 535, 173, 292],
+                         [2500, 480, 174, 346],
+                         [2000, 324, 120, 556],
+                         [1500, 244, 86, 670],
+                         [1000, 169, 81, 750]
+                         ])
+    
+#Checking the total fibres
+for i in range(dataCentroid.shape[0]):
+    totFibres = np.sum(dataCentroid[i, 1:])
+    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataCentroid[i, 1:])))
 
+#Plot the graph
+labels = ("Correct", "One Away", "Incorrect")
+graph = plt.figure()
+[y1, y2, y3] = plt.plot(dataCentroid[:, 0], dataCentroid[:, 1:])
+plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
+plt.title("Graph showing the data for 100 random images after edits\nfor checking centroid position is part of a fibre.")
+plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
+graph.show()
+"""
+#Data for the 100 random image tests after edits for checking the midpoint is part of a fibre
+#10 fibres per image between 100-1000 pixels long and 25 pixels wide
+#[Array Size, correct, one away, incorrect]
+dataMidpoint = np.array([[10000, , , ],
+                         [9000, , , ],
+                         [8000, , , ],
+                         [7000, , , ],
+                         [6000, , , ],
+                         [5000, , , ],
+                         [4000, , , ],
+                         [3000, , , ],
+                         [2500, , , ],
+                         [2000, , , ],
+                         [1500, , , ],
+                         [1000, , , ]
+                         ])
+    
+#Checking the total fibres
+for i in range(dataMidpoint.shape[0]):
+    totFibres = np.sum(dataMidpoint[i, 1:])
+    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataMidpoint[i, 1:])))
 
+#Plot the graph
+labels = ("Correct", "One Away", "Incorrect")
+graph = plt.figure()
+[y1, y2, y3] = plt.plot(dataMidpoint[:, 0], dataMidpoint[:, 1:])
+plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
+plt.title("Graph showing the data for 100 random images after edits\nfor checking the midpoint is part of a fibre.")
+plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
+graph.show()
+
+#Data for the 100 random image tests after fixing checking the line is part of a fibre
+#10 fibres per image between 100-1000 pixels long and 25 pixels wide
+#[Array Size, correct, one away, incorrect]
+dataLineFix = np.array([[10000, , , ],
+                         [9000, , , ],
+                         [8000, , , ],
+                         [7000, , , ],
+                         [6000, , , ],
+                         [5000, , , ],
+                         [4000, , , ],
+                         [3000, , , ],
+                         [2500, , , ],
+                         [2000, , , ],
+                         [1500, , , ],
+                         [1000, , , ]
+                         ])
+    
+#Checking the total fibres
+for i in range(dataLineFix.shape[0]):
+    totFibres = np.sum(dataLineFix[i, 1:])
+    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataLineFix[i, 1:])))
+
+#Plot the graph
+labels = ("Correct", "One Away", "Incorrect")
+graph = plt.figure()
+[y1, y2, y3] = plt.plot(dataLineFix[:, 0], dataLineFix[:, 1:])
+plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
+plt.title("Graph showing the data for 100 random images after fixing\nthe check that the line is part of a fibre.")
+plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
+graph.show()
+"""

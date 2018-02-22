@@ -22,13 +22,13 @@ PROCESSEDFOLDER = "..\\ProcessedData\\" #Source where output files are stored
 #PROCESSEDFOLDER = "..\\Real Images Test\\ProcessedData\\"
 PROCESSEDIMAGES = PROCESSEDFOLDER + "Images\\" #Source for where processed images are stored
 PROCESSEDDATA = PROCESSEDFOLDER + "LogDataFiles\\" #Source for where log and data files are stored
-DEBUGGING = True
+DEBUGGING = False
 OVERWRITE = False
 #Fibre variables
 FIBRE_WIDTH = 25 #fibre width
 MIN_LENGTH = 4 * FIBRE_WIDTH #Minimum fibre length minimum ratio is approximately 4:1
 #Varibles for random generated images
-randArraySize = 1000
+randArraySize = 10000
 randFibreNum = 10
 
 
