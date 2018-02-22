@@ -1,0 +1,16 @@
+INCORRECT: Known Data: [ 3301.  7049.  3532.  7760.   748.    72.] Found Data: [ 7049.  3301.  7756.  3531.   744.    72.]
+Incorrect Data for Random Image 35
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 42
+
+************************************************
+INCORRECT: Known Data: [ 8108.  8274.  8200.  8184.   129.   316.] Found Data: [ 8184.  8192.  8274.  8108.   124.    47.]
+Incorrect Data for Random Image 50
+
+************************************************
+There are 10 generated fibres but only 9 have been found.
+Incorrect Data for Random Image 89
+
+************************************************

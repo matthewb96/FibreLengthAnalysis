@@ -9,6 +9,24 @@ Temporary file for creating a graph manually.
 import numpy as np
 from matplotlib import pyplot as plt
 
+#Functions
+def plotGraph(data, title):
+    """
+    Plots a graph containing the correct, incorrect and one away data for the 100 random image tests.
+    
+    arg[0] data - numpy array containing the data to be plotted.
+    arg[1] title - string containing the title for the graph.
+    """
+    #Plot the graph
+    labels = ("Correct", "One Away", "Incorrect")
+    graph = plt.figure()
+    [y1, y2, y3] = plt.plot(data[:, 0], data[:, 1:])
+    plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
+    plt.title(title)
+    plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
+    graph.show()
+        
+
 #Data for the 100 random image tests before fixing the one away check 
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
 #[Array Size, correct, one away, incorrect]
@@ -32,15 +50,8 @@ for i in range(dataOrig.shape[0]):
     totFibres = np.sum(dataOrig[i, 1:])
     dataOrig[i,3] += (1000 - totFibres)
     print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataOrig[i, 1:])))
-    
-#Plot the graph
-labels = ("Correct", "One Away", "Incorrect")
-graph = plt.figure()
-[y1, y2, y3] = plt.plot(dataOrig[:, 0], dataOrig[:, 1:])
-plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
-plt.title("Graph showing the data for 100 random images\nbefore fixing the one away check")
-plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
-graph.show()
+#Plot graph 
+plotGraph(dataOrig, "Graph showing the data for 100 random images\nbefore fixing the one away check")
 
 #Data for the 100 random image tests after fixing the one away check 
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
@@ -63,15 +74,8 @@ dataNew = np.array([[10000, 720, 221, 59],
 for i in range(dataNew.shape[0]):
     totFibres = np.sum(dataNew[i, 1:])
     print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataNew[i, 1:])))
-
 #Plot the graph
-labels = ("Correct", "One Away", "Incorrect")
-graph = plt.figure()
-[y1, y2, y3] = plt.plot(dataNew[:, 0], dataNew[:, 1:])
-plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
-plt.title("Graph showing the data for 100 random images\nafter fixing the one away check")
-plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
-graph.show()
+plotGraph(dataNew, "Graph showing the data for 100 random images\nafter fixing the one away check")
 
 #Data for the 100 random image tests after getting fibres to check further down the array when some are missing 
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
@@ -94,20 +98,13 @@ dataCheckDown = np.array([[10000, 744, 219, 37],
 for i in range(dataCheckDown.shape[0]):
     totFibres = np.sum(dataCheckDown[i, 1:])
     print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataCheckDown[i, 1:])))
-
 #Plot the graph
-labels = ("Correct", "One Away", "Incorrect")
-graph = plt.figure()
-[y1, y2, y3] = plt.plot(dataCheckDown[:, 0], dataCheckDown[:, 1:])
-plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
-plt.title("Graph showing the data for 100 random images after having\nfibres check further down array, to account for missing fibres.")
-plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
-graph.show()
+plotGraph(dataCheckDown, "Graph showing the data for 100 random images after having\nfibres check further down array, to account for missing fibres.")
 
 #Data for the 100 random image tests after edits for checking the midpoint is part of a fibre
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
 #[Array Size, correct, one away, incorrect]
-dataCentroid = np.array([[10000, 692, 287, 21],
+dataMidpoint = np.array([[10000, 692, 287, 21],
                          [9000, 726, 246, 28],
                          [8000, 698, 280, 22],
                          [7000, 710, 258, 32],
@@ -122,23 +119,16 @@ dataCentroid = np.array([[10000, 692, 287, 21],
                          ])
     
 #Checking the total fibres
-for i in range(dataCentroid.shape[0]):
-    totFibres = np.sum(dataCentroid[i, 1:])
-    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataCentroid[i, 1:])))
-
+for i in range(dataMidpoint.shape[0]):
+    totFibres = np.sum(dataMidpoint[i, 1:])
+    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataMidpoint[i, 1:])))
 #Plot the graph
-labels = ("Correct", "One Away", "Incorrect")
-graph = plt.figure()
-[y1, y2, y3] = plt.plot(dataCentroid[:, 0], dataCentroid[:, 1:])
-plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
-plt.title("Graph showing the data for 100 random images after edits\nfor checking the midpoint is part of a fibre.")
-plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
-graph.show()
+plotGraph(dataMidpoint, "Graph showing the data for 100 random images after edits\nfor checking the midpoint is part of a fibre.")
 
 #Data for the 100 random image tests after edits for checking centroid position is part of a fibre
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
 #[Array Size, correct, one away, incorrect]
-dataMidpoint = np.array([[10000, 709, 281, 10],
+dataCentroid = np.array([[10000, 709, 281, 10],
                          [9000, 726, 246, 28],
                          [8000, 725, 264, 11],
                          [7000, 705, 280, 15],
@@ -153,34 +143,27 @@ dataMidpoint = np.array([[10000, 709, 281, 10],
                          ])
     
 #Checking the total fibres
-for i in range(dataMidpoint.shape[0]):
-    totFibres = np.sum(dataMidpoint[i, 1:])
-    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataMidpoint[i, 1:])))
-
+for i in range(dataCentroid.shape[0]):
+    totFibres = np.sum(dataCentroid[i, 1:])
+    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataCentroid[i, 1:])))
 #Plot the graph
-labels = ("Correct", "One Away", "Incorrect")
-graph = plt.figure()
-[y1, y2, y3] = plt.plot(dataMidpoint[:, 0], dataMidpoint[:, 1:])
-plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
-plt.title("Graph showing the data for 100 random images after edits\nfor checking centroid position is part of a fibre.")
-plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
-graph.show()
-"""
+plotGraph(dataCentroid, "Graph showing the data for 100 random images after edits\nfor checking centroid position is part of a fibre.")
+
 #Data for the 100 random image tests after fixing checking the line is part of a fibre
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
 #[Array Size, correct, one away, incorrect]
-dataLineFix = np.array([[10000, , , ],
-                         [9000, , , ],
-                         [8000, , , ],
-                         [7000, , , ],
-                         [6000, , , ],
-                         [5000, , , ],
-                         [4000, , , ],
-                         [3000, , , ],
-                         [2500, , , ],
-                         [2000, , , ],
-                         [1500, , , ],
-                         [1000, , , ]
+dataLineFix = np.array([[10000, 737, 256, 7],
+                         [9000, 739, 257, 4],
+                         [8000, 736, 255, 9],
+                         [7000, 722, 265, 13],
+                         [6000, 735, 248, 17],
+                         [5000, 747, 240, 13],
+                         [4000, 717, 247, 36],
+                         [3000, 673, 251, 76],
+                         [2500, 658, 240, 102],
+                         [2000, 624, 247, 129],
+                         [1500, 561, 201, 238],
+                         [1000, 466, 180, 354]
                          ])
     
 #Checking the total fibres
@@ -189,11 +172,4 @@ for i in range(dataLineFix.shape[0]):
     print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataLineFix[i, 1:])))
 
 #Plot the graph
-labels = ("Correct", "One Away", "Incorrect")
-graph = plt.figure()
-[y1, y2, y3] = plt.plot(dataLineFix[:, 0], dataLineFix[:, 1:])
-plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
-plt.title("Graph showing the data for 100 random images after fixing\nthe check that the line is part of a fibre.")
-plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
-graph.show()
-"""
+plotGraph(dataLineFix, "Graph showing the data for 100 random images after fixing\nthe check that the line is part of a fibre.")
