@@ -61,7 +61,7 @@ def findCorners(imageArray, filename, debug = False):
     cornersThres = np.uint8(cornersThres)
     retval, labels, stats, centroids = cv2.connectedComponentsWithStats(cornersThres)
     centroids = np.delete(centroids, 0, 0) #Delete the first row in the array because it does not refer to a corner
-    """ Removed for testing
+
     #Check centroid positions are on a fibre
     rowsDelete = []
     for i in range(centroids.shape[0]):
@@ -70,7 +70,7 @@ def findCorners(imageArray, filename, debug = False):
             rowsDelete.append(i)
     #Delete rows
     centroids = np.delete(centroids, rowsDelete, 0)
-    """
+    
     #Sub Pixel Function
     criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.001)
     cornersSubPix = cv2.cornerSubPix(imageFloat,            #Input image

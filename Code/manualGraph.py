@@ -104,7 +104,7 @@ plt.title("Graph showing the data for 100 random images after having\nfibres che
 plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
 graph.show()
 
-#Data for the 100 random image tests after edits for checking centroid position is part of a fibre
+#Data for the 100 random image tests after edits for checking the midpoint is part of a fibre
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
 #[Array Size, correct, one away, incorrect]
 dataCentroid = np.array([[10000, 692, 287, 21],
@@ -134,22 +134,22 @@ plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
 plt.title("Graph showing the data for 100 random images after edits\nfor checking the midpoint is part of a fibre.")
 plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
 graph.show()
-"""
-#Data for the 100 random image tests after edits for checking the midpoint is part of a fibre
+
+#Data for the 100 random image tests after edits for checking centroid position is part of a fibre
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
 #[Array Size, correct, one away, incorrect]
-dataMidpoint = np.array([[10000, , , ],
-                         [9000, , , ],
-                         [8000, , , ],
-                         [7000, , , ],
-                         [6000, , , ],
-                         [5000, , , ],
-                         [4000, , , ],
-                         [3000, , , ],
-                         [2500, , , ],
-                         [2000, , , ],
-                         [1500, , , ],
-                         [1000, , , ]
+dataMidpoint = np.array([[10000, 709, 281, 10],
+                         [9000, 726, 246, 28],
+                         [8000, 725, 264, 11],
+                         [7000, 705, 280, 15],
+                         [6000, 718, 258, 24],
+                         [5000, 712, 253, 35],
+                         [4000, 668, 280, 52],
+                         [3000, 662, 245, 93],
+                         [2500, 648, 205, 147],
+                         [2000, 626, 199, 175],
+                         [1500, 506, 181, 313],
+                         [1000, 400, 123, 477]
                          ])
     
 #Checking the total fibres
@@ -165,7 +165,7 @@ plt.xlabel("Array Size (pixels)"); plt.ylabel("Number of fibres")
 plt.title("Graph showing the data for 100 random images after edits\nfor checking centroid position is part of a fibre.")
 plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
 graph.show()
-
+"""
 #Data for the 100 random image tests after fixing checking the line is part of a fibre
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
 #[Array Size, correct, one away, incorrect]
