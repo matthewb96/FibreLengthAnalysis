@@ -1,0 +1,35 @@
+Log file for ..\Real Data Collected 22 Feb\x20_reflection3.bmp
+
+Save location: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x20_reflection3[2018-02-25_23-50-42]
+Started at: 88.97624071662437s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 30
+# Endpoints: 5
+Current clock 89.07603960826434s. 0 out of 5 coordinates found.
+Current clock 89.07685225267325s. 0 out of 5 coordinates found.
+Current clock 89.07750520581457s. 0 out of 5 coordinates found.
+Current clock 89.07815393272197s. 0 out of 5 coordinates found.
+Current clock 89.07877730222583s. 0 out of 5 coordinates found.
+Current clock 89.07886756250751s. 0 out of 5 coordinates found.
+Current clock 89.07948972451597s. 0 out of 5 coordinates found.
+Current clock 89.0800995096965s. 0 out of 5 coordinates found.
+Current clock 89.08070989862472s. 0 out of 5 coordinates found.
+Current clock 89.08132058942681s. 0 out of 5 coordinates found.
+Final: 0 out of 5 coordinates found.
+Lengths checked: 9
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x20_reflection3[2018-02-25_23-50-42]Drawn Lines.jpg
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 0.14946287585559048

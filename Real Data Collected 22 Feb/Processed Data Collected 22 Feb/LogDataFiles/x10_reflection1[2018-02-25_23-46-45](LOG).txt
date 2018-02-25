@@ -1,0 +1,40 @@
+Log file for ..\Real Data Collected 22 Feb\x10_reflection1.bmp
+
+Save location: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x10_reflection1[2018-02-25_23-46-45]
+Started at: 1197.4168497531577s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 45
+# Endpoints: 6
+Current clock 1197.6227074945014s. 0 out of 6 coordinates found.
+Current clock 1197.6235992298593s. 0 out of 6 coordinates found.
+Current clock 1197.6241899969873s. 0 out of 6 coordinates found.
+Current clock 1197.6247629535578s. 0 out of 6 coordinates found.
+Current clock 1197.6253356082548s. 0 out of 6 coordinates found.
+Current clock 1197.6269319171827s. 0 out of 6 coordinates found.
+Current clock 1197.6275241936798s. 0 out of 6 coordinates found.
+Current clock 1197.6275951340351s. 0 out of 6 coordinates found.
+Current clock 1197.628128545131s. 0 out of 6 coordinates found.
+Current clock 1197.6287033129447s. 0 out of 6 coordinates found.
+Current clock 1197.6292705339122s. 0 out of 6 coordinates found.
+Current clock 1197.629847112969s. 0 out of 6 coordinates found.
+Current clock 1197.6304143339364s. 0 out of 6 coordinates found.
+Current clock 1197.6309857811377s. 0 out of 6 coordinates found.
+Current clock 1197.6315517946098s. 0 out of 6 coordinates found.
+Final: 0 out of 6 coordinates found.
+Lengths checked: 14
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x10_reflection1[2018-02-25_23-46-45]Drawn Lines.jpg
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 0.26041781756066484

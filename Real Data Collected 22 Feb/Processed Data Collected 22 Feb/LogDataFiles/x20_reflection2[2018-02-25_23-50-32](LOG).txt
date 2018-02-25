@@ -1,0 +1,70 @@
+Log file for ..\Real Data Collected 22 Feb\x20_reflection2.bmp
+
+Save location: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x20_reflection2[2018-02-25_23-50-32]
+Started at: 78.80820112767996s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 32
+# Endpoints: 10
+Current clock 78.93363484493646s. 0 out of 10 coordinates found.
+Current clock 78.93610538053916s. 0 out of 10 coordinates found.
+Current clock 78.93691862869576s. 0 out of 10 coordinates found.
+Current clock 78.93760961794241s. 0 out of 10 coordinates found.
+Current clock 78.93823027058161s. 0 out of 10 coordinates found.
+Current clock 78.93884126325754s. 0 out of 10 coordinates found.
+Current clock 78.93945799153667s. 0 out of 10 coordinates found.
+Current clock 78.94010913343489s. 0 out of 10 coordinates found.
+Current clock 78.94074518164051s. 0 out of 10 coordinates found.
+Current clock 78.94135979680267s. 0 out of 10 coordinates found.
+Current clock 78.94193154587788s. 0 out of 10 coordinates found.
+Current clock 78.9424963518545s. 0 out of 10 coordinates found.
+Current clock 78.94310100517956s. 0 out of 10 coordinates found.
+Current clock 78.94366913176854s. 0 out of 10 coordinates found.
+Current clock 78.94423846585293s. 0 out of 10 coordinates found.
+Current clock 78.94480327182956s. 0 out of 10 coordinates found.
+Current clock 78.94537230404009s. 0 out of 10 coordinates found.
+Current clock 78.94593801563828s. 0 out of 10 coordinates found.
+Current clock 78.9460297852892s. 0 out of 10 coordinates found.
+Current clock 78.94656078139442s. 0 out of 10 coordinates found.
+Current clock 78.94662206178633s. 0 out of 10 coordinates found.
+Current clock 78.94715185039615s. 0 out of 10 coordinates found.
+Current clock 78.94771816574203s. 0 out of 10 coordinates found.
+Current clock 78.94828236797095s. 0 out of 10 coordinates found.
+Current clock 78.94885321142459s. 0 out of 10 coordinates found.
+Current clock 78.94941711177967s. 0 out of 10 coordinates found.
+Current clock 78.94948110903623s. 0 out of 10 coordinates found.
+Current clock 78.95000999202449s. 0 out of 10 coordinates found.
+Current clock 78.95067954822767s. 0 out of 10 coordinates found.
+Current clock 78.95144298719873s. 0 out of 10 coordinates found.
+Current clock 78.95202349061564s. 0 out of 10 coordinates found.
+Current clock 78.95260097529405s. 0 out of 10 coordinates found.
+Current clock 78.95325906029085s. 0 out of 10 coordinates found.
+Current clock 78.95386552485901s. 0 out of 10 coordinates found.
+Current clock 78.95448979998443s. 0 out of 10 coordinates found.
+Current clock 78.95506215280733s. 0 out of 10 coordinates found.
+Current clock 78.95562846815321s. 0 out of 10 coordinates found.
+Current clock 78.95623855520759s. 0 out of 10 coordinates found.
+Current clock 78.95680577617503s. 0 out of 10 coordinates found.
+Current clock 78.95737933649335s. 0 out of 10 coordinates found.
+Current clock 78.95794534996537s. 0 out of 10 coordinates found.
+Current clock 78.9585113634374s. 0 out of 10 coordinates found.
+Current clock 78.95907737690943s. 0 out of 10 coordinates found.
+Current clock 78.9591419779137s. 0 out of 10 coordinates found.
+Current clock 78.95917095780347s. 0 out of 10 coordinates found.
+Final: 0 out of 10 coordinates found.
+Lengths checked: 39
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x20_reflection2[2018-02-25_23-50-32]Drawn Lines.jpg
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 0.2508378508755271

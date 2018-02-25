@@ -1,0 +1,32 @@
+Log file for ..\Real Data Collected 22 Feb\x20_transmission6.bmp
+
+Save location: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x20_transmission6[2018-02-25_23-52-14]
+Started at: 180.7440695372455s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 48
+# Endpoints: 7
+Current clock 180.8534118688346s. 0 out of 7 coordinates found.
+Current clock 180.8535851444255s. 0 out of 7 coordinates found.
+Current clock 180.85424866315165s. 0 out of 7 coordinates found.
+Current clock 180.85489889942832s. 0 out of 7 coordinates found.
+Current clock 180.85558536056718s. 0 out of 7 coordinates found.
+Final: 2 out of 7 coordinates found.
+Lengths checked: 12
+Lengths Found: 1
+
+Drawing found fibres.
+Drawing 1 out of 1
+Line coords: (249, 412, 378, 445)
+Drawn found fibres on the image: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x20_transmission6[2018-02-25_23-52-14]Drawn Lines.jpg
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 0.16217055751872067
