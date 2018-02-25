@@ -13,6 +13,7 @@ import lengths
 import sys
 import numpy as np
 import cv2
+import graphing
 
 
 #Variables and Constants
@@ -28,7 +29,7 @@ OVERWRITE = False
 FIBRE_WIDTH = 25 #fibre width
 MIN_LENGTH = 4 * FIBRE_WIDTH #Minimum fibre length minimum ratio is approximately 4:1
 #Varibles for random generated images
-randArraySize = 1000
+randArraySize = 7500
 randFibreNum = 10
 
 
@@ -236,6 +237,11 @@ while numDone <= numAnalyse:
         totCorrect += correct
         totIncorrect += incorrect
         totOneAway += oneAway
+        
+    #Produce graphs
+    graphing.lengthDistribution(fibreLengths)
+    if RANDOM:
+        graphing.lengthDistribution(knownPositions)
         
     #Update number done
     print("Analysed image " + str(numDone) + " out of " + str(numAnalyse) + 

@@ -1,0 +1,81 @@
+Log file for Generated Random Image. 1 images to be generated and analysed.
+
+Save location: ..\ProcessedData\Images\Generated Random Image[2018-02-25_23-25-23]
+Started at: 6.037477034946728e-07s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Generating random image with 10 fibres and an array size of 7500 pixels.
+The fibre widths are 25 with lengths between 100 and 1000 pixels.
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 1
+
+# Corners Found: 40
+# Endpoints: 20
+Current clock 8.198988903720958s. 0 out of 20 coordinates found.
+Current clock 8.260608903708883s. 0 out of 20 coordinates found.
+Current clock 9.873294790079942s. 4 out of 20 coordinates found.
+Current clock 9.935116139926983s. 4 out of 20 coordinates found.
+Current clock 9.99657584489963s. 4 out of 20 coordinates found.
+Current clock 11.112932517307938s. 8 out of 20 coordinates found.
+Current clock 12.458601623719074s. 12 out of 20 coordinates found.
+Current clock 13.44088766609854s. 16 out of 20 coordinates found.
+Final: 20 out of 20 coordinates found.
+Lengths checked: 15
+Lengths Found: 10
+
+Drawing found fibres.
+Drawing 1 out of 10
+Line coords: (529, 3522, 1307, 3091)
+Drawing 2 out of 10
+Line coords: (843, 4446, 1795, 4701)
+Drawing 3 out of 10
+Line coords: (1366, 6539, 1878, 6925)
+Drawing 4 out of 10
+Line coords: (1687, 4911, 1865, 4738)
+Drawing 5 out of 10
+Line coords: (2188, 2042, 2648, 2776)
+Drawing 6 out of 10
+Line coords: (2916, 4824, 3138, 5400)
+Drawing 7 out of 10
+Line coords: (4826, 3575, 4955, 3490)
+Drawing 8 out of 10
+Line coords: (5464, 5971, 5810, 6306)
+Drawing 9 out of 10
+Line coords: (6322, 3817, 7004, 3112)
+Drawing 10 out of 10
+Line coords: (7210, 3201, 7319, 3211)
+Drawn found fibres on the image: ..\ProcessedData\Images\Generated Random Image[2018-02-25_23-25-23] (Random Image 1) Drawn Lines.jpg
+
+Checking found fibres with known fibre positions.
+CORRECT: [  3.20100000e+03   7.21000000e+03   3.21100000e+03   7.31900000e+03
+   1.10000000e+02   5.00000000e+00]
+CORRECT: [ 3575.  4826.  3490.  4955.   154.    33.]
+CORRECT: [ 4911.  1687.  4738.  1865.   249.    44.]
+CORRECT: [ 5971.  5464.  6306.  5810.   482.    44.]
+One away: Known Data: [ 3138.  5400.  2916.  4824.   618.   249.] Found Data: [ 4824.  2916.  5400.  3138.   617.    69.]
+CORRECT: [ 6539.  1366.  6925.  1878.   642.    37.]
+CORRECT: [ 2042.  2188.  2776.  2648.   866.    58.]
+CORRECT: [ 3522.   529.  3091.  1307.   889.    29.]
+One away: Known Data: [ 7004.  3112.  6322.  3818.   982.   134.] Found Data: [ 3817.  6322.  3112.  7004.   981.    46.]
+One away: Known Data: [ 1795.  4701.   843.  4446.   986.   195.] Found Data: [ 4446.   843.  4701.  1795.   985.    15.]
+Found 0 incorrect fibres and 7 correct fibres and 3 fibres that are one away.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Known length distribution.
+Analysed image 1 out of 1
+***********************************************************************************
+A total of 7 correct fibres have been found, with 3 fibres only one away. 0 have been incorrectly found.
+
+Time taken: 15.470078565688654
