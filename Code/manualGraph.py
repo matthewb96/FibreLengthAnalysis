@@ -8,9 +8,10 @@ Temporary file for creating a graph manually.
 
 import numpy as np
 from matplotlib import pyplot as plt
+from scipy.optimize import curve_fit
 
 #Functions
-def plotGraph(data, title):
+def plot3LineGraph(data, title):
     """
     Plots a graph containing the correct, incorrect and one away data for the 100 random image tests.
     
@@ -25,7 +26,45 @@ def plotGraph(data, title):
     plt.title(title)
     plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
     graph.show()
-        
+    
+    
+def plotPercentError(data, title):
+    """
+    Plot a graph for the average percentage incorrect fibres for 100 random images tests.
+    
+    arg[0] data - numpy array containing the data to be plotted.
+    arg[1] title - string containing the title for the graph.
+    """
+    graph = plt.figure()
+    x = data[:, 0]
+    #Divide the data by 100 to get average per image, then divide by 10 and multiply by 100 to get percentage so just divide by 10
+    y = data[:, 3] / 10
+    y1 = np.ones(y.shape)
+    #Exponential fit
+    global popt
+    popt, pcov = curve_fit(expFunc, x, y, p0 = (100., (0.01), 1.))
+    percentile = expFuncX(1, *popt)
+    #Plots
+    plt.plot(x, y, "r+", label = "% Incorrect")
+    plt.plot(x, expFunc(x, *popt), label = "Exponential fit")
+    plt.plot(x, y1, label = "1%")
+    plt.xlabel("Array Size (pixels)"); plt.ylabel("Percentage of Incorrect Fibres")
+    plt.title(title)
+    plt.text(6000, 25, "1% Incorrect at x = " + str(np.rint(percentile)))
+    plt.legend()
+    graph.show()
+    
+def expFunc(x, a, b, c):
+    """
+    Exponential function for curve_fit.
+    """
+    return a * np.exp(-b * x) + c
+
+def expFuncX(y, a, b, c):
+    """
+    Rearrangement of the exponential function to find y.
+    """
+    return -(np.log((y - c)/a))/b
 
 #Data for the 100 random image tests before fixing the one away check 
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
@@ -50,8 +89,10 @@ for i in range(dataOrig.shape[0]):
     totFibres = np.sum(dataOrig[i, 1:])
     dataOrig[i,3] += (1000 - totFibres)
     print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataOrig[i, 1:])))
-#Plot graph 
-plotGraph(dataOrig, "Graph showing the data for 100 random images\nbefore fixing the one away check")
+#Plot graphs 
+plot3LineGraph(dataOrig, "Graph showing the data for 100 random images\nbefore fixing the one away check")
+plotPercentError(dataOrig, "Graph showing the percentage error for 100 random images\nbefore fixing the one away check")
+
 
 #Data for the 100 random image tests after fixing the one away check 
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
@@ -69,13 +110,10 @@ dataNew = np.array([[10000, 720, 221, 59],
                      [1500, 187, 64, 749],
                      [1000, 105, 50, 845]
                      ])
-    
-#Checking the total fibres
-for i in range(dataNew.shape[0]):
-    totFibres = np.sum(dataNew[i, 1:])
-    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataNew[i, 1:])))
-#Plot the graph
-plotGraph(dataNew, "Graph showing the data for 100 random images\nafter fixing the one away check")
+#Plot the graphs
+plot3LineGraph(dataNew, "Graph showing the data for 100 random images\nafter fixing the one away check")
+plotPercentError(dataNew, "Graph showing the percentage error for 100 random images\nafter fixing the one away check")
+
 
 #Data for the 100 random image tests after getting fibres to check further down the array when some are missing 
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
@@ -93,13 +131,11 @@ dataCheckDown = np.array([[10000, 744, 219, 37],
                          [1500, 320, 124, 556],
                          [1000, 200, 86, 714]
                          ])
-    
-#Checking the total fibres
-for i in range(dataCheckDown.shape[0]):
-    totFibres = np.sum(dataCheckDown[i, 1:])
-    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataCheckDown[i, 1:])))
+
 #Plot the graph
-plotGraph(dataCheckDown, "Graph showing the data for 100 random images after having\nfibres check further down array, to account for missing fibres.")
+plot3LineGraph(dataCheckDown, "Graph showing the data for 100 random images after having\nfibres check further down array, to account for missing fibres.")
+plotPercentError(dataCheckDown, "Graph showing the percentage error for 100 random images after having\nfibres check further down array, to account for missing fibres.")
+
 
 #Data for the 100 random image tests after edits for checking the midpoint is part of a fibre
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
@@ -117,13 +153,11 @@ dataMidpoint = np.array([[10000, 692, 287, 21],
                          [1500, 244, 86, 670],
                          [1000, 169, 81, 750]
                          ])
-    
-#Checking the total fibres
-for i in range(dataMidpoint.shape[0]):
-    totFibres = np.sum(dataMidpoint[i, 1:])
-    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataMidpoint[i, 1:])))
-#Plot the graph
-plotGraph(dataMidpoint, "Graph showing the data for 100 random images after edits\nfor checking the midpoint is part of a fibre.")
+
+#Plot the graphs
+plot3LineGraph(dataMidpoint, "Graph showing the data for 100 random images after edits\nfor checking the midpoint is part of a fibre.")
+plotPercentError(dataMidpoint, "Graph showing the percentage error for 100 random images after edits\nfor checking the midpoint is part of a fibre.")
+
 
 #Data for the 100 random image tests after edits for checking centroid position is part of a fibre
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
@@ -141,13 +175,10 @@ dataCentroid = np.array([[10000, 709, 281, 10],
                          [1500, 506, 181, 313],
                          [1000, 400, 123, 477]
                          ])
-    
-#Checking the total fibres
-for i in range(dataCentroid.shape[0]):
-    totFibres = np.sum(dataCentroid[i, 1:])
-    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataCentroid[i, 1:])))
-#Plot the graph
-plotGraph(dataCentroid, "Graph showing the data for 100 random images after edits\nfor checking centroid position is part of a fibre.")
+#Plot the graphs
+plot3LineGraph(dataCentroid, "Graph showing the data for 100 random images after edits\nfor checking centroid position is part of a fibre.")
+plotPercentError(dataCentroid, "Graph showing the percentage error for 100 random images after edits\nfor checking centroid position is part of a fibre.")
+
 
 #Data for the 100 random image tests after fixing checking the line is part of a fibre
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
@@ -165,11 +196,7 @@ dataLineFix = np.array([[10000, 737, 256, 7],
                          [1500, 561, 201, 238],
                          [1000, 466, 180, 354]
                          ])
-    
-#Checking the total fibres
-for i in range(dataLineFix.shape[0]):
-    totFibres = np.sum(dataLineFix[i, 1:])
-    print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataLineFix[i, 1:])))
 
-#Plot the graph
-plotGraph(dataLineFix, "Graph showing the data for 100 random images after fixing\nthe check that the line is part of a fibre.")
+#Plot the graphs
+plot3LineGraph(dataLineFix, "Graph showing the data for 100 random images after fixing\nthe check that the line is part of a fibre.")
+plotPercentError(dataLineFix, "Graph showing the percentage error for 100 random images after fixing\nthe check that the line is part of a fibre.")
