@@ -239,9 +239,9 @@ while numDone <= numAnalyse:
         totOneAway += oneAway
         
     #Produce graphs
-    graphing.lengthDistribution(fibreLengths)
+    graphing.lengthDistribution(fibreLengths, PROCESSEDIMAGES + saveName, title = "Length Distribution of the Found Fibres")
     if RANDOM:
-        graphing.lengthDistribution(knownPositions)
+        graphing.lengthDistribution(knownPositions, PROCESSEDIMAGES + saveName, title = "Length Distribution of the Known Fibres")
         
     #Update number done
     print("Analysed image " + str(numDone) + " out of " + str(numAnalyse) + 

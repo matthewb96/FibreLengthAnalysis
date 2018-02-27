@@ -9,7 +9,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 #Functions
-def lengthDistribution(data):
+def lengthDistribution(data, filename = "", title = "Length Distribution of the Fibres"):
     """
     Produces a histogram showing the length distribution.
     """
@@ -23,8 +23,12 @@ def lengthDistribution(data):
     #Plot
     plt.bar(binCentres, vals, width, yerr = stdErr)
     plt.ylabel("Number of fibres"), plt.xlabel("Fibre Length (pixels)")
-    plt.title("Length Distribution of the Fibres")
+    plt.title(title)
     graph.show()
+    
+    #Save the plot
+    if filename != "":
+        graph.savefig(filename + " " + title + ".jpg") 
     
 """
 data = np.array([[0,0,0,0,0,0]], dtype = np.float)

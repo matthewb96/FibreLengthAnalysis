@@ -15,24 +15,41 @@ def averageEdges(cornerPos, FIBREWIDTH, imageArray):
     """
     Finds the corners that are close enough together to be considered part of the short edge 
     and averages them to return one position for each edge.
+    
+    arg[0] cornerPos - numpy array containing the coordinates for the corners.
+    arg[1] FIBREWIDTH - int value for width of the fibres.
+    arg[2] imageArray - numpy array containing the image data.
     """
     averageCoords = np.array([[0,0]]) #Initiate array with temp values
     arrayLength, width = cornerPos.shape #Find length of axis 0
+    foundMidpoint = np.full(arrayLength, False, dtype = bool)
     for i in range(arrayLength):
+        if foundMidpoint[i]: #If corner is already part of an edge
+            continue
         for j in range(i, arrayLength): #Generates list of numbers starts at i so to not repeat numbers already compared
+            if foundMidpoint[j]: #If corner is already part of an edge
+                continue
             distance = coordDist(cornerPos[i], cornerPos[j])
             #Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width
             if  distance <= int(np.rint(FIBREWIDTH*1.1)) and distance != 0: 
                 average = np.array([(cornerPos[i] + cornerPos[j])/2])
                 #Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint
-                for i in [(0,0), (1, 0), (0, 1), (-1, 0), (0, -1), (1, 1), (-1, -1), (1, -1), (-1, 1)]:
-                    x = np.rint(average[0, 0] + i[0])
-                    y = np.rint(average[0, 1] + i[1])
+                for k in [(0,0), (1, 0), (0, 1), (-1, 0), (0, -1), (1, 1), (-1, -1), (1, -1), (-1, 1)]:
+                    x = np.rint(average[0, 0] + k[0])
+                    y = np.rint(average[0, 1] + k[1])
                     pos = np.array([x, y], dtype = int)
                     if checkBlack(pos, imageArray):
                         #If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint
                         averageCoords = np.vstack((averageCoords, average))
+                        foundMidpoint[i] = True
+                        foundMidpoint[j] = True
                         break
+    
+    #Add coordinates of corners where no midpoint has been found to the midpoint array
+    if not foundMidpoint.all():
+        elements = np.where(foundMidpoint == False)
+        otherCorners = cornerPos[elements]
+        averageCoords = np.concatenate((averageCoords, otherCorners))
     
     averageCoords = np.delete(averageCoords, 0, 0) #Delete temp values
     print("# Endpoints: " + str(averageCoords.shape[0]))
