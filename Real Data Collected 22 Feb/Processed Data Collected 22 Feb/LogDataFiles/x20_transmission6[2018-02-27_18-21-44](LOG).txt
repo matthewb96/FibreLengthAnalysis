@@ -1,0 +1,61 @@
+Log file for ..\Real Data Collected 22 Feb\x20_transmission6.bmp
+
+Save location: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x20_transmission6[2018-02-27_18-21-44]
+Started at: 3.018738517473364e-07s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 48
+# Endpoints: 42
+Current clock 0.11280210780398243s. 0 out of 42 coordinates found.
+Current clock 0.11306534180270612s. 0 out of 42 coordinates found.
+Current clock 0.1182461008463939s. 0 out of 42 coordinates found.
+Current clock 0.12329222415220238s. 0 out of 42 coordinates found.
+Current clock 0.1281907311445064s. 0 out of 42 coordinates found.
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(161)[0;36mcheckLine[1;34m()[0m
+[1;32m    159 [1;33m            [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos1[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m [1;32mand[0m [0mcheckBlack[0m[1;33m([0m[0mpos2[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m    160 [1;33m                [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m-> 161 [1;33m                [0mmid1[0m [1;33m=[0m [0mmidpoint[0m[1;33m([0m[0mpos1[0m[1;33m,[0m [0mmid1[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    162 [1;33m                [0mmid2[0m [1;33m=[0m [0mmidpoint[0m[1;33m([0m[0mpos2[0m[1;33m,[0m [0mmid2[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    163 [1;33m                [0mpartOf[0m [1;33m=[0m [1;32mTrue[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(162)[0;36mcheckLine[1;34m()[0m
+[1;32m    160 [1;33m                [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m   161 [1;33m                [0mmid1[0m [1;33m=[0m [0mmidpoint[0m[1;33m([0m[0mpos1[0m[1;33m,[0m [0mmid1[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m--> 162 [1;33m                [0mmid2[0m [1;33m=[0m [0mmidpoint[0m[1;33m([0m[0mpos2[0m[1;33m,[0m [0mmid2[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    163 [1;33m                [0mpartOf[0m [1;33m=[0m [1;32mTrue[0m[1;33m[0m[0m
+[0m[1;32m    164 [1;33m                [1;32mbreak[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(166)[0;36mwrite[1;34m()[0m
+[1;32m    164 [1;33m[1;33m[0m[0m
+[0m[1;32m    165 [1;33m    [1;32mdef[0m [0mwrite[0m[1;33m([0m[0mself[0m[1;33m,[0m [0mmessage[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m--> 166 [1;33m        [0mself[0m[1;33m.[0m[0mterminal[0m[1;33m.[0m[0mwrite[0m[1;33m([0m[0mmessage[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    167 [1;33m        [1;32mif[0m [0mself[0m[1;33m.[0m[0mtype[0m [1;33m==[0m [1;34m"Out"[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m    168 [1;33m            [0mself[0m[1;33m.[0m[0mlog[0m[1;33m.[0m[0mwrite[0m[1;33m([0m[0mmessage[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+Analysing ..\Real Data Collected 22 Feb\x20_transmission6.bmp
+Log file for ..\Real Data Collected 22 Feb\x20_transmission6.bmp
+
+Save location: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x20_transmission6[2018-02-27_18-23-09]
+Started at: 84.83223843687304s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 48
+# Endpoints: 42
+Current clock 84.94316168182375s. 0 out of 42 coordinates found.
+Current clock 84.94352876042748s. 0 out of 42 coordinates found.
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(154)[0;36mcheckLine[1;34m()[0m
+[1;32m    152 [1;33m    [1;31m#Check to within half of fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m    153 [1;33m    [1;32mwhile[0m [0mint[0m[1;33m([0m[0mcoordDist[0m[1;33m([0m[0mmid1[0m[1;33m,[0m [0mpos1[0m[1;33m)[0m[1;33m)[0m [1;33m>[0m [1;33m([0m[0mfibreWidth[0m[1;33m/[0m[1;36m2[0m[1;33m)[0m [1;32mand[0m [0mint[0m[1;33m([0m[0mcoordDist[0m[1;33m([0m[0mmid2[0m[1;33m,[0m [0mpos2[0m[1;33m)[0m[1;33m)[0m [1;33m>[0m [1;33m([0m[0mfibreWidth[0m[1;33m/[0m[1;36m2[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m-> 154 [1;33m        [0mpartOf[0m [1;33m=[0m [1;32mFalse[0m [1;31m#Set to true when midpoint is part of a fibre[0m[1;33m[0m[0m
+[0m[1;32m    155 [1;33m        [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m    156 [1;33m        [1;32mfor[0m [0mi[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m

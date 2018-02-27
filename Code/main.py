@@ -27,7 +27,8 @@ DEBUGGING = False
 OVERWRITE = False
 #Fibre variables
 FIBRE_WIDTH = 25 #fibre width
-MIN_LENGTH = 4 * FIBRE_WIDTH #Minimum fibre length minimum ratio is approximately 4:1
+MIN_LENGTH = 30
+#MIN_LENGTH = 4 * FIBRE_WIDTH #Minimum fibre length minimum ratio is approximately 4:1
 #Varibles for random generated images
 randArraySize = 7500
 randFibreNum = 10
