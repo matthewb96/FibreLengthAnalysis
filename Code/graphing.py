@@ -14,8 +14,14 @@ def lengthDistribution(data):
     Produces a histogram showing the length distribution.
     """
     graph = plt.figure()
-    x = data[:, 4]
-    plt.hist(x)
+    #Generate Histogram
+    vals, binEdges = np.histogram(data[:, 4], bins = 10)
+    binCentres = 0.5 * (binEdges[1:] + binEdges[:-1])
+    width = binEdges[1] - binEdges[0]
+    stdErr = np.sqrt(vals)
+    
+    #Plot
+    plt.bar(binCentres, vals, width, yerr = stdErr)
     plt.ylabel("Number of fibres"), plt.xlabel("Fibre Length (pixels)")
     plt.title("Length Distribution of the Fibres")
     graph.show()
@@ -23,7 +29,7 @@ def lengthDistribution(data):
 """
 data = np.array([[0,0,0,0,0,0]], dtype = np.float)
 for i in range(100):
-    temp = np.loadtxt("..\\ProcessedData\\LogDataFiles\\Generated Random Image[2018-02-22_21-29-49] (Random Image " + str(i + 1) + ") Fibre_Lengths.txt")
+    temp = np.loadtxt("..\\ProcessedData\\LogDataFiles\\Generated Random Image[2018-02-22_23-28-49] (Random Image " + str(i + 1) + ") Fibre_Lengths.txt")
     data = np.concatenate((data, temp))
     
 data = np.delete(data, 0, 0)
