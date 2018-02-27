@@ -1,0 +1,130 @@
+Log file for ..\Real Data Collected 22 Feb\x10_transmission1.bmp
+
+Save location: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x10_transmission1[2018-02-27_18-37-03]
+Started at: 4768.595439229473s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 43
+# Endpoints: 38
+Current clock 4768.690850988425s. 0 out of 38 coordinates found.
+Current clock 4768.6956682913515s. 0 out of 38 coordinates found.
+Current clock 4768.700345222936s. 0 out of 38 coordinates found.
+Current clock 4768.7048854056675s. 0 out of 38 coordinates found.
+Current clock 4768.709670106217s. 0 out of 38 coordinates found.
+Current clock 4768.714132405494s. 0 out of 38 coordinates found.
+Current clock 4768.71858685605s. 0 out of 38 coordinates found.
+Current clock 4768.723139717482s. 0 out of 38 coordinates found.
+Current clock 4768.727597488651s. 0 out of 38 coordinates found.
+Current clock 4768.732048014847s. 0 out of 38 coordinates found.
+Current clock 4768.736685099084s. 0 out of 38 coordinates found.
+Current clock 4768.741140455262s. 0 out of 38 coordinates found.
+Current clock 4768.746571165855s. 0 out of 38 coordinates found.
+Current clock 4768.751019578935s. 0 out of 38 coordinates found.
+Current clock 4768.755641871352s. 0 out of 38 coordinates found.
+Current clock 4768.760115339961s. 0 out of 38 coordinates found.
+Current clock 4768.766029954339s. 0 out of 38 coordinates found.
+Current clock 4768.770608776922s. 0 out of 38 coordinates found.
+Current clock 4768.775074094937s. 0 out of 38 coordinates found.
+Current clock 4768.7795457523025s. 0 out of 38 coordinates found.
+Current clock 4768.78410917932s. 0 out of 38 coordinates found.
+Current clock 4768.788667776355s. 0 out of 38 coordinates found.
+Current clock 4768.793180790439s. 0 out of 38 coordinates found.
+Current clock 4768.797688068919s. 0 out of 38 coordinates found.
+Current clock 4768.802771926456s. 0 out of 38 coordinates found.
+Current clock 4768.807401463847s. 0 out of 38 coordinates found.
+Current clock 4768.811860140637s. 0 out of 38 coordinates found.
+Current clock 4768.816511714818s. 0 out of 38 coordinates found.
+Current clock 4768.821172345216s. 0 out of 38 coordinates found.
+Current clock 4768.825761129636s. 0 out of 38 coordinates found.
+Current clock 4768.834810100216s. 0 out of 38 coordinates found.
+Current clock 4768.839313454337s. 0 out of 38 coordinates found.
+Current clock 4768.843766395524s. 0 out of 38 coordinates found.
+Current clock 4768.848300540777s. 0 out of 38 coordinates found.
+Current clock 4768.852844345994s. 0 out of 38 coordinates found.
+Current clock 4768.85739992429s. 0 out of 38 coordinates found.
+Current clock 4768.862477140603s. 0 out of 38 coordinates found.
+Current clock 4768.867428777393s. 0 out of 38 coordinates found.
+Current clock 4768.872029033019s. 0 out of 38 coordinates found.
+Current clock 4768.876491332296s. 0 out of 38 coordinates found.
+Current clock 4768.881210224346s. 0 out of 38 coordinates found.
+Current clock 4768.886253328914s. 0 out of 38 coordinates found.
+Current clock 4768.890787172293s. 0 out of 38 coordinates found.
+Current clock 4768.895353316175s. 0 out of 38 coordinates found.
+Current clock 4768.899814407956s. 0 out of 38 coordinates found.
+Current clock 4768.90428123534s. 0 out of 38 coordinates found.
+Current clock 4768.90881900308s. 0 out of 38 coordinates found.
+Current clock 4768.91327375551s. 0 out of 38 coordinates found.
+Current clock 4768.917723376085s. 0 out of 38 coordinates found.
+Current clock 4769.350652741829s. 4 out of 38 coordinates found.
+Current clock 4769.355213150108s. 4 out of 38 coordinates found.
+Current clock 4769.367200258887s. 8 out of 38 coordinates found.
+Current clock 4769.3693329976495s. 12 out of 38 coordinates found.
+Current clock 4769.46409723719s. 16 out of 38 coordinates found.
+Current clock 4769.472780034788s. 20 out of 38 coordinates found.
+Current clock 4769.484046268809s. 20 out of 38 coordinates found.
+Current clock 4769.488578602819s. 20 out of 38 coordinates found.
+Current clock 4769.493038487105s. 20 out of 38 coordinates found.
+Current clock 4769.497489918923s. 20 out of 38 coordinates found.
+Current clock 4769.502067835884s. 20 out of 38 coordinates found.
+Current clock 4769.5066315647755s. 20 out of 38 coordinates found.
+Current clock 4769.511146390102s. 20 out of 38 coordinates found.
+Current clock 4769.515656083573s. 20 out of 38 coordinates found.
+Current clock 4769.520375881245s. 20 out of 38 coordinates found.
+Current clock 4769.5249269314345s. 20 out of 38 coordinates found.
+Current clock 4769.529437832401s. 20 out of 38 coordinates found.
+Current clock 4769.5341072171395s. 20 out of 38 coordinates found.
+Current clock 4769.538673059147s. 20 out of 38 coordinates found.
+Current clock 4769.540860135203s. 24 out of 38 coordinates found.
+Current clock 4769.545383412998s. 24 out of 38 coordinates found.
+Current clock 4769.55004917525s. 24 out of 38 coordinates found.
+Current clock 4769.554775312274s. 24 out of 38 coordinates found.
+Current clock 4769.561332616081s. 24 out of 38 coordinates found.
+Current clock 4769.5659769452905s. 24 out of 38 coordinates found.
+Current clock 4769.57050143058s. 24 out of 38 coordinates found.
+Current clock 4769.575097459973s. 24 out of 38 coordinates found.
+Current clock 4769.579583003536s. 24 out of 38 coordinates found.
+Final: 28 out of 38 coordinates found.
+Lengths checked: 215
+Lengths Found: 14
+
+Drawing found fibres.
+Drawing 1 out of 14
+Line coords: (176, 313, 139, 387)
+Drawing 2 out of 14
+Line coords: (397, 296, 550, 328)
+Drawing 3 out of 14
+Line coords: (8, 454, 74, 469)
+Drawing 4 out of 14
+Line coords: (62, 552, 95, 548)
+Drawing 5 out of 14
+Line coords: (71, 61, 74, 110)
+Drawing 6 out of 14
+Line coords: (92, 463, 123, 448)
+Drawing 7 out of 14
+Line coords: (149, 242, 172, 266)
+Drawing 8 out of 14
+Line coords: (185, 259, 234, 264)
+Drawing 9 out of 14
+Line coords: (194, 177, 270, 75)
+Drawing 10 out of 14
+Line coords: (299, 385, 310, 420)
+Drawing 11 out of 14
+Line coords: (320, 287, 350, 304)
+Drawing 12 out of 14
+Line coords: (359, 405, 389, 399)
+Drawing 13 out of 14
+Line coords: (431, 281, 468, 290)
+Drawing 14 out of 14
+Line coords: (541, 568, 574, 582)
+Drawn found fibres on the image: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x10_transmission1[2018-02-27_18-37-03]Drawn Lines.jpg
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 1.122218156987401

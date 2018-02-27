@@ -1,0 +1,387 @@
+Log file for ..\Real Data Collected 22 Feb\x10_transmission2.bmp
+
+Save location: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x10_transmission2[2018-02-27_18-38-22]
+Started at: 4847.3633142367935s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 52
+# Endpoints: 49
+Current clock 4847.449625706611s. 0 out of 49 coordinates found.
+Current clock 4847.45442278399s. 0 out of 49 coordinates found.
+Current clock 4847.459121148618s. 0 out of 49 coordinates found.
+Current clock 4847.4640797285065s. 0 out of 49 coordinates found.
+Current clock 4847.468707756528s. 0 out of 49 coordinates found.
+Current clock 4847.4731733764165s. 0 out of 49 coordinates found.
+Current clock 4847.477782084511s. 0 out of 49 coordinates found.
+Current clock 4847.4823104941615s. 0 out of 49 coordinates found.
+Current clock 4847.48676826533s. 0 out of 49 coordinates found.
+Current clock 4847.491278562549s. 0 out of 49 coordinates found.
+Current clock 4847.496145372787s. 0 out of 49 coordinates found.
+Current clock 4847.500782758898s. 0 out of 49 coordinates found.
+Current clock 4847.505239926319s. 0 out of 49 coordinates found.
+Current clock 4847.509811503929s. 0 out of 49 coordinates found.
+Current clock 4847.514283765043s. 0 out of 49 coordinates found.
+Current clock 4847.518736404357s. 0 out of 49 coordinates found.
+Current clock 4847.523440806462s. 0 out of 49 coordinates found.
+Current clock 4847.528167547232s. 0 out of 49 coordinates found.
+Current clock 4847.532657015156s. 0 out of 49 coordinates found.
+Current clock 4847.537111767586s. 0 out of 49 coordinates found.
+Current clock 4847.541792019783s. 0 out of 49 coordinates found.
+Current clock 4847.546251904069s. 0 out of 49 coordinates found.
+Current clock 4847.550703637761s. 0 out of 49 coordinates found.
+Current clock 4847.555410756731s. 0 out of 49 coordinates found.
+Current clock 4847.560442390092s. 0 out of 49 coordinates found.
+Current clock 4847.564999477759s. 0 out of 49 coordinates found.
+Current clock 4847.569458154549s. 0 out of 49 coordinates found.
+Current clock 4847.57415199107s. 0 out of 49 coordinates found.
+Current clock 4847.578754661687s. 0 out of 49 coordinates found.
+Current clock 4847.583328956162s. 0 out of 49 coordinates found.
+Current clock 4847.588087695562s. 0 out of 49 coordinates found.
+Current clock 4847.592688253062s. 0 out of 49 coordinates found.
+Current clock 4847.597207002749s. 0 out of 49 coordinates found.
+Current clock 4847.601718507463s. 0 out of 49 coordinates found.
+Current clock 4847.606467586899s. 0 out of 49 coordinates found.
+Current clock 4847.611063918165s. 0 out of 49 coordinates found.
+Current clock 4847.615820242574s. 0 out of 49 coordinates found.
+Current clock 4847.620510456608s. 0 out of 49 coordinates found.
+Current clock 4847.625174709492s. 0 out of 49 coordinates found.
+Current clock 4847.629642744371s. 0 out of 49 coordinates found.
+Current clock 4847.634347448351s. 0 out of 49 coordinates found.
+Current clock 4847.639145733225s. 0 out of 49 coordinates found.
+Current clock 4847.643631880535s. 0 out of 49 coordinates found.
+Current clock 4847.648084217974s. 0 out of 49 coordinates found.
+Current clock 4847.652710434752s. 0 out of 49 coordinates found.
+Current clock 4847.657205034531s. 0 out of 49 coordinates found.
+Current clock 4847.661682125627s. 0 out of 49 coordinates found.
+Current clock 4847.66631739862s. 0 out of 49 coordinates found.
+Current clock 4847.67111387225s. 0 out of 49 coordinates found.
+Current clock 4847.6755897558505s. 0 out of 49 coordinates found.
+Current clock 4847.680148956633s. 0 out of 49 coordinates found.
+Current clock 4847.684693365598s. 0 out of 49 coordinates found.
+Current clock 4847.689164419216s. 0 out of 49 coordinates found.
+Current clock 4847.693613737917s. 0 out of 49 coordinates found.
+Current clock 4847.698239954695s. 0 out of 49 coordinates found.
+Current clock 4847.702716442042s. 0 out of 49 coordinates found.
+Current clock 4847.707317301417s. 0 out of 49 coordinates found.
+Current clock 4847.712448855023s. 0 out of 49 coordinates found.
+Current clock 4847.7172999678205s. 0 out of 49 coordinates found.
+Current clock 4847.721758946484s. 0 out of 49 coordinates found.
+Current clock 4847.7262118876715s. 0 out of 49 coordinates found.
+Current clock 4847.730752976024s. 0 out of 49 coordinates found.
+Current clock 4847.735202294724s. 0 out of 49 coordinates found.
+Current clock 4847.739651915299s. 0 out of 49 coordinates found.
+Current clock 4847.74419602239s. 0 out of 49 coordinates found.
+Current clock 4847.748648661703s. 0 out of 49 coordinates found.
+Current clock 4847.753098584151s. 0 out of 49 coordinates found.
+Current clock 4847.757546997231s. 0 out of 49 coordinates found.
+Current clock 4847.762394185668s. 0 out of 49 coordinates found.
+Current clock 4847.7669470471s. 0 out of 49 coordinates found.
+Current clock 4847.771942153725s. 0 out of 49 coordinates found.
+Current clock 4847.772094901894s. 0 out of 49 coordinates found.
+Current clock 4847.776893790515s. 0 out of 49 coordinates found.
+Current clock 4847.78166792548s. 0 out of 49 coordinates found.
+Current clock 4847.786251276172s. 0 out of 49 coordinates found.
+Current clock 4847.791135896967s. 0 out of 49 coordinates found.
+Current clock 4847.795697210867s. 0 out of 49 coordinates found.
+Current clock 4847.800222299905s. 0 out of 49 coordinates found.
+Current clock 4847.804850327925s. 0 out of 49 coordinates found.
+Current clock 4847.809553220662s. 0 out of 49 coordinates found.
+Current clock 4847.81404540545s. 0 out of 49 coordinates found.
+Current clock 4847.818505289735s. 0 out of 49 coordinates found.
+Current clock 4847.823065999888s. 0 out of 49 coordinates found.
+Current clock 4847.8275862589435s. 0 out of 49 coordinates found.
+Current clock 4847.8320609350485s. 0 out of 49 coordinates found.
+Current clock 4847.837868082334s. 0 out of 49 coordinates found.
+Current clock 4847.842516939651s. 0 out of 49 coordinates found.
+Current clock 4847.846972899577s. 0 out of 49 coordinates found.
+Current clock 4847.85142553889s. 0 out of 49 coordinates found.
+Current clock 4847.858135590866s. 0 out of 49 coordinates found.
+Current clock 4847.862735846494s. 0 out of 49 coordinates found.
+Current clock 4847.86722169193s. 0 out of 49 coordinates found.
+Current clock 4847.8718708511215s. 0 out of 49 coordinates found.
+Current clock 4847.876351866576s. 0 out of 49 coordinates found.
+Current clock 4847.880828957672s. 0 out of 49 coordinates found.
+Current clock 4847.8860254141555s. 0 out of 49 coordinates found.
+Current clock 4847.8907678523665s. 0 out of 49 coordinates found.
+Current clock 4847.89523769849s. 0 out of 49 coordinates found.
+Current clock 4847.89995266618s. 0 out of 49 coordinates found.
+Current clock 4847.904635937116s. 0 out of 49 coordinates found.
+Current clock 4847.909167969252s. 0 out of 49 coordinates found.
+Current clock 4847.913830109019s. 0 out of 49 coordinates found.
+Current clock 4847.918447571455s. 0 out of 49 coordinates found.
+Current clock 4847.9230079797335s. 0 out of 49 coordinates found.
+Current clock 4847.927524012555s. 0 out of 49 coordinates found.
+Current clock 4847.932179812971s. 0 out of 49 coordinates found.
+Current clock 4847.936720297575s. 0 out of 49 coordinates found.
+Current clock 4847.941256857819s. 0 out of 49 coordinates found.
+Current clock 4847.945853189086s. 0 out of 49 coordinates found.
+Current clock 4847.950575703622s. 0 out of 49 coordinates found.
+Current clock 4847.9556465805845s. 0 out of 49 coordinates found.
+Current clock 4847.960149330957s. 0 out of 49 coordinates found.
+Current clock 4847.964830186902s. 0 out of 49 coordinates found.
+Current clock 4847.969485987318s. 0 out of 49 coordinates found.
+Current clock 4847.974028283165s. 0 out of 49 coordinates found.
+Current clock 4847.97887999971s. 0 out of 49 coordinates found.
+Current clock 4847.983340789618s. 0 out of 49 coordinates found.
+Current clock 4847.987851086837s. 0 out of 49 coordinates found.
+Current clock 4847.99242990942s. 0 out of 49 coordinates found.
+Current clock 4848.200104025729s. 4 out of 49 coordinates found.
+Current clock 4848.200316243047s. 4 out of 49 coordinates found.
+Current clock 4848.204822314032s. 4 out of 49 coordinates found.
+Current clock 4848.2358271735975s. 8 out of 49 coordinates found.
+Current clock 4848.240481162769s. 8 out of 49 coordinates found.
+Current clock 4848.2451816405155s. 8 out of 49 coordinates found.
+Current clock 4848.2496623540965s. 8 out of 49 coordinates found.
+Current clock 4848.254114389662s. 8 out of 49 coordinates found.
+Current clock 4848.2586856654s. 8 out of 49 coordinates found.
+Current clock 4848.263320334645s. 8 out of 49 coordinates found.
+Current clock 4848.267853876151s. 8 out of 49 coordinates found.
+Current clock 4848.272445075562s. 8 out of 49 coordinates found.
+Current clock 4848.277081254178s. 8 out of 49 coordinates found.
+Current clock 4848.282642978022s. 8 out of 49 coordinates found.
+Current clock 4848.287155992105s. 8 out of 49 coordinates found.
+Current clock 4848.291886657236s. 8 out of 49 coordinates found.
+Current clock 4848.29636676707s. 8 out of 49 coordinates found.
+Current clock 4848.300823934491s. 8 out of 49 coordinates found.
+Current clock 4848.305403360822s. 8 out of 49 coordinates found.
+Current clock 4848.3098852818985s. 8 out of 49 coordinates found.
+Current clock 4848.31434244932s. 8 out of 49 coordinates found.
+Current clock 4848.318795390507s. 8 out of 49 coordinates found.
+Current clock 4848.323447568437s. 8 out of 49 coordinates found.
+Current clock 4848.327909263965s. 8 out of 49 coordinates found.
+Current clock 4848.332360393909s. 8 out of 49 coordinates found.
+Current clock 4848.336913255342s. 8 out of 49 coordinates found.
+Current clock 4848.341427175046s. 8 out of 49 coordinates found.
+Current clock 4848.3458816256025s. 8 out of 49 coordinates found.
+Current clock 4848.350331246177s. 8 out of 49 coordinates found.
+Current clock 4848.355133757285s. 8 out of 49 coordinates found.
+Current clock 4848.359874686127s. 8 out of 49 coordinates found.
+Current clock 4848.364533807155s. 8 out of 49 coordinates found.
+Current clock 4848.369568761128s. 8 out of 49 coordinates found.
+Current clock 4848.374268333252s. 8 out of 49 coordinates found.
+Current clock 4848.378953415431s. 8 out of 49 coordinates found.
+Current clock 4848.383690419912s. 8 out of 49 coordinates found.
+Current clock 4848.38916610971s. 8 out of 49 coordinates found.
+Current clock 4848.39464602574s. 8 out of 49 coordinates found.
+Current clock 4848.4009853766265s. 8 out of 49 coordinates found.
+Current clock 4848.406062291066s. 8 out of 49 coordinates found.
+Current clock 4848.41070782777s. 8 out of 49 coordinates found.
+Current clock 4848.4153935136965s. 8 out of 49 coordinates found.
+Current clock 4848.420090368956s. 8 out of 49 coordinates found.
+Current clock 4848.424840957761s. 8 out of 49 coordinates found.
+Current clock 4848.429530266174s. 8 out of 49 coordinates found.
+Current clock 4848.434350285965s. 8 out of 49 coordinates found.
+Current clock 4848.439068574268s. 8 out of 49 coordinates found.
+Current clock 4848.443739166502s. 8 out of 49 coordinates found.
+Current clock 4848.448535942007s. 8 out of 49 coordinates found.
+Current clock 4848.453279889587s. 8 out of 49 coordinates found.
+Current clock 4848.45802413904s. 8 out of 49 coordinates found.
+Current clock 4848.462797066511s. 8 out of 49 coordinates found.
+Current clock 4848.467450150061s. 8 out of 49 coordinates found.
+Current clock 4848.472033500752s. 8 out of 49 coordinates found.
+Current clock 4848.47658364532s. 8 out of 49 coordinates found.
+Current clock 4848.48142238129s. 8 out of 49 coordinates found.
+Current clock 4848.486114104693s. 8 out of 49 coordinates found.
+Current clock 4848.490896692127s. 8 out of 49 coordinates found.
+Current clock 4848.495862215114s. 8 out of 49 coordinates found.
+Current clock 4848.5007069885605s. 8 out of 49 coordinates found.
+Current clock 4848.5054711616895s. 8 out of 49 coordinates found.
+Current clock 4848.518428191153s. 8 out of 49 coordinates found.
+Current clock 4848.523293492022s. 8 out of 49 coordinates found.
+Current clock 4848.528508664685s. 8 out of 49 coordinates found.
+Current clock 4848.533580145395s. 8 out of 49 coordinates found.
+Current clock 4848.5390811925945s. 8 out of 49 coordinates found.
+Current clock 4848.5459919906825s. 8 out of 49 coordinates found.
+Current clock 4848.55168714277s. 8 out of 49 coordinates found.
+Current clock 4848.557621680821s. 8 out of 49 coordinates found.
+Current clock 4848.563251024409s. 8 out of 49 coordinates found.
+Current clock 4848.568658792589s. 8 out of 49 coordinates found.
+Current clock 4848.573504773532s. 8 out of 49 coordinates found.
+Current clock 4848.57828856846s. 8 out of 49 coordinates found.
+Current clock 4848.583050628471s. 8 out of 49 coordinates found.
+Current clock 4848.587919551826s. 8 out of 49 coordinates found.
+Current clock 4848.592704856124s. 8 out of 49 coordinates found.
+Current clock 4848.597464501145s. 8 out of 49 coordinates found.
+Current clock 4848.6022775778365s. 8 out of 49 coordinates found.
+Current clock 4848.607285665037s. 8 out of 49 coordinates found.
+Current clock 4848.612013613303s. 8 out of 49 coordinates found.
+Current clock 4848.621854097122s. 8 out of 49 coordinates found.
+Current clock 4848.626429297219s. 8 out of 49 coordinates found.
+Current clock 4848.6319581168145s. 8 out of 49 coordinates found.
+Current clock 4848.63665074584s. 8 out of 49 coordinates found.
+Current clock 4848.641267604528s. 8 out of 49 coordinates found.
+Current clock 4848.645795410431s. 8 out of 49 coordinates found.
+Current clock 4848.650500718158s. 8 out of 49 coordinates found.
+Current clock 4848.655089200704s. 8 out of 49 coordinates found.
+Current clock 4848.659606441022s. 8 out of 49 coordinates found.
+Current clock 4848.664154774347s. 8 out of 49 coordinates found.
+Current clock 4848.668769821792s. 8 out of 49 coordinates found.
+Current clock 4848.673325701962s. 8 out of 49 coordinates found.
+Current clock 4848.677833282317s. 8 out of 49 coordinates found.
+Current clock 4848.682552476241s. 8 out of 49 coordinates found.
+Current clock 4848.687093866467s. 8 out of 49 coordinates found.
+Current clock 4848.691707706417s. 8 out of 49 coordinates found.
+Current clock 4848.696372563048s. 8 out of 49 coordinates found.
+Current clock 4848.701057343354s. 8 out of 49 coordinates found.
+Current clock 4848.7059003055565s. 8 out of 49 coordinates found.
+Current clock 4848.710452261367s. 8 out of 49 coordinates found.
+Current clock 4848.715198925812s. 8 out of 49 coordinates found.
+Current clock 4848.719734580434s. 8 out of 49 coordinates found.
+Current clock 4848.724297705578s. 8 out of 49 coordinates found.
+Current clock 4848.72895954347s. 8 out of 49 coordinates found.
+Current clock 4848.7334994243265s. 8 out of 49 coordinates found.
+Current clock 4848.738103000565s. 8 out of 49 coordinates found.
+Current clock 4848.744363562377s. 8 out of 49 coordinates found.
+Current clock 4848.749050757673s. 8 out of 49 coordinates found.
+Current clock 4848.7535061138515s. 8 out of 49 coordinates found.
+Current clock 4848.757977167469s. 8 out of 49 coordinates found.
+Current clock 4848.762571083746s. 8 out of 49 coordinates found.
+Current clock 4848.76758581217s. 8 out of 49 coordinates found.
+Current clock 4848.772068035121s. 8 out of 49 coordinates found.
+Current clock 4848.776807756468s. 8 out of 49 coordinates found.
+Current clock 4848.781296922517s. 8 out of 49 coordinates found.
+Current clock 4848.785748354335s. 8 out of 49 coordinates found.
+Current clock 4848.790388759184s. 8 out of 49 coordinates found.
+Current clock 4849.094661602431s. 12 out of 49 coordinates found.
+Current clock 4849.099218690097s. 12 out of 49 coordinates found.
+Current clock 4849.103900451663s. 12 out of 49 coordinates found.
+Current clock 4849.109540058962s. 12 out of 49 coordinates found.
+Current clock 4849.11503386119s. 12 out of 49 coordinates found.
+Current clock 4849.11982007111s. 12 out of 49 coordinates found.
+Current clock 4849.124328858959s. 12 out of 49 coordinates found.
+Current clock 4849.128875079166s. 12 out of 49 coordinates found.
+Current clock 4849.133552614499s. 12 out of 49 coordinates found.
+Current clock 4849.138177020034s. 12 out of 49 coordinates found.
+Current clock 4849.142751918257s. 12 out of 49 coordinates found.
+Current clock 4849.147269460449s. 12 out of 49 coordinates found.
+Current clock 4849.151902922199s. 12 out of 49 coordinates found.
+Current clock 4849.156375787061s. 12 out of 49 coordinates found.
+Current clock 4849.160829331995s. 12 out of 49 coordinates found.
+Current clock 4849.165399400237s. 12 out of 49 coordinates found.
+Current clock 4849.170057917518s. 12 out of 49 coordinates found.
+Current clock 4849.174713114185s. 12 out of 49 coordinates found.
+Current clock 4849.179397894491s. 12 out of 49 coordinates found.
+Current clock 4849.184069392346s. 12 out of 49 coordinates found.
+Current clock 4849.188718853411s. 12 out of 49 coordinates found.
+Current clock 4849.1932028876045s. 12 out of 49 coordinates found.
+Current clock 4849.197823670654s. 12 out of 49 coordinates found.
+Current clock 4849.202374720842s. 12 out of 49 coordinates found.
+Current clock 4849.20696169402s. 12 out of 49 coordinates found.
+Current clock 4849.211638625605s. 12 out of 49 coordinates found.
+Current clock 4849.21631797218s. 12 out of 49 coordinates found.
+Current clock 4849.220914303447s. 12 out of 49 coordinates found.
+Current clock 4849.225437883116s. 12 out of 49 coordinates found.
+Current clock 4849.2301416814735s. 12 out of 49 coordinates found.
+Current clock 4849.234672807988s. 12 out of 49 coordinates found.
+Current clock 4849.2391846145765s. 12 out of 49 coordinates found.
+Current clock 4849.2746369815995s. 16 out of 49 coordinates found.
+Current clock 4849.279207955463s. 16 out of 49 coordinates found.
+Current clock 4849.285607077372s. 16 out of 49 coordinates found.
+Current clock 4849.290370043005s. 16 out of 49 coordinates found.
+Current clock 4849.2949986747735s. 16 out of 49 coordinates found.
+Current clock 4849.29956602615s. 16 out of 49 coordinates found.
+Current clock 4849.304130660663s. 16 out of 49 coordinates found.
+Current clock 4849.308851363957s. 16 out of 49 coordinates found.
+Current clock 4849.31338007548s. 16 out of 49 coordinates found.
+Current clock 4849.317891278321s. 16 out of 49 coordinates found.
+Current clock 4849.322590850445s. 16 out of 49 coordinates found.
+Current clock 4849.327076997756s. 16 out of 49 coordinates found.
+Current clock 4849.331536278294s. 16 out of 49 coordinates found.
+Current clock 4849.335989521355s. 16 out of 49 coordinates found.
+Current clock 4849.340550533381s. 16 out of 49 coordinates found.
+Current clock 4849.345003776441s. 16 out of 49 coordinates found.
+Current clock 4849.349452491395s. 16 out of 49 coordinates found.
+Current clock 4849.3541638366s. 16 out of 49 coordinates found.
+Current clock 4849.358691340628s. 16 out of 49 coordinates found.
+Current clock 4849.363230013989s. 16 out of 49 coordinates found.
+Current clock 4849.367863475739s. 16 out of 49 coordinates found.
+Current clock 4849.372576632187s. 16 out of 49 coordinates found.
+Current clock 4849.377104739963s. 16 out of 49 coordinates found.
+Current clock 4849.381903930458s. 16 out of 49 coordinates found.
+Current clock 4849.386632784345s. 16 out of 49 coordinates found.
+Current clock 4849.39119289075s. 16 out of 49 coordinates found.
+Current clock 4849.395665151864s. 16 out of 49 coordinates found.
+Current clock 4849.40029046302s. 16 out of 49 coordinates found.
+Current clock 4849.404877436197s. 16 out of 49 coordinates found.
+Current clock 4849.409395280262s. 16 out of 49 coordinates found.
+Current clock 4849.421497704853s. 20 out of 49 coordinates found.
+Current clock 4849.425970871588s. 20 out of 49 coordinates found.
+Current clock 4849.430575051575s. 20 out of 49 coordinates found.
+Current clock 4849.43505214267s. 20 out of 49 coordinates found.
+Current clock 4849.582211117289s. 24 out of 49 coordinates found.
+Current clock 4849.586935141196s. 24 out of 49 coordinates found.
+Current clock 4849.591539623056s. 24 out of 49 coordinates found.
+Current clock 4849.596008865431s. 24 out of 49 coordinates found.
+Current clock 4849.600463617861s. 24 out of 49 coordinates found.
+Current clock 4849.60511730516s. 24 out of 49 coordinates found.
+Current clock 4849.609612206813s. 24 out of 49 coordinates found.
+Current clock 4849.614066959243s. 24 out of 49 coordinates found.
+Current clock 4849.618660573645s. 24 out of 49 coordinates found.
+Current clock 4849.623156984667s. 24 out of 49 coordinates found.
+Current clock 4849.627612642718s. 24 out of 49 coordinates found.
+Current clock 4849.632062565167s. 24 out of 49 coordinates found.
+Current clock 4849.636688480071s. 24 out of 49 coordinates found.
+Current clock 4849.641169193653s. 24 out of 49 coordinates found.
+Current clock 4849.645617304858s. 24 out of 49 coordinates found.
+Current clock 4849.650287293344s. 24 out of 49 coordinates found.
+Current clock 4849.680447207999s. 28 out of 49 coordinates found.
+Current clock 4849.685009729395s. 28 out of 49 coordinates found.
+Current clock 4849.689535120306s. 28 out of 49 coordinates found.
+Current clock 4849.694039078174s. 28 out of 49 coordinates found.
+Current clock 4849.698596769587s. 28 out of 49 coordinates found.
+Current clock 4849.703073860683s. 28 out of 49 coordinates found.
+Current clock 4849.707531028103s. 28 out of 49 coordinates found.
+Current clock 4849.712109548814s. 28 out of 49 coordinates found.
+Current clock 4849.716628600374s. 28 out of 49 coordinates found.
+Current clock 4849.721137690098s. 28 out of 49 coordinates found.
+Current clock 4849.7256461760735s. 28 out of 49 coordinates found.
+Current clock 4849.755545573594s. 32 out of 49 coordinates found.
+Final: 32 out of 49 coordinates found.
+Lengths checked: 505
+Lengths Found: 16
+
+Drawing found fibres.
+Drawing 1 out of 16
+Line coords: (402, 679, 320, 661)
+Drawing 2 out of 16
+Line coords: (22, 398, 109, 405)
+Drawing 3 out of 16
+Line coords: (94, 725, 139, 701)
+Drawing 4 out of 16
+Line coords: (111, 712, 202, 724)
+Drawing 5 out of 16
+Line coords: (181, 757, 255, 680)
+Drawing 6 out of 16
+Line coords: (206, 314, 279, 390)
+Drawing 7 out of 16
+Line coords: (250, 619, 315, 618)
+Drawing 8 out of 16
+Line coords: (292, 108, 368, 118)
+Drawing 9 out of 16
+Line coords: (301, 464, 397, 484)
+Drawing 10 out of 16
+Line coords: (318, 692, 352, 682)
+Drawing 11 out of 16
+Line coords: (329, 527, 402, 521)
+Drawing 12 out of 16
+Line coords: (383, 726, 441, 732)
+Drawing 13 out of 16
+Line coords: (438, 272, 483, 271)
+Drawing 14 out of 16
+Line coords: (450, 371, 533, 385)
+Drawing 15 out of 16
+Line coords: (475, 583, 523, 581)
+Drawing 16 out of 16
+Line coords: (494, 202, 554, 269)
+Drawn found fibres on the image: ..\Real Data Collected 22 Feb\Processed Data Collected 22 Feb\Images\x10_transmission2[2018-02-27_18-38-22]Drawn Lines.jpg
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+Analysed image 1 out of 1
+***********************************************************************************
+
+Time taken: 2.4869358053183532
