@@ -40,19 +40,23 @@ def plotPercentError(data, title):
     #Divide the data by 100 to get average per image, then divide by 10 and multiply by 100 to get percentage so just divide by 10
     y = data[:, 3] / 10
     y1 = np.ones(y.shape)
+    yErr = np.sqrt(y) #Error is the square root of the value for counting stats
+    
     #Exponential fit
     global popt
-    popt, pcov = curve_fit(expFunc, x, y, p0 = (100., (0.01), 1.))
+    popt, pcov = curve_fit(expFunc, x, y, sigma = yErr, p0 = (100., (0.01), 1.))
     percentile = expFuncX(1, *popt)
+    
     #Plots
-    plt.plot(x, y, "r+", label = "% Incorrect")
+    plt.errorbar(x, y, yerr = yErr, fmt = "r.", label = "% Incorrect")
     plt.plot(x, expFunc(x, *popt), label = "Exponential fit")
     plt.plot(x, y1, label = "1%")
     plt.xlabel("Array Size (pixels)"); plt.ylabel("Percentage of Incorrect Fibres")
     plt.title(title)
-    plt.text(6000, 25, "1% Incorrect at x = " + str(np.rint(percentile)))
+    plt.text(6000, 25, "1% Incorrect at x = " + str(np.rint(percentile)) + "\nb = -" + str(np.round(popt[1], 8)))
     plt.legend()
     graph.show()
+    
     
 def expFunc(x, a, b, c):
     """
@@ -60,11 +64,13 @@ def expFunc(x, a, b, c):
     """
     return a * np.exp(-b * x) + c
 
+
 def expFuncX(y, a, b, c):
     """
     Rearrangement of the exponential function to find y.
     """
     return -(np.log((y - c)/a))/b
+
 
 #Data for the 100 random image tests before fixing the one away check 
 #10 fibres per image between 100-1000 pixels long and 25 pixels wide
