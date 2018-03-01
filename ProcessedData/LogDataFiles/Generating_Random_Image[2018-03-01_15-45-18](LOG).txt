@@ -1,0 +1,37 @@
+Log file for [2018-03-01_15-45-18] with 10 images to be generated and analysed.
+
+Started at: 1302.1281942762337s
+
+
+
+###################################################################################
+Analysing image Random, number 1 out of 2
+###################################################################################
+
+
+
+***********************************************************************************
+Loop 1 out of 10
+Generating random image with 10 fibres and an array size of 7500 pixels.
+The fibre widths are 10 with lengths between 30 and 300 pixels.
+Generated 1 out of 10 fibres.
+Generated 2 out of 10 fibres.
+Generated 3 out of 10 fibres.
+Generated 4 out of 10 fibres.
+Generated 5 out of 10 fibres.
+Generated 6 out of 10 fibres.
+Generated 7 out of 10 fibres.
+Generated 8 out of 10 fibres.
+Generated 9 out of 10 fibres.
+Generated 10 out of 10 fibres.
+Generated random image 1 out of 10
+
+# Corners Found: 20
+# Endpoints: 20
+Current clock 1306.58838227108s. 0 out of 20 coordinates found.
+Current clock 1307.9922762602923s. 4 out of 20 coordinates found.
+Current clock 1308.5770559710008s. 4 out of 20 coordinates found.
+Current clock 1309.6156345203408s. 8 out of 20 coordinates found.
+Current clock 1310.1794291810409s. 8 out of 20 coordinates found.
+Current clock 1310.770218290888s. 8 out of 20 coordinates found.
+Current clock 1311.7865946355842s. 12 out of 20 coordinates found.

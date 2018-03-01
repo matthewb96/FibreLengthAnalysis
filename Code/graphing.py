@@ -28,7 +28,7 @@ def lengthDistribution(data, filename = "", title = "Length Distribution of the 
     
     #Save the plot
     if filename != "":
-        graph.savefig(filename + " " + title + ".jpg") 
+        graph.savefig(filename + " " + title + ".png") 
     
 """
 data = np.array([[0,0,0,0,0,0]], dtype = np.float)

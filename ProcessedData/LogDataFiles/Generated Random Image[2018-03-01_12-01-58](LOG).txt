@@ -165,3 +165,56 @@ Drawn found fibres on the image: ..\ProcessedData\Images\4 test fibres (25,500 f
 
 C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
   "matplotlib is currently using a non-GUI backend, "
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+Could not find "exit" in ..\FibreImages\
+Please try again.
+['exit']
+Log file for ..\FibreImages\4 test fibres (25,500 fibre).jpg
+
+Started at: 9426.31526387985s
+
+
+
+***********************************************************************************
+Starting image 1 out of 1
+Opened image 1 out of 1
+# Corners Found: 16
+# Endpoints: 16
+Current clock 9426.79172769546s. 0 out of 16 coordinates found.
+Current clock 9426.791975835617s. 0 out of 16 coordinates found.
+Current clock 9426.834518288111s. 0 out of 16 coordinates found.
+Current clock 9426.876642041825s. 0 out of 16 coordinates found.
+Current clock 9426.916315788838s. 0 out of 16 coordinates found.
+Current clock 9426.956819386569s. 0 out of 16 coordinates found.
+Current clock 9427.24641977828s. 4 out of 16 coordinates found.
+Current clock 9427.404685501973s. 8 out of 16 coordinates found.
+Current clock 9427.443872326758s. 8 out of 16 coordinates found.
+Current clock 9427.44406582778s. 8 out of 16 coordinates found.
+Current clock 9427.48347030348s. 8 out of 16 coordinates found.
+Current clock 9427.706128095866s. 12 out of 16 coordinates found.
+Current clock 9427.745853463275s. 12 out of 16 coordinates found.
+Final: 16 out of 16 coordinates found.
+Lengths checked: 20
+Lengths Found: 8
+
+Drawing found fibres.
+Drawing 1 out of 8
+Line coords: (250, 475, 749, 475)
+Drawing 2 out of 8
+Line coords: (250, 499, 749, 499)
+Drawing 3 out of 8
+Line coords: (474, 1251, 474, 1750)
+Drawing 4 out of 8
+Line coords: (498, 1251, 498, 1750)
+Drawing 5 out of 8
+Line coords: (1303, 667, 1657, 313)
+Drawing 6 out of 8
+Line coords: (1306, 1339, 1660, 1692)
+Drawing 7 out of 8
+Line coords: (1321, 685, 1675, 331)
+Drawing 8 out of 8
+Line coords: (1324, 1320, 1678, 1674)
+Drawn found fibres on the image: ..\ProcessedData\Images\4 test fibres (25,500 fibre)[2018-03-01_14-39-04]Drawn Lines.jpg
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
