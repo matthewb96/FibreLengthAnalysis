@@ -3,7 +3,8 @@
 @author: Matthew
 This main file will control all other modules. 
 """
-#All the imported modules
+####Imports####
+
 import os
 import time
 from datetime import datetime
@@ -16,11 +17,12 @@ import cv2
 import graphing
 
 
-#Variables and Constants
-#IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
-#PROCESSEDFOLDER = "..\\ProcessedData\\" #Source where output files are stored
-IMAGEFOLDER = "..\\Real Data Collected 22 Feb\\"
-PROCESSEDFOLDER = "..\\Real Data Collected 22 Feb\\Processed Data Collected 22 Feb\\"
+####Variables####
+
+IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
+PROCESSEDFOLDER = "..\\ProcessedData\\" #Source where output files are stored
+#IMAGEFOLDER = "..\\Real Data Collected 22 Feb\\"
+#PROCESSEDFOLDER = "..\\Real Data Collected 22 Feb\\Processed Data Collected 22 Feb\\"
 PROCESSEDIMAGES = PROCESSEDFOLDER + "Images\\" #Source for where processed images are stored
 PROCESSEDDATA = PROCESSEDFOLDER + "LogDataFiles\\" #Source for where log and data files are stored
 DEBUGGING = False
@@ -34,8 +36,9 @@ randArraySize = 7500
 randFibreNum = 10
 
 
-#Functions
-def saveImg(filename, overwrite = False):
+####Functions####
+
+def saveImg(filename, timeAndDate, overwrite = False):
     """
     This function will save the images that have been created into a file with the name "filename", by default it will not overwrite existing images.
     Currently not working as planned as plt.saveFig() won't work inside the function so instead this function just finds the next free filename and returns it.
@@ -47,7 +50,7 @@ def saveImg(filename, overwrite = False):
     Returns a string of an edited version of the filename that won't overwrite anything.
     """
     pos = filename.rfind(".") #Find the position of the start of the file type to put a number before it 
-    filename = filename[:pos] + "[" + str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) +  "]" #Add the date and time to the filename, and then it will probably not need to overwrite anything
+    filename = filename[:pos] + timeAndDate #Add the date and time to the filename, and then it will probably not need to overwrite anything
     if overwrite or not os.path.isfile(PROCESSEDIMAGES + filename + ".jpg") : #Check if overwrite is enabled or if the file doesn't exist and save the image and exit function.
         return filename
     else: #The file does exist so add a number to the filename and save it
@@ -126,6 +129,80 @@ def checkRandom(fibreLengths, knownPositions, incorrectFile):
     return correct, incorrect, oneAway 
 
 
+def analyseImage(saveData, FIBRE_WIDTH, MIN_LENGTH, numDone, numAnalyse, DEBUGGING = False, RANDOM = False, randData = None):
+    """
+    Function that contains all the calls to other functions to fully analyse a single image.
+    
+    arg[0] saveData - tuple containg 3 strings first being path to processed data folder, second path to processed images folder and third being the save filename.
+    arg[1] FIBRE_WIDTH - int value for the fibre width.
+    arg[2] MIN_LENGTH - int value for the minimum length of a fibre.
+    arg[3] numDone - int value for number of images analysed.
+    arg[4] numAnalyse - int value for the total number of images to analyse.
+    arg[5] DEBUGGING - boolean value for whether in debugging mode or not.
+    arg[6] RANDOM - boolean value for whether random image generation or not.
+    arg[7] randData - tuple containing the random fibre number and array size to be generated.
+    """
+    print("\n\n***********************************************************************************\nStarting image " + 
+          str(numDone) + " out of " + str(numAnalyse))
+    #Extract save data from tuple
+    PROCESSEDDATA, PROCESSEDIMAGES, originalSaveName = saveData
+    #Create the grayscale numpy array of the image or generate an image array
+    if RANDOM:
+        randFibreNum, randArraySize = randData
+        imageGray, knownPositions = inputs.generateImage(FIBRE_WIDTH, MIN_LENGTH, randFibreNum, randArraySize)
+        saveName = originalSaveName + " (Random Image " + str(numDone) + ") "
+        cv2.imwrite(PROCESSEDIMAGES + saveName + ".jpg", imageGray)
+        print("Generated random image " + str(numDone) + " out of " + str(numAnalyse) + "\n")
+    else:
+        saveName = originalSaveName
+        imageGray = inputs.openImage(IMAGEFOLDER + imageSource, DEBUGGING, PROCESSEDIMAGES + saveName)
+        print("Opened image " + str(numDone) + " out of " + str(numAnalyse))
+        knownPositions = None
+    
+    #Find the corners and then the edges on the image
+    cornersCoords, subpixArray = corners.findCorners(imageGray, PROCESSEDIMAGES + saveName, DEBUGGING)
+    edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH, imageGray)
+    
+    #Add the edge positions to the subpixArray and then saved the image
+    subpixArray[np.rint(edgeCoords[:,1]).astype(int) , np.rint(edgeCoords[:, 0]).astype(int)] = np.array([255, 255, 0])
+    #Save a copy of the orginal image given with the corner and edge positions saved on
+    cv2.imwrite(PROCESSEDIMAGES + saveName + "Corners and Edges.jpg", subpixArray)
+    
+    #Finding the fibre lengths
+    fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
+    np.savetxt(PROCESSEDDATA + saveName + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01, angle01]")
+    
+    #Draw found fibres
+    lengths.drawFound(fibreLengths, imageGray, PROCESSEDIMAGES + saveName)
+    
+    #If randomly generated image check found fibres against known fibre positions
+    if RANDOM:
+        with open(PROCESSEDDATA + originalSaveName + " Incorrect Data.txt", "a") as incorrectFile:
+            correct, incorrect, oneAway = checkRandom(fibreLengths, knownPositions, incorrectFile)
+            #If there is incorrect data in this image then state the image number
+            if incorrect != 0: 
+                incorrectFile.write("Incorrect Data for Random Image " + str(numDone) + 
+                                    "\n\n************************************************\n")
+        #Print the data found
+        print("Found " + str(incorrect) + " incorrect fibres and " + str(correct) + " correct fibres and " + str(oneAway) + " fibres that are one away.")
+        #Variables to be returned
+        correctness = (correct, oneAway, incorrect)
+    else:
+        correctness = None
+        
+    #Produce graphs
+    graphing.lengthDistribution(fibreLengths, PROCESSEDIMAGES + saveName, title = "Length Distribution of the Found Fibres")
+    if RANDOM:
+        graphing.lengthDistribution(knownPositions, PROCESSEDIMAGES + saveName, title = "Length Distribution of the Known Fibres")
+        
+    #Update number done
+    print("Analysed image " + str(numDone) + " out of " + str(numAnalyse) + 
+          "\n***********************************************************************************")
+    return correctness, knownPositions, fibreLengths
+
+
+####Main Code####
+    
 #Get input file
 RANDOM = False #Whether or not to generate random images
 while True:
@@ -151,7 +228,8 @@ while True:
         break
         
 start = time.clock() #Time the program from this point so that waiting for user input isnt included
-saveName = saveImg(imageSource, OVERWRITE)
+timeAndDate = "[" + str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) +  "]" #Date and time to be used on filenames
+logName = saveImg(imageSource, timeAndDate, OVERWRITE)
 
 #Redirecting Standard output of python terminal to a log file
 #This class will allow the stdout to be duplicated into the log file so it is also seen in the terminal
@@ -161,7 +239,7 @@ class Logger(object):
         self.type = standard
         self.terminal = sys.stdout
         if self.type == "Out":
-            self.log = open(PROCESSEDDATA + saveName + "(LOG).txt", "w")
+            self.log = open(PROCESSEDDATA + logName + "(LOG).txt", "w")
 
     def write(self, message):
         self.terminal.write(message)
@@ -188,65 +266,17 @@ if RANDOM:
     totOneAway = 0
 else:
     print("Log file for " + IMAGEFOLDER + imageSource)
-print("\nSave location: " + PROCESSEDIMAGES + saveName + "\nStarted at: " + str(start) + "s\n")
+print("\nStarted at: " + str(start) + "s\n")
 
 
 #Loop to allow mulitple images to be analysed at without extra input
 numDone = 1
-originalSaveName = saveName #Keep the unedited saveLocation 
+saveName = saveImg(imageSource, timeAndDate, OVERWRITE) 
 while numDone <= numAnalyse:
-    #Create the grayscale numpy array of the image or generate an image array
-    print("\n\n***********************************************************************************\nStarting image " + 
-          str(numDone) + " out of " + str(numAnalyse))
-    if RANDOM:
-        imageGray, knownPositions = inputs.generateImage(FIBRE_WIDTH, MIN_LENGTH, randFibreNum, randArraySize)
-        saveName = originalSaveName + " (Random Image " + str(numDone) + ") "
-        cv2.imwrite(PROCESSEDIMAGES + saveName + ".jpg", imageGray)
-        print("Generated random image " + str(numDone) + " out of " + str(numAnalyse) + "\n")
-    else:
-        imageGray = inputs.openImage(IMAGEFOLDER + imageSource, DEBUGGING, PROCESSEDIMAGES + saveName)
-        print("Opened image " + str(numDone) + " out of " + str(numAnalyse))
-    
-    #Find the corners and then the edges on the image
-    cornersCoords, subpixArray = corners.findCorners(imageGray, PROCESSEDIMAGES + saveName, DEBUGGING)
-    edgeCoords = corners.averageEdges(cornersCoords, FIBRE_WIDTH, imageGray)
-    
-    #Add the edge positions to the subpixArray and then saved the image
-    subpixArray[np.rint(edgeCoords[:,1]).astype(int) , np.rint(edgeCoords[:, 0]).astype(int)] = np.array([255, 255, 0])
-    #Save a copy of the orginal image given with the corner and edge positions saved on
-    cv2.imwrite(PROCESSEDIMAGES + saveName + "Corners and Edges.jpg",subpixArray)
-    
-    #Finding the fibre lengths
-    fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
-    np.savetxt(PROCESSEDDATA + saveName + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01, angle01]")
-    
-    #Draw found fibres
-    lengths.drawFound(fibreLengths, imageGray, PROCESSEDIMAGES + saveName)
-    
-    #If randomly generated image check found fibres against known fibre positions
-    if RANDOM:
-        with open(PROCESSEDDATA + originalSaveName + " Incorrect Data.txt", "a") as incorrectFile:
-            correct, incorrect, oneAway = checkRandom(fibreLengths, knownPositions, incorrectFile)
-            #If there is incorrect data in this image then state the image number
-            if incorrect != 0: 
-                incorrectFile.write("Incorrect Data for Random Image " + str(numDone) + 
-                                    "\n\n************************************************\n")
-
-        #Print the data found
-        print("Found " + str(incorrect) + " incorrect fibres and " + str(correct) + " correct fibres and " + str(oneAway) + " fibres that are one away.")
-        #Add to the total numbers
-        totCorrect += correct
-        totIncorrect += incorrect
-        totOneAway += oneAway
-        
-    #Produce graphs
-    graphing.lengthDistribution(fibreLengths, PROCESSEDIMAGES + saveName, title = "Length Distribution of the Found Fibres")
-    if RANDOM:
-        graphing.lengthDistribution(knownPositions, PROCESSEDIMAGES + saveName, title = "Length Distribution of the Known Fibres")
-        
-    #Update number done
-    print("Analysed image " + str(numDone) + " out of " + str(numAnalyse) + 
-          "\n***********************************************************************************")
+    #Analyse image
+    saveData = PROCESSEDDATA, PROCESSEDIMAGES, saveName
+    randData = randFibreNum, randArraySize
+    correctness, knownPositions, fibreLengths = analyseImage(saveData, FIBRE_WIDTH, MIN_LENGTH, numDone, numAnalyse, DEBUGGING, RANDOM, randData)
     numDone += 1
 
 #Print values for generated image checks
@@ -254,8 +284,8 @@ if RANDOM:
     print("A total of " + str(totCorrect) + " correct fibres have been found, with " + str(totOneAway) + " fibres only one away. " 
           + str(totIncorrect) + " have been incorrectly found.")
     #Remove the incorrect data file if it is empty
-    if os.path.getsize(PROCESSEDDATA + originalSaveName + " Incorrect Data.txt") == 0:
-        os.remove(PROCESSEDDATA + originalSaveName + " Incorrect Data.txt")
+    if os.path.getsize(PROCESSEDDATA + saveName + " Incorrect Data.txt") == 0:
+        os.remove(PROCESSEDDATA + saveName + " Incorrect Data.txt")
 
 #Finished
 end = time.clock()
