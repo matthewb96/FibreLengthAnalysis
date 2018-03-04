@@ -129,7 +129,7 @@ def findCorners(imageArray, filename, debug = False):
         #Show and save the plots
         plt.show()
         try:
-            img.savefig(filename + " Corners(DEBUG).jpg")
+            img.savefig(filename + " Corners(DEBUG).png")
         except TypeError as error:
             print(error)
             print("Debugging images could not be saved. In corners.findCorners().")

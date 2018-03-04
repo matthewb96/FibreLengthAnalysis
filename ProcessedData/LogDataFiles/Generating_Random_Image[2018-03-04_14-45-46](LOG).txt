@@ -192,3 +192,4 @@ C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarni
 
 Time taken: 3.8495549174617167
 Log file location: ..\ProcessedData\LogDataFiles\Generating_Random_Image[2018-03-04_14-49-08](LOG).txt
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m

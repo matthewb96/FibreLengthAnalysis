@@ -1,0 +1,103 @@
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 2900.120828558698s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(35)[0;36mopenImage[1;34m()[0m
+[1;32m     33 [1;33m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m    [1;31m#Remove small objects using morphology[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 35 [1;33m    [0mmorph[0m [1;33m=[0m [0mmorphology[0m[1;33m.[0m[0mremove_small_holes[0m[1;33m([0m[0mimageGray[0m[1;33m,[0m [0mmin_size[0m [1;33m=[0m [1;36m500[0m[1;33m,[0m [0mconnectivity[0m [1;33m=[0m [1;36m1[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m    [0mmorphedImage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mzeros_like[0m[1;33m([0m[0mimageGray[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m    [0mmorphedImage[0m[1;33m[[0m[0mnp[0m[1;33m.[0m[0mwhere[0m[1;33m([0m[0mmorph[0m[1;33m)[0m[1;33m][0m [1;33m=[0m [1;36m255[0m[1;33m[0m[0m
+[0m
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(36)[0;36mopenImage[1;34m()[0m
+[1;32m     34 [1;33m    [1;31m#Remove small objects using morphology[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m    35 [1;33m    [0mmorph[0m [1;33m=[0m [0mmorphology[0m[1;33m.[0m[0mremove_small_holes[0m[1;33m([0m[0mimageGray[0m[1;33m,[0m [0mmin_size[0m [1;33m=[0m [1;36m500[0m[1;33m,[0m [0mconnectivity[0m [1;33m=[0m [1;36m1[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m---> 36 [1;33m    [0mmorphedImage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mzeros_like[0m[1;33m([0m[0mimageGray[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m    [0mmorphedImage[0m[1;33m[[0m[0mnp[0m[1;33m.[0m[0mwhere[0m[1;33m([0m[0mmorph[0m[1;33m)[0m[1;33m][0m [1;33m=[0m [1;36m255[0m[1;33m[0m[0m
+[0m[1;32m     38 [1;33m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(37)[0;36mopenImage[1;34m()[0m
+[1;31m1[1;32m    35 [1;33m    [0mmorph[0m [1;33m=[0m [0mmorphology[0m[1;33m.[0m[0mremove_small_holes[0m[1;33m([0m[0mimageGray[0m[1;33m,[0m [0mmin_size[0m [1;33m=[0m [1;36m500[0m[1;33m,[0m [0mconnectivity[0m [1;33m=[0m [1;36m1[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m    [0mmorphedImage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mzeros_like[0m[1;33m([0m[0mimageGray[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m---> 37 [1;33m    [0mmorphedImage[0m[1;33m[[0m[0mnp[0m[1;33m.[0m[0mwhere[0m[1;33m([0m[0mmorph[0m[1;33m)[0m[1;33m][0m [1;33m=[0m [1;36m255[0m[1;33m[0m[0m
+[0m[1;32m     38 [1;33m[1;33m[0m[0m
+[0m[1;32m     39 [1;33m    [1;32mif[0m [0mdebug[0m[1;33m:[0m [1;31m#Printing the images and some histograms to the console for debugging purposes[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(39)[0;36mopenImage[1;34m()[0m
+[1;32m     37 [1;33m    [0mmorphedImage[0m[1;33m[[0m[0mnp[0m[1;33m.[0m[0mwhere[0m[1;33m([0m[0mmorph[0m[1;33m)[0m[1;33m][0m [1;33m=[0m [1;36m255[0m[1;33m[0m[0m
+[0m[1;32m     38 [1;33m[1;33m[0m[0m
+[0m[1;32m---> 39 [1;33m    [1;32mif[0m [0mdebug[0m[1;33m:[0m [1;31m#Printing the images and some histograms to the console for debugging purposes[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m        [0mimg[0m [1;33m=[0m [0mplt[0m[1;33m.[0m[0mfigure[0m[1;33m([0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     41 [1;33m        [1;31m#Plot images[0m[1;33m[0m[1;33m[0m[0m
+[0m
+Opened image 1 out of 1
+# Corners Found: 17
+# Endpoints: 17
+Current clock 2929.917891569393s. 0 out of 17 coordinates found.
+Current clock 2929.923184622314s. 0 out of 17 coordinates found.
+Current clock 2929.9284447710047s. 0 out of 17 coordinates found.
+Current clock 2929.9338685352245s. 0 out of 17 coordinates found.
+Current clock 2929.9460729858083s. 4 out of 17 coordinates found.
+Current clock 2929.9523036583464s. 4 out of 17 coordinates found.
+Current clock 2929.9582122316797s. 4 out of 17 coordinates found.
+Current clock 2929.963784517745s. 4 out of 17 coordinates found.
+Current clock 2929.9691690383875s. 4 out of 17 coordinates found.
+Current clock 2929.974482618718s. 4 out of 17 coordinates found.
+Current clock 2929.980129769453s. 4 out of 17 coordinates found.
+Current clock 2929.9853117328635s. 4 out of 17 coordinates found.
+Current clock 2929.9905570897445s. 4 out of 17 coordinates found.
+Current clock 2929.995838671466s. 4 out of 17 coordinates found.
+Current clock 2930.0011549686596s. 4 out of 17 coordinates found.
+Current clock 2930.006432927897s. 4 out of 17 coordinates found.
+Current clock 2930.011848239654s. 4 out of 17 coordinates found.
+Current clock 2930.0169976007082s. 4 out of 17 coordinates found.
+Current clock 2930.022161753572s. 4 out of 17 coordinates found.
+Current clock 2930.104868799666s. 8 out of 17 coordinates found.
+Current clock 2930.1105600239566s. 8 out of 17 coordinates found.
+Current clock 2930.116039031058s. 8 out of 17 coordinates found.
+Current clock 2930.121465210267s. 8 out of 17 coordinates found.
+Current clock 2930.127688939711s. 8 out of 17 coordinates found.
+Current clock 2930.1333889183384s. 8 out of 17 coordinates found.
+Current clock 2930.140340465199s. 8 out of 17 coordinates found.
+Current clock 2930.148802889776s. 12 out of 17 coordinates found.
+Final: 14 out of 17 coordinates found.
+Lengths checked: 40
+Lengths Found: 7
+
+Drawing found fibres.
+Drawing 1 out of 7
+Line coords: (8, 215, 65, 232)
+Drawing 2 out of 7
+Line coords: (29, 109, 43, 156)
+Drawing 3 out of 7
+Line coords: (69, 320, 135, 360)
+Drawing 4 out of 7
+Line coords: (111, 434, 252, 587)
+Drawing 5 out of 7
+Line coords: (334, 621, 371, 576)
+Drawing 6 out of 7
+Line coords: (393, 598, 495, 613)
+Drawing 7 out of 7
+Line coords: (505, 641, 563, 608)
+Drawn found fibres on the image: ..\ProcessedData\Images\x20_transmission1[2018-03-04_16-02-48]Drawn Lines.jpg
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+
+###################################################################################
+Analysed image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+
+Time taken: 30.579451338568106
+Log file location: ..\ProcessedData\LogDataFiles\x20_transmission1[2018-03-04_16-02-48](LOG).txt

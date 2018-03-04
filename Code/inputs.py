@@ -7,55 +7,67 @@ Input module to control the image being inputted or generate a random image for 
 import cv2
 from matplotlib import pyplot as plt
 import numpy as np
-from skimage import draw
+from skimage import draw, morphology
 from lengths import midpoint
 
 #Functions
-def openImage(imageSource, debug = False, filename = ""):
+def openImage(imageSource, minSize, debug = False, filename = ""):
     """
     This function will open the given image using openCV and convert it to grayscale. 
     It will show the images in the console and produces histograms if debug = True.
     It will return the grayscale image as a numpy array.
     
     arg[0] imageSource - a string containg the source for the image file to be opened.
-    arg[1] debug - a boolean that will allow extra code to be run for debugging.
-    arg[2] filename - a string containing the source for where the debugging images should be saved.
+    arg[1] minSize - int for the minimum amount of pixels to be counted as a fibre.
+    arg[2] debug - a boolean that will allow extra code to be run for debugging.
+    arg[3] filename - a string containing the source for where the debugging images should be saved.
     
-    Returns a numpy array containing the grayscale image data.
+    Returns a numpy array containing the grayscale image data, with small object removed.
     """
     image = cv2.imread(imageSource)
     cv2.imwrite(filename + ".jpg", image)
     imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
-    #Threshold the image using a value of 200
+    #Threshold the image
     thresVal, imageGray = cv2.threshold(imageGray, 180, 255, 0)
+    
+    #Remove small objects using morphology
+    morph = morphology.remove_small_holes(imageGray, min_size = minSize, connectivity = 1)
+    morphedImage = np.zeros_like(imageGray)
+    morphedImage[np.where(morph)] = 255
     
     if debug: #Printing the images and some histograms to the console for debugging purposes
         img = plt.figure()
         #Plot images
-        plt.subplot(2,2,1)
+        plt.subplot(2,3,1)
         plt.imshow(image) #Shows the image in the IPython console test purposes
         plt.title("Original Image"), plt.yticks([]), plt.xticks([])
-        plt.subplot(2,2,2)
+        plt.subplot(2,3,2)
         plt.imshow(imageGray)
         plt.title("Grayscale Image"), plt.yticks([]), plt.xticks([])
+        plt.subplot(2,3,3)
+        plt.imshow(morphedImage)
+        plt.title("Morphed Image"), plt.yticks([]), plt.xticks([])
         #Plot histograms
-        plt.subplot(2,2,3)
+        plt.subplot(2,3,4)
         n, bins, patches = plt.hist(np.ndarray.flatten(np.uint8(image))) #Plot histogram of the orignal image array
         plt.title("Original Hist"), plt.yticks([])
-        plt.subplot(2,2,4)
+        plt.subplot(2,3,5)
         n, bins, patches = plt.hist(np.ndarray.flatten(np.uint8(imageGray))) #Plot histogram of the grayscale image array
         plt.title("Grayscale Hist"), plt.yticks([])
+        plt.subplot(2,3,6)
+        n, bins, patches = plt.hist(np.ndarray.flatten(np.uint8(morphedImage))) #Plot histogram of the grayscale image array
+        plt.title("Morphed Hist"), plt.yticks([])
         #Show and save the plots
         plt.show()
         try:
-            img.savefig(filename + " GrayScale(DEBUG).jpg")
+            img.savefig(filename + " GrayScale(DEBUG).png")
         except TypeError as error:
             print(error)
             print("Debugging images could not be saved. In input.openFile().")
         plt.close(img)
     
-    return imageGray
+    return morphedImage
 
 
 def generateImage(fibreWidth, minLength, numFibres, arraySize):
