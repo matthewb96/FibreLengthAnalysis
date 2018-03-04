@@ -24,7 +24,7 @@ PROCESSEDFOLDER = "..\\ProcessedData\\" #Source where output files are stored
 #PROCESSEDFOLDER = "..\\Real Data Collected 22 Feb\\Processed Data Collected 22 Feb\\"
 PROCESSEDIMAGES = PROCESSEDFOLDER + "Images\\" #Source for where processed images are stored
 PROCESSEDDATA = PROCESSEDFOLDER + "LogDataFiles\\" #Source for where log and data files are stored
-DEBUGGING = True
+DEBUGGING = False
 OVERWRITE = False
 #Fibre variables
 FIBRE_WIDTH = 10
