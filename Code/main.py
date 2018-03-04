@@ -223,14 +223,17 @@ while True:
     
     if source[0] == "Random":
         RANDOM = True
+        temp = source
+        source = []
         try:
-            numRand, randFibreNum, randArraySize = source[1:]
-            numAnalyse = int(numRand) #Number of images to be analysed
-        except:
+            i = 1
+            while i < len(temp):
+                source.append((int(temp[i]), int(temp[i + 1]), int(temp[i + 2])))
+                i += 3
+        except Exception as error:
             print("The format you have given is incorrect please try again. \n If you would like random images type \"random (loop number) (fibre number) (array size)\" (case sensitive)")
+            print(error)
             continue
-        source.clear()
-        source.append((numAnalyse, randFibreNum, randArraySize))
         #Ask user if correct
         print("Random image with (number of loops, number of fibres, array size)" + str(source))
         check = input("Are these the correct values(y/n): ")
@@ -311,7 +314,7 @@ sys.stderr = Logger("Error")
 
 #Log file info
 if RANDOM:
-    print("Log file for " + str(timeAndDate) + " with " + str(numRand) + " images to be generated and analysed.")
+    print("Log file for " + str(timeAndDate) + " random image with (number of loops, number of fibres, array size)" + str(source))
     #Initiate variables for random fibre checks
     totCorrect = 0
     totIncorrect = 0
@@ -342,6 +345,7 @@ for image in source:
     if RANDOM:        
         #Loop for random images
         numDone = 1
+        numAnalyse = image[0]
         while numDone <= numAnalyse:
             print("\n\n***********************************************************************************\nLoop " + 
               str(numDone) + " out of " + str(numAnalyse))
