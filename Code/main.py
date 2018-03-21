@@ -149,8 +149,9 @@ def analyseImage(saveData, loadData, FIBRE_WIDTH, MIN_LENGTH, numDone, numAnalys
         print("Generated random image " + str(numDone) + " out of " + str(numAnalyse) + "\n")
     else:
         saveName = originalSaveName
-        imageGray = inputs.openImage(IMAGEFOLDER + imageSource, int(FIBRE_WIDTH * MIN_LENGTH * 0.9), DEBUGGING, PROCESSEDIMAGES + saveName)
+        imageGray, numObjects = inputs.openImage(IMAGEFOLDER + imageSource, int(FIBRE_WIDTH * MIN_LENGTH * 0.9), DEBUGGING, PROCESSEDIMAGES + saveName)
         print("Opened image " + str(numDone) + " out of " + str(numAnalyse))
+        print(str(numObjects) + " objects found in the image.")
         knownPositions = None
     
     #Find the corners and then the edges on the image

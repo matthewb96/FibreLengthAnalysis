@@ -1,0 +1,391 @@
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 268.1924580486162s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(40)[0;36mopenImage[0;34m()[0m
+[0;32m     38 [0;31m[0;34m[0m[0m
+[0m[0;32m     39 [0;31m    [0;31m#Count objects on image[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m--> 40 [0;31m    [0mretval[0m[0;34m,[0m [0mlabels[0m[0;34m,[0m [0mstats[0m[0;34m,[0m [0mcentroids[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mconnectedComponentsWithStats[0m[0;34m([0m[0mmorphedImage[0m[0;34m.[0m[0mcopy[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     41 [0;31m    [0mnumObjects[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mcentroids[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(41)[0;36mopenImage[0;34m()[0m
+[0;32m     39 [0;31m    [0;31m#Count objects on image[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m    40 [0;31m    [0mretval[0m[0;34m,[0m [0mlabels[0m[0;34m,[0m [0mstats[0m[0;34m,[0m [0mcentroids[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mconnectedComponentsWithStats[0m[0;34m([0m[0mmorphedImage[0m[0;34m.[0m[0mcopy[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m---> 41 [0;31m    [0mnumObjects[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mcentroids[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(43)[0;36mopenImage[0;34m()[0m
+[0;32m     41 [0;31m    [0mnumObjects[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mcentroids[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m[0;34m[0m[0m
+[0m[0;32m---> 43 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m[0;32m     44 [0;31m        [0mimg[0m [0;34m=[0m [0mplt[0m[0;34m.[0m[0mfigure[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     45 [0;31m        [0;31m#Plot images[0m[0;34m[0m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(298)[0;36mwrite[0;34m()[0m
+[0;32m    296 [0;31m[0;34m[0m[0m
+[0m[0;32m    297 [0;31m    [0;32mdef[0m [0mwrite[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mmessage[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m--> 298 [0;31m        [0mself[0m[0;34m.[0m[0mterminal[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m    299 [0;31m        [0;32mif[0m [0mself[0m[0;34m.[0m[0mtype[0m [0;34m==[0m [0;34m"Out"[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m    300 [0;31m            [0mself[0m[0;34m.[0m[0mlog[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['4_test_fibres(25,500_fibre).jpg']
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 508.5125546240405s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(41)[0;36mopenImage[0;34m()[0m
+[0;32m     39 [0;31m    [0;31m#Count objects on image[0m[0;34m[0m[0;34m[0m[0m
+[0m[0;32m     40 [0;31m    [0mthresVal[0m[0;34m,[0m [0minverted[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mthreshold[0m[0;34m([0m[0mimageGray[0m[0;34m,[0m [0;36m180[0m[0;34m,[0m [0;36m255[0m[0;34m,[0m [0;36m0[0m[0;34m,[0m [0mcv2[0m[0;34m.[0m[0mTHRESH_BINARY_INV[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m--> 41 [0;31m    [0mretval[0m[0;34m,[0m [0mlabels[0m[0;34m,[0m [0mstats[0m[0;34m,[0m [0mcentroids[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mconnectedComponentsWithStats[0m[0;34m([0m[0minverted[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m    [0mnumObjects[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mcentroids[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(42)[0;36mopenImage[0;34m()[0m
+[0;32m     40 [0;31m    [0mthresVal[0m[0;34m,[0m [0minverted[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mthreshold[0m[0;34m([0m[0mimageGray[0m[0;34m,[0m [0;36m180[0m[0;34m,[0m [0;36m255[0m[0;34m,[0m [0;36m0[0m[0;34m,[0m [0mcv2[0m[0;34m.[0m[0mTHRESH_BINARY_INV[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m    41 [0;31m    [0mretval[0m[0;34m,[0m [0mlabels[0m[0;34m,[0m [0mstats[0m[0;34m,[0m [0mcentroids[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mconnectedComponentsWithStats[0m[0;34m([0m[0minverted[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m---> 42 [0;31m    [0mnumObjects[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mcentroids[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m[0;34m[0m[0m
+[0m[0;32m     44 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(44)[0;36mopenImage[0;34m()[0m
+[0;32m     42 [0;31m    [0mnumObjects[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mcentroids[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m[0;34m[0m[0m
+[0m[0;32m---> 44 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m[0;32m     45 [0;31m        [0mimg[0m [0;34m=[0m [0mplt[0m[0;34m.[0m[0mfigure[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     46 [0;31m        [0;31m#Plot images[0m[0;34m[0m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(298)[0;36mwrite[0;34m()[0m
+[0;32m    296 [0;31m[0;34m[0m[0m
+[0m[0;32m    297 [0;31m    [0;32mdef[0m [0mwrite[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mmessage[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m--> 298 [0;31m        [0mself[0m[0;34m.[0m[0mterminal[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m    299 [0;31m        [0;32mif[0m [0mself[0m[0;34m.[0m[0mtype[0m [0;34m==[0m [0;34m"Out"[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m    300 [0;31m            [0mself[0m[0;34m.[0m[0mlog[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['4_test_fibres(25,500_fibre).jpg']
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 609.1605548317295s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(41)[0;36mopenImage[0;34m()[0m
+[0;32m     39 [0;31m    [0;31m#Count objects on image[0m[0;34m[0m[0;34m[0m[0m
+[0m[0;32m     40 [0;31m    [0mthresVal[0m[0;34m,[0m [0minverted[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mthreshold[0m[0;34m([0m[0mimageGray[0m[0;34m,[0m [0;36m180[0m[0;34m,[0m [0;36m0[0m[0;34m,[0m [0;36m255[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m--> 41 [0;31m    [0mretval[0m[0;34m,[0m [0mlabels[0m[0;34m,[0m [0mstats[0m[0;34m,[0m [0mcentroids[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mconnectedComponentsWithStats[0m[0;34m([0m[0minverted[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m    [0mnumObjects[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mcentroids[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(42)[0;36mopenImage[0;34m()[0m
+[0;32m     40 [0;31m    [0mthresVal[0m[0;34m,[0m [0minverted[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mthreshold[0m[0;34m([0m[0mimageGray[0m[0;34m,[0m [0;36m180[0m[0;34m,[0m [0;36m0[0m[0;34m,[0m [0;36m255[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m    41 [0;31m    [0mretval[0m[0;34m,[0m [0mlabels[0m[0;34m,[0m [0mstats[0m[0;34m,[0m [0mcentroids[0m [0;34m=[0m [0mcv2[0m[0;34m.[0m[0mconnectedComponentsWithStats[0m[0;34m([0m[0minverted[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m---> 42 [0;31m    [0mnumObjects[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mcentroids[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m[0;34m[0m[0m
+[0m[0;32m     44 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(44)[0;36mopenImage[0;34m()[0m
+[0;32m     42 [0;31m    [0mnumObjects[0m [0;34m=[0m [0mlen[0m[0;34m([0m[0mcentroids[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m[0;34m[0m[0m
+[0m[0;32m---> 44 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m[0;32m     45 [0;31m        [0mimg[0m [0;34m=[0m [0mplt[0m[0;34m.[0m[0mfigure[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     46 [0;31m        [0;31m#Plot images[0m[0;34m[0m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(298)[0;36mwrite[0;34m()[0m
+[0;32m    296 [0;31m[0;34m[0m[0m
+[0m[0;32m    297 [0;31m    [0;32mdef[0m [0mwrite[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mmessage[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m--> 298 [0;31m        [0mself[0m[0;34m.[0m[0mterminal[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m    299 [0;31m        [0;32mif[0m [0mself[0m[0;34m.[0m[0mtype[0m [0;34m==[0m [0;34m"Out"[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m    300 [0;31m            [0mself[0m[0;34m.[0m[0mlog[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['4_test_fibres(25,500_fibre).jpg']
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 840.367969815048s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(298)[0;36mwrite[0;34m()[0m
+[0;32m    296 [0;31m[0;34m[0m[0m
+[0m[0;32m    297 [0;31m    [0;32mdef[0m [0mwrite[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mmessage[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m--> 298 [0;31m        [0mself[0m[0;34m.[0m[0mterminal[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m    299 [0;31m        [0;32mif[0m [0mself[0m[0;34m.[0m[0mtype[0m [0;34m==[0m [0;34m"Out"[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m    300 [0;31m            [0mself[0m[0;34m.[0m[0mlog[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['4_test_fibres(25,500_fibre).jpg']
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 858.0400215054802s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 16
+# Endpoints: 16
+Current clock 858.7280673685431s. 0 out of 16 coordinates found.
+Current clock 858.7283242630358s. 0 out of 16 coordinates found.
+Current clock 858.7331291862331s. 0 out of 16 coordinates found.
+Current clock 858.7383724299985s. 0 out of 16 coordinates found.
+Current clock 858.7431855037848s. 0 out of 16 coordinates found.
+Current clock 858.7479424290688s. 0 out of 16 coordinates found.
+Current clock 858.8751166741732s. 4 out of 16 coordinates found.
+Current clock 858.9841588773197s. 8 out of 16 coordinates found.
+Current clock 858.9891056811417s. 8 out of 16 coordinates found.
+Current clock 858.989352915677s. 8 out of 16 coordinates found.
+Current clock 858.9939598097471s. 8 out of 16 coordinates found.
+Current clock 859.1129653533552s. 12 out of 16 coordinates found.
+Current clock 859.1179559288593s. 12 out of 16 coordinates found.
+Final: 16 out of 16 coordinates found.
+Lengths checked: 20
+Lengths Found: 8
+
+Drawing found fibres.
+Drawing 1 out of 8
+Line coords: (250, 475, 749, 475)
+Drawing 2 out of 8
+Line coords: (250, 499, 749, 499)
+Drawing 3 out of 8
+Line coords: (474, 1251, 474, 1750)
+Drawing 4 out of 8
+Line coords: (498, 1251, 498, 1750)
+Drawing 5 out of 8
+Line coords: (1303, 667, 1657, 313)
+Drawing 6 out of 8
+Line coords: (1306, 1339, 1660, 1692)
+Drawing 7 out of 8
+Line coords: (1321, 685, 1675, 331)
+Drawing 8 out of 8
+Line coords: (1324, 1320, 1678, 1674)
+Drawn found fibres on the image: ..\ProcessedData\Images\4_test_fibres(25,500_fibre)[2018-03-21_19-27-39]Drawn Lines.jpg
+
+
+
+###################################################################################
+Analysed image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 1.3361846307661835
+Log file location: ..\ProcessedData\LogDataFiles\4_test_fibres(25,500_fibre)[2018-03-21_19-27-39](LOG).txt
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(298)[0;36mwrite[0;34m()[0m
+[0;32m    296 [0;31m[0;34m[0m[0m
+[0m[0;32m    297 [0;31m    [0;32mdef[0m [0mwrite[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mmessage[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m--> 298 [0;31m        [0mself[0m[0;34m.[0m[0mterminal[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m    299 [0;31m        [0;32mif[0m [0mself[0m[0;34m.[0m[0mtype[0m [0;34m==[0m [0;34m"Out"[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m    300 [0;31m            [0mself[0m[0;34m.[0m[0mlog[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['4_test_fibres(25,500_fibre).jpg']
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 871.7368715141138s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(40)[0;36mopenImage[0;34m()[0m
+[0;32m     38 [0;31m[0;34m[0m[0m
+[0m[0;32m     39 [0;31m    [0;31m#Count objects on image[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m--> 40 [0;31m    [0mlabels[0m [0;34m=[0m [0mmeasure[0m[0;34m.[0m[0mlabel[0m[0;34m([0m[0mmorphedImage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     41 [0;31m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(42)[0;36mopenImage[0;34m()[0m
+[1;31m1[0;32m    40 [0;31m    [0mlabels[0m [0;34m=[0m [0mmeasure[0m[0;34m.[0m[0mlabel[0m[0;34m([0m[0mmorphedImage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     41 [0;31m[0;34m[0m[0m
+[0m[0;32m---> 42 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m        [0mimg[0m [0;34m=[0m [0mplt[0m[0;34m.[0m[0mfigure[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     44 [0;31m        [0;31m#Plot images[0m[0;34m[0m[0;34m[0m[0m
+[0m
+1
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(298)[0;36mwrite[0;34m()[0m
+[0;32m    296 [0;31m[0;34m[0m[0m
+[0m[0;32m    297 [0;31m    [0;32mdef[0m [0mwrite[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mmessage[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m--> 298 [0;31m        [0mself[0m[0;34m.[0m[0mterminal[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m    299 [0;31m        [0;32mif[0m [0mself[0m[0;34m.[0m[0mtype[0m [0;34m==[0m [0;34m"Out"[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m    300 [0;31m            [0mself[0m[0;34m.[0m[0mlog[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['4_test_fibres(25,500_fibre).jpg']
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 1208.4886444181748s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(41)[0;36mopenImage[0;34m()[0m
+[0;32m     39 [0;31m    [0;31m#Count objects on image[0m[0;34m[0m[0;34m[0m[0m
+[0m[0;32m     40 [0;31m    [0minverted[0m [0;34m=[0m [0mutil[0m[0;34m.[0m[0minvert[0m[0;34m([0m[0mmorphedImage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m--> 41 [0;31m    [0mlabels[0m [0;34m=[0m [0mmeasure[0m[0;34m.[0m[0mlabel[0m[0;34m([0m[0minverted[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(43)[0;36mopenImage[0;34m()[0m
+[1;31m1[0;32m    41 [0;31m    [0mlabels[0m [0;34m=[0m [0mmeasure[0m[0;34m.[0m[0mlabel[0m[0;34m([0m[0minverted[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m[0;34m[0m[0m
+[0m[0;32m---> 43 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m[0;32m     44 [0;31m        [0mimg[0m [0;34m=[0m [0mplt[0m[0;34m.[0m[0mfigure[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     45 [0;31m        [0;31m#Plot images[0m[0;34m[0m[0;34m[0m[0m
+[0m
+4
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(298)[0;36mwrite[0;34m()[0m
+[0;32m    296 [0;31m[0;34m[0m[0m
+[0m[0;32m    297 [0;31m    [0;32mdef[0m [0mwrite[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mmessage[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m--> 298 [0;31m        [0mself[0m[0;34m.[0m[0mterminal[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m    299 [0;31m        [0;32mif[0m [0mself[0m[0;34m.[0m[0mtype[0m [0;34m==[0m [0;34m"Out"[0m[0;34m:[0m[0;34m[0m[0m
+[0m[0;32m    300 [0;31m            [0mself[0m[0;34m.[0m[0mlog[0m[0;34m.[0m[0mwrite[0m[0;34m([0m[0mmessage[0m[0;34m)[0m[0;34m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['x20_transmission1.bmp']
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 1244.35268746053s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(41)[0;36mopenImage[0;34m()[0m
+[0;32m     39 [0;31m    [0;31m#Count objects on image[0m[0;34m[0m[0;34m[0m[0m
+[0m[0;32m     40 [0;31m    [0minverted[0m [0;34m=[0m [0mutil[0m[0;34m.[0m[0minvert[0m[0;34m([0m[0mmorphedImage[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;31m1[0;32m--> 41 [0;31m    [0mlabels[0m [0;34m=[0m [0mmeasure[0m[0;34m.[0m[0mlabel[0m[0;34m([0m[0minverted[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m[0;34m[0m[0m
+[0m[0;32m     43 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m
+> [0;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\inputs.py[0m(43)[0;36mopenImage[0;34m()[0m
+[1;31m1[0;32m    41 [0;31m    [0mlabels[0m [0;34m=[0m [0mmeasure[0m[0;34m.[0m[0mlabel[0m[0;34m([0m[0minverted[0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     42 [0;31m[0;34m[0m[0m
+[0m[0;32m---> 43 [0;31m    [0;32mif[0m [0mdebug[0m[0;34m:[0m [0;31m#Printing the images and some histograms to the console for debugging purposes[0m[0;34m[0m[0m
+[0m[0;32m     44 [0;31m        [0mimg[0m [0;34m=[0m [0mplt[0m[0;34m.[0m[0mfigure[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m     45 [0;31m        [0;31m#Plot images[0m[0;34m[0m[0;34m[0m[0m
+[0m
+10
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['x20_transmission1.bmp']
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 1351.1358811873536s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+10 objects found on the image after removing objects smaller than 270
+Opened image 1 out of 1
+# Corners Found: 19
+# Endpoints: 18
+Current clock 1351.2051222527987s. 0 out of 18 coordinates found.
+Current clock 1351.2059436510533s. 0 out of 18 coordinates found.
+Current clock 1351.2066144143469s. 0 out of 18 coordinates found.
+Current clock 1351.2072999694503s. 0 out of 18 coordinates found.
+Current clock 1351.2080114856894s. 0 out of 18 coordinates found.
+Current clock 1351.2086991539086s. 0 out of 18 coordinates found.
+Current clock 1351.2093813884014s. 0 out of 18 coordinates found.
+Current clock 1351.2111896116817s. 0 out of 18 coordinates found.
+Current clock 1351.2118558468703s. 0 out of 18 coordinates found.
+Current clock 1351.2124725747772s. 0 out of 18 coordinates found.
+Current clock 1351.2149745037498s. 0 out of 18 coordinates found.
+Current clock 1351.2260828510398s. 4 out of 18 coordinates found.
+Current clock 1351.2282140791465s. 4 out of 18 coordinates found.
+Current clock 1351.2288395613896s. 4 out of 18 coordinates found.
+Current clock 1351.2514432580138s. 8 out of 18 coordinates found.
+Current clock 1351.2520959088872s. 8 out of 18 coordinates found.
+Current clock 1351.2527174667728s. 8 out of 18 coordinates found.
+Current clock 1351.2533378171636s. 8 out of 18 coordinates found.
+Current clock 1351.253953035702s. 8 out of 18 coordinates found.
+Current clock 1351.2545709711035s. 8 out of 18 coordinates found.
+Current clock 1351.2561896177192s. 8 out of 18 coordinates found.
+Current clock 1351.2636277849356s. 12 out of 18 coordinates found.
+Final: 14 out of 18 coordinates found.
+Lengths checked: 59
+Lengths Found: 7
+
+Drawing found fibres.
+Drawing 1 out of 7
+Line coords: (106, 438, 252, 587)
+Drawing 2 out of 7
+Line coords: (8, 215, 65, 232)
+Drawing 3 out of 7
+Line coords: (29, 109, 43, 156)
+Drawing 4 out of 7
+Line coords: (69, 320, 135, 360)
+Drawing 5 out of 7
+Line coords: (334, 621, 371, 576)
+Drawing 6 out of 7
+Line coords: (393, 598, 495, 613)
+Drawing 7 out of 7
+Line coords: (505, 641, 563, 608)
+Drawn found fibres on the image: ..\ProcessedData\Images\x20_transmission1[2018-03-21_19-35-52]Drawn Lines.jpg
+
+
+
+###################################################################################
+Analysed image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 0.27945834203751474
+Log file location: ..\ProcessedData\LogDataFiles\x20_transmission1[2018-03-21_19-35-52](LOG).txt

@@ -7,7 +7,7 @@ Input module to control the image being inputted or generate a random image for 
 import cv2
 from matplotlib import pyplot as plt
 import numpy as np
-from skimage import draw, morphology
+from skimage import draw, morphology, measure, util
 from lengths import midpoint
 
 #Functions
@@ -22,7 +22,7 @@ def openImage(imageSource, minSize, debug = False, filename = ""):
     arg[2] debug - a boolean that will allow extra code to be run for debugging.
     arg[3] filename - a string containing the source for where the debugging images should be saved.
     
-    Returns a numpy array containing the grayscale image data, with small object removed.
+    Returns a numpy array containing the grayscale image data, with small object removed. As well as the number of objects in the returned image.
     """
     image = cv2.imread(imageSource)
     cv2.imwrite(filename + ".jpg", image)
@@ -35,6 +35,12 @@ def openImage(imageSource, minSize, debug = False, filename = ""):
     morph = morphology.remove_small_holes(imageGray, min_size = minSize, connectivity = 1)
     morphedImage = np.zeros_like(imageGray)
     morphedImage[np.where(morph)] = 255
+    print("Objects smaller than " + str(minSize) + " pixels have been removed.")
+    
+    #Count objects on image
+    inverted = util.invert(morphedImage)
+    labels = measure.label(inverted)
+    numObjects = labels.max()
     
     if debug: #Printing the images and some histograms to the console for debugging purposes
         img = plt.figure()
@@ -67,7 +73,7 @@ def openImage(imageSource, minSize, debug = False, filename = ""):
             print("Debugging images could not be saved. In input.openFile().")
         plt.close(img)
     
-    return morphedImage
+    return morphedImage, numObjects
 
 
 def generateImage(fibreWidth, minLength, numFibres, arraySize):
