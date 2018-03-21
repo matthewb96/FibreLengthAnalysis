@@ -1,0 +1,730 @@
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 345.8961316096749s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+Got here[215   8]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[109  29]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[144  28]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[721  31]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[153  41]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[719  53]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[232  65]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[324  72]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[443 105]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[437 111]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[357 135]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[587 233]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[586 249]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[619 336]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[576 366]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[594 397]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[609 493]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[642 510]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[607 559]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+# Corners Found: 19
+Got here[438 106]
+Search area [[255   0   0]
+ [  0   0   0]
+ [  0   0   0]]
+Amax 255
+# Endpoints: 18
+Current clock 345.9783885621274s. 0 out of 18 coordinates found.
+Got here[327  57]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 345.9800014731435s. 0 out of 18 coordinates found.
+Got here[274  67]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 345.9816053279495s. 0 out of 18 coordinates found.
+Got here[291  65]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 345.9834869065315s. 0 out of 18 coordinates found.
+Got here[581  66]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 345.98509106321114s. 0 out of 18 coordinates found.
+Got here[297  74]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 345.9864817952065s. 0 out of 18 coordinates found.
+Got here[580  80]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 345.98786226349705s. 0 out of 18 coordinates found.
+Got here[335  85]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[335  85]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[387  95]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 345.99184578843966s. 0 out of 18 coordinates found.
+Got here[379  87]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 345.99320663494177s. 0 out of 18 coordinates found.
+Got here[399 120]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 345.99457019830686s. 0 out of 18 coordinates found.
+Got here[513 168]
+Search area [[255 255 255]
+ [  0   0 255]
+ [  0   0   0]]
+Amax 255
+Got here[513 168]
+Search area [[255 255 255]
+ [  0   0 255]
+ [  0   0   0]]
+Amax 255
+Got here[476 137]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[551 199]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 346.0005267695533s. 0 out of 18 coordinates found.
+Got here[513 179]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[513 179]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[476 142]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[550 215]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[457 124]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[569 233]
+Search area [[  0   0   0]
+ [  0   0   0]
+ [255   0   0]]
+Amax 255
+Got here[448 115]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[578 243]
+Search area [[  0   0   0]
+ [  0   0   0]
+ [255   0   0]]
+Amax 255
+Got here[443 110]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[582 247]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[162  19]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[179  16]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[469  18]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[185  25]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[469  31]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[223  36]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[223  36]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[219  22]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[228  50]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[217  15]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[230  58]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Current clock 346.02951781115024s. 4 out of 18 coordinates found.
+Got here[126  27]
+Search area [[255 255 255]
+ [255 255 255]
+ [  0   0 255]]
+Amax 255
+Got here[126  27]
+Search area [[255 255 255]
+ [255 255 255]
+ [  0   0 255]]
+Amax 255
+Got here[118  28]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[135  26]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 346.03513386889745s. 4 out of 18 coordinates found.
+Got here[416  28]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 346.036792966585s. 4 out of 18 coordinates found.
+Got here[132  36]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[132  36]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[121  32]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[144  39]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[115  31]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[150  41]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[433  26]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[433  39]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[232  47]
+Search area [[  0 255 255]
+ [  0 255 255]
+ [  0 255 255]]
+Amax 255
+Got here[232  47]
+Search area [[  0 255 255]
+ [  0 255 255]
+ [  0 255 255]]
+Amax 255
+Got here[188  36]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[252  80]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[366 127]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[383 179]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[360 198]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[371 209]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[379 260]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[392 265]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[376 294]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[521  48]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[541  81]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[656 128]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[672 180]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[649 199]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[660 210]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[668 261]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[682 266]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[665 295]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[521  61]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[541  95]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[655 142]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[672 194]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[649 212]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[660 223]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[668 274]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[681 279]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[665 308]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Got here[340 102]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[340 102]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[330  86]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[350 119]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[325  77]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[355 127]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Current clock 346.09820554215906s. 8 out of 18 coordinates found.
+Got here[605 282]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 346.0995748411239s. 8 out of 18 coordinates found.
+Got here[582 300]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 346.10094202697303s. 8 out of 18 coordinates found.
+Got here[593 311]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 346.1024767527087s. 8 out of 18 coordinates found.
+Got here[601 362]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 346.103934198785s. 8 out of 18 coordinates found.
+Got here[615 367]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 346.105391946735s. 8 out of 18 coordinates found.
+Got here[598 396]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[598 396]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[593 313]
+Search area [[255 255 255]
+ [255 255 255]
+ [255 255 255]]
+Amax 255
+Current clock 346.1100160476043s. 8 out of 18 coordinates found.
+Got here[599 352]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[599 352]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[610 343]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[588 362]
+Search area [[  0   0   0]
+ [  0   0   0]
+ [  0   0 255]]
+Amax 255
+Got here[616 338]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[582 366]
+Search area [[  0   0   0]
+ [  0   0   0]
+ [  0   0 255]]
+Amax 255
+Got here[606 444]
+Search area [[  0   0 255]
+ [  0   0 255]
+ [  0   0 255]]
+Amax 255
+Got here[606 444]
+Search area [[  0   0 255]
+ [  0   0 255]
+ [  0   0 255]]
+Amax 255
+Got here[602 418]
+Search area [[  0   0 255]
+ [  0   0 255]
+ [  0   0 255]]
+Amax 255
+Got here[609 469]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[600 406]
+Search area [[  0   0 255]
+ [  0   0 255]
+ [  0   0   0]]
+Amax 255
+Got here[611 482]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[599 399]
+Search area [[  0   0 255]
+ [  0   0 255]
+ [  0   0 255]]
+Amax 255
+Got here[612 488]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Current clock 346.12949686111756s. 12 out of 18 coordinates found.
+Got here[624 534]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[624 534]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[632 520]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[616 549]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[636 513]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Got here[612 556]
+Search area [[0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Amax 255
+Final: 14 out of 18 coordinates found.
+Lengths checked: 59
+Lengths Found: 7
+
+Drawing found fibres.
+Drawing 1 out of 7
+Line coords: (106, 438, 252, 587)
+Drawing 2 out of 7
+Line coords: (8, 215, 65, 232)
+Drawing 3 out of 7
+Line coords: (29, 109, 43, 156)
+Drawing 4 out of 7
+Line coords: (69, 320, 135, 360)
+Drawing 5 out of 7
+Line coords: (334, 621, 371, 576)
+Drawing 6 out of 7
+Line coords: (393, 598, 495, 613)
+Drawing 7 out of 7
+Line coords: (505, 641, 563, 608)
+Drawn found fibres on the image: ..\ProcessedData\Images\x20_transmission1[2018-03-21_18-46-24]Drawn Lines.jpg
+
+
+
+###################################################################################
+Analysed image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 0.33305450268727554
+Log file location: ..\ProcessedData\LogDataFiles\x20_transmission1[2018-03-21_18-46-24](LOG).txt

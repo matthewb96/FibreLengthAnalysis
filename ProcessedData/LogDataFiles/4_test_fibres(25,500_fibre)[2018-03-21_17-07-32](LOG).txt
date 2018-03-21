@@ -1,0 +1,236 @@
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 1046.2580446314182s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 16
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(35)[0;36maverageEdges[1;34m()[0m
+[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(37)[0;36maverageEdges[1;34m()[0m
+[1;31m1[1;32m    35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m---> 37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     38 [1;33m                    [0mx[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m0[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m0[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(38)[0;36maverageEdges[1;34m()[0m
+[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m---> 38 [1;33m                    [0mx[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m0[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m0[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(39)[0;36maverageEdges[1;34m()[0m
+[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     38 [1;33m                    [0mx[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m0[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m0[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m---> 39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m    41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(40)[0;36maverageEdges[1;34m()[0m
+[1;32m     38 [1;33m                    [0mx[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m0[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m0[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m---> 40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m    41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(35)[0;36maverageEdges[1;34m()[0m
+[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(35)[0;36maverageEdges[1;34m()[0m
+[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(35)[0;36maverageEdges[1;34m()[0m
+[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(35)[0;36maverageEdges[1;34m()[0m
+[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(35)[0;36maverageEdges[1;34m()[0m
+[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(35)[0;36maverageEdges[1;34m()[0m
+[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(35)[0;36maverageEdges[1;34m()[0m
+[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     37 [1;33m                [1;32mfor[0m [0mk[0m [1;32min[0m [1;33m[[0m[1;33m([0m[1;36m0[0m[1;33m,[0m[1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m0[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m0[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;36m1[0m[1;33m,[0m [1;33m-[0m[1;36m1[0m[1;33m)[0m[1;33m,[0m [1;33m([0m[1;33m-[0m[1;36m1[0m[1;33m,[0m [1;36m1[0m[1;33m)[0m[1;33m][0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(41)[0;36maverageEdges[1;34m()[0m
+[1;32m     39 [1;33m                    [0my[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0maverage[0m[1;33m[[0m[1;36m0[0m[1;33m,[0m [1;36m1[0m[1;33m][0m [1;33m+[0m [0mk[0m[1;33m[[0m[1;36m1[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     40 [1;33m                    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[0mx[0m[1;33m,[0m [0my[0m[1;33m][0m[1;33m,[0m [0mdtype[0m [1;33m=[0m [0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m--> 41 [1;33m                    [1;32mif[0m [0mcheckBlack[0m[1;33m([0m[0mpos[0m[1;33m,[0m [0mimageArray[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m     42 [1;33m                        [1;31m#If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     43 [1;33m                        [0maverageCoords[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mvstack[0m[1;33m([0m[1;33m([0m[0maverageCoords[0m[1;33m,[0m [0maverage[0m[1;33m)[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+# Endpoints: 8
+Current clock 1236.6579520769512s. 0 out of 8 coordinates found.
+Current clock 1236.7006862192254s. 0 out of 8 coordinates found.
+Current clock 1236.7413153964023s. 0 out of 8 coordinates found.
+Current clock 1236.8295654468152s. 4 out of 8 coordinates found.
+Current clock 1236.8689732431255s. 4 out of 8 coordinates found.
+Final: 8 out of 8 coordinates found.
+Lengths checked: 7
+Lengths Found: 4
+
+Drawing found fibres.
+Drawing 1 out of 4
+Line coords: (250, 487, 749, 487)
+Drawing 2 out of 4
+Line coords: (486, 1251, 486, 1750)
+Drawing 3 out of 4
+Line coords: (1312, 676, 1666, 322)
+Drawing 4 out of 4
+Line coords: (1315, 1329, 1669, 1683)
+Drawn found fibres on the image: ..\ProcessedData\Images\4_test_fibres(25,500_fibre)[2018-03-21_17-07-32]Drawn Lines.jpg
+
+
+
+###################################################################################
+Analysed image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 191.00667442683243
+Log file location: ..\ProcessedData\LogDataFiles\4_test_fibres(25,500_fibre)[2018-03-21_17-07-32](LOG).txt

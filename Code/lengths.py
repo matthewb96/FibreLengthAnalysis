@@ -151,21 +151,14 @@ def checkLine(pos1, pos2, fibreWidth, imageArray):
     mid2 = midpoint(pos1, pos2)
     #Check to within half of fibre width
     while int(coordDist(mid1, pos1)) > (fibreWidth/2) and int(coordDist(mid2, pos2)) > (fibreWidth/2):
-        partOf = False #Set to true when midpoint is part of a fibre
-        #Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint
-        for i in [(0,0), (1, 0), (0, 1), (-1, 0), (0, -1), (1, 1), (-1, -1), (1, -1), (-1, 1)]:
-            check1 = np.array([(mid1[0] + i[0]), mid1[1] + i[1]])
-            check2 = np.array([(mid2[0] + i[0]), mid2[1] + i[1]])
-            if checkBlack(check1, imageArray) and checkBlack(check2, imageArray):
-                #If one of the pixels next to the midpoint is black then consider it part of a fibre
-                mid1 = midpoint(pos1, mid1)
-                mid2 = midpoint(pos2, mid2)
-                partOf = True
-                break
-        #Only false if midpoint or surrounding pixels aren't part of a fibre    
-        if not partOf:
+        #Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint (done in checkBlack() function)
+        if checkBlack(mid1, imageArray) and checkBlack(mid2, imageArray):
+            #If one of the pixels next to the midpoint is black then consider it part of a fibre
+            mid1 = midpoint(pos1, mid1)
+            mid2 = midpoint(pos2, mid2)
+        else:
             return False
-        
+
     #If the loop has suceeded then pos1 and pos2 are part of the same fibre
     return True
     
@@ -183,17 +176,25 @@ def midpoint(pos1, pos2):
     return middle
 
 
-def checkBlack(pos, image):
+def checkBlack(pos, image, imageSearchRange = 1):
     """
     This function checks if the pixel at the given position is black and therefore part of a fibre.
     
     arg[0] pos - a numpy array containing the coordinates for the pixel that should be checked.
     arg[1] image - a numpy array containing the image data that should be checked.
+    arg[2] imageSearchRange - int value for the range of pixels around the pos to be searched and if any are black return True.
     
     Returns boolean value of True if the pixel is part of a fibre and False if it is not.
     """
-    pixel = image[int(pos[1])][int(pos[0])]
-    if pixel <= (0.5*np.amax(image)):
+    pos = np.rint(pos)
+    pos = pos.astype(int)
+    startX = pos[1] - imageSearchRange
+    endX = pos[1] + imageSearchRange
+    startY = pos[0] - imageSearchRange
+    endY = pos[0] + imageSearchRange
+    searchArea = image[startX:endX + 1, startY:endY + 1]
+    #Check if any position in searchArea is black
+    if np.any(searchArea <= (0.5*np.amax(image))):
         return True 
     else:
         return False

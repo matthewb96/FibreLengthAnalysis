@@ -1,0 +1,37 @@
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 4641.432727452754s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 4
+# Endpoints: 2
+Current clock 4641.486002117946s. 0 out of 2 coordinates found.
+Final: 2 out of 2 coordinates found.
+Lengths checked: 1
+Lengths Found: 1
+
+Drawing found fibres.
+Drawing 1 out of 1
+Line coords: (106, 438, 241, 588)
+Drawn found fibres on the image: ..\ProcessedData\Images\x20_transmission1[2018-03-21_18-07-27]Drawn Lines.jpg
+
+
+
+###################################################################################
+Analysed image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 0.14578415308096737
+Log file location: ..\ProcessedData\LogDataFiles\x20_transmission1[2018-03-21_18-07-27](LOG).txt

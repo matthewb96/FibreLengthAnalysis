@@ -1,0 +1,37 @@
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 3880.697608919039s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 2
+# Endpoints: 2
+Current clock 3884.640553889884s. 0 out of 2 coordinates found.
+Final: 2 out of 2 coordinates found.
+Lengths checked: 1
+Lengths Found: 1
+
+Drawing found fibres.
+Drawing 1 out of 1
+Line coords: (1324, 1320, 1678, 1674)
+Drawn found fibres on the image: ..\ProcessedData\Images\4_test_fibres(25,500_fibre)[2018-03-21_17-54-47]Drawn Lines.jpg
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+
+###################################################################################
+Analysed image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+
+Time taken: 4.280574368993257
+Log file location: ..\ProcessedData\LogDataFiles\4_test_fibres(25,500_fibre)[2018-03-21_17-54-47](LOG).txt

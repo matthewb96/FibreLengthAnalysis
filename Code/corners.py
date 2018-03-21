@@ -31,19 +31,16 @@ def averageEdges(cornerPos, FIBREWIDTH, imageArray):
                 continue
             distance = coordDist(cornerPos[i], cornerPos[j])
             #Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width
-            if  distance <= int(np.rint(FIBREWIDTH*1.1)) and distance != 0: 
+            if  distance <= int(np.rint(FIBREWIDTH*1.5)) and distance != 0: 
                 average = np.array([(cornerPos[i] + cornerPos[j])/2])
-                #Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint
-                for k in [(0,0), (1, 0), (0, 1), (-1, 0), (0, -1), (1, 1), (-1, -1), (1, -1), (-1, 1)]:
-                    x = np.rint(average[0, 0] + k[0])
-                    y = np.rint(average[0, 1] + k[1])
-                    pos = np.array([x, y], dtype = int)
-                    if checkBlack(pos, imageArray):
-                        #If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint
-                        averageCoords = np.vstack((averageCoords, average))
-                        foundMidpoint[i] = True
-                        foundMidpoint[j] = True
-                        break
+                #Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint (done in checkBlack() function)
+                pos = np.array([np.rint(average[0][0]), np.rint(average[0][1])], dtype = int)
+                if checkBlack(pos, imageArray):
+                    #If one of the pixels next to the midpoint is black then consider it part of a fibre and save the midpoint
+                    averageCoords = np.vstack((averageCoords, average))
+                    foundMidpoint[i] = True
+                    foundMidpoint[j] = True
+                    break
     
     #Add coordinates of corners where no midpoint has been found to the midpoint array
     if not foundMidpoint.all():
@@ -54,6 +51,7 @@ def averageEdges(cornerPos, FIBREWIDTH, imageArray):
     averageCoords = np.delete(averageCoords, 0, 0) #Delete temp values
     print("# Endpoints: " + str(averageCoords.shape[0]))
     return averageCoords
+
 
 def findCorners(imageArray, filename, debug = False):
     """

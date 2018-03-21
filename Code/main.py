@@ -20,8 +20,6 @@ import graphing
 ####Variables####
 IMAGEFOLDER = "..\\FibreImages\\" #Source where images to be analysed are stored. Backslash is special character used to ignore special characters so 2 are needed
 PROCESSEDFOLDER = "..\\ProcessedData\\" #Source where output files are stored
-#IMAGEFOLDER = "..\\Real Data Collected 22 Feb\\"
-#PROCESSEDFOLDER = "..\\Real Data Collected 22 Feb\\Processed Data Collected 22 Feb\\"
 PROCESSEDIMAGES = PROCESSEDFOLDER + "Images\\" #Source for where processed images are stored
 PROCESSEDDATA = PROCESSEDFOLDER + "LogDataFiles\\" #Source for where log and data files are stored
 DEBUGGING = False

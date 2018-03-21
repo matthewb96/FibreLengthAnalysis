@@ -1,0 +1,20 @@
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 5637.608621994998s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 19
+# Endpoints: 18
+Current clock 5637.674377627056s. 0 out of 18 coordinates found.
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+Could not find "exit" in ..\FibreImages\
+Please try again.
+['exit']

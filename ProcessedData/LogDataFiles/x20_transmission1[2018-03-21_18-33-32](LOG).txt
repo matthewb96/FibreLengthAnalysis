@@ -1,0 +1,137 @@
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 489.16827223209015s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 19
+# Endpoints: 18
+Current clock 489.2309952412635s. 0 out of 18 coordinates found.
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(298)[0;36mwrite[1;34m()[0m
+[1;32m    296 [1;33m[1;33m[0m[0m
+[0m[1;32m    297 [1;33m    [1;32mdef[0m [0mwrite[0m[1;33m([0m[0mself[0m[1;33m,[0m [0mmessage[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m--> 298 [1;33m        [0mself[0m[1;33m.[0m[0mterminal[0m[1;33m.[0m[0mwrite[0m[1;33m([0m[0mmessage[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    299 [1;33m        [1;32mif[0m [0mself[0m[1;33m.[0m[0mtype[0m [1;33m==[0m [1;34m"Out"[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m    300 [1;33m            [0mself[0m[1;33m.[0m[0mlog[0m[1;33m.[0m[0mwrite[0m[1;33m([0m[0mmessage[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['x20_transmission1.bmp']
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 761.5930453136527s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(194)[0;36mcheckBlack[1;34m()[0m
+[1;32m    192 [1;33m    [0mReturns[0m [0mboolean[0m [0mvalue[0m [0mof[0m [1;32mTrue[0m [1;32mif[0m [0mthe[0m [0mpixel[0m [1;32mis[0m [0mpart[0m [0mof[0m [0ma[0m [0mfibre[0m [1;32mand[0m [1;32mFalse[0m [1;32mif[0m [0mit[0m [1;32mis[0m [1;32mnot[0m[1;33m.[0m[1;33m[0m[0m
+[0m[1;32m    193 [1;33m    """
+[0m[1;31m1[1;32m-> 194 [1;33m    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mpos[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    195 [1;33m    [0mpos[0m [1;33m=[0m [0mpos[0m[1;33m.[0m[0mastype[0m[1;33m([0m[0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    196 [1;33m    [0mstartX[0m [1;33m=[0m [0mpos[0m[1;33m[[0m[1;36m1[0m[1;33m][0m [1;33m-[0m [0mimageSearchRange[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(194)[0;36mcheckBlack[1;34m()[0m
+[1;32m    192 [1;33m    [0mReturns[0m [0mboolean[0m [0mvalue[0m [0mof[0m [1;32mTrue[0m [1;32mif[0m [0mthe[0m [0mpixel[0m [1;32mis[0m [0mpart[0m [0mof[0m [0ma[0m [0mfibre[0m [1;32mand[0m [1;32mFalse[0m [1;32mif[0m [0mit[0m [1;32mis[0m [1;32mnot[0m[1;33m.[0m[1;33m[0m[0m
+[0m[1;32m    193 [1;33m    """
+[0m[1;31m1[1;32m-> 194 [1;33m    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mpos[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    195 [1;33m    [0mpos[0m [1;33m=[0m [0mpos[0m[1;33m.[0m[0mastype[0m[1;33m([0m[0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    196 [1;33m    [0mstartX[0m [1;33m=[0m [0mpos[0m[1;33m[[0m[1;36m1[0m[1;33m][0m [1;33m-[0m [0mimageSearchRange[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(194)[0;36mcheckBlack[1;34m()[0m
+[1;32m    192 [1;33m    [0mReturns[0m [0mboolean[0m [0mvalue[0m [0mof[0m [1;32mTrue[0m [1;32mif[0m [0mthe[0m [0mpixel[0m [1;32mis[0m [0mpart[0m [0mof[0m [0ma[0m [0mfibre[0m [1;32mand[0m [1;32mFalse[0m [1;32mif[0m [0mit[0m [1;32mis[0m [1;32mnot[0m[1;33m.[0m[1;33m[0m[0m
+[0m[1;32m    193 [1;33m    """
+[0m[1;31m1[1;32m-> 194 [1;33m    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mpos[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    195 [1;33m    [0mpos[0m [1;33m=[0m [0mpos[0m[1;33m.[0m[0mastype[0m[1;33m([0m[0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    196 [1;33m    [0mstartX[0m [1;33m=[0m [0mpos[0m[1;33m[[0m[1;36m1[0m[1;33m][0m [1;33m-[0m [0mimageSearchRange[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(194)[0;36mcheckBlack[1;34m()[0m
+[1;32m    192 [1;33m    [0mReturns[0m [0mboolean[0m [0mvalue[0m [0mof[0m [1;32mTrue[0m [1;32mif[0m [0mthe[0m [0mpixel[0m [1;32mis[0m [0mpart[0m [0mof[0m [0ma[0m [0mfibre[0m [1;32mand[0m [1;32mFalse[0m [1;32mif[0m [0mit[0m [1;32mis[0m [1;32mnot[0m[1;33m.[0m[1;33m[0m[0m
+[0m[1;32m    193 [1;33m    """
+[0m[1;31m1[1;32m-> 194 [1;33m    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mpos[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    195 [1;33m    [0mpos[0m [1;33m=[0m [0mpos[0m[1;33m.[0m[0mastype[0m[1;33m([0m[0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    196 [1;33m    [0mstartX[0m [1;33m=[0m [0mpos[0m[1;33m[[0m[1;36m1[0m[1;33m][0m [1;33m-[0m [0mimageSearchRange[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(194)[0;36mcheckBlack[1;34m()[0m
+[1;32m    192 [1;33m    [0mReturns[0m [0mboolean[0m [0mvalue[0m [0mof[0m [1;32mTrue[0m [1;32mif[0m [0mthe[0m [0mpixel[0m [1;32mis[0m [0mpart[0m [0mof[0m [0ma[0m [0mfibre[0m [1;32mand[0m [1;32mFalse[0m [1;32mif[0m [0mit[0m [1;32mis[0m [1;32mnot[0m[1;33m.[0m[1;33m[0m[0m
+[0m[1;32m    193 [1;33m    """
+[0m[1;31m1[1;32m-> 194 [1;33m    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mpos[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    195 [1;33m    [0mpos[0m [1;33m=[0m [0mpos[0m[1;33m.[0m[0mastype[0m[1;33m([0m[0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    196 [1;33m    [0mstartX[0m [1;33m=[0m [0mpos[0m[1;33m[[0m[1;36m1[0m[1;33m][0m [1;33m-[0m [0mimageSearchRange[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(194)[0;36mcheckBlack[1;34m()[0m
+[1;32m    192 [1;33m    [0mReturns[0m [0mboolean[0m [0mvalue[0m [0mof[0m [1;32mTrue[0m [1;32mif[0m [0mthe[0m [0mpixel[0m [1;32mis[0m [0mpart[0m [0mof[0m [0ma[0m [0mfibre[0m [1;32mand[0m [1;32mFalse[0m [1;32mif[0m [0mit[0m [1;32mis[0m [1;32mnot[0m[1;33m.[0m[1;33m[0m[0m
+[0m[1;32m    193 [1;33m    """
+[0m[1;31m1[1;32m-> 194 [1;33m    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mpos[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    195 [1;33m    [0mpos[0m [1;33m=[0m [0mpos[0m[1;33m.[0m[0mastype[0m[1;33m([0m[0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    196 [1;33m    [0mstartX[0m [1;33m=[0m [0mpos[0m[1;33m[[0m[1;36m1[0m[1;33m][0m [1;33m-[0m [0mimageSearchRange[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(194)[0;36mcheckBlack[1;34m()[0m
+[1;32m    192 [1;33m    [0mReturns[0m [0mboolean[0m [0mvalue[0m [0mof[0m [1;32mTrue[0m [1;32mif[0m [0mthe[0m [0mpixel[0m [1;32mis[0m [0mpart[0m [0mof[0m [0ma[0m [0mfibre[0m [1;32mand[0m [1;32mFalse[0m [1;32mif[0m [0mit[0m [1;32mis[0m [1;32mnot[0m[1;33m.[0m[1;33m[0m[0m
+[0m[1;32m    193 [1;33m    """
+[0m[1;31m1[1;32m-> 194 [1;33m    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mpos[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    195 [1;33m    [0mpos[0m [1;33m=[0m [0mpos[0m[1;33m.[0m[0mastype[0m[1;33m([0m[0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    196 [1;33m    [0mstartX[0m [1;33m=[0m [0mpos[0m[1;33m[[0m[1;36m1[0m[1;33m][0m [1;33m-[0m [0mimageSearchRange[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(194)[0;36mcheckBlack[1;34m()[0m
+[1;32m    192 [1;33m    [0mReturns[0m [0mboolean[0m [0mvalue[0m [0mof[0m [1;32mTrue[0m [1;32mif[0m [0mthe[0m [0mpixel[0m [1;32mis[0m [0mpart[0m [0mof[0m [0ma[0m [0mfibre[0m [1;32mand[0m [1;32mFalse[0m [1;32mif[0m [0mit[0m [1;32mis[0m [1;32mnot[0m[1;33m.[0m[1;33m[0m[0m
+[0m[1;32m    193 [1;33m    """
+[0m[1;31m1[1;32m-> 194 [1;33m    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mpos[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    195 [1;33m    [0mpos[0m [1;33m=[0m [0mpos[0m[1;33m.[0m[0mastype[0m[1;33m([0m[0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    196 [1;33m    [0mstartX[0m [1;33m=[0m [0mpos[0m[1;33m[[0m[1;36m1[0m[1;33m][0m [1;33m-[0m [0mimageSearchRange[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\lengths.py[0m(194)[0;36mcheckBlack[1;34m()[0m
+[1;32m    192 [1;33m    [0mReturns[0m [0mboolean[0m [0mvalue[0m [0mof[0m [1;32mTrue[0m [1;32mif[0m [0mthe[0m [0mpixel[0m [1;32mis[0m [0mpart[0m [0mof[0m [0ma[0m [0mfibre[0m [1;32mand[0m [1;32mFalse[0m [1;32mif[0m [0mit[0m [1;32mis[0m [1;32mnot[0m[1;33m.[0m[1;33m[0m[0m
+[0m[1;32m    193 [1;33m    """
+[0m[1;31m1[1;32m-> 194 [1;33m    [0mpos[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mpos[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    195 [1;33m    [0mpos[0m [1;33m=[0m [0mpos[0m[1;33m.[0m[0mastype[0m[1;33m([0m[0mint[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    196 [1;33m    [0mstartX[0m [1;33m=[0m [0mpos[0m[1;33m[[0m[1;36m1[0m[1;33m][0m [1;33m-[0m [0mimageSearchRange[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\main.py[0m(298)[0;36mwrite[1;34m()[0m
+[1;32m    296 [1;33m[1;33m[0m[0m
+[0m[1;32m    297 [1;33m    [1;32mdef[0m [0mwrite[0m[1;33m([0m[0mself[0m[1;33m,[0m [0mmessage[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m--> 298 [1;33m        [0mself[0m[1;33m.[0m[0mterminal[0m[1;33m.[0m[0mwrite[0m[1;33m([0m[0mmessage[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m    299 [1;33m        [1;32mif[0m [0mself[0m[1;33m.[0m[0mtype[0m [1;33m==[0m [1;34m"Out"[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m    300 [1;33m            [0mself[0m[1;33m.[0m[0mlog[0m[1;33m.[0m[0mwrite[0m[1;33m([0m[0mmessage[0m[1;33m)[0m[1;33m[0m[0m
+[0m
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['x20_transmission1.bmp']
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 785.5682246567998s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 19
+# Endpoints: 18
+Current clock 785.6314949629359s. 0 out of 18 coordinates found.
+
+Program interrupted. (Use 'cont' to resume).
+--Return--
+255
+> [1;32mc:\users\matthew\anaconda3\lib\site-packages\numpy\core\_methods.py[0m(26)[0;36m_amax[1;34m()[0m
+[1;32m     24 [1;33m[1;31m# small reductions[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     25 [1;33m[1;32mdef[0m [0m_amax[0m[1;33m([0m[0ma[0m[1;33m,[0m [0maxis[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m [0mout[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m [0mkeepdims[0m[1;33m=[0m[1;32mFalse[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;32m---> 26 [1;33m    [1;32mreturn[0m [0mumr_maximum[0m[1;33m([0m[0ma[0m[1;33m,[0m [0maxis[0m[1;33m,[0m [1;32mNone[0m[1;33m,[0m [0mout[0m[1;33m,[0m [0mkeepdims[0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     27 [1;33m[1;33m[0m[0m
+[0m[1;32m     28 [1;33m[1;32mdef[0m [0m_amin[0m[1;33m([0m[0ma[0m[1;33m,[0m [0maxis[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m [0mout[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m [0mkeepdims[0m[1;33m=[0m[1;32mFalse[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[0m
+[0m

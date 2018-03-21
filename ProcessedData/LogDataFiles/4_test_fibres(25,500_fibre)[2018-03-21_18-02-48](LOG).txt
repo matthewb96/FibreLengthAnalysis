@@ -1,0 +1,47 @@
+Log file for ..\FibreImages\4_test_fibres(25,500_fibre).jpg
+
+Started at: 4362.176669753828s
+
+
+
+###################################################################################
+Analysing image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 16
+# Endpoints: 8
+Current clock 4362.826629423505s. 0 out of 8 coordinates found.
+Current clock 4362.866639155913s. 0 out of 8 coordinates found.
+Current clock 4362.906862313004s. 0 out of 8 coordinates found.
+Current clock 4362.9247893827405s. 4 out of 8 coordinates found.
+Current clock 4362.964110239434s. 4 out of 8 coordinates found.
+Final: 8 out of 8 coordinates found.
+Lengths checked: 7
+Lengths Found: 4
+
+Drawing found fibres.
+Drawing 1 out of 4
+Line coords: (250, 487, 749, 487)
+Drawing 2 out of 4
+Line coords: (486, 1251, 486, 1750)
+Drawing 3 out of 4
+Line coords: (1312, 676, 1666, 322)
+Drawing 4 out of 4
+Line coords: (1315, 1329, 1669, 1683)
+Drawn found fibres on the image: ..\ProcessedData\Images\4_test_fibres(25,500_fibre)[2018-03-21_18-02-48]Drawn Lines.jpg
+
+
+
+###################################################################################
+Analysed image 4_test_fibres(25,500_fibre).jpg, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 0.9414887322636787
+Log file location: ..\ProcessedData\LogDataFiles\4_test_fibres(25,500_fibre)[2018-03-21_18-02-48](LOG).txt

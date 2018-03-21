@@ -1,0 +1,100 @@
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 4688.768513006529s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 19
+# Endpoints: 19
+Current clock 4688.834528551815s. 0 out of 19 coordinates found.
+Current clock 4688.839406830314s. 0 out of 19 coordinates found.
+Current clock 4688.844259449552s. 0 out of 19 coordinates found.
+Current clock 4688.849006714878s. 0 out of 19 coordinates found.
+Current clock 4688.853485916386s. 0 out of 19 coordinates found.
+Current clock 4688.858328271918s. 0 out of 19 coordinates found.
+Current clock 4688.866307094877s. 4 out of 19 coordinates found.
+Current clock 4688.870785390764s. 4 out of 19 coordinates found.
+Current clock 4688.870903423368s. 4 out of 19 coordinates found.
+Current clock 4688.875465338261s. 4 out of 19 coordinates found.
+Current clock 4688.879971708399s. 4 out of 19 coordinates found.
+Current clock 4688.884440344329s. 4 out of 19 coordinates found.
+Current clock 4688.889066558314s. 4 out of 19 coordinates found.
+Current clock 4688.8936707355215s. 4 out of 19 coordinates found.
+Current clock 4688.898142390188s. 4 out of 19 coordinates found.
+Current clock 4688.902609214875s. 4 out of 19 coordinates found.
+Current clock 4688.907497455205s. 4 out of 19 coordinates found.
+Current clock 4688.911989939154s. 4 out of 19 coordinates found.
+Current clock 4688.916458876957s. 4 out of 19 coordinates found.
+Current clock 4688.921022603093s. 4 out of 19 coordinates found.
+Current clock 4688.925506030832s. 4 out of 19 coordinates found.
+Current clock 4688.929975270509s. 4 out of 19 coordinates found.
+Current clock 4688.934440887701s. 4 out of 19 coordinates found.
+Current clock 4688.939049894888s. 4 out of 19 coordinates found.
+Current clock 4688.943531209511s. 4 out of 19 coordinates found.
+Current clock 4688.9480137316295s. 4 out of 19 coordinates found.
+Current clock 4688.9527311114625s. 4 out of 19 coordinates found.
+Current clock 4688.95721846356s. 4 out of 19 coordinates found.
+Current clock 4688.961683175132s. 4 out of 19 coordinates found.
+Current clock 4688.966143358598s. 4 out of 19 coordinates found.
+Current clock 4688.970873417125s. 4 out of 19 coordinates found.
+Current clock 4688.975482424311s. 4 out of 19 coordinates found.
+Current clock 4688.979955286472s. 4 out of 19 coordinates found.
+Current clock 4688.9846071597185s. 4 out of 19 coordinates found.
+Current clock 4688.989130434783s. 4 out of 19 coordinates found.
+Current clock 4688.993599976333s. 4 out of 19 coordinates found.
+Current clock 4688.998148306911s. 4 out of 19 coordinates found.
+Current clock 4689.003069753345s. 4 out of 19 coordinates found.
+Current clock 4689.007632573859s. 4 out of 19 coordinates found.
+Current clock 4689.0121042285255s. 4 out of 19 coordinates found.
+Current clock 4689.016812552149s. 4 out of 19 coordinates found.
+Current clock 4689.021306545466s. 4 out of 19 coordinates found.
+Current clock 4689.025776087017s. 4 out of 19 coordinates found.
+Current clock 4689.03034373751s. 4 out of 19 coordinates found.
+Current clock 4689.034953348443s. 4 out of 19 coordinates found.
+Current clock 4689.039439794919s. 4 out of 19 coordinates found.
+Current clock 4689.043905412112s. 4 out of 19 coordinates found.
+Current clock 4689.04853434296s. 4 out of 19 coordinates found.
+Current clock 4689.055083794093s. 8 out of 19 coordinates found.
+Current clock 4689.057246115188s. 12 out of 19 coordinates found.
+Final: 16 out of 19 coordinates found.
+Lengths checked: 54
+Lengths Found: 8
+
+Drawing found fibres.
+Drawing 1 out of 8
+Line coords: (8, 215, 65, 232)
+Drawing 2 out of 8
+Line coords: (29, 109, 25, 144)
+Drawing 3 out of 8
+Line coords: (69, 320, 135, 360)
+Drawing 4 out of 8
+Line coords: (101, 443, 252, 587)
+Drawing 5 out of 8
+Line coords: (111, 434, 229, 589)
+Drawing 6 out of 8
+Line coords: (334, 621, 371, 576)
+Drawing 7 out of 8
+Line coords: (393, 598, 495, 613)
+Drawing 8 out of 8
+Line coords: (505, 641, 563, 608)
+Drawn found fibres on the image: ..\ProcessedData\Images\x20_transmission1[2018-03-21_18-08-15]Drawn Lines.jpg
+
+
+
+###################################################################################
+Analysed image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 0.3787590818692479
+Log file location: ..\ProcessedData\LogDataFiles\x20_transmission1[2018-03-21_18-08-15](LOG).txt

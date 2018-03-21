@@ -1,0 +1,356 @@
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 710.6566482845727s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Opened image 1 out of 1
+# Corners Found: 19
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(34)[0;36maverageEdges[1;34m()[0m
+[1;31m1[1;32m    32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m---> 34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m    35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(29)[0;36maverageEdges[1;34m()[0m
+[1;32m     27 [1;33m        [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     28 [1;33m            [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;32m---> 29 [1;33m        [1;32mfor[0m [0mj[0m [1;32min[0m [0mrange[0m[1;33m([0m[0mi[0m[1;33m,[0m [0marrayLength[0m[1;33m)[0m[1;33m:[0m [1;31m#Generates list of numbers starts at i so to not repeat numbers already compared[0m[1;33m[0m[0m
+[0m[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(30)[0;36maverageEdges[1;34m()[0m
+[1;32m     28 [1;33m            [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;32m     29 [1;33m        [1;32mfor[0m [0mj[0m [1;32min[0m [0mrange[0m[1;33m([0m[0mi[0m[1;33m,[0m [0marrayLength[0m[1;33m)[0m[1;33m:[0m [1;31m#Generates list of numbers starts at i so to not repeat numbers already compared[0m[1;33m[0m[0m
+[0m[1;32m---> 30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m    32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(34)[0;36maverageEdges[1;34m()[0m
+[1;31m1[1;32m    32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m---> 34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m    35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(29)[0;36maverageEdges[1;34m()[0m
+[1;32m     27 [1;33m        [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     28 [1;33m            [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;32m---> 29 [1;33m        [1;32mfor[0m [0mj[0m [1;32min[0m [0mrange[0m[1;33m([0m[0mi[0m[1;33m,[0m [0marrayLength[0m[1;33m)[0m[1;33m:[0m [1;31m#Generates list of numbers starts at i so to not repeat numbers already compared[0m[1;33m[0m[0m
+[0m[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(30)[0;36maverageEdges[1;34m()[0m
+[1;32m     28 [1;33m            [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;32m     29 [1;33m        [1;32mfor[0m [0mj[0m [1;32min[0m [0mrange[0m[1;33m([0m[0mi[0m[1;33m,[0m [0marrayLength[0m[1;33m)[0m[1;33m:[0m [1;31m#Generates list of numbers starts at i so to not repeat numbers already compared[0m[1;33m[0m[0m
+[0m[1;32m---> 30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m    32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(34)[0;36maverageEdges[1;34m()[0m
+[1;31m1[1;32m    32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m---> 34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m[1;31m2[1;32m    35 [1;33m                [0maverage[0m [1;33m=[0m [0mnp[0m[1;33m.[0m[0marray[0m[1;33m([0m[1;33m[[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m [1;33m+[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m/[0m[1;36m2[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     36 [1;33m                [1;31m#Check the midpoint is part of a fibre, check all pixels within one pixel of midpoint[0m[1;33m[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(29)[0;36maverageEdges[1;34m()[0m
+[1;32m     27 [1;33m        [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     28 [1;33m            [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;32m---> 29 [1;33m        [1;32mfor[0m [0mj[0m [1;32min[0m [0mrange[0m[1;33m([0m[0mi[0m[1;33m,[0m [0marrayLength[0m[1;33m)[0m[1;33m:[0m [1;31m#Generates list of numbers starts at i so to not repeat numbers already compared[0m[1;33m[0m[0m
+[0m[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+> [1;32mc:\users\matthew\masters project\program files\fibrelengthanalysis\code\corners.py[0m(32)[0;36maverageEdges[1;34m()[0m
+[1;32m     30 [1;33m            [1;32mif[0m [0mfoundMidpoint[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m:[0m [1;31m#If corner is already part of an edge[0m[1;33m[0m[0m
+[0m[1;32m     31 [1;33m                [1;32mcontinue[0m[1;33m[0m[0m
+[0m[1;31m1[1;32m--> 32 [1;33m            [0mdistance[0m [1;33m=[0m [0mcoordDist[0m[1;33m([0m[0mcornerPos[0m[1;33m[[0m[0mi[0m[1;33m][0m[1;33m,[0m [0mcornerPos[0m[1;33m[[0m[0mj[0m[1;33m][0m[1;33m)[0m[1;33m[0m[0m
+[0m[1;32m     33 [1;33m            [1;31m#Checking against a slightly larger number because if the corners are not exact due to blurring they might be slightly further apart than fibre width[0m[1;33m[0m[1;33m[0m[0m
+[0m[1;32m     34 [1;33m            [1;32mif[0m  [0mdistance[0m [1;33m<=[0m [0mint[0m[1;33m([0m[0mnp[0m[1;33m.[0m[0mrint[0m[1;33m([0m[0mFIBREWIDTH[0m[1;33m*[0m[1;36m1.1[0m[1;33m)[0m[1;33m)[0m [1;32mand[0m [0mdistance[0m [1;33m!=[0m [1;36m0[0m[1;33m:[0m[1;33m[0m[0m
+[0m
+# Endpoints: 19
+Current clock 789.7462126929425s. 0 out of 19 coordinates found.
+Current clock 789.7514031088158s. 0 out of 19 coordinates found.
+Current clock 789.756413607982s. 0 out of 19 coordinates found.
+Current clock 789.7615659877729s. 0 out of 19 coordinates found.
+Current clock 789.7665861468965s. 0 out of 19 coordinates found.
+Current clock 789.77157913739s. 0 out of 19 coordinates found.
+Current clock 789.7879062766781s. 4 out of 19 coordinates found.
+Current clock 789.7929391144959s. 4 out of 19 coordinates found.
+Current clock 789.7978662965293s. 4 out of 19 coordinates found.
+Current clock 789.8038246790177s. 4 out of 19 coordinates found.
+Current clock 789.8089030997596s. 4 out of 19 coordinates found.
+Current clock 789.8138444698556s. 4 out of 19 coordinates found.
+Current clock 789.8187472001217s. 4 out of 19 coordinates found.
+Current clock 789.8238075084435s. 4 out of 19 coordinates found.
+Current clock 789.8287343886032s. 4 out of 19 coordinates found.
+Current clock 789.8335691972937s. 4 out of 19 coordinates found.
+Current clock 789.8386316187311s. 4 out of 19 coordinates found.
+Current clock 789.8434709555268s. 4 out of 19 coordinates found.
+Current clock 789.8482795012081s. 4 out of 19 coordinates found.
+Current clock 789.8532706804594s. 4 out of 19 coordinates found.
+Current clock 789.8582455585326s. 4 out of 19 coordinates found.
+Current clock 789.8584357389445s. 4 out of 19 coordinates found.
+Current clock 789.863365637841s. 4 out of 19 coordinates found.
+Current clock 789.8685174138845s. 4 out of 19 coordinates found.
+Current clock 789.8733639956482s. 4 out of 19 coordinates found.
+Current clock 789.8781803900449s. 4 out of 19 coordinates found.
+Current clock 789.8831893798429s. 4 out of 19 coordinates found.
+Current clock 789.888051960911s. 4 out of 19 coordinates found.
+Current clock 789.8928589972239s. 4 out of 19 coordinates found.
+Current clock 789.8978293471921s. 4 out of 19 coordinates found.
+Current clock 789.9027550198573s. 4 out of 19 coordinates found.
+Current clock 789.90764265644s. 4 out of 19 coordinates found.
+Current clock 789.9125474998219s. 4 out of 19 coordinates found.
+Current clock 789.917440268257s. 4 out of 19 coordinates found.
+Current clock 789.9221633836898s. 4 out of 19 coordinates found.
+Current clock 789.9268499724087s. 4 out of 19 coordinates found.
+Current clock 789.9320609156915s. 4 out of 19 coordinates found.
+Current clock 789.9370270394284s. 4 out of 19 coordinates found.
+Current clock 789.9419599570615s. 4 out of 19 coordinates found.
+Current clock 789.946926382672s. 4 out of 19 coordinates found.
+Current clock 789.9518094911497s. 4 out of 19 coordinates found.
+Current clock 789.9566593935238s. 4 out of 19 coordinates found.
+Current clock 789.9616016692406s. 4 out of 19 coordinates found.
+Current clock 789.9665122482222s. 4 out of 19 coordinates found.
+Current clock 789.9714835038114s. 4 out of 19 coordinates found.
+Current clock 789.976563132048s. 4 out of 19 coordinates found.
+Current clock 789.9814269206108s. 4 out of 19 coordinates found.
+Current clock 789.9863027841204s. 4 out of 19 coordinates found.
+Current clock 790.0670579150673s. 8 out of 19 coordinates found.
+Current clock 790.0719630603228s. 8 out of 19 coordinates found.
+Current clock 790.0767743228672s. 8 out of 19 coordinates found.
+Current clock 790.0815107207414s. 8 out of 19 coordinates found.
+Current clock 790.0863817542725s. 8 out of 19 coordinates found.
+Current clock 790.0911272083569s. 8 out of 19 coordinates found.
+Current clock 790.096948842073s. 8 out of 19 coordinates found.
+Current clock 790.1047622382605s. 12 out of 19 coordinates found.
+Final: 14 out of 19 coordinates found.
+Lengths checked: 69
+Lengths Found: 7
+
+Drawing found fibres.
+Drawing 1 out of 7
+Line coords: (8, 215, 65, 232)
+Drawing 2 out of 7
+Line coords: (29, 109, 43, 156)
+Drawing 3 out of 7
+Line coords: (69, 320, 135, 360)
+Drawing 4 out of 7
+Line coords: (111, 434, 252, 587)
+Drawing 5 out of 7
+Line coords: (334, 621, 371, 576)
+Drawing 6 out of 7
+Line coords: (393, 598, 495, 613)
+Drawing 7 out of 7
+Line coords: (505, 641, 563, 608)
+Drawn found fibres on the image: ..\ProcessedData\Images\x20_transmission1[2018-03-21_17-01-56]Drawn Lines.jpg
+
+
+
+###################################################################################
+Analysed image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 79.69062869417894
+Log file location: ..\ProcessedData\LogDataFiles\x20_transmission1[2018-03-21_17-01-56](LOG).txt
