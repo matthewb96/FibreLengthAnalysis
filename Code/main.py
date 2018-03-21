@@ -24,11 +24,10 @@ PROCESSEDIMAGES = PROCESSEDFOLDER + "Images\\" #Source for where processed image
 PROCESSEDDATA = PROCESSEDFOLDER + "LogDataFiles\\" #Source for where log and data files are stored
 DEBUGGING = False
 OVERWRITE = False
-global imageStats
-imageStats = [["Objects Found", "Fibres Found", "Coordinates Missed"]]
+global imageStats; imageStats = [["Objects Found", "Fibres Found", "Coordinates Missed"]]
 #Fibre variables
-FIBRE_WIDTH = 10
-MIN_LENGTH = 30
+FIBRE_WIDTH = 5
+MIN_LENGTH = 20
 
 
 ####Functions####

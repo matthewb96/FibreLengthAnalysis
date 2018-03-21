@@ -457,3 +457,9 @@ C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarni
 
 Time taken: 0.22332463132079283
 Log file location: ..\ProcessedData\LogDataFiles\x20_transmission1[2018-03-21_21-57-15](LOG).txt
+[4;33mReloaded modules[24m: inputs, lengths, corners, graphing[0m
+['1.bmp', '10.bmp', '2.bmp', '3.bmp', '4.bmp', '5.bmp', '6.bmp', '7.bmp', '8.bmp', '9.bmp', 'scale.bmp']
+Please try again.
+Could not find "exit" in ..\FibreImages\
+Please try again.
+['exit']
