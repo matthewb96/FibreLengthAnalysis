@@ -1,0 +1,74 @@
+Log file for ..\FibreImages\x20_transmission1.bmp
+
+Started at: 9809.777054220134s
+
+
+
+###################################################################################
+Analysing image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Objects smaller than 270 pixels have been removed.
+Opened image 1 out of 1
+10 objects found in the image.
+# Corners Found: 19
+# Endpoints: 18
+Current clock 9809.87249882571s. 0 out of 18 coordinates found.
+Current clock 9809.873326563313s. 0 out of 18 coordinates found.
+Current clock 9809.874041400162s. 0 out of 18 coordinates found.
+Current clock 9809.874763783853s. 0 out of 18 coordinates found.
+Current clock 9809.87550880807s. 0 out of 18 coordinates found.
+Current clock 9809.87619587254s. 0 out of 18 coordinates found.
+Current clock 9809.876882031393s. 0 out of 18 coordinates found.
+Current clock 9809.878802249805s. 0 out of 18 coordinates found.
+Current clock 9809.87954817964s. 0 out of 18 coordinates found.
+Current clock 9809.880229508513s. 0 out of 18 coordinates found.
+Current clock 9809.883050517954s. 0 out of 18 coordinates found.
+Current clock 9809.893877217111s. 4 out of 18 coordinates found.
+Current clock 9809.895998181513s. 4 out of 18 coordinates found.
+Current clock 9809.896680416006s. 4 out of 18 coordinates found.
+Current clock 9809.919106007164s. 8 out of 18 coordinates found.
+Current clock 9809.919806655953s. 8 out of 18 coordinates found.
+Current clock 9809.92043002508s. 8 out of 18 coordinates found.
+Current clock 9809.921050677343s. 8 out of 18 coordinates found.
+Current clock 9809.921664386515s. 8 out of 18 coordinates found.
+Current clock 9809.922280812547s. 8 out of 18 coordinates found.
+Current clock 9809.923899761037s. 8 out of 18 coordinates found.
+Current clock 9809.931218688154s. 12 out of 18 coordinates found.
+Final: 14 out of 18 coordinates found.
+Lengths checked: 59
+Lengths Found: 7
+
+Drawing found fibres.
+Drawing 1 out of 7
+Line coords: (106, 438, 252, 587)
+Drawing 2 out of 7
+Line coords: (8, 215, 65, 232)
+Drawing 3 out of 7
+Line coords: (29, 109, 43, 156)
+Drawing 4 out of 7
+Line coords: (69, 320, 135, 360)
+Drawing 5 out of 7
+Line coords: (334, 621, 371, 576)
+Drawing 6 out of 7
+Line coords: (393, 598, 495, 613)
+Drawing 7 out of 7
+Line coords: (505, 641, 563, 608)
+Drawn found fibres on the image: ..\ProcessedData\Images\x20_transmission1[2018-03-21_21-56-50]Drawn Lines.jpg
+
+Image data:
+There are 10 objects found in the image, 7 of which are found to be fibres. 4 endpoints were not found to be part of a fibre.
+
+
+###################################################################################
+Analysed image x20_transmission1.bmp, number 1 out of 1
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 0.26112857282532786
+Log file location: ..\ProcessedData\LogDataFiles\x20_transmission1[2018-03-21_21-56-50](LOG).txt

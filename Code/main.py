@@ -24,6 +24,8 @@ PROCESSEDIMAGES = PROCESSEDFOLDER + "Images\\" #Source for where processed image
 PROCESSEDDATA = PROCESSEDFOLDER + "LogDataFiles\\" #Source for where log and data files are stored
 DEBUGGING = False
 OVERWRITE = False
+global imageStats
+imageStats = [["Objects Found", "Fibres Found", "Coordinates Missed"]]
 #Fibre variables
 FIBRE_WIDTH = 10
 MIN_LENGTH = 30
@@ -164,7 +166,7 @@ def analyseImage(saveData, loadData, FIBRE_WIDTH, MIN_LENGTH, numDone, numAnalys
     cv2.imwrite(PROCESSEDIMAGES + saveName + "Corners and Edges.jpg", subpixArray)
     
     #Finding the fibre lengths
-    fibreLengths = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
+    fibreLengths, coordsNotFound = lengths.findLengths(edgeCoords, MIN_LENGTH, FIBRE_WIDTH, imageGray)
     np.savetxt(PROCESSEDDATA + saveName + "Fibre_Lengths.txt", fibreLengths, header = "Fibre lengths: [x0, y0, x1, y1, length01, angle01]")
     
     #Draw found fibres
@@ -190,7 +192,10 @@ def analyseImage(saveData, loadData, FIBRE_WIDTH, MIN_LENGTH, numDone, numAnalys
         graphing.lengthDistribution(fibreLengths, PROCESSEDIMAGES + saveName, title = "Length Distribution of the Found Fibres")
         if RANDOM:
             graphing.lengthDistribution(knownPositions, PROCESSEDIMAGES + saveName, title = "Length Distribution of the Known Fibres")
-        
+            
+    print("Image data:\nThere are " + str(numObjects) + " objects found in the image, " + str(len(fibreLengths)) + " of which are found to be fibres. " + str(coordsNotFound) + " endpoints were not found to be part of a fibre.")
+    imageStats.append([numObjects, len(fibreLengths), coordsNotFound])
+    
     return correctness, knownPositions, fibreLengths
 
 

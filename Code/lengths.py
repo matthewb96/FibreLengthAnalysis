@@ -38,6 +38,7 @@ def findLengths(coords, minLength, fibreWidth, imageArray):
     [[x0, y0, x1, y1, length01]
      [x0, y0, x2, y2, length02] 
      ...]
+    Also returns the number of coordinates found that were not part of a fibre.
     """
     lineLengths = np.array([[0, 0, 0, 0, 0, 0]]) #For each line in the array [x, y, x1, y1, length, angle]
     arrayLength, width = coords.shape #Find length of axis 0
@@ -73,7 +74,7 @@ def findLengths(coords, minLength, fibreWidth, imageArray):
     lineLengths = np.delete(lineLengths, 0, 0)
     print("Lengths checked: " + str(lengthsChecked))
     print("Lengths Found: " + str(lineLengths.shape[0]))
-    return lineLengths
+    return lineLengths, arrayLength - numChecked
  
 
 def checkLineOld(pos1, pos2, imageArray):
