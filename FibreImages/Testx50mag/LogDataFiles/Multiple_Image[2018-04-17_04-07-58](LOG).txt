@@ -1,0 +1,522 @@
+Log file for ..\\FibreImages\\Testx50mag\ containing multiple images:
+['x50_reflection1.bmp', 'x50_reflection2.bmp', 'x50_reflection3.bmp', 'x50_reflection4.bmp', 'x50_reflection5.bmp', 'x50_transmission1.bmp', 'x50_transmission2.bmp', 'x50_transmission3.bmp', 'x50_transmission4.bmp', 'x50_transmission5.bmp', 'x50_transmission6.bmp', 'x50_transmission7.bmp']
+
+Started at: 416.68017479677127s
+
+
+
+###################################################################################
+Analysing image x50_reflection1.bmp, number 1 out of 12
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:194: UserWarning: Any labeled images will be returned as a boolean array. Did you mean to use a boolean array?
+  "Did you mean to use a boolean array?", UserWarning)
+Objects smaller than 2250 pixels have been removed.
+Opened image 1 out of 12
+1 objects found in the image.
+# Corners Found: 4
+# Endpoints: 4
+Current clock 416.7868091589596s. 0 out of 4 coordinates found.
+Current clock 416.7892555409617s. 0 out of 4 coordinates found.
+Current clock 416.78997490526456s. 0 out of 4 coordinates found.
+Current clock 416.7906028019285s. 0 out of 4 coordinates found.
+Current clock 416.79068159088484s. 0 out of 4 coordinates found.
+Final: 2 out of 4 coordinates found.
+Lengths checked: 4
+Lengths Found: 1
+
+Drawing found fibres.
+Drawing 1 out of 1
+Line coords: (434, 291, 487, 561)
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_reflection1[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 1 objects found in the image, 1 of which are found to be fibres. 2 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.13011950865882227s
+
+
+###################################################################################
+Analysed image x50_reflection1.bmp, number 1 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_reflection2.bmp, number 2 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 2 out of 12
+1 objects found in the image.
+# Corners Found: 0
+# Endpoints: 0
+Final: 0 out of 0 coordinates found.
+Lengths checked: 0
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_reflection2[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 1 objects found in the image, 0 of which are found to be fibres. 0 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.10787415622615981s
+
+
+###################################################################################
+Analysed image x50_reflection2.bmp, number 2 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_reflection3.bmp, number 3 out of 12
+###################################################################################
+
+C:\Users\Matthew\Anaconda3\lib\site-packages\skimage\morphology\misc.py:122: UserWarning: Only one label was provided to `remove_small_objects`. Did you mean to use a boolean array?
+  warn("Only one label was provided to `remove_small_objects`. "
+Objects smaller than 2250 pixels have been removed.
+Opened image 3 out of 12
+1 objects found in the image.
+# Corners Found: 2
+# Endpoints: 2
+Current clock 417.0935140387732s. 0 out of 2 coordinates found.
+Final: 2 out of 2 coordinates found.
+Lengths checked: 1
+Lengths Found: 1
+
+Drawing found fibres.
+Drawing 1 out of 1
+Line coords: (1, 298, 182, 224)
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_reflection3[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 1 objects found in the image, 1 of which are found to be fibres. 0 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.19214845409123882s
+
+
+###################################################################################
+Analysed image x50_reflection3.bmp, number 3 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_reflection4.bmp, number 4 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 4 out of 12
+1 objects found in the image.
+# Corners Found: 1
+# Endpoints: 1
+Final: 0 out of 1 coordinates found.
+Lengths checked: 0
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_reflection4[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 1 objects found in the image, 0 of which are found to be fibres. 1 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.10742919484022195s
+
+
+###################################################################################
+Analysed image x50_reflection4.bmp, number 4 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_reflection5.bmp, number 5 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 5 out of 12
+1 objects found in the image.
+# Corners Found: 3
+# Endpoints: 3
+Current clock 417.3137967915084s. 0 out of 3 coordinates found.
+Current clock 417.31556456211604s. 0 out of 3 coordinates found.
+Current clock 417.31617464824956s. 0 out of 3 coordinates found.
+Final: 0 out of 3 coordinates found.
+Lengths checked: 3
+Lengths Found: 0
+
+Drawing found fibres.
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_reflection5[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 1 objects found in the image, 0 of which are found to be fibres. 3 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.1107335010340762s
+
+
+###################################################################################
+Analysed image x50_reflection5.bmp, number 5 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_transmission1.bmp, number 6 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 6 out of 12
+3 objects found in the image.
+# Corners Found: 19
+# Endpoints: 13
+Current clock 417.4164521604626s. 0 out of 13 coordinates found.
+Current clock 417.41668943295196s. 0 out of 13 coordinates found.
+Current clock 417.4173064621736s. 0 out of 13 coordinates found.
+Current clock 417.4248131479146s. 4 out of 13 coordinates found.
+Current clock 417.4255666239113s. 4 out of 13 coordinates found.
+Current clock 417.4385109551365s. 8 out of 13 coordinates found.
+Final: 10 out of 13 coordinates found.
+Lengths checked: 11
+Lengths Found: 5
+
+Drawing found fibres.
+Drawing 1 out of 5
+Line coords: (295, 140, 456, 131)
+Drawing 2 out of 5
+Line coords: (312, 177, 464, 122)
+Drawing 3 out of 5
+Line coords: (364, 524, 246, 339)
+Drawing 4 out of 5
+Line coords: (315, 111, 494, 118)
+Drawing 5 out of 5
+Line coords: (351, 192, 473, 112)
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_transmission1[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 3 objects found in the image, 5 of which are found to be fibres. 3 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.1269558754675586s
+
+
+###################################################################################
+Analysed image x50_transmission1.bmp, number 6 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_transmission2.bmp, number 7 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 7 out of 12
+2 objects found in the image.
+# Corners Found: 14
+# Endpoints: 11
+Current clock 417.58367583385734s. 0 out of 11 coordinates found.
+Current clock 417.5845213812398s. 0 out of 11 coordinates found.
+Current clock 417.5854251901878s. 0 out of 11 coordinates found.
+Current clock 417.5855555994949s. 0 out of 11 coordinates found.
+Current clock 417.58776984085534s. 0 out of 11 coordinates found.
+Current clock 417.58850611006847s. 0 out of 11 coordinates found.
+Current clock 417.5891780802482s. 0 out of 11 coordinates found.
+Current clock 417.5898908033364s. 0 out of 11 coordinates found.
+Current clock 417.5905380198977s. 0 out of 11 coordinates found.
+Current clock 417.59120727321687s. 0 out of 11 coordinates found.
+Current clock 417.6008666181456s. 4 out of 11 coordinates found.
+Current clock 417.6015554932355s. 4 out of 11 coordinates found.
+Current clock 417.6021897292407s. 4 out of 11 coordinates found.
+Final: 8 out of 11 coordinates found.
+Lengths checked: 23
+Lengths Found: 4
+
+Drawing found fibres.
+Drawing 1 out of 4
+Line coords: (28, 522, 554, 561)
+Drawing 2 out of 4
+Line coords: (316, 116, 414, 160)
+Drawing 3 out of 4
+Line coords: (411, 110, 333, 190)
+Drawing 4 out of 4
+Line coords: (348, 191, 415, 106)
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_transmission2[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 2 objects found in the image, 4 of which are found to be fibres. 3 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.2127087492268629s
+
+
+###################################################################################
+Analysed image x50_transmission2.bmp, number 7 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_transmission3.bmp, number 8 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 8 out of 12
+4 objects found in the image.
+# Corners Found: 22
+# Endpoints: 15
+Current clock 417.78610760518706s. 0 out of 15 coordinates found.
+Current clock 417.78632374653864s. 0 out of 15 coordinates found.
+Current clock 417.7870400921076s. 0 out of 15 coordinates found.
+Current clock 417.7889871755125s. 0 out of 15 coordinates found.
+Current clock 417.78969567237317s. 0 out of 15 coordinates found.
+Current clock 417.7903350402261s. 0 out of 15 coordinates found.
+Current clock 417.79099191673606s. 0 out of 15 coordinates found.
+Current clock 417.79107251693284s. 0 out of 15 coordinates found.
+Current clock 417.7911066286266s. 0 out of 15 coordinates found.
+Current clock 417.7917324121767s. 0 out of 15 coordinates found.
+Current clock 417.79244453151813s. 0 out of 15 coordinates found.
+Current clock 417.79316299020087s. 0 out of 15 coordinates found.
+Current clock 417.7938231873182s. 0 out of 15 coordinates found.
+Current clock 417.7944933462575s. 0 out of 15 coordinates found.
+Current clock 417.79529210326365s. 0 out of 15 coordinates found.
+Current clock 417.7971069661211s. 0 out of 15 coordinates found.
+Current clock 417.7978015768055s. 0 out of 15 coordinates found.
+Current clock 417.79850373432487s. 0 out of 15 coordinates found.
+Current clock 417.7991518565063s. 0 out of 15 coordinates found.
+Current clock 417.7997848850179s. 0 out of 15 coordinates found.
+Current clock 417.79987846577075s. 0 out of 15 coordinates found.
+Current clock 417.8004764769684s. 0 out of 15 coordinates found.
+Current clock 417.80056492587346s. 0 out of 15 coordinates found.
+Current clock 417.8027356974649s. 0 out of 15 coordinates found.
+Current clock 417.8226659828228s. 4 out of 15 coordinates found.
+Current clock 417.82336904596235s. 4 out of 15 coordinates found.
+Current clock 417.823987584551s. 4 out of 15 coordinates found.
+Current clock 417.8245979725579s. 4 out of 15 coordinates found.
+Current clock 417.826238050719s. 4 out of 15 coordinates found.
+Current clock 417.8268695698636s. 4 out of 15 coordinates found.
+Current clock 417.8285247416945s. 4 out of 15 coordinates found.
+Current clock 417.8293416111043s. 4 out of 15 coordinates found.
+Current clock 417.8300917664937s. 4 out of 15 coordinates found.
+Final: 6 out of 15 coordinates found.
+Lengths checked: 62
+Lengths Found: 3
+
+Drawing found fibres.
+Drawing 1 out of 3
+Line coords: (37, 331, 212, 446)
+Drawing 2 out of 3
+Line coords: (45, 121, 490, 118)
+Drawing 3 out of 3
+Line coords: (317, 526, 568, 653)
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_transmission3[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 4 objects found in the image, 3 of which are found to be fibres. 9 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.19882166738563s
+
+
+###################################################################################
+Analysed image x50_transmission3.bmp, number 8 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_transmission4.bmp, number 9 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 9 out of 12
+2 objects found in the image.
+# Corners Found: 21
+# Endpoints: 16
+Current clock 417.9888433630266s. 0 out of 16 coordinates found.
+Current clock 417.98972483334325s. 0 out of 16 coordinates found.
+Current clock 417.9904710643784s. 0 out of 16 coordinates found.
+Current clock 417.9911759387583s. 0 out of 16 coordinates found.
+Current clock 417.991885944986s. 0 out of 16 coordinates found.
+Current clock 418.0131115690866s. 4 out of 16 coordinates found.
+Current clock 418.0138777237659s. 4 out of 16 coordinates found.
+Current clock 418.0139725120123s. 4 out of 16 coordinates found.
+Current clock 418.01400722745285s. 4 out of 16 coordinates found.
+Current clock 418.0140371129191s. 4 out of 16 coordinates found.
+Current clock 418.0147489303871s. 4 out of 16 coordinates found.
+Current clock 418.0148560954427s. 4 out of 16 coordinates found.
+Current clock 418.015497274536s. 4 out of 16 coordinates found.
+Current clock 418.0161595847671s. 4 out of 16 coordinates found.
+Current clock 418.0168333661872s. 4 out of 16 coordinates found.
+Current clock 418.02228550159435s. 8 out of 16 coordinates found.
+Current clock 418.0223953835105s. 8 out of 16 coordinates found.
+Current clock 418.0230441094388s. 8 out of 16 coordinates found.
+Current clock 418.02313950143196s. 8 out of 16 coordinates found.
+Current clock 418.0238570544945s. 8 out of 16 coordinates found.
+Current clock 418.02453596776235s. 8 out of 16 coordinates found.
+Current clock 418.0251910330319s. 8 out of 16 coordinates found.
+Current clock 418.02586904067954s. 8 out of 16 coordinates found.
+Current clock 418.02597077201403s. 8 out of 16 coordinates found.
+Current clock 418.02659112184307s. 8 out of 16 coordinates found.
+Current clock 418.02724890397315s. 8 out of 16 coordinates found.
+Current clock 418.02790125238215s. 8 out of 16 coordinates found.
+Current clock 418.0285569213985s. 8 out of 16 coordinates found.
+Current clock 418.02864597405033s. 8 out of 16 coordinates found.
+Current clock 418.02869578316074s. 8 out of 16 coordinates found.
+Current clock 418.0287464978913s. 8 out of 16 coordinates found.
+Current clock 418.0293514521771s. 8 out of 16 coordinates found.
+Current clock 418.0300031968393s. 8 out of 16 coordinates found.
+Current clock 418.0306760726392s. 8 out of 16 coordinates found.
+Current clock 418.0308149344014s. 8 out of 16 coordinates found.
+Current clock 418.0310368113475s. 8 out of 16 coordinates found.
+Final: 8 out of 16 coordinates found.
+Lengths checked: 38
+Lengths Found: 4
+
+Drawing found fibres.
+Drawing 1 out of 4
+Line coords: (96, 281, 347, 407)
+Drawing 2 out of 4
+Line coords: (328, 184, 402, 101)
+Drawing 3 out of 4
+Line coords: (460, 173, 535, 104)
+Drawing 4 out of 4
+Line coords: (349, 191, 484, 108)
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_transmission4[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 2 objects found in the image, 4 of which are found to be fibres. 8 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.17555719036772643s
+
+
+###################################################################################
+Analysed image x50_transmission4.bmp, number 9 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_transmission5.bmp, number 10 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 10 out of 12
+4 objects found in the image.
+# Corners Found: 10
+# Endpoints: 8
+Current clock 418.3143727659482s. 0 out of 8 coordinates found.
+Current clock 418.31526299059334s. 0 out of 8 coordinates found.
+Current clock 418.31598899611095s. 0 out of 8 coordinates found.
+Current clock 418.3168303172659s. 0 out of 8 coordinates found.
+Current clock 418.3174817600547s. 0 out of 8 coordinates found.
+Current clock 418.3181525227409s. 0 out of 8 coordinates found.
+Current clock 418.3188794338787s. 0 out of 8 coordinates found.
+Current clock 418.3195169904913s. 0 out of 8 coordinates found.
+Current clock 418.32659471413643s. 4 out of 8 coordinates found.
+Current clock 418.3272609487217s. 4 out of 8 coordinates found.
+Current clock 418.3290839621608s. 4 out of 8 coordinates found.
+Final: 6 out of 8 coordinates found.
+Lengths checked: 13
+Lengths Found: 3
+
+Drawing found fibres.
+Drawing 1 out of 3
+Line coords: (450, 404, 279, 344)
+Drawing 2 out of 3
+Line coords: (318, 107, 441, 155)
+Drawing 3 out of 3
+Line coords: (388, 504, 505, 586)
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_transmission5[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 4 objects found in the image, 3 of which are found to be fibres. 2 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.30115433367939204s
+
+
+###################################################################################
+Analysed image x50_transmission5.bmp, number 10 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_transmission6.bmp, number 11 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 11 out of 12
+1 objects found in the image.
+# Corners Found: 5
+# Endpoints: 5
+Current clock 418.44482071286194s. 0 out of 5 coordinates found.
+Current clock 418.44557992445317s. 0 out of 5 coordinates found.
+Current clock 418.44634306039853s. 0 out of 5 coordinates found.
+Final: 2 out of 5 coordinates found.
+Lengths checked: 6
+Lengths Found: 1
+
+Drawing found fibres.
+Drawing 1 out of 1
+Line coords: (16, 147, 197, 357)
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_transmission6[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 1 objects found in the image, 1 of which are found to be fibres. 3 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.1189360049531274s
+
+
+###################################################################################
+Analysed image x50_transmission6.bmp, number 11 out of 12
+###################################################################################
+
+
+
+###################################################################################
+Analysing image x50_transmission7.bmp, number 12 out of 12
+###################################################################################
+
+Objects smaller than 2250 pixels have been removed.
+Opened image 12 out of 12
+6 objects found in the image.
+# Corners Found: 16
+# Endpoints: 13
+Current clock 418.5920217276396s. 0 out of 13 coordinates found.
+Current clock 418.59296176139503s. 0 out of 13 coordinates found.
+Current clock 418.6110971075397s. 4 out of 13 coordinates found.
+Current clock 418.6113530961796s. 4 out of 13 coordinates found.
+Current clock 418.6120117839299s. 4 out of 13 coordinates found.
+Current clock 418.61282291774523s. 4 out of 13 coordinates found.
+Current clock 418.6135280939985s. 4 out of 13 coordinates found.
+Current clock 418.61418044240753s. 4 out of 13 coordinates found.
+Current clock 418.6148349039303s. 4 out of 13 coordinates found.
+Current clock 418.61662440942246s. 4 out of 13 coordinates found.
+Current clock 418.61732958567575s. 4 out of 13 coordinates found.
+Current clock 418.618005782083s. 4 out of 13 coordinates found.
+Current clock 418.61869465717297s. 4 out of 13 coordinates found.
+Current clock 418.6193491186957s. 4 out of 13 coordinates found.
+Current clock 418.61998758092847s. 4 out of 13 coordinates found.
+Current clock 418.62061910007316s. 4 out of 13 coordinates found.
+Current clock 418.6212817121776s. 4 out of 13 coordinates found.
+Current clock 418.6219841715704s. 4 out of 13 coordinates found.
+Current clock 418.6226537267629s. 4 out of 13 coordinates found.
+Current clock 418.6298772552584s. 8 out of 13 coordinates found.
+Final: 8 out of 13 coordinates found.
+Lengths checked: 36
+Lengths Found: 4
+
+Drawing found fibres.
+Drawing 1 out of 4
+Line coords: (181, 282, 412, 311)
+Drawing 2 out of 4
+Line coords: (107, 459, 255, 556)
+Drawing 3 out of 4
+Line coords: (249, 418, 341, 521)
+Drawing 4 out of 4
+Line coords: (251, 206, 328, 317)
+Drawn found fibres on the image: ..\\FibreImages\\Testx50mag\Images\x50_transmission7[2018-04-17_04-07-58]Drawn Lines.jpg
+
+Image data:
+There are 6 objects found in the image, 4 of which are found to be fibres. 5 endpoints were not found to be part of a fibre.
+Time taken for this image: 0.17830303077869303s
+
+
+###################################################################################
+Analysed image x50_transmission7.bmp, number 12 out of 12
+###################################################################################
+
+Producing length distribution graphs for total data.
+C:\Users\Matthew\Anaconda3\lib\site-packages\matplotlib\figure.py:403: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+  "matplotlib is currently using a non-GUI backend, "
+
+Time taken: 2.058676037621865s
+Log file location: ..\\FibreImages\\Testx50mag\LogDataFiles\Multiple_Image[2018-04-17_04-07-58](LOG).txt

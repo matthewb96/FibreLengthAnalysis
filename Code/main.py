@@ -24,7 +24,7 @@ PROCESSEDIMAGES = PROCESSEDFOLDER + "Images\\" #Source for where processed image
 PROCESSEDDATA = PROCESSEDFOLDER + "LogDataFiles\\" #Source for where log and data files are stored
 DEBUGGING = False
 OVERWRITE = False
-global imageStats; imageStats = [["Objects Found", "Fibres Found", "Coordinates Missed"]]
+global imageStats; imageStats = [["Objects Found", "Fibres Found", "Coordinates Missed", "Time Taken (s)"]]
 #Fibre variables
 FIBRE_WIDTH = 5
 MIN_LENGTH = 20
@@ -138,6 +138,7 @@ def analyseImage(saveData, loadData, FIBRE_WIDTH, MIN_LENGTH, numDone, numAnalys
     arg[7] RANDOM - boolean value for whether random image generation or not.
     arg[8] randData - tuple containing the random fibre number and array size to be generated.
     """
+    singleImageStart = time.clock()
     #Extract save data from tuple
     PROCESSEDDATA, PROCESSEDIMAGES, originalSaveName = saveData
     IMAGEFOLDER, imageSource = loadData
@@ -192,8 +193,10 @@ def analyseImage(saveData, loadData, FIBRE_WIDTH, MIN_LENGTH, numDone, numAnalys
         if RANDOM:
             graphing.lengthDistribution(knownPositions, PROCESSEDIMAGES + saveName, title = "Length Distribution of the Known Fibres")
             
+    singleImageTaken = time.clock() - singleImageStart
     print("Image data:\nThere are " + str(numObjects) + " objects found in the image, " + str(len(fibreLengths)) + " of which are found to be fibres. " + str(coordsNotFound) + " endpoints were not found to be part of a fibre.")
-    imageStats.append([numObjects, len(fibreLengths), coordsNotFound])
+    print("Time taken for this image: " + str(singleImageTaken) + "s")
+    imageStats.append([numObjects, len(fibreLengths), coordsNotFound, singleImageTaken])
     
     return correctness, knownPositions, fibreLengths
 
@@ -390,7 +393,7 @@ if RANDOM:
 
 #Finished
 end = time.clock()
-print("\nTime taken: " + str(end-start))
+print("\nTime taken: " + str(end-start) + "s")
 print("Log file location: " + PROCESSEDDATA + logName + "(LOG).txt")
 #Set standard out back to its original
 sys.stdout = orignalOut

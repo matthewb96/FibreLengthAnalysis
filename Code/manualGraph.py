@@ -11,12 +11,13 @@ from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit
 
 #Functions
-def plot3LineGraph(data, title):
+def plot3LineGraph(data, title, filename):
     """
     Plots a graph containing the correct, incorrect and one away data for the 100 random image tests.
     
     arg[0] data - numpy array containing the data to be plotted.
     arg[1] title - string containing the title for the graph.
+    arg[2] filename - string containing the file path to save the graph to.
     """
     #Plot the graph
     labels = ("Correct", "One Away", "Incorrect")
@@ -26,14 +27,16 @@ def plot3LineGraph(data, title):
     plt.title(title)
     plt.legend([y1, y2, y3], labels, loc = (0.7, 0.5))
     graph.show()
+    graph.savefig(filename)
     
     
-def plotPercentError(data, title):
+def plotPercentError(data, title, filename):
     """
     Plot a graph for the average percentage incorrect fibres for 100 random images tests.
     
     arg[0] data - numpy array containing the data to be plotted.
     arg[1] title - string containing the title for the graph.
+    arg[2] filename - string containing the file path to save the graph to.
     """
     graph = plt.figure()
     x = data[:, 0]
@@ -56,6 +59,7 @@ def plotPercentError(data, title):
     plt.text(6000, 25, "1% Incorrect at x = " + str(np.rint(percentile)) + "\nb = -" + str(np.round(popt[1], 8)))
     plt.legend()
     graph.show()
+    graph.savefig(filename)
     
     
 def expFunc(x, a, b, c):
@@ -96,8 +100,8 @@ for i in range(dataOrig.shape[0]):
     dataOrig[i,3] += (1000 - totFibres)
     print("Total fibres: " + str(totFibres) + " New total: " + str(np.sum(dataOrig[i, 1:])))
 #Plot graphs 
-plot3LineGraph(dataOrig, "Graph showing the data for 100 random images\nbefore fixing the one away check")
-plotPercentError(dataOrig, "Graph showing the percentage error for 100 random images\nbefore fixing the one away check")
+plot3LineGraph(dataOrig, "Graph showing the data for 100 random images\nbefore fixing the one away check", "before_fixing_one_away1.png")
+plotPercentError(dataOrig, "Graph showing the percentage error for 100 random images\nbefore fixing the one away check", "before_fixing_one_away2.png")
 
 
 #Data for the 100 random image tests after fixing the one away check 
@@ -117,8 +121,8 @@ dataNew = np.array([[10000, 720, 221, 59],
                      [1000, 105, 50, 845]
                      ])
 #Plot the graphs
-plot3LineGraph(dataNew, "Graph showing the data for 100 random images\nafter fixing the one away check")
-plotPercentError(dataNew, "Graph showing the percentage error for 100 random images\nafter fixing the one away check")
+plot3LineGraph(dataNew, "Graph showing the data for 100 random images\nafter fixing the one away check", "after_fixing_one_away1.png")
+plotPercentError(dataNew, "Graph showing the percentage error for 100 random images\nafter fixing the one away check", "after_fixing_one_away2.png")
 
 
 #Data for the 100 random image tests after getting fibres to check further down the array when some are missing 
@@ -139,8 +143,8 @@ dataCheckDown = np.array([[10000, 744, 219, 37],
                          ])
 
 #Plot the graph
-plot3LineGraph(dataCheckDown, "Graph showing the data for 100 random images after having\nfibres check further down array, to account for missing fibres.")
-plotPercentError(dataCheckDown, "Graph showing the percentage error for 100 random images after having\nfibres check further down array, to account for missing fibres.")
+plot3LineGraph(dataCheckDown, "Graph showing the data for 100 random images after having\nfibres check further down array, to account for missing fibres.", "account_for_missing1.png")
+plotPercentError(dataCheckDown, "Graph showing the percentage error for 100 random images after having\nfibres check further down array, to account for missing fibres.", "account_for_missing2.png")
 
 
 #Data for the 100 random image tests after edits for checking the midpoint is part of a fibre
@@ -161,8 +165,8 @@ dataMidpoint = np.array([[10000, 692, 287, 21],
                          ])
 
 #Plot the graphs
-plot3LineGraph(dataMidpoint, "Graph showing the data for 100 random images after edits\nfor checking the midpoint is part of a fibre.")
-plotPercentError(dataMidpoint, "Graph showing the percentage error for 100 random images after edits\nfor checking the midpoint is part of a fibre.")
+plot3LineGraph(dataMidpoint, "Graph showing the data for 100 random images after edits\nfor checking the midpoint is part of a fibre.", "checking_midpoint1.png")
+plotPercentError(dataMidpoint, "Graph showing the percentage error for 100 random images after edits\nfor checking the midpoint is part of a fibre.", "checking_midpoint2.png")
 
 
 #Data for the 100 random image tests after edits for checking centroid position is part of a fibre
@@ -182,8 +186,8 @@ dataCentroid = np.array([[10000, 709, 281, 10],
                          [1000, 400, 123, 477]
                          ])
 #Plot the graphs
-plot3LineGraph(dataCentroid, "Graph showing the data for 100 random images after edits\nfor checking centroid position is part of a fibre.")
-plotPercentError(dataCentroid, "Graph showing the percentage error for 100 random images after edits\nfor checking centroid position is part of a fibre.")
+plot3LineGraph(dataCentroid, "Graph showing the data for 100 random images after edits\nfor checking centroid position is part of a fibre.", "checking_centroid1.png")
+plotPercentError(dataCentroid, "Graph showing the percentage error for 100 random images after edits\nfor checking centroid position is part of a fibre.", "checking_centroid2.png")
 
 
 #Data for the 100 random image tests after fixing checking the line is part of a fibre
@@ -204,5 +208,5 @@ dataLineFix = np.array([[10000, 737, 256, 7],
                          ])
 
 #Plot the graphs
-plot3LineGraph(dataLineFix, "Graph showing the data for 100 random images after fixing\nthe check that the line is part of a fibre.")
-plotPercentError(dataLineFix, "Graph showing the percentage error for 100 random images after fixing\nthe check that the line is part of a fibre.")
+plot3LineGraph(dataLineFix, "Graph showing the data for 100 random images after fixing\nthe check that the line is part of a fibre.", "checking_line1.png")
+plotPercentError(dataLineFix, "Graph showing the percentage error for 100 random images after fixing\nthe check that the line is part of a fibre.", "checking_line2.png")
